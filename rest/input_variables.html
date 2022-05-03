@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>控制API要求的輸入變數</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="控制API要求的輸入變數" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/ontap-automation/rest/input_variables.html" />
+	<meta property="og:description" content="" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/ontap-automation/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/zh-tw/ontap-automation/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-automation/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-tw/ontap-automation/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-automation/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-automation/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-tw/ontap-automation/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-tw/ontap-automation/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-tw/ontap-automation/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-tw/ontap-automation/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-tw/ontap-automation/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-tw/ontap-automation/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-automation/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-automation/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-automation/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-tw/ontap-automation/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/ontap-automation/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-tw/ontap-automation/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/ontap-automation/js/na-search.js'></script><script src='/zh-tw/ontap-automation/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-tw/ontap-automation/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/ontap-automation/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-tw/ontap-automation/js/na-utility.js'></script>
+  <script src='/zh-tw/ontap-automation/js/clouddocs.js'></script>
+  <script src='/zh-tw/ontap-automation/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-tw/ontap-automation/js/toc.js'></script>
+  <script src='/zh-tw/ontap-automation/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-tw/ontap-automation/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/ontap-automation/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/ontap-automation/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/ontap-automation/js/jszip.min.js'></script>
+  <script src='/zh-tw/ontap-automation/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[控制API要求的輸入變數](https://docs.netapp.com/zh-tw/ontap-automation/rest/input_variables.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-automation/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/rest/input_variables.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-automation/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-automation/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此頁面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">產品與解決方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支援與訓練</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社群</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">部落格</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客戶成功案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-tw/ontap-automation/search.html"
+          data-type="widget" 
+          data-placeholder="搜尋文件" 
+          data-no-results-found="找不到符合 {query} 的相關結果。" 
+          data-did-you-mean="搜尋 {suggestion}。" 
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
+          data-results-found="找到 {hitCount} 筆結果"  
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">繁體中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/input_variables.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-tw/ontap-automation/pdfs/fullsite-sidebar/自動化文件ONTAP.pdf" >
+          <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/靜態API_ONTAP.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            靜態API ONTAP
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/REST實作詳細資料.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            REST實作詳細資料
+          </a>
+          
+
+
+
+
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-tw/ontap-automation/pdfs/pages/rest/input_variables.pdf" >
+    <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/其他考量.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            其他考量
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/剩餘資源摘要.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            剩餘資源摘要
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/工作流程.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            工作流程
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/使用ONTAP_REST_API管理功能.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            使用ONTAP REST API管理功能
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/Python用戶端程式庫.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            Python用戶端程式庫
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/ontap-automation/pdfs/sidebar/自動化技術.pdf" 
+            
+          >
+            <img src="/zh-tw/ontap-automation/images/pdf.png" width="16" height="16"/>
+            自動化技術
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-tw/ontap-automation/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/index.html">
+        自動化文件ONTAP
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 版本資訊</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rn/whats_new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508">
+        發行說明 ONTAP
+      </a></li></ul></li><li class="subfolders "><a href="/zh-tw/ontap-automation/getting_started_with_the_rest_api.html">
+        <div class="na-navbar-padding"> 開始使用</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/get-started/ontap_automation_options.html">
+        瞭解自動化選項
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/get-started/prepare.html">
+        準備使用REST API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/get-started/retrieve_cluster_software_version.html">
+        擷取叢集軟體版本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/get-started/hello_world.html">
+        您好：World
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 靜態API ONTAP</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> REST實作詳細資料</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/rest_web_services_foundation.html">
+        REST Web服務基礎
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/rest_api_versioning.html">
+        REST API版本管理ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/access_rest_api.html">
+        如何存取REST API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/operational_characteristics.html">
+        基本營運特性
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/input_variables.html">
+        輸入變數
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/interpret_api_response.html">
+        解讀API回應
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/asynchronous_processing.html">
+        使用工作物件進行非同步處理
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 其他考量</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/object_references_and_access.html">
+        物件參考與存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/users_ontapi_api_ontap_cli.html">
+        ONTAPI API API和ONTAP CLI的使用者
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/access_ontap_cli.html">
+        存取ONTAP CLI
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/security_using_rbac.html">
+        使用RBAC的安全性
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/rest/performance_metrics.html">
+        儲存資源的效能指標
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 剩餘資源摘要</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/overview_categories.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/application.html">
+        應用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/cloud.html">
+        雲端
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/cluster.html">
+        叢集
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/name_services.html">
+        名稱服務
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/nas.html">
+        NAS
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/ndmp.html">
+        NDMP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/networking.html">
+        網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/nvme.html">
+        NVMe
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/object_store.html">
+        物件存放區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/san.html">
+        SAN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/security.html">
+        安全性
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/snaplock.html">
+        SnapLock
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/snapmirror.html">
+        SnapMirror
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/storage.html">
+        儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/support.html">
+        支援
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/svm.html">
+        SVM
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 工作流程</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/workflows/prepare_workflows.html">
+        準備好使用工作流程
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/workflows/wf_1_update_cluster_contact.html">
+        工作流程1：更新叢集聯絡人並檢查狀態
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用ONTAP REST API管理功能</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/manage/ems-rest-api.html">
+        EMS事件通知
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/manage/dacl-sacl-rest-api.html">
+        DACL和SACL權限
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Python用戶端程式庫</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/python/overview_pcl.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/python/prepare_pcl.html">
+        準備使用Python用戶端程式庫
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/python/script_retrieve_cluster_configuration.html">
+        用於擷取叢集組態的指令碼
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/reference/api_reference.html">
+        API 參考
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 自動化技術</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/automate/ontap_ansible.html">
+        可與Ansible ONTAP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/automate/blogs.html">
+        自動化部落格
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/additional/get_more_information.html">
+        取得更多資訊
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-tw/ontap-automation/">ONTAP&nbsp;Automation</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">控制API要求的輸入變數</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-05-03 10:26:43 +0000">05/03/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>您可以透過HTTP要求中設定的參數和變數來控制API呼叫的處理方式。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="http方法">HTTP方法</h3>
+<div class="paragraph">
+<p>下表顯示了由REST API支援的HTTP方法ONTAP 。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-automation/images/note.svg" alt="附註">
+</td>
+<td class="content">
+並非所有的HTTP方法都可在每個REST端點上使用。此外、修補程式和刪除功能也可用於集合。如需詳細資訊、請參閱_Object參考資料和access_。
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HTTP方法</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">取得</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">擷取資源執行個體或集合上的物件屬性。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">貼文</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">根據提供的輸入建立新的資源執行個體。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">修補程式</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">根據提供的輸入內容更新現有的資源執行個體。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">刪除</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">刪除現有的資源執行個體。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">標題</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">有效發出GET要求、但僅傳回HTTP標頭。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選項</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">判斷特定端點支援哪些HTTP方法。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="要求標頭">要求標頭</h3>
+<div class="paragraph">
+<p>您必須在HTTP要求中包含多個標頭。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">內容類型</dt>
+<dd>
+<p>如果申請本文包含Json、則此標頭必須設定為「application/json」。</p>
+</dd>
+<dt class="hdlist1">接受</dt>
+<dd>
+<p>此標頭應設定為「application/hal+json」。如果改為「application/json」、則除了擷取下一批記錄所需的連結之外、不會傳回任何的HAL連結。如果標頭是這兩個值以外的其他值、則回應中「content-type」標頭的預設值為「application/hal+json」。</p>
+</dd>
+<dt class="hdlist1">授權</dt>
+<dd>
+<p>基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="申請本文">申請本文</h3>
+<div class="paragraph">
+<p>申請本文的內容會因特定通話而有所不同。HTTP要求本文包含下列其中一項：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>具有輸入變數的Json物件</p>
+</li>
+<li>
+<p>清空Json物件</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="篩選物件">篩選物件</h3>
+<div class="paragraph">
+<p>發出使用Get的API呼叫時、您可以根據任何屬性來限制或篩選傳回的物件。例如、您可以指定要符合的確切值：</p>
+</div>
+<div class="paragraph">
+<p>「&lt;field&gt;=&lt;查詢值&gt;'</p>
+</div>
+<div class="paragraph">
+<p>除了完全相符的運算子、其他運算子也可傳回一系列值的一組物件。下表所示的靜態API支援篩選運算子。ONTAP</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">營運者</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">等於</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">小於</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">大於</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8656;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">小於或等於</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">大於或等於</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">更新</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">或</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">！</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不等於</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">貪婪的萬用字元</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>您也可以使用「null」關鍵字或其否定詞「!null」作為查詢的一部分、根據是否設定特定欄位來傳回物件集合。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-automation/images/note.svg" alt="附註">
+</td>
+<td class="content">
+任何未設定的欄位通常都會排除在相符查詢之外。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="要求特定物件欄位">要求特定物件欄位</h3>
+<div class="paragraph">
+<p>根據預設、使用Get發出API呼叫時、只會傳回唯一識別物件的屬性、以及可用的HAL自我連結。這組最小欄位可做為每個物件的金鑰、而且會根據物件類型而有所不同。您可以使用「功能變數」查詢參數、以下列方式選取其他物件內容：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>一般或標準欄位</p>
+<div class="paragraph">
+<p>指定「Fields =*」以擷取最常用的物件欄位。這些欄位通常會保留在本機伺服器記憶體中、或只需少量處理即可存取。使用Get搭配URL路徑金鑰（UUID）之後、傳回的物件內容相同。</p>
+</div>
+</li>
+<li>
+<p>所有欄位</p>
+<div class="paragraph">
+<p>指定「Fields =」以擷取所有物件欄位、包括需要額外伺服器處理才能存取的欄位。</p>
+</div>
+</li>
+<li>
+<p>自訂欄位選擇</p>
+<div class="paragraph">
+<p>使用「field=&lt;field_name&gt;'」來指定所需的確切欄位。要求多個欄位時、必須使用不含空格的逗號分隔值。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-automation/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+最佳實務做法是、務必找出您想要的特定欄位。您只能在需要時擷取一組通用欄位或所有欄位。哪些欄位屬於一般欄位、並使用「Fields =*」傳回、由NetApp根據內部效能分析來決定。欄位的分類可能會在未來的版本中變更。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="排序輸出集中的物件">排序輸出集中的物件</h3>
+<div class="paragraph">
+<p>資源集合中的記錄會以物件定義的預設順序傳回。您可以使用「order_by」查詢參數、以下列欄位名稱和排序方向來變更順序：</p>
+</div>
+<div class="paragraph">
+<p>「order_by=&lt;欄位名稱&gt; asc|desc」</p>
+</div>
+<div class="paragraph">
+<p>例如、您可以依遞增順序、以遞減順序排序類型欄位、然後依ID排序：</p>
+</div>
+<div class="paragraph">
+<p>「order_by=type desc、id asc」</p>
+</div>
+<div class="paragraph">
+<p>請注意下列事項：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您指定排序欄位但未提供方向、則會以遞增順序排序這些值。</p>
+</li>
+<li>
+<p>包含多個參數時、您必須以逗號分隔欄位。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="擷取集合中的物件時分頁">擷取集合中的物件時分頁</h3>
+<div class="paragraph">
+<p>使用Get存取同一類型物件的集合時發出API呼叫ONTAP 、根據兩個限制、嘗試傳回盡可能多的物件。您可以使用要求上的其他查詢參數來控制這些限制。針對特定Get要求所達成的第一個限制會終止要求、因此會限制傳回的記錄數目。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-automation/images/note.svg" alt="附註">
+</td>
+<td class="content">
+如果要求在重複所有物件之前結束、回應會包含擷取下一批記錄所需的連結。
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">限制物件數量</dt>
+<dd>
+<p>根據預設、ONTAP 針對Get要求、最多可傳回10、000個物件。您可以使用「max_Records」查詢參數來變更此限制。例如：</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>"Marax_Records=20"</p>
+</div>
+<div class="paragraph">
+<p>實際傳回的物件數目可能會低於有效的最大值、取決於相關的時間限制、以及系統中的物件總數。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">限制擷取物件所用的時間</dt>
+<dd>
+<p>根據預設、ONTAP 在允許的取得要求時間內、將盡可能多的物件傳回。預設的逾時時間為15秒。您可以使用「RETON_Timeout」查詢參數來變更此限制。例如：</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>"RETON_Timeout=5"</p>
+</div>
+<div class="paragraph">
+<p>實際傳回的物件數目可能會低於有效的最大值、這是根據物件數目的相關限制、以及系統中的物件總數而定。</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">縮小結果集</dt>
+<dd>
+<p>如有需要、您可以將這兩個參數與其他查詢參數結合、以縮小結果集範圍。例如、下列項目最多會傳回指定時間之後產生的10個EMS事件：</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>「Time &#8658; 202018年4月4日T15：41：29.140265Z&amp;max記錄=10」</p>
+</div>
+<div class="paragraph">
+<p>您可以針對物件發出多個分頁要求。每次後續的API呼叫都應根據最後結果集中的最新事件、使用新的時間值。</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="大小屬性">大小屬性</h3>
+<div class="paragraph">
+<p>某些API呼叫所使用的輸入值以及某些查詢參數均為數值。您可以選擇使用下表所示的字尾、而不是提供以位元組為單位的整數。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">後置</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KB千位元組（1024位元組）或Kibibibyte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MB MB（KB x 1024位元組）或百萬位元組</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GB GB GB（MB x 1024位元組）或GB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TB TB TB（GB x 1024位元組）或TB位元組</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PB PB PB（TB x 1024位元組）或pibibbytes</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><a href="object_references_and_access.html">"物件參考與存取"</a></p>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">cookie-settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
+              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/ontap-automation/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/ontap-automation/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/ontap-automation/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/ontap-automation/js/www-ntap.js'></script>
+    <script src='/zh-tw/ontap-automation/js/tabbed-blocks.js'></script>
+  </body></html>
