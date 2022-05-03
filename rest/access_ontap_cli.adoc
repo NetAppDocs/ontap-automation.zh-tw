@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: rest/access_ontap_cli.html 
+keywords:  
+summary:  
+---
+= 透過REST API存取ONTAP REST CLI
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了協助CLI和ONTAPI API使用者移轉ONTAP 至靜態API、ONTAP 我們提供REST端點來存取CLI。您可以使用此傳遞功能來執行任何CLI命令。REST端點的使用會傳回AutoSupport 至靜態資料中、以便NetApp找出REST API中的落差、並在未來版本中進行改善。
+
+若要發出CLI命令、您必須根據下列相關規則、進行適當格式的REST API呼叫：
+
+* 資源路徑
+* 欄位名稱
+* HTTP方法
+
+
+CLI存取的基礎資源路徑為「/Private / CLI」。如ONTAP 需透過REST API存取CLI的詳細資訊、請參閱《靜態API》線上文件頁面。
+
+
+NOTE: NetApp維護GitHub儲存庫、其中包含程式碼範例和其他實用資訊。您可以存取儲存庫、以取得如何使用CLI傳遞功能的範例。
+
+https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["靜態Python GitHub儲存庫- CLI傳遞範例ONTAP"^]

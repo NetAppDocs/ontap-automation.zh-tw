@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: additional/get_more_information.html 
+keywords:  
+summary:  
+---
+= 取得更多資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。
+
+
+
+=== 支援支援支援ONTAP
+
+* https://docs.netapp.com/us-en/ontap/["供應說明文件ONTAP"^]
++
+提供ONTAP 有關支援功能的文件（CLI命令除外）。
+
+* https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]
++
+提供ONTAP 有關支援功能的文件、以供參考。
+
+* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["系統管理程式資源ONTAP ONTAP"^]
++
+提供規劃、管理及支援ONTAP 功能所需的文件及其他實用連結。
+
+
+
+
+
+=== 支援的開發人員資源ONTAP
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^]
++
+提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。
+
+* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 版本9.10.1"^]
++
+PyPI的NetApp Python用戶端程式庫套件。
+
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["適用於9.10.1的NetApp PCL文件"^]
++
+NetApp Python用戶端程式庫的文件。
+
+* https://devnet.netapp.com/restapi.php["NetApp開發人員網路：ONTAP 功能不一的API"^]
++
+提供使用ONTAP REST API所需的資源和文件、包括ONTAP 使用支援支援的Python用戶端程式庫。
+
+
+
+
+
+=== 影片
+
+* https://www.youtube.com/watch?v=Wws3SB5d9Ss["NetApp ONTAP 方面的Python用戶端程式庫入門"^]
++
+NetApp Python用戶端程式庫簡介、以及如何開始使用程式庫撰寫程式碼。
+
+
+
+
+
+=== NetApp資源
+
+* https://mysupport.netapp.com/["NetApp支援"^]
++
+存取疑難排解工具、文件及技術支援協助。
+
+* https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
++
+存取ONTAP 有關使用R11和ONTAP R11 API的要求與相容性資訊。
+
+* http://www.netapp.com/us/library/index.aspx["NetApp技術報告與白皮書庫"^]
++
+存取技術報告、白皮書及其他文件。
+
+

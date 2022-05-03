@@ -1,0 +1,191 @@
+---
+sidebar: sidebar 
+permalink: resources/nas.html 
+keywords:  
+summary:  
+---
+= NAS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用這些API呼叫來管理叢集和SVM的CIFS和NFS設定。
+
+
+
+==== 稽核
+
+有些CIFS和NFS事件可記錄在SVM上、有助於提升安全性。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 稽核記錄重新導向
+
+您可以將NAS稽核事件重新導向至特定SVM。此資源類型是ONTAP 更新的功能、採用了更新的功能。
+
+
+
+==== CIFS網域
+
+叢集和SVM層級已新增CIFS網域支援、並加入多種端點類別。您可以擷取網域組態、以及建立和移除慣用的網域控制器。此資源類型是ONTAP 更新的、採用了更新版的功能。
+
+
+
+==== CIFS主目錄搜尋路徑
+
+您可以在CIFS伺服器上建立SMB使用者的主目錄、而不需為每位使用者建立個別的SMB共用區。主目錄搜尋路徑是SVM根目錄的一組絕對路徑。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== CIFS本機群組
+
+CIFS伺服器可在決定共用、檔案和目錄存取權限時、使用本機群組進行授權。這種資源類型採用ONTAP 了引用的是包含9.9的功能、ONTAP 並以版本號9、10大幅擴充。
+
+
+
+==== CIFS服務
+
+CIFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
+
+
+
+==== CIFS工作階段
+
+您可以使用此API擷取CIFS工作階段的詳細資訊。這種資源類型是ONTAP 以《不含資料的9.8 REST API」推出、ONTAP 並以《不含資料的升級版：
+
+
+
+==== CIFS共用
+
+在CIFS伺服器上定義的SMB共用。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== CIFS共用ACL
+
+存取控制清單（ACL）可控制對CIFS共用上資料夾和檔案的存取。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== CIFS UNIX symlink對應
+
+CIFS和UNIX用戶端都可以存取相同的資料存放區。當UNIX用戶端建立符號連結時、這些對應會提供另一個檔案或資料夾的參考、以支援CIFS用戶端。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 檔案存取追蹤
+
+您可以使用這些API呼叫來追蹤特定檔案的存取。此資源類型是ONTAP 更新的功能、採用了更新的功能。
+
+
+
+==== 檔案安全性權限
+
+您可以使用這些API呼叫來顯示已授予Windows或Unix使用者特定檔案或資料夾的有效權限。您也可以管理NTFS檔案安全性和稽核原則。這種資源類型是ONTAP 以《不經意的9.8 REST API」推出、ONTAP 並以《不經意的9.9版技術大幅提升。
+
+
+
+==== FPolicy
+
+FPolicy是檔案存取通知架構、用於監控及管理SVM上的檔案存取事件。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== FPolicy連線
+
+這些端點可讓您顯示及更新外部FPolicy伺服器的連線狀態資訊。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
+
+
+
+==== FPolicy引擎
+
+FPolicy引擎可讓您識別接收檔案存取通知的外部伺服器。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== FPolicy活動
+
+此組態可識別檔案存取的監控方式、以及產生的事件。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== FPolicy原則
+
+FPolicy架構元素的容器、包括FPolicy引擎和事件。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 鎖定
+
+鎖定是一種同步機制、可強制限制同時存取許多用戶端同時存取相同檔案的檔案。您可以使用這些端點來擷取和刪除鎖定。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
+
+
+
+==== NFS連線用戶端
+
+您可以顯示已連線用戶端的清單、其中包含其連線的詳細資料。此資源類型隨ONTAP 附於NetApp 9.7。
+
+
+
+==== NFS匯出原則
+
+包括說明NFS匯出的規則在內的原則。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NFS Kerberos介面
+
+Kerberos介面的組態設定。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NFS Kerberos領域
+
+Kerberos領域的組態設定。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NFS服務
+
+NFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
+
+
+
+==== 物件存放區
+
+稽核S3事件是一項安全性改善、可讓您追蹤及記錄特定S3事件。S3稽核事件選取器可依每個SVM設定為每個儲存區。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
+
+
+
+==== VScan
+
+一項安全功能、可保護您的資料免受病毒和其他惡意程式碼的侵害。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== VScan存取原則
+
+VScan原則可在用戶端存取檔案物件時、主動掃描檔案物件。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== VScan隨需原則
+
+VScan原則可讓檔案物件立即依需求或根據設定的排程進行掃描。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== VScan掃描器資源池
+
+一組屬性、用於管理ONTAP 介於更新和外部掃毒伺服器之間的連線。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== VScan伺服器狀態
+
+外部掃毒伺服器的狀態。此資源類型隨ONTAP 附於NetApp 9.6。

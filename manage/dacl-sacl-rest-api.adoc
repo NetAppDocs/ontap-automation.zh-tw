@@ -1,0 +1,282 @@
+---
+permalink: manage/dacl-sacl-rest-api.html 
+sidebar: sidebar 
+keywords: dacl, sacl, permissions, file, api, access, vserver, control, list, access control list, access control 
+summary: 使用ONTAP REST API管理DACL和SACL檔案權限。 
+---
+= 利用REST API管理DACL和SACL檔案權限ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用系統存取控制清單（SACL）和自由存取控制清單（DACL）來指派檔案物件的權限。ONTAP從靜止9.9.1開始ONTAP 、ONTAP 包含端點、可指派SACL和DACL權限給檔案、並自動化檔案安全權限。（您可以深入瞭ONTAP 解在執行版本號之前、將SACL和DACL權限自動化的選項 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["請按這裡"^]）。
+
+從ONTAP 靜止9.9.1開始、您可以使用單一REST API呼叫來取代多個CLI命令或ONTAPI呼叫。下列範例說明如何使用ONTAP R靜止API來處理檔案權限。在每個範例中、請務必在方括弧<>中指定資訊的值。
+
+您也可以參考範例 https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["Python指令碼"^] 這說明如何將許多SACL和DACL相關活動自動化。
+
+
+
+== 檢視有效權限
+
+使用「Get /傳輸 協定/file-Security /有效權限/」API呼叫、您可以擷取特定檔案或目錄的目前權限。
+
+.申請範例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/protocols/file-security/effective-permissions/cf5f271a-1beb-11ea-8fad-005056bb645e/administrator/windows/%2F?share.name=sh1&return_records=true'
+----
+.回應範例
+[source, json]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----
+
+
+== 檢視所有稽核資訊
+
+使用「Get /傳輸 協定/file-Security /permissions/」API呼叫、您可以擷取特定檔案或目錄的所有稽核資訊。
+
+.申請範例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent'
+----
+.回應範例
+[source, json]
+----
+{
+  "svm": {
+    "uuid": "9479099d-5b9f-11eb-9c4e-0050568e8682",
+    "name": "vs1"
+  },
+  "path": "/parent",
+  "owner": "BUILTIN\\Administrators",
+  "group": "BUILTIN\\Administrators",
+  "control_flags": "0x8014",
+  "acls": [
+    {
+      "user": "BUILTIN\\Administrators",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    },
+    {
+      "user": "BUILTIN\\Users",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    }
+  ],
+  "inode": 64,
+  "security_style": "mixed",
+  "effective_style": "ntfs",
+  "dos_attributes": "10",
+  "text_dos_attr": "----D---",
+  "user_id": "0",
+  "group_id": "0",
+  "mode_bits": 777,
+  "text_mode_bits": "rwxrwxrwx"
+}
+
+----
+
+
+== 套用新權限
+
+您可以使用「POST /傳輸 協定/file-Security /權限/」API呼叫、將新的安全性描述元套用至檔案或目錄。
+
+.申請範例
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X POST -d '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'
+----
+.回應範例
+[source, json]
+----
+{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== 更新安全性描述元資訊
+
+您可以使用「修補程式/傳輸協定/檔案安全性/權限/」API呼叫來更新檔案或目錄的特定安全性描述元資訊、例如主要擁有者、群組或控制旗標。
+
+.申請範例
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X PATCH -d '{ \"control_flags\": \"32788\", \"group\": \"everyone\", \"owner\": \"user1\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'
+----
+.回應範例
+[source, json]
+----
+{
+  "job": {
+    "uuid": "6f89e612-5bbd-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/6f89e612-5bbd-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== 刪除現有的SACL/DACL存取控制項目（ACE）
+
+您可以使用「刪除/medias/file-security/permissions/」API呼叫、從目錄的檔案中刪除現有的ACE。此範例會將變更傳播至任何子物件。
+
+.申請範例
+[source, curl]
+----
+curl -u admin:<PASSWORD> -X DELETE -d '{ \"access\": \"access_allow\", \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"ignore_paths\": [ \"/parent/child2\" ], \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent/acl/himanshu?return_timeout=0'
+----
+.回應範例
+[source, json]
+----
+{
+  "job": {
+    "uuid": "e5683b61-5bbf-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/e5683b61-5bbf-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== 不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP
+
+利用此功能、您可以使用比支援許多工作的CLI更少的命令來自動化工作流程。ONTAP ONTAP例如、您可以使用單一POST API方法來修改檔案的安全性描述元、而非使用多個CLI命令。下表顯示完成一般檔案系統權限工作所需的CLI命令、以及對應的REST API呼叫：
+
+|===
+| 靜態API ONTAP | CLI ONTAP 
+
+
+| 「Get /傳輸 協定/file-Security /有效權限/」  a| 
+「vserver安全性檔案目錄show-aive-permissions」
+
+
+
+| 「POST /傳輸協定/檔案安全性/權限/」  a| 
+. 「vserver安全性檔案目錄NTFS建立」
+. 「vserver安全檔案目錄NTFS DACL add」
+. 「vserver安全檔案目錄NTFS SACL add」
+. 「vserver安全性檔案目錄原則建立」
+. 「vserver安全性檔案目錄原則工作新增」
+. 「適用Vserver安全檔案目錄」
+
+
+
+
+| 「修補程式/傳輸協定/檔案安全性/權限/」  a| 
+「vserver安全性檔案目錄NTFS修改」
+
+
+
+| 「刪除/傳輸協定/檔案安全性/權限/」  a| 
+. 「Vserver安全檔案目錄NTFS DACL移除」
+. 「Vserver安全檔案目錄NTFS SACL移除」
+
+
+|===
+
+
+== 相關資訊
+
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["靜態API DACL/SACL權限範例Python指令碼ONTAP"^]
+* https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/["利用REST API簡化檔案安全權限的管理ONTAP"^]
+* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["搭配ONTAP 使用私有CLI passThrough搭配使用REST API（適用於ONTAP 版本9.9.1之前的版本）"^]
+

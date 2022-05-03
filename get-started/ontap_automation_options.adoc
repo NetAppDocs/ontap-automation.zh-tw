@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: get-started/ontap_automation_options.html 
+keywords: ontap, ontap automation, rest, ontap rest api, python client library, ontap ansible 
+summary: 有多種選項可讓ONTAP 您自動化部署和管理功能。 
+---
+= 瞭ONTAP 解功能自動化選項
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。您可以直接或透過NetApp Python用戶端程式庫存取REST API。此外、NetApp也支援ONTAP 使用Ansible及其他高階軟體抽象化的功能進行功能不全的自動化。
+
+
+NOTE: ONTAPI API也稱為Network Manageability SDK或ZAPI、是以程式設計方式存取及管理ONTAP 效益儲存系統的老舊技術。現在、這個靜態API是一項策略性技術、應該盡可能選用。ONTAP
+
+
+
+=== 原生存取ONTAP 靜態API
+
+您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。您應該先檢閱本網站上的所有文件。
+
+
+
+=== 調整舊版ONTAPI程式碼以使用REST
+
+如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^] 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、
+
+
+
+=== 使用NetApp Python用戶端程式庫
+
+Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。您應該先檢閱本網站上的文件、包括 link:../python/overview_pcl.html["Python用戶端程式庫"]。
+
+
+
+=== 使用Ansible
+
+Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。您應該先檢閱本網站上的文件、包括 link:../automate/ontap_ansible.html["可執行的自動化功能ONTAP"]。

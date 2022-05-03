@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: get-started/hello_world.html 
+keywords:  
+summary:  
+---
+= 您好：World
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST API並確認其可用度。
+
+您的工作站必須具備Curl公用程式。此外、您必須具備下列條件：
+
+* 知識集區管理LIF的IP位址或主機名稱ONTAP
+* 有權存取ONTAP REST API（叢集資源）之帳戶的使用者名稱和密碼。
+
+
+
+NOTE: 如果您的認證資料包含特殊字元、您必須根據您使用的Shell、以Curl可接受的方式來設定其格式。例如、您可以在每個特殊字元之前插入反斜槓、或將整個「username:password」字串換成單引號。
+
+.步驟
+. 在本機工作站的命令列介面上、擷取ONTAP 版本的資訊：
++
+"curl -X Get -u username:password -k "https://<ip_address>/api/cluster?fields=version"`[]
+
++
+* 範例 *
+
++
+「curl -X Get -u admin: password -k」'https://10.222.81.101/api/cluster?fields=version"`[]
+
+
+
+此版本資訊會以Json格式顯示。ONTAP

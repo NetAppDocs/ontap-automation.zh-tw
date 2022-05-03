@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: rest/security_using_rbac.html 
+keywords:  
+summary:  
+---
+= 使用RBAC的安全性
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API可在使用ONTAP 時擴充角色型存取控制（RBAC）功能。您可以建立具有自訂角色的使用者帳戶、以限制其餘端點的存取。
+
+
+
+=== 為REST端點建立角色
+
+REST角色是透過一組或多個權限來定義。每項權限都包含指向REST端點的路徑、以及相關的存取層級。每個端點的存取權限均以三個層級之一提供、並決定可用於資源的HTTP方法。存取層級包括：
+
+* 全部
++
+可使用所有HTTP方法
+
+* 唯讀
++
+只能使用Get
+
+* 無
++
+不允許存取
+
+
+
+以下是可指派給REST角色的兩種權限範例：
+
+* 「access="readonly」、path="/API/storage / volume」
+* 「access="none"、path="/API/SnapMirror/Policies」
+
+
+
+
+=== 建立具有自訂角色的使用者帳戶
+
+在高層級、您可以建立具有自訂REST角色的帳戶、如下所示：
+
+. 建立可存取HTTP管理傳輸協定的使用者帳戶。
+. 以所需的權限建立REST角色。
+. 將使用者帳戶與角色建立關聯。
+

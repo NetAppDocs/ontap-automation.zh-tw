@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="bf07f432276ee2fe7e55f9ea12c2ba5a" category="doc">取得更多資訊</block>
+  <block id="f09943979dc3457d406cfb7e8205a032" category="paragraph">您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。</block>
+  <block id="f372ae3b2fda116fe4b7463cbac902c0" category="section-title">支援支援支援ONTAP</block>
+  <block id="5358757de9216cc29d688612a3d72fe1" category="inline-link">供應說明文件ONTAP</block>
+  <block id="7d1750eaf694ea55e3ed364bf2fc1139" category="list-text"><block ref="7d1750eaf694ea55e3ed364bf2fc1139" category="inline-link-rx"></block></block>
+  <block id="85e5e87731b3318f19ef33e2fb42f8b4" category="paragraph">提供ONTAP 有關支援功能的文件（CLI命令除外）。</block>
+  <block id="774a065cb3548cc61fb0ec3bc1494fbe" category="inline-link">供應說明文件中心 ONTAP</block>
+  <block id="04b0bb6aae6dc41149097cc24034df97" category="list-text"><block ref="04b0bb6aae6dc41149097cc24034df97" category="inline-link-rx"></block></block>
+  <block id="874bbaff78a1a5929b6a69396bce843d" category="paragraph">提供ONTAP 有關支援功能的文件、以供參考。</block>
+  <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">系統管理程式資源ONTAP ONTAP</block>
+  <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
+  <block id="d36ee6fe6aa657c937857a18101e0782" category="paragraph">提供規劃、管理及支援ONTAP 功能所需的文件及其他實用連結。</block>
+  <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">支援的開發人員資源ONTAP</block>
+  <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">用於REST API對應資訊的ONTAPI</block>
+  <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
+  <block id="4afcca23062e18db41a227f2c2299716" category="paragraph">提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。</block>
+  <block id="09b968a9a3d2c3977d1e4ac1ccd11b75" category="inline-link">PyPI：NetApp ONTAP 版本9.10.1</block>
+  <block id="4be092006953c35749a0846e4734167a" category="list-text"><block ref="4be092006953c35749a0846e4734167a" category="inline-link-rx"></block></block>
+  <block id="3c7d0c806ed3155c89dbd1e259689a6c" category="paragraph">PyPI的NetApp Python用戶端程式庫套件。</block>
+  <block id="52c1911015b514cf96a78c24068ce96a" category="inline-link">適用於9.10.1的NetApp PCL文件</block>
+  <block id="dd0ebea31107f6302bac45e38cca3b1d" category="list-text"><block ref="dd0ebea31107f6302bac45e38cca3b1d" category="inline-link-rx"></block></block>
+  <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">NetApp Python用戶端程式庫的文件。</block>
+  <block id="b597994ba1223810c3ac8977cffacb37" category="inline-link">NetApp開發人員網路：ONTAP 功能不一的API</block>
+  <block id="6228139d56297e6f87b517feae45bc99" category="list-text"><block ref="6228139d56297e6f87b517feae45bc99" category="inline-link-rx"></block></block>
+  <block id="851a3f787680b56a5580f460ad9424f3" category="paragraph">提供使用ONTAP REST API所需的資源和文件、包括ONTAP 使用支援支援的Python用戶端程式庫。</block>
+  <block id="554cfab3938e21d9270bd6b75931f96f" category="section-title">影片</block>
+  <block id="e6d9d2044073b02a5ea64a67b46c528d" category="inline-link">NetApp ONTAP 方面的Python用戶端程式庫入門</block>
+  <block id="b93fb835faa7e2d92c1bb9e56f4f9f3e" category="list-text"><block ref="b93fb835faa7e2d92c1bb9e56f4f9f3e" category="inline-link-rx"></block></block>
+  <block id="1016adf11e3bfe1329073f40bbc1f5b8" category="paragraph">NetApp Python用戶端程式庫簡介、以及如何開始使用程式庫撰寫程式碼。</block>
+  <block id="ed08ca4078374e76c6df3f1999af7274" category="section-title">NetApp資源</block>
+  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp支援</block>
+  <block id="4e3ffaad45a8ae63f200119be8101498" category="list-text"><block ref="4e3ffaad45a8ae63f200119be8101498" category="inline-link-rx"></block></block>
+  <block id="3d32fc1a126e880a8ed715ad4b9c42f5" category="paragraph">存取疑難排解工具、文件及技術支援協助。</block>
+  <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互通性對照表工具</block>
+  <block id="29c81145f8df4c302d2a5db797d28b64" category="list-text"><block ref="29c81145f8df4c302d2a5db797d28b64" category="inline-link-rx"></block></block>
+  <block id="f921b580843ecb0435df878ae2c6c51e" category="paragraph">存取ONTAP 有關使用R11和ONTAP R11 API的要求與相容性資訊。</block>
+  <block id="5528d45d676e7b5e4b5f82591b52d795" category="inline-link">NetApp技術報告與白皮書庫</block>
+  <block id="8d4056bb7e1987655b2aad3e78b46bc4" category="list-text"><block ref="8d4056bb7e1987655b2aad3e78b46bc4" category="inline-link-rx"></block></block>
+  <block id="e996b4c3d79a1e2689fba6ba27c0372f" category="paragraph">存取技術報告、白皮書及其他文件。</block>
+  <block id="62e19745c2e31bc4e7e9e3351516716c" category="summary">歡迎使用ONTAP 《自動化》文件入口網站。</block>
+  <block id="ec033dcf5fdadae0c2ee4fad5b7980ac" category="doc">自動化文件ONTAP</block>
+  <block id="5b588205bbe49d54e5a0303fd962d449" category="doc">部落格關於ONTAP 自動化</block>
+  <block id="c99ca37e36a22c30020b03f2ea8e7938" category="paragraph">有幾篇部落格文章可協助您更深入瞭解ONTAP 各種技術和方法來實現自動化。</block>
+  <block id="2e02e4fcb54e6e1277182e7dcc734294" category="section-title">ONTAPI至REST對應</block>
+  <block id="396362dbb23440630e9d742429d0eb0e" category="paragraph">NetApp支援從專屬的ONTAPI（前身為Zehyr）API移轉至更健全的全新ONTAP REST API。</block>
+  <block id="66678bc28616cb8b07e14e87fe993fc3" category="inline-link">NetApp.IO/202/12/17/ontapi-rit-mapping</block>
+  <block id="62bed9184b42d07dbb453a2b1a516b44" category="paragraph"><block ref="62bed9184b42d07dbb453a2b1a516b44" category="inline-link-rx"></block></block>
+  <block id="bc00f7a5406f8f98848784d25ca2e573" category="section-title">將私有CLI密碼與ONTAP REST API搭配使用</block>
+  <block id="4561b01a73d4a9676d22f56757f49ab2" category="paragraph">CLI passThrough提供一種使用ONTAP REST API執行Rest CLI命令的技術。</block>
+  <block id="ec141cf04dfb48ccacaa7a20c45d7195" category="inline-link">NetApp.IO/202/11/09/Private - CLI/pass-ONTAP-REST - API</block>
+  <block id="b87866cc7b2f4d3bca6b529f08021191" category="paragraph"><block ref="b87866cc7b2f4d3bca6b529f08021191" category="inline-link-rx"></block></block>
+  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="section-title">NetApp與Ansible快速入門：安裝Ansible</block>
+  <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。</block>
+  <block id="b1ed8990c321e2a215dff03bbacc2765" category="inline-link">NetApp.IO/202018年10月8日/ NetApp與Ansible安裝入門</block>
+  <block id="152f81f627d712d24b8acdfdd3016fc7" category="paragraph"><block ref="152f81f627d712d24b8acdfdd3016fc7" category="inline-link-rx"></block></block>
+  <block id="a8f88f602880c7c7c74079d3f99ff931" category="doc">可執行的自動化功能ONTAP</block>
+  <block id="f820c3830ab123b8422eb4a89ffeb2e6" category="paragraph">有幾項資源可協助您瞭解如何使用Ansible來自動化ONTAP 部署及管理各種資源。</block>
+  <block id="039792ff8ff6ac357ed8f4a13b3345c2" category="inline-link-macro">Ansible認證模組</block>
+  <block id="b9604383a9491878c8331801e487f3e0" category="paragraph">上述影片也可透過NetApp TV取得、網址為 <block ref="0fbd1fba292ef7e8dc7c843e65ec1153" category="inline-link-macro-rx"></block>。</block>
+  <block id="10cb31045b1e0319cad9e10cb17e7d7f" category="section-title">開發人員資源</block>
+  <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">NetApp Ansible DevOps解決方案</block>
+  <block id="8b328188cce263fb3b3c747dfca835f3" category="paragraph">請參閱 <block ref="0edd4b40b713849ac51dc73d6ee2b46b" category="inline-link-macro-rx"></block> 以取得DevOps環境中Ansible入門指南的說明。</block>
+  <block id="cae712fa1badd396170b95946efaaab8" category="doc">儲存資源的效能指標</block>
+  <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">此功能可收集所選SVM儲存物件和傳輸協定的效能指標、並透過REST API回報此資訊。ONTAP您可以使用此資料來監控ONTAP 整個系統的效能。</block>
+  <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">對於特定的儲存物件或傳輸協定、效能資料分為三類：</block>
+  <block id="79073619fba8242703524f16870ff858" category="list-text">IOPS</block>
+  <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="list-text">延遲</block>
+  <block id="0b85467ebafa7ca3c47e82dc38184484" category="list-text">處理量</block>
+  <block id="fc13a8ad35d492292d26c7c232494a69" category="paragraph">在每個類別中、您可以使用下列一種或多種資料類型：</block>
+  <block id="b17f69722718b85419b1b7c729f83d96" category="list-text">讀取（R）</block>
+  <block id="6c105af65b1a03e10e37b946944a4ec1" category="list-text">寫入（W）</block>
+  <block id="7290aa89bc380a7a4a4cdb96d88b0423" category="list-text">其他（O）</block>
+  <block id="fe0f4026da92fad05ee2d529195feaf9" category="list-text">總計（T）</block>
+  <block id="dc15b7ace633327d1f713d234ebbf2ab" category="paragraph">下表摘要說明ONTAP 透過「REST API」提供的效能資料、包括新增時的版本。如需詳細資訊、請參閱ONTAP 您的系統資訊的REST API線上文件頁面。</block>
+  <block id="35177f50714da7582167be83201595f1" category="cell">儲存物件或傳輸協定</block>
+  <block id="6f5d65265f83dc677b44095a40b11f53" category="cell">發行版ONTAP</block>
+  <block id="3a6bb7bfc19c244ca6d1bf0f937e19c6" category="cell">乙太網路連接埠</block>
+  <block id="e681a3b45989b468533c4b90ee960bf9" category="cell">不適用</block>
+  <block id="fed7366b19d657c70bf220617392d574" category="cell">RWT</block>
+  <block id="4f7dd0fe0940df4a5fda327a4ee4ddbd" category="cell">9.8</block>
+  <block id="2ffa082e74e8a66a4dbfceb8340c8c97" category="cell">FC連接埠</block>
+  <block id="f0b14c187f50696f3487da69d6b99f91" category="cell">RWOT</block>
+  <block id="211512e9d4808b015cdd15578678496c" category="cell">IP介面</block>
+  <block id="ed2a617f42b9ef0f10fda0a2bd39cef0" category="cell">FC介面</block>
+  <block id="f0e0d9619a10d780bb68e23aa0e76b3f" category="cell">NVMe命名空間</block>
+  <block id="ce4c5bf7c240dbd400c2c9fc79afb6a8" category="cell">qtree統計資料</block>
+  <block id="f29710dd87bb6441d8f24a754198bb4f" category="cell">原始RWOT</block>
+  <block id="56ee29a4b66dde93ebaa3e77a1c33cf5" category="cell">Volume FlexCache</block>
+  <block id="3c247f0cb9af1be3cdae716c8d2f546a" category="cell">節點–程序使用率</block>
+  <block id="610d53c2dcf08f07c8fb8821961fca83" category="cell">以數值形式處理使用率</block>
+  <block id="ca4315a948c678855d213254cd6a293d" category="cell">雲端磁碟區</block>
+  <block id="1993d9efb38e23403848e9f9ec71c633" category="cell">無法應用</block>
+  <block id="f82f50748d06cc9643330a4a8297ba43" category="cell">9.7</block>
+  <block id="b26e74ed6e2892c7e2bb95e414d460c6" category="cell">LUN</block>
+  <block id="2ee34178bb8415b7d7234cd27b83aed6" category="cell">Aggregate</block>
+  <block id="dac7fec7fb0c23f851e1cdc7d45db404" category="cell">SVM NFS傳輸協定</block>
+  <block id="bd872f5bb9653c5ec22001d577d9a556" category="cell">SVM CIFS傳輸協定</block>
+  <block id="1e4bc2049e99e1dba3e6f915fc7f568f" category="cell">SVM FCP傳輸協定</block>
+  <block id="982b599888f90ebfbaf2ff013ca5d6b6" category="cell">SVM iSCSI傳輸協定</block>
+  <block id="95a02cab92aa50cc8b3fa691276c0382" category="cell">SVM NVMe傳輸協定</block>
+  <block id="249694a485fc5d3289c38986b4f8e887" category="cell">叢集</block>
+  <block id="eaf2f97729e8d5e4d205672da8afc9a5" category="cell">9.6</block>
+  <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="cell">磁碟區</block>
+  <block id="e393851263b97103e1b16673bad43724" category="doc">物件參考與存取</block>
+  <block id="3b98e5cd1805cb4fd2c7b8d86d331550" category="paragraph">透過REST API曝光的資源執行個體或物件ONTAP 、可透過多種不同的方式進行參考和存取。</block>
+  <block id="f9ba85f66ecf10329f937eb9a888ebc2" category="section-title">物件存取路徑</block>
+  <block id="590d9821cd6209eb8347ef35da9289df" category="paragraph">在較高層級、存取物件時有兩種路徑類型：</block>
+  <block id="074de7e7c226d5c60f8af14c20725352" category="list-text">主要</block>
+  <block id="fe005fa1e43bf097315b336aa7455358" category="paragraph">物件是API呼叫的主要或直接目標。</block>
+  <block id="fec70ebbc6f88c7be94808968447168f" category="list-text">國外</block>
+  <block id="decdc4a3e16e328b73d0f86fa39dbe81" category="paragraph">物件不是API呼叫的主要參考、而是從主要物件連結至。因此、它是外部或下游物件、並透過主要物件的欄位加以參照。</block>
+  <block id="8bccaa334a303a564fb35cdc17e6edb2" category="section-title">使用UUID存取物件</block>
+  <block id="224015dbd27932e7e23f227bf25ab6b9" category="paragraph">每個物件在建立時都會指派一個唯一的識別碼、在大多數情況下是128位元UUID。指派的UUID值不可改變、可在ONTAP 內部用於存取及管理資源。因此、UUID通常是存取物件的最快且最穩定的方法。</block>
+  <block id="296bead235e4f03b068c49fe1f138243" category="paragraph">對於許多資源類型、可以在URL中提供UUID值作為路徑金鑰的一部分、以存取特定物件。例如、您可以使用下列項目來存取節點執行個體：「/叢集/節點/｛uuid｝」</block>
+  <block id="52da342872b7cfd5755a4a18c4a131ba" category="section-title">使用物件內容存取物件</block>
+  <block id="0ae7bfb306f0d8bd367fc3e3d5ca2a22" category="paragraph">除了UUID之外、您也可以使用物件內容來存取物件。在大多數情況下、使用name屬性很方便。例如、您可以在URL字串中使用下列查詢參數、以名稱存取節點執行個體：「/cluster / nodes?name=node_on'。除了查詢參數之外、外部物件也可透過主要物件的屬性存取。</block>
+  <block id="016e25c50283e53f24e0f2f5e5549f7f" category="paragraph">雖然您可以使用名稱或其他屬性來存取物件、而非UUID、但仍有幾個可能的缺點：</block>
+  <block id="b8c720f68ef790c0a72313d1e0103a0e" category="list-text">名稱欄位並非不可變更的欄位、可以變更。如果在存取物件之前變更物件名稱、將會傳回錯誤的物件、否則物件存取錯誤將會失敗。</block>
+  <block id="a99339d948d4eae9c76225755a2070da" category="admonition">此問題可能發生於外部物件上的POST或修補方法、或是主要物件上的Get方法。</block>
+  <block id="5c4d76b1365dbed06d75968c3bfb1c05" category="list-text">必須將名稱欄位轉譯為對應的UUID。ONTAP這是一種間接存取、可能會成為效能問題。</block>
+  <block id="70f9db80c05580b3f3eac884c37ad9fb" category="paragraph">尤其是當下列一項或多項條件成立時、效能可能會降低：</block>
+  <block id="432d4977c534da13f9690476228c6e94" category="list-text">使用Get方法</block>
+  <block id="c6bf428cdeaf4bf048bd6f8a0ba3b083" category="list-text">系統會存取大量物件集合</block>
+  <block id="889e1029116c8905ca56fdfa98e11f6f" category="list-text">使用複雜或精細的查詢</block>
+  <block id="ad8ef764efca0f0de9058aa1ec46026d" category="section-title">叢集與SVM內容</block>
+  <block id="60f7985ebb6e64768380e903d262bce0" category="paragraph">有幾個REST端點同時支援叢集和SVM。使用其中一個端點時、您可以透過「shcope=[SVM|cluster」（叢集）值來指出API呼叫的內容。支援雙內容的端點範例包括IP介面和安全角色。</block>
+  <block id="c73fde36f81c21090b2713e29c537039" category="admonition">範圍值會根據每個API呼叫所提供的內容、提供預設值。</block>
+  <block id="9cee0a41eba695b9da10985e41816e0c" category="section-title">在物件集合上使用修補程式和刪除</block>
+  <block id="f8aa6a58caed1e1d2c9ccbbdbe6f091a" category="paragraph">支援資源執行個體上修補或刪除的每個REST端點、也支援物件集合上的相同方法。唯一的需求是必須透過URL字串中的查詢參數提供至少一個欄位。在發佈修補程式或刪除集合時、這相當於在內部執行下列動作：</block>
+  <block id="99efb2d280df5dfb88ff3974d6ba377a" category="list-text">以查詢為基礎的Get來擷取集合</block>
+  <block id="b493da72818f74a4523850f1316fabdc" category="list-text">修補或刪除集合中每個物件上的呼叫的序列順序</block>
+  <block id="d42ef5aeeeac3bae2faf89cff30ba1b2" category="paragraph">作業的逾時時間可設定為預設為15秒的「恢復逾時」。如果在逾時之前未完成、回應會包含下一個物件的連結。您必須使用下一個連結重新核發相同的HTTP方法、才能繼續作業。</block>
+  <block id="f9423483f907b342ce1d6b2a5646580f" category="doc">基本營運特性</block>
+  <block id="d9ea677ef356bfa08eea805869f9eded" category="paragraph">REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因設計選項而異。</block>
+  <block id="fc068ae597c9019f5d61b19badc39991" category="section-title">要求及回應API交易</block>
+  <block id="52cbf28bd4927df9cf59c3544b5ae581" category="paragraph">每次REST API呼叫都會以HTTP要求的形式執行ONTAP 、以產生與用戶端相關的回應。此要求/回應配對被視為API交易。在使用API之前、您應該先熟悉可用於控制要求的輸入變數、以及回應輸出的內容。</block>
+  <block id="1548c883ffc13bf8f014216dd31bce6d" category="section-title">支援CRUD作業</block>
+  <block id="47bcad78eda58775cc7e5722f848076b" category="paragraph">透過「REST API」提供的每項資源ONTAP 、都是根據CRUD模式來存取：</block>
+  <block id="686e697538050e4664636337cc3b834f" category="list-text">建立</block>
+  <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">讀取</block>
+  <block id="06933067aafd48425d67bcb01bba5cb6" category="list-text">更新</block>
+  <block id="f2a6c498fb90ee345d997f888fce3b18" category="list-text">刪除</block>
+  <block id="f77c2a1d73d98ae14b40ff85e97c4e64" category="paragraph">對於某些資源、只支援一部分作業。您應該檢閱ONTAP 位於您的叢集上的「ENetApp API」文件頁面ONTAP 、以取得每項資源的詳細資訊。</block>
+  <block id="7f65a5bae7570e7d2a9cc75be01898fc" category="section-title">物件識別碼</block>
+  <block id="0111d5a8b14c92fa83ed3c67ea078e6b" category="paragraph">每個資源執行個體或物件在建立時都會指派一個唯一的識別碼。在大多數情況下、識別碼為128位元UUID。這些識別碼在特定ONTAP 的支援中心叢集內是全域唯一的。發出API呼叫以建立新的物件執行個體之後、會在HTTP回應的位置標頭中、傳回具有相關ID值的URL給呼叫者。您可以擷取識別碼、並在參照資源執行個體時用於後續通話。</block>
+  <block id="83e21aa294744cfc75cee4862af31f56" category="admonition">物件識別碼的內容和內部結構可隨時變更。當您參照相關的物件時、只能視需要在適用的API呼叫上使用識別碼。</block>
+  <block id="9836668105a34d676a62c3504a8f922d" category="section-title">物件執行個體和集合</block>
+  <block id="b46274acc570b55dd2a12d8b7c4550d2" category="paragraph">根據資源路徑和HTTP方法、API呼叫可套用至特定物件執行個體或物件集合。</block>
+  <block id="5b57fad34c2bf967374b0061c6901da7" category="section-title">同步與非同步作業</block>
+  <block id="a335c41d0ba63f4ef96fea6dd4186477" category="paragraph">執行從用戶端收到的HTTP要求有兩種方式ONTAP 。</block>
+  <block id="feb4904f6f50abf811a7763ed6efc659" category="list-text">同步處理</block>
+  <block id="890eb969fdd1ce4246bc3681e3987268" category="list-text">如果HTTP狀態代碼為200或201（成功）、則會立即執行要求、並以HTTP狀態代碼回應。ONTAP</block>
+  <block id="2d6550072cd57d4135b675b28f95808e" category="paragraph">使用方法Get、head和options的每個要求都會一律同步執行。此外、使用POST、修補及刪除的要求、設計為在預期不到兩秒內完成時同步執行。</block>
+  <block id="97fc3d9385e39e5a8a5a53f93c073517" category="list-text">非同步處理</block>
+  <block id="7191f1887421328b513e89d8e5db7cf6" category="list-text">如果非同步要求有效、ONTAP 則會建立背景工作來處理要求、並建立工作物件來固定工作。這會將202 HTTP狀態連同工作物件傳回給呼叫者。若要判斷最終成功或失敗、您必須擷取工作狀態。</block>
+  <block id="026d032072959df5e7c61af10bdc9924" category="paragraph">使用POST、修補和刪除方法的要求、是設計成在預期需要兩秒以上才能完成時、非同步執行。</block>
+  <block id="48d8b5f7a9deedfd0fd5dd40310c83a5" category="admonition">「RETON_Timeout」查詢參數可用於非同步API呼叫、並可將非同步呼叫轉換為同步完成。如需詳細資訊、請參閱「使用工作物件進行非同步處理的方式」。</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">安全性</block>
+  <block id="a0c340ff7c895ce6a1d571f1f55df890" category="paragraph">REST API所提供的安全性主要是以ONTAP 現有的資訊安全功能為基礎。API使用下列安全性：</block>
+  <block id="14a55e8a26db2705a0ffd20ba0427338" category="list-text">傳輸層安全性</block>
+  <block id="efe99011e665b49448af280693e74e6c" category="paragraph">透過網路在ONTAP S還原LIF與用戶端之間傳送的所有流量、通常會根據ONTAP 還原組態設定、使用TLS加密。</block>
+  <block id="234b7702b17d750d0199947820d83481" category="list-text">用戶端驗證</block>
+  <block id="e3f07bfd552c9d40285bc289e8e95e1a" category="paragraph">使用相同的驗證選項ONTAP 、也可以搭配使用搭配使用《Rsest ONTAP API》（《Rsest System Manager》）和《Network Manageability SDK》（網路管理SDK）。</block>
+  <block id="b19cfdc6ba6a94190ea654a5c325673c" category="list-text">HTTP驗證</block>
+  <block id="fba54022e3b47aa328af3bc5b2fd6c5b" category="paragraph">在HTTP層級、API交易會使用基本驗證。每個要求都會新增一個HTTP標頭、其中使用者名稱和密碼為基礎64字串。</block>
+  <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">驗證ONTAP</block>
+  <block id="ecada31be49896665065d57659291715" category="paragraph">執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。</block>
+  <block id="1eff307bdee34970a4f1fba8b03f2362" category="inline-link-macro">使用RBAC的安全性</block>
+  <block id="46c2a957c1f02e81b9096c86660e0264" category="paragraph"><block ref="46c2a957c1f02e81b9096c86660e0264" category="inline-link-macro-rx"></block></block>
+  <block id="18b4b706d794eaf9349903da4fc0390f" category="paragraph">REST API可在使用ONTAP 時擴充角色型存取控制（RBAC）功能。您可以建立具有自訂角色的使用者帳戶、以限制其餘端點的存取。</block>
+  <block id="b74460ea0e79c18a13e8aaf7ba6b5575" category="section-title">為REST端點建立角色</block>
+  <block id="6a4ac1ce41cb9afd36c8a1b4345eb15a" category="paragraph">REST角色是透過一組或多個權限來定義。每項權限都包含指向REST端點的路徑、以及相關的存取層級。每個端點的存取權限均以三個層級之一提供、並決定可用於資源的HTTP方法。存取層級包括：</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="list-text">全部</block>
+  <block id="0525ebcee9d40246b4c3fe60fa9dffdf" category="paragraph">可使用所有HTTP方法</block>
+  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="list-text">唯讀</block>
+  <block id="38c8b11da703697447ae0e841de8ff94" category="paragraph">只能使用Get</block>
+  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">無</block>
+  <block id="e170b518f0b1211531e4d6a5dc28bd24" category="paragraph">不允許存取</block>
+  <block id="46c2882c6847f54514352d1885b51de6" category="paragraph">以下是可指派給REST角色的兩種權限範例：</block>
+  <block id="4fb0f5d620d25bedf9de124abeecb3dd" category="list-text">「access="readonly」、path="/API/storage / volume」</block>
+  <block id="a6c54762c776264191d718908cc8793a" category="list-text">「access="none"、path="/API/SnapMirror/Policies」</block>
+  <block id="fc2e8f1e6bdb078d903709febae2f81c" category="section-title">建立具有自訂角色的使用者帳戶</block>
+  <block id="efce0b822abdb6a64b62590d47b2243d" category="paragraph">在高層級、您可以建立具有自訂REST角色的帳戶、如下所示：</block>
+  <block id="5cbfeffa3e5b9da20fef5c63f1ade205" category="list-text">建立可存取HTTP管理傳輸協定的使用者帳戶。</block>
+  <block id="388dcc6806f032ea576d4bf906f82f93" category="list-text">以所需的權限建立REST角色。</block>
+  <block id="54f15799e869b562c4b17306f16e44af" category="list-text">將使用者帳戶與角色建立關聯。</block>
+  <block id="42a4074843d4a69faa8c790fcb72ca0a" category="doc">ONTAPI API API和ONTAP CLI的使用者</block>
+  <block id="18aadc11d3c5f40e8c8474e03cf706af" category="paragraph">ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管理ONTAP 各種儲存系統。REST API和ONTAPI API API呼叫之間、以及REST API和ONTAP REST CLI之間存在差異。在正式作業環境中使用REST API之前、您應該先瞭解這些差異。</block>
+  <block id="1b3d9b05305989cf6898b061409738ed" category="section-title">一般設計差異</block>
+  <block id="ee083ff11ffc430b7230624e8985e88c" category="inline-link-macro">控制API要求的輸入變數</block>
+  <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API 參考</block>
+  <block id="a91c898dc88158a371c7ff70b0baa9e0" category="paragraph">此產品的設計與功能完全不同、ONTAPCLI命令和參數不會直接對應至REST API呼叫。即使可能有相似性、輸入參數的詳細資料也可能有所不同。例如、數字單位可能是以位元組為單位指定、或是使用字尾（例如KB）。您應該檢閱 <block ref="3715d1b1602da53d0f380910b6dd9205" category="inline-link-macro-rx"></block> 以及 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="0f659373042725afb9f92bda18229d9e" category="section-title">透過REST API公開的資料SVM</block>
+  <block id="f01d65d87efa9315f7d78fee0755d570" category="paragraph">支援多種儲存虛擬機器（SVM）ONTAP 。不過ONTAP 、只有資料SVM會透過REST API直接曝露在外。說明叢集和節點的組態資訊可透過REST API取得、但是叢集和節點不會視為個別的SVM。</block>
+  <block id="389a48ede65b8854e63d5d655a7dd311" category="section-title">從ONTAPI移轉至REST</block>
+  <block id="c1d42d663da10febd47133f541b8941c" category="paragraph">REST API是自動化ONTAP 作業系統管理的主要策略選擇。如果您目前使用的是ONTAPI API、則應考慮移轉至REST API。NetApp提供對應文件、協助從ONTAPI移轉至REST。</block>
+  <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">在ONTAPI中對SnapDiff可用度所做的變更</block>
+  <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">從ONTAP 功能性版本的E59.10.1開始、SnapDiff v1和v2 ONTAPI呼叫將無法叫用。任何啟動SnapDiff v1或v2 ONTAPI呼叫的第三方應用程式、都無法從ONTAP 版本資訊的版本9.10.1開始運作。支援SnapDiff v3 REST的備份應用程式、使用者應先確認其是否支援、再升級至版本RE-9.10.1。ONTAP ONTAP</block>
+  <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">SnapDiff API在ONTAP 整個發行版中的可用度定義如下：</block>
+  <block id="c731207305059b4146b7b02e506607f9" category="list-text">更新版本：V1和v2（僅限ONTAPI）ONTAP</block>
+  <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
+  <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">僅限v3（僅限REST API）ONTAP</block>
+  <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">發行說明 ONTAP</block>
+  <block id="e5adab4baa780b014bfe7130066b2a36" category="paragraph">如需詳細資訊、請參閱 <block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="430e01911dcacc88e4a83d838ae504e2" category="paragraph"><block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block></block>
+  <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">REST Web服務基礎</block>
+  <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
+  <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因開發期間所做的選擇而有所不同。在使用即時部署之前、您應該先瞭解ONTAP 到靜態API的設計特性。</block>
+  <block id="b0fcdfb2c58efafaace08609d3e95f6d" category="section-title">資源和狀態表示</block>
+  <block id="d2d07b32aecf22c6a25dc91e4b898e5e" category="paragraph">資源是網路型系統的基本元件。建立REST Web服務應用程式時、早期的設計工作包括：</block>
+  <block id="c73e999111ecc4cc9c48709542105db9" category="list-text">識別系統或伺服器型資源</block>
+  <block id="0400993c35912a6c4e281a903a66400e" category="paragraph">每個系統都會使用及維護資源。資源可以是檔案、商業交易、程序或管理實體。根據REST Web服務設計應用程式的首要任務之一、就是識別資源。</block>
+  <block id="082f61fd927dc840d6a4c2daa3a8d76d" category="list-text">資源狀態和相關狀態作業的定義</block>
+  <block id="5f4e63d9846190edae863ef33879f410" category="paragraph">資源永遠處於有限的狀態之一。必須清楚定義狀態、以及用來影響狀態變更的相關作業。</block>
+  <block id="6e9ee433459bf14a5380c1e7371232a9" category="section-title">URI端點</block>
+  <block id="64c51063277c11a48be48ec3446f5087" category="paragraph">每個REST資源都必須使用明確定義的定址方案來定義和提供。資源所在及識別的端點使用統一資源識別元（URI）。URI提供一般架構、可為網路中的每個資源建立唯一名稱。統一資源定位器（URL）是一種與Web服務搭配使用的URI、用於識別及存取資源。資源通常會以階層式結構公開、類似檔案目錄。</block>
+  <block id="34d23bd6dd51b3238872241264de74bf" category="section-title">HTTP訊息</block>
+  <block id="19f05b47f4b958662678fc11fd0ce414" category="paragraph">超文字傳輸傳輸協定（HTTP）是Web服務用戶端和伺服器用來交換有關資源的要求和回應訊息的傳輸協定。在設計Web服務應用程式時、HTTP方法會對應至資源及對應的狀態管理動作。HTTP為無狀態。因此、若要將一組相關的要求和回應建立關聯、以做為一筆交易的一部分、則必須在隨要求和回應資料流一起提供的HTTP標頭中加入額外資訊。</block>
+  <block id="bd4c8bbdccbcb7826a3bc4ae421c0604" category="section-title">JSON格式化</block>
+  <block id="171bf5afc5734ab1982f0d1e37b2b5e9" category="paragraph">雖然資訊可透過多種方式在Web服務用戶端和伺服器之間進行結構化和傳輸、但最受歡迎的選項是JavaScript物件表示法（Json）。Json是以純文字表示簡單資料結構的產業標準、用於傳輸描述資源的狀態資訊。這個靜態API使用Json來格式化每個HTTP要求和回應的實體中所包含的資料。ONTAP</block>
+  <block id="29fe0e3b021fed4ff52a274326d05c86" category="doc">如何存取ONTAP NetApp的</block>
+  <block id="3c09024082538b393ae85161883b78ab" category="paragraph">您可以ONTAP 使用多種不同的方法來存取靜態API。</block>
+  <block id="1391ec09425a9a140a4aef306e42d0cb" category="section-title">網路考量</block>
+  <block id="480df78a66061b5c3b61f69d89342d23" category="paragraph">您可以透過下列介面連線至REST API：</block>
+  <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">叢集管理LIF</block>
+  <block id="e2578ec54f85b5b6333c94364b756a1c" category="list-text">節點管理 LIF</block>
+  <block id="a954bd55e944d7b65a02512356ab0177" category="list-text">SVM管理LIF</block>
+  <block id="3869128f90019baba527314ae533f075" category="paragraph">您選擇使用的LIF必須設定為支援HTTPS管理傳輸協定。此外、網路中的防火牆組態必須允許HTTPS流量。</block>
+  <block id="45959e4341735c410aac6dadf11dd966" category="admonition">您應該永遠使用叢集管理LIF。這會在所有節點之間平衡API要求負載、避免節點離線或發生連線問題。</block>
+  <block id="649819179ab6bae8f5294207b4462523" category="section-title">介紹API線上文件頁面ONTAP</block>
+  <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">剩餘資源摘要</block>
+  <block id="424fc80aa929edad9729b9b006049584" category="paragraph">使用網頁瀏覽器時、「支援API」線上文件頁面提供存取點。ONTAP除了提供直接執行個別API呼叫的方法、此頁面還包含API的詳細說明、包括每個呼叫的輸入參數和其他選項。API呼叫分為功能類別。請參閱 <block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">用於存取API最新版本文件頁面的URL格式為：</block>
+  <block id="5577746582bcb9358092e3471e9dbcbb" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/docs/api`</block>
+  <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">自訂軟體與工具</block>
+  <block id="6e70b7cc1cd3e6a65b37dbcdde8ecd4a" category="paragraph">您可以ONTAP 使用多種不同的程式設計語言和工具來存取VMware API。熱門選項包括Python、Java、Curl和PowerShell。使用API的程式、指令碼或工具會做為REST Web服務用戶端。使用程式設計語言可更深入瞭解API、並提供自動化ONTAP 的機會來進行支援。</block>
+  <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">用於直接存取最新版API的基礎URL格式如下：</block>
+  <block id="eb58b311b3cd61c57c1148d0c5ba0129" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/api`</block>
+  <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">若要存取支援多個版本的特定API版本、URL格式如下：</block>
+  <block id="8b27cc8fdbb4b1dea164580b7fa49b37" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/api/v1`</block>
+  <block id="fc004b0a2e525fdc279e93342807a662" category="paragraph">您可以透過HTTP要求中設定的參數和變數來控制API呼叫的處理方式。</block>
+  <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">HTTP方法</block>
+  <block id="1ca197be3e0d7fcd720e84d7a6a700e2" category="paragraph">下表顯示了由REST API支援的HTTP方法ONTAP 。</block>
+  <block id="658f0f20a452278b19514e37e5349877" category="admonition">並非所有的HTTP方法都可在每個REST端點上使用。此外、修補程式和刪除功能也可用於集合。如需詳細資訊、請參閱_Object參考資料和access_。</block>
+  <block id="3ded167f4ad4afb85c6ace5862e27ba0" category="cell">HTTP方法</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
+  <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">取得</block>
+  <block id="0decd4a1f47d9c9f9601109afe0d9a4e" category="cell">擷取資源執行個體或集合上的物件屬性。</block>
+  <block id="a02439ec229d8be0e74b0c1602392310" category="cell">貼文</block>
+  <block id="fb9e1a48a4257dee6289fcb9c187cc7d" category="cell">根據提供的輸入建立新的資源執行個體。</block>
+  <block id="63bc9a3997d66d835d9f3ec29451407d" category="cell">修補程式</block>
+  <block id="3dd2f0938d95c74bc5663d1d4f9ef2d7" category="cell">根據提供的輸入內容更新現有的資源執行個體。</block>
+  <block id="32f68a60cef40faedbc6af20298c1a1e" category="cell">刪除</block>
+  <block id="eef129331314d2c9f4c4a5b0fdde3c7e" category="cell">刪除現有的資源執行個體。</block>
+  <block id="e15e216fc1c639f787b1231ecdfa1bf8" category="cell">標題</block>
+  <block id="94c333a66ce4419d14f1e38f68a75c9b" category="cell">有效發出GET要求、但僅傳回HTTP標頭。</block>
+  <block id="164dd62adb30ca051b5289672a572f9b" category="cell">選項</block>
+  <block id="edcba56ceac51e771d54e51d44cdfa11" category="cell">判斷特定端點支援哪些HTTP方法。</block>
+  <block id="736943e80c16e2be98d8595e6376e4ee" category="section-title">要求標頭</block>
+  <block id="a40021b61208de981e605608cd09946d" category="paragraph">您必須在HTTP要求中包含多個標頭。</block>
+  <block id="f64aadb713838867dd5f6cb3d02558a0" category="list-text">內容類型</block>
+  <block id="3d0bca9825bd7eb98bae10bbb86e76d4" category="list-text">如果申請本文包含Json、則此標頭必須設定為「application/json」。</block>
+  <block id="c4408d335012a56ff58937d78050efad" category="list-text">接受</block>
+  <block id="43e5eac57fb1fee548fbabb2345d61d5" category="list-text">此標頭應設定為「application/hal+json」。如果改為「application/json」、則除了擷取下一批記錄所需的連結之外、不會傳回任何的HAL連結。如果標頭是這兩個值以外的其他值、則回應中「content-type」標頭的預設值為「application/hal+json」。</block>
+  <block id="9cd8a2455b1839ff98ef70c05b9b5983" category="list-text">授權</block>
+  <block id="1ef8df17a9442d1f08a0df818861c5e5" category="list-text">基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。</block>
+  <block id="a3ba8461439f7d0176ef3944696ea2ac" category="section-title">申請本文</block>
+  <block id="973ab3cad185dec8eac7662330e49f1c" category="paragraph">申請本文的內容會因特定通話而有所不同。HTTP要求本文包含下列其中一項：</block>
+  <block id="b86f5c6ed2b7d52e2940495dc8a984f4" category="list-text">具有輸入變數的Json物件</block>
+  <block id="dc51df2cdcd7759fe85ea304591b7327" category="list-text">清空Json物件</block>
+  <block id="ac860c2e604ebd01436860da72828954" category="section-title">篩選物件</block>
+  <block id="0438b035fcfcfd3b3c333dd8d993e532" category="paragraph">發出使用Get的API呼叫時、您可以根據任何屬性來限制或篩選傳回的物件。例如、您可以指定要符合的確切值：</block>
+  <block id="1fc998fba92eac6c354078a63d749232" category="paragraph">「&lt;field&gt;=&lt;查詢值&gt;'</block>
+  <block id="7d306d43ad9025b540f138ad516bc09f" category="paragraph">除了完全相符的運算子、其他運算子也可傳回一系列值的一組物件。下表所示的靜態API支援篩選運算子。ONTAP</block>
+  <block id="e1b3ec89ead7f83a9245ed5c9cacfdbf" category="cell">營運者</block>
+  <block id="43ec3e5dee6e706af7766fffea512721" category="cell">=</block>
+  <block id="495c04002891bebf41bc3b56507f6d6b" category="cell">等於</block>
+  <block id="524a50782178998021a88b8cd4c8dcd8" category="cell">&lt;</block>
+  <block id="ad647e4ae904c7ed54ee93040d8298c7" category="cell">小於</block>
+  <block id="cedf8da05466bb54708268b3c694a78f" category="cell">&gt;</block>
+  <block id="05824b7be006782aaefd1fdb97c71e06" category="cell">大於</block>
+  <block id="a7eeaea90b4e8312b88abcd178019929" category="cell">&lt;=</block>
+  <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">小於或等於</block>
+  <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">&gt;=</block>
+  <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">大於或等於</block>
+  <block id="15a8022d0ed9cd9c2a2e756822703eb4" category="cell">更新</block>
+  <block id="3a2d5fe857d8f9541136a124c2edec6c" category="cell">或</block>
+  <block id="9033e0e305f247c0c3c80d0c7848c8b3" category="cell">！</block>
+  <block id="9bc7de899cf1c0d3ada046cd81f96aff" category="cell">不等於</block>
+  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
+  <block id="05a8a074dcf1a74c3e6c55d4f730a475" category="cell">貪婪的萬用字元</block>
+  <block id="ec90f26336d0c5d5491d8f83f9c0d5a0" category="paragraph">您也可以使用「null」關鍵字或其否定詞「!null」作為查詢的一部分、根據是否設定特定欄位來傳回物件集合。</block>
+  <block id="5260f8fe460e79195a4c88c011e51342" category="admonition">任何未設定的欄位通常都會排除在相符查詢之外。</block>
+  <block id="6d8c6f6bd33a2c5ad3268242ca5ff59b" category="section-title">要求特定物件欄位</block>
+  <block id="18053bbe41d54f9a3bd7a74b9e91941c" category="paragraph">根據預設、使用Get發出API呼叫時、只會傳回唯一識別物件的屬性、以及可用的HAL自我連結。這組最小欄位可做為每個物件的金鑰、而且會根據物件類型而有所不同。您可以使用「功能變數」查詢參數、以下列方式選取其他物件內容：</block>
+  <block id="c679b8eaf3069c4f7bffc461e34b95fb" category="list-text">一般或標準欄位</block>
+  <block id="766cc68d20d5ecccaff42f964b0d5009" category="paragraph">指定「Fields =*」以擷取最常用的物件欄位。這些欄位通常會保留在本機伺服器記憶體中、或只需少量處理即可存取。使用Get搭配URL路徑金鑰（UUID）之後、傳回的物件內容相同。</block>
+  <block id="36579447315838f79ada095ab26bf693" category="list-text">所有欄位</block>
+  <block id="17a3ef8b97ca69ffa9e72fc5dae88b4e" category="paragraph">指定「Fields =」以擷取所有物件欄位、包括需要額外伺服器處理才能存取的欄位。</block>
+  <block id="a686d83a73b66e60196ab98b2632e7da" category="list-text">自訂欄位選擇</block>
+  <block id="56fadb8635732364aeee84efcb78f2ba" category="paragraph">使用「field=&lt;field_name&gt;'」來指定所需的確切欄位。要求多個欄位時、必須使用不含空格的逗號分隔值。</block>
+  <block id="8f7a3293e759b9a149775c5dcaae5cf6" category="admonition">最佳實務做法是、務必找出您想要的特定欄位。您只能在需要時擷取一組通用欄位或所有欄位。哪些欄位屬於一般欄位、並使用「Fields =*」傳回、由NetApp根據內部效能分析來決定。欄位的分類可能會在未來的版本中變更。</block>
+  <block id="8b9514b4e7a0d660f91152d4a5baf424" category="section-title">排序輸出集中的物件</block>
+  <block id="760ed1003f95d4d8f38b6a7862a1fcd6" category="paragraph">資源集合中的記錄會以物件定義的預設順序傳回。您可以使用「order_by」查詢參數、以下列欄位名稱和排序方向來變更順序：</block>
+  <block id="42ac83dab536d4c72f5e57b001e9d1b7" category="paragraph">「order_by=&lt;欄位名稱&gt; asc|desc」</block>
+  <block id="ec8ebedbd75e137e3d60f61956a459a3" category="paragraph">例如、您可以依遞增順序、以遞減順序排序類型欄位、然後依ID排序：</block>
+  <block id="ae95344c2bcf9d6ce4630f98e0438896" category="paragraph">「order_by=type desc、id asc」</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
+  <block id="8b2e720a58accc143187322487b6638a" category="list-text">如果您指定排序欄位但未提供方向、則會以遞增順序排序這些值。</block>
+  <block id="35f47ff7e3cab9069eae76509c43183a" category="list-text">包含多個參數時、您必須以逗號分隔欄位。</block>
+  <block id="245272e0c4968634df98eb3e43fe7188" category="section-title">擷取集合中的物件時分頁</block>
+  <block id="dc509c391146df8e9a9de44e0a0d97b0" category="paragraph">使用Get存取同一類型物件的集合時發出API呼叫ONTAP 、根據兩個限制、嘗試傳回盡可能多的物件。您可以使用要求上的其他查詢參數來控制這些限制。針對特定Get要求所達成的第一個限制會終止要求、因此會限制傳回的記錄數目。</block>
+  <block id="77f9234bccd7df3df5de9766fc1ee88a" category="admonition">如果要求在重複所有物件之前結束、回應會包含擷取下一批記錄所需的連結。</block>
+  <block id="9b694e5a19d32713635e80d596a204af" category="list-text">限制物件數量</block>
+  <block id="9495391a0bd527b86b989c35cf92b08d" category="list-text">根據預設、ONTAP 針對Get要求、最多可傳回10、000個物件。您可以使用「max_Records」查詢參數來變更此限制。例如：</block>
+  <block id="ca70aeac050e5deeb2d294566c856b35" category="paragraph">"Marax_Records=20"</block>
+  <block id="6a0a3434834e0b30becf7f97dc2459a7" category="paragraph">實際傳回的物件數目可能會低於有效的最大值、取決於相關的時間限制、以及系統中的物件總數。</block>
+  <block id="cec4fc9be41c96cfd5b0d11b548d1a5e" category="list-text">限制擷取物件所用的時間</block>
+  <block id="3804251270ace919f78aea7fb71b7140" category="list-text">根據預設、ONTAP 在允許的取得要求時間內、將盡可能多的物件傳回。預設的逾時時間為15秒。您可以使用「RETON_Timeout」查詢參數來變更此限制。例如：</block>
+  <block id="4f2ca89743f0c1642129bde507459575" category="paragraph">"RETON_Timeout=5"</block>
+  <block id="d803d2dd2f39605b0bc879d0532fc5ba" category="paragraph">實際傳回的物件數目可能會低於有效的最大值、這是根據物件數目的相關限制、以及系統中的物件總數而定。</block>
+  <block id="2dadc767979da8ab1576ee0aa8da5e21" category="list-text">縮小結果集</block>
+  <block id="317480d31248a2b7b399c7ddbecbf74a" category="list-text">如有需要、您可以將這兩個參數與其他查詢參數結合、以縮小結果集範圍。例如、下列項目最多會傳回指定時間之後產生的10個EMS事件：</block>
+  <block id="89163f6e2498a9f894e7813e6de46b08" category="paragraph">「Time =&gt; 202018年4月4日T15：41：29.140265Z&amp;max記錄=10」</block>
+  <block id="5394a0e51a0e30e195e0299ede162a02" category="paragraph">您可以針對物件發出多個分頁要求。每次後續的API呼叫都應根據最後結果集中的最新事件、使用新的時間值。</block>
+  <block id="050a8c11f48cd555f6e5e6bab96225d6" category="section-title">大小屬性</block>
+  <block id="721165b216d0f852ad3d9fd6e430dbe1" category="paragraph">某些API呼叫所使用的輸入值以及某些查詢參數均為數值。您可以選擇使用下表所示的字尾、而不是提供以位元組為單位的整數。</block>
+  <block id="56e6ddd1cb6cec596b433440dfb21c17" category="cell">後置</block>
+  <block id="ab57fd0432e25d5b3013133a1c910d56" category="cell">KB</block>
+  <block id="9664b7d53f6c3f95743d9d5e1e03e0f6" category="cell">KB千位元組（1024位元組）或Kibibibyte</block>
+  <block id="8d8fcc1abd550c5f25dbfaa57d59cb67" category="cell">MB</block>
+  <block id="1bfdb499a2daaef53342602344b219d2" category="cell">MB MB（KB x 1024位元組）或百萬位元組</block>
+  <block id="79cba1185463850dedba31f172f1dc5b" category="cell">GB</block>
+  <block id="9a19cb477310ba69217d25ed9ca7c242" category="cell">GB GB GB（MB x 1024位元組）或GB</block>
+  <block id="ff88442a425c06d961f97bccb11ddf5d" category="cell">TB</block>
+  <block id="0c626e6c47ae0120c9962e031c65a1a8" category="cell">TB TB TB（GB x 1024位元組）或TB位元組</block>
+  <block id="cd203ccd68b84de1c5df8fd890e104e0" category="cell">PB</block>
+  <block id="e96c6ce30fc02655f5156ad7f43abeb2" category="cell">PB PB PB（TB x 1024位元組）或pibibbytes</block>
+  <block id="4d89f3083454f3531f41ee418943d490" category="paragraph"><block ref="4d89f3083454f3531f41ee418943d490" category="inline-link-macro-rx"></block></block>
+  <block id="32bab1cda6687d8af3648df1b3e2f763" category="doc">解讀API回應</block>
+  <block id="6fc21adbf0e55cc3da583314e4540308" category="paragraph">每個API要求都會對用戶端產生回應。您應該檢查回應、判斷回應是否成功、並視需要擷取其他資料。</block>
+  <block id="0a289f551402f1b0bba7f13be5d7fdc4" category="section-title">HTTP狀態代碼</block>
+  <block id="9cc7f2c4c4cb3a083eaa0fa002427217" category="paragraph">以下說明了由靜止API使用的HTTP狀態代碼ONTAP 。</block>
+  <block id="ca0dbad92a874b2f69b549293387925e" category="cell">程式碼</block>
+  <block id="bd41d562c332d24641812d2291c46936" category="cell">原因詞彙</block>
+  <block id="3644a684f98ea8fe223c713b77189a77" category="cell">200</block>
+  <block id="e0aa021e21dddbd6d8cecec71e9cf564" category="cell">好的</block>
+  <block id="22dde4592ecf1a0346899f4796ac6a71" category="cell">表示未建立新物件的通話成功。</block>
+  <block id="757b505cfd34c64c85ca5b5690ee5293" category="cell">201.</block>
+  <block id="0eceeb45861f9585dd7a97a3e36f85c6" category="cell">已建立</block>
+  <block id="96d8c2608803b60683fc0850d3051379" category="cell">已成功建立物件。回應中的位置標頭包含物件的唯一識別碼。</block>
+  <block id="854d6fae5ee42911677c739ee1734486" category="cell">202.02</block>
+  <block id="382ab522931673c11e398ead1b7b1678" category="cell">已接受</block>
+  <block id="8d8ad608d254874736ca41087ea93b4b" category="cell">已開始執行要求的背景工作、但尚未完成。</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="cell">400</block>
+  <block id="0fc30646d5cf22910283967bf24ebf66" category="cell">錯誤要求</block>
+  <block id="d61713af1a9c56d51f7fb3873bed7e92" category="cell">無法辨識或不適當的要求輸入。</block>
+  <block id="816b112c6105b3ebd537828a39af4818" category="cell">401.</block>
+  <block id="e06d1ba70f1331e9f9a113cc2f887d3f" category="cell">未獲授權</block>
+  <block id="3b182148c9c0009822cea2178fd99584" category="cell">使用者驗證失敗。</block>
+  <block id="bbf94b34eb32268ada57a3be5062fe7d" category="cell">403.</block>
+  <block id="722969577a96ca3953e84e3d949dee81" category="cell">禁止</block>
+  <block id="832bcd57b678ba711a9e21562156a359" category="cell">由於授權（RBAC）錯誤、存取遭拒。</block>
+  <block id="4f4adcbf8c6f66dcfc8a3282ac2bf10a" category="cell">404..</block>
+  <block id="9e076f5885f5cc16a4b5aeb8de4adff5" category="cell">找不到</block>
+  <block id="24ff0a9484d837d82e7f8f8218e196b6" category="cell">要求中提及的資源不存在。</block>
+  <block id="bbcbff5c1f1ded46c25d28119a85c6c2" category="cell">405</block>
+  <block id="e84e55d186de7883e285e32fc32bfa7c" category="cell">不允許使用方法</block>
+  <block id="1d3cb250993a8d280152a1df96b9bd78" category="cell">資源不支援要求中的HTTP方法。</block>
+  <block id="a96b65a721e561e1e3de768ac819ffbb" category="cell">409.</block>
+  <block id="f1d4ac54357cc0932f385d56814ba7e4" category="cell">衝突</block>
+  <block id="bd584224ee6719b30d3d8e436e005a6a" category="cell">建立物件的嘗試失敗、因為必須先建立不同的物件、或要求的物件已經存在。</block>
+  <block id="cee631121c2ec9232f3a2f028ad5c89b" category="cell">500</block>
+  <block id="8f8913c1f755436db84ae169e37c61f9" category="cell">內部錯誤</block>
+  <block id="03f0e0f686ebd5f796ca9febd1723676" category="cell">伺服器發生一般內部錯誤。</block>
+  <block id="56ecb97c626815b7f982c04e736f624b" category="section-title">回應標頭</block>
+  <block id="04f98fbfd3c51a57a87539381fd8a213" category="paragraph">許多標頭都包含在ONTAP 由該功能產生的HTTP回應中。</block>
+  <block id="ce5bf551379459c1c61d2a204061c455" category="list-text">位置</block>
+  <block id="38515ce918c3b6af061a519ef0eac4b3" category="list-text">建立物件時、位置標頭會包含新物件的完整URL、包括指派給物件的唯一識別碼。</block>
+  <block id="ba07bca510e34abceaf29718956f302d" category="list-text">這通常是「application/hal+json」。</block>
+  <block id="38eee230c1573327fd210b5c3dda7e19" category="section-title">回應本文</block>
+  <block id="e6c6c92dc547d386d241bcd550116b15" category="paragraph">API要求所產生的回應本文內容、會因物件、處理類型、以及要求的成功或失敗而有所不同。回應一律以Json呈現。</block>
+  <block id="57d0d9ea2a98e5c26333523b1d8467c3" category="list-text">單一物件</block>
+  <block id="3cc50ef9b6d082ac8e12c2c3779c073b" category="paragraph">單一物件可根據要求傳回一組欄位。例如、您可以使用「Get」（取得）、使用唯一識別碼擷取叢集的選定內容。</block>
+  <block id="4e46d77705b2969e287dd5755715eb0a" category="list-text">多個物件</block>
+  <block id="515356f0f2f7c12627510739771d70ca" category="paragraph">可從資源集合傳回多個物件。在所有情況下、都會使用一致的格式、其中「nm_Records」表示包含物件執行個體陣列的記錄和記錄數目。例如、您可以擷取在特定叢集中定義的節點。</block>
+  <block id="a7b616ec1be656c2c3ef33dfd78bdb0c" category="list-text">工作物件</block>
+  <block id="5e64c3bf2bc1f6387e5e57c5f9384ee8" category="paragraph">如果API呼叫以非同步方式處理、則會傳回工作物件、以固定背景工作。例如、用於更新叢集組態的修補程式要求會以非同步方式處理、並傳回工作物件。</block>
+  <block id="05f8eaafeb8ced9dd4a19a6b3785c4cd" category="list-text">錯誤物件</block>
+  <block id="341a54c08b1ed842fe5f4e080f824b06" category="paragraph">如果發生錯誤、一律會傳回錯誤物件。例如、當您嘗試變更未為叢集定義的欄位時、會收到錯誤訊息。</block>
+  <block id="3b98d27d5cd1c9b8f2b850732e9feb05" category="paragraph">在某些情況下、不會傳回任何資料、而且回應本文包含空白的Json物件。</block>
+  <block id="7f209a3b605b3cca82065ef1edcb3e42" category="section-title">HAL連結</block>
+  <block id="8de2d085db23c7f30c07f0a7cf4b124a" category="paragraph">支援HyperMedia做為應用程式狀態引擎（HATEOAS）的機制是使用HAL。ONTAP當傳回識別特定資源的物件或屬性時、也會隨附一個由Hal-encoded編碼的連結、讓您輕鬆找到並判斷有關資源的其他詳細資料。</block>
+  <block id="5ef0c737746fae2ca90e66c39333f8f6" category="section-title">錯誤</block>
+  <block id="9e0438d724c3072c813dcb7e50a35d3e" category="paragraph">如果發生錯誤、回應本文會傳回錯誤物件。</block>
+  <block id="520d0db389f362bf79ef56ca0af3dcab" category="list-text">格式</block>
+  <block id="3ad7e7f974ec3138f1d8868d33366ea8" category="list-text">錯誤物件的格式如下：</block>
+  <block id="5677dc31e892945a7390c90bd26de63e" category="paragraph">您可以使用程式碼值來判斷一般錯誤類型或類別、以及判斷特定錯誤的訊息。如果可用、目標欄位會包含與錯誤相關的特定使用者輸入。</block>
+  <block id="44a7d933609e3ddb1b012707ab8a0571" category="list-text">常見錯誤代碼</block>
+  <block id="53758348abd1452f2d76174cfd379951" category="list-text">下表說明常見的錯誤代碼。特定API呼叫可能包含其他錯誤代碼。</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
+  <block id="25bc3f662d04d0340ecbe8ac08e412bb" category="cell">具有相同識別碼的物件已存在。</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2.</block>
+  <block id="ad2fe83bdaf727e636add5c81c3617bf" category="cell">欄位的值有無效值或遺失、或是提供額外欄位。</block>
+  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3.</block>
+  <block id="3fbed032f77ccf31061e41ecee1f109d" category="cell">不支援此作業。</block>
+  <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4.</block>
+  <block id="77c5562c34464df7f828c6ab55b571fb" category="cell">找不到具有指定識別碼的物件。</block>
+  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6.</block>
+  <block id="5e952c79470abe484528aaaf836add9e" category="cell">拒絕執行要求的權限。</block>
+  <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8.</block>
+  <block id="cdb0d512cc3fdc0adc8795b79f91c40f" category="cell">資源正在使用中。</block>
+  <block id="54a05230a9d83fc20a3024afd1148c81" category="doc">透過REST API存取ONTAP REST CLI</block>
+  <block id="b16b005167b4cc2f06dc1e1acd755f91" category="paragraph">為了協助CLI和ONTAPI API使用者移轉ONTAP 至靜態API、ONTAP 我們提供REST端點來存取CLI。您可以使用此傳遞功能來執行任何CLI命令。REST端點的使用會傳回AutoSupport 至靜態資料中、以便NetApp找出REST API中的落差、並在未來版本中進行改善。</block>
+  <block id="af112349f35f3d8adc945b2dc23535c5" category="paragraph">若要發出CLI命令、您必須根據下列相關規則、進行適當格式的REST API呼叫：</block>
+  <block id="9ec3f506845187b11b0f4c9a2b129777" category="list-text">資源路徑</block>
+  <block id="ef2eef77980dfb726eee7566523a9f55" category="list-text">欄位名稱</block>
+  <block id="22f09f8242749472617c2605cfe68fef" category="paragraph">CLI存取的基礎資源路徑為「/Private / CLI」。如ONTAP 需透過REST API存取CLI的詳細資訊、請參閱《靜態API》線上文件頁面。</block>
+  <block id="3c2ec0a807110f1719364376d4921734" category="admonition">NetApp維護GitHub儲存庫、其中包含程式碼範例和其他實用資訊。您可以存取儲存庫、以取得如何使用CLI傳遞功能的範例。</block>
+  <block id="d8225434898f45be37a5aecc2ae6627b" category="inline-link">靜態Python GitHub儲存庫- CLI傳遞範例ONTAP</block>
+  <block id="3c676a780a447c272e1d87565dcc8822" category="paragraph"><block ref="3c676a780a447c272e1d87565dcc8822" category="inline-link-rx"></block></block>
+  <block id="6427fa68aca1f0e647dc8dc6d6c6d323" category="doc">使用工作物件進行非同步處理</block>
+  <block id="f8645777304498f78534eb91dd733f91" category="paragraph">在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。視HTTP狀態代碼而定、您必須擷取工作狀態、以判斷要求是否成功。</block>
+  <block id="aa5ed514388a44e4dc092690c451252e" category="paragraph">請參閱 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以判斷哪些API呼叫是設計為非同步執行。</block>
+  <block id="a8309049942086c2cb34d06b79f3e1f8" category="section-title">控制處理要求的方式</block>
+  <block id="1084d62a8185c09b35a498111328338e" category="paragraph">您可以使用「RETON_Timeout」查詢參數來控制處理非同步API呼叫的方式。使用此參數有兩種可能的結果。</block>
+  <block id="79c9e2bc343687ace96848830a1b7ef5" category="list-text">定時器會在要求完成之前過期</block>
+  <block id="5297088497336f28245812f751dc1442" category="list-text">若為有效要求、ONTAP 則將傳回202HTTP狀態代碼及工作物件。您必須擷取工作狀態、以判斷要求是否成功完成。</block>
+  <block id="eb1e85425716b64be6784d892532a723" category="list-text">要求會在定時器過期之前完成</block>
+  <block id="0c71d100c3dd501b43051aba4ee308a8" category="list-text">如果申請有效且在到期前成功完成、ONTAP 則會連同工作物件一起傳回200個HTTP狀態代碼。由於要求已同步完成（如200所示）、因此您不需要擷取工作狀態。</block>
+  <block id="315d4aa16a7d0c4be58fc477cefe016f" category="admonition">"RETON_Timeout"參數的預設值為零秒。因此、如果您不包含此參數、系統會針對有效的要求傳回202 HTTP狀態代碼。</block>
+  <block id="0b59094893d51f7145a2630314a487ad" category="section-title">查詢與API要求相關聯的工作物件</block>
+  <block id="49ae4b3e87a30f19cb084a67d672b82f" category="paragraph">HTTP回應中傳回的工作物件包含數個內容。您可以在後續的API呼叫中查詢狀態內容、以判斷要求是否成功完成。工作物件永遠處於下列其中一種狀態：</block>
+  <block id="6ac451bf60fd238cbad3c65d72492af4" category="list-text">非終端機狀態</block>
+  <block id="7b2f31b90fe1c2cc33a52233c1925df3" category="list-text">已佇列</block>
+  <block id="5bda814c4aedb126839228f1a3d92f09" category="list-text">執行中</block>
+  <block id="e99180abf47a8b3a856e0bcb2656990a" category="list-text">已暫停</block>
+  <block id="b98a176698c2de9a2b4f71b184ca82f9" category="list-text">終端機狀態</block>
+  <block id="505a83f220c02df2f85c3810cd9ceb38" category="list-text">成功</block>
+  <block id="e139a585510a502bbf1841cf589f5086" category="list-text">故障</block>
+  <block id="6bf66c95880dec487d135a49bd2f166f" category="section-title">發出非同步要求的一般程序</block>
+  <block id="8b38da21ed7969442cd1cc0e38f03a3b" category="paragraph">您可以使用下列高階程序來完成非同步API呼叫。此範例假設不使用「recnute_timeout」參數、或是背景工作完成之前的時間過期。</block>
+  <block id="0deabf644e722c81f85e31df84cbe22d" category="list-text">發出設計為非同步執行的API呼叫。</block>
+  <block id="f6d52fde097d143df856d93a9014f85e" category="list-text">接收HTTP回應202、表示已接受有效的要求。</block>
+  <block id="c14204fc561259d66fa2aef5b4314029" category="list-text">從回應本文擷取工作物件的識別碼。</block>
+  <block id="d7a138c57b8dc6d35621f54e72488bf9" category="list-text">在定時迴圈內、在每個週期中執行下列步驟：</block>
+  <block id="51c033a34d63a2d1737e1b6bdf842d1f" category="list-text">取得工作的目前狀態。</block>
+  <block id="b281ec87e30bc1058b3173012f46c637" category="list-text">如果工作處於非終端機狀態、請再次執行迴圈。</block>
+  <block id="6caaacff3c8abae5d9b2e02a5e4d0829" category="list-text">當工作達到終端機狀態（成功、失敗）時停止。</block>
+  <block id="13d76f06d267496e8846be9e378c6df8" category="inline-link-macro">工作流程1：更新叢集聯絡人並檢查工作狀態</block>
+  <block id="5a683654a64ec8dd5cecf5ff4ead9469" category="paragraph"><block ref="5a683654a64ec8dd5cecf5ff4ead9469" category="inline-link-macro-rx"></block></block>
+  <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">REST API版本管理ONTAP</block>
+  <block id="a131529b4b9e76bc39353ef1aa209dd9" category="paragraph">包含在更新版本編號中的REST API ONTAP 會指派ONTAP 一個版本編號、此編號與更新版本編號無關。您應該注意ONTAP 到發行版的版本包含API、以及這會如何影響您對API的使用。</block>
+  <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">所有版本ONTAP 的更新版本均使用相同版本的REST API。</block>
+  <block id="bfed0b768d4205be491cf9aab9ef5bf1" category="list-text">從功能升級到功能升級到功能升級到功能升級ONTAP ONTAP</block>
+  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">版本1</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相關連結</block>
+  <block id="fa229fc458ab35ecd4519d4dcca0e7bb" category="list-text"><block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block></block>
+  <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">更新功能：利用靜止API與自動化技術ONTAP</block>
+  <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。</block>
+  <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">零點9.10.1 ONTAP</block>
+  <block id="f81a95c072d17e5d1b7da75eee2c5a50" category="paragraph">而供應的功能也不斷擴大。ONTAP ONTAP我們新增了超過一百個新的端點、以支援ONTAP 全新的功能、以及對現有功能的增強功能。其餘API增強功能的摘要如下所示。</block>
+  <block id="b5742337dd1612713a73b81dd85f6519" category="list-text">應用程式一致性群組</block>
+  <block id="89b60b7b18597a3fbf28c20a66d0554f" category="list-text">一致性群組是一組磁碟區、在執行某些作業（例如快照）時、會將這些磁碟區群組在一起。此功能可在一組磁碟區中執行單一磁碟區作業、藉此延伸相同的損毀一致性和資料完整性。對於大型的多Volume工作負載應用程式而言、這項功能非常重要。</block>
+  <block id="363ac709cba54fea743eb36bb06d23c7" category="list-text">SVM移轉</block>
+  <block id="e103f6a6d6929aea03e223a20faabfab" category="list-text">您可以將SVM從來源叢集移轉至目的地叢集。新的端點提供完整的控制、包括暫停、恢復、擷取狀態及中止移轉作業的功能。</block>
+  <block id="28e2c87b206213f5c59cbe60508b1daa" category="list-text">檔案複製與管理</block>
+  <block id="aae9ea9b55ca978886bb3bcf67a7b7af" category="list-text">Volume層級的檔案複製與管理功能已增強。新的REST端點支援檔案移動、複製及分割作業。</block>
+  <block id="cc043e804fab4c123d69e795b127d626" category="list-text">改善S3稽核</block>
+  <block id="9ec3cad9fe1af8b29e76301d0e04bc71" category="list-text">稽核S3事件是一項安全性改善、可讓您追蹤及記錄特定S3事件。S3稽核事件選取器可依每個SVM設定為每個儲存區。</block>
+  <block id="9b18962d74ca9f6ee86af2817f51fbf9" category="list-text">勒索軟體防禦</block>
+  <block id="0773024a39c43c78bcb987b8de6630ea" category="list-text">可偵測可能含有勒索軟體威脅的檔案。ONTAP您可以擷取這些可疑檔案的清單、並將其從磁碟區中移除。</block>
+  <block id="7b9c0bd1e9617dc71d6eca94ae15b1bc" category="list-text">其他安全性增強功能</block>
+  <block id="8a3b352420c05c2377d15df3fdbf54d0" category="list-text">有幾項一般的安全性增強功能可擴充現有的傳輸協定並引進新功能。IPsec、金鑰管理、SSH組態和檔案權限等方面已有改善。</block>
+  <block id="b5914ff3e2405c26264348e71dfd4590" category="list-text">CIFS網域和本機群組</block>
+  <block id="00f95d14ec52f3905a8ed85a9a48dcc2" category="list-text">叢集與SVM層級已新增CIFS網域支援。您可以擷取網域組態、以及建立和移除慣用的網域控制器。</block>
+  <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">擴充Volume分析</block>
+  <block id="6495a298c2a1a26b997ca9bbb99ef7ef" category="list-text">Volume分析和指標已透過其他端點進行擴充、以支援熱門檔案、目錄和使用者。</block>
+  <block id="faa07c048822900bcf8537b1c474345f" category="list-text">支援增強功能</block>
+  <block id="8c0d6517a0a1c4f8718164322e468757" category="list-text">多項新功能增強了支援。自動更新ONTAP 功能可下載並套用最新的軟體更新、讓您的更新版不中斷。您也可以擷取及管理節點產生的記憶體核心傾印。</block>
+  <block id="74eb178224c5fa701fbcd96998feaafe" category="section-title">部分9.9.1 ONTAP</block>
+  <block id="789933b01aa01335db4e573eb0fdfea6" category="paragraph">而供應器的功能也不斷擴充、ONTAP ONTAP有新的API端點可用於現有ONTAP 的功能、包括SAN連接埠集和Vserver檔案目錄安全性。此外、我們也新增了端點、以支援ONTAP 全新的功能與增強功能。相關文件也有所改善。以下為增強功能的摘要。</block>
+  <block id="154f94956201de1d51f6ff61e84ae944" category="list-text">將ONTAPI對應至ONTAP Rest 9 API</block>
+  <block id="d15c7ef669111b1c40233338c66dfc44" category="inline-link">用於REST API對應的ONTAPI</block>
+  <block id="5576a121543ddb1cc6d1fd0dd6bbc8ce" category="list-text">為了協助您將ONTAP 自己的自動化程式碼轉換為REST API、NetApp提供API對應文件。此參考包含每個的ONTAPI呼叫清單和REST API等效值。地圖文件已更新、加入全新ONTAP 的《更新版》、以涵蓋全新的《更新版》、《更新版》。請參閱<block ref="5dba316c85ac11066d0b9336552c6287" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="5a3b858ecd9ec9c186ad254f07cd1d33" category="list-text">API端點提供ONTAP 全新的功能、以利更新的功能</block>
+  <block id="07e5c3418b383cfa2bebed08d44aefc3" category="list-text">REST API已新增對ONTAP 無法透過ONTAPI API取得的全新功能的支援功能。這包括支援巢狀igroup和Google Cloud Key Management Services。</block>
+  <block id="d621c5d40a054b36a3f1e180f7fc170d" category="list-text">改善從ONTAPI移轉至REST的支援</block>
+  <block id="192cf409001c19f48a695ad558e612f6" category="list-text">更多舊版ONTAPI呼叫現在具有對應的REST API等效項目。這包括本機Unix使用者和群組、不需用戶端、SAN連接埠集和磁碟區空間屬性、即可管理NTFS檔案安全性。這些變更也包含在更新的ONTAPI中、以供REST對應文件使用。</block>
+  <block id="88b1c796bb089f48a24b20aea93fb18e" category="list-text">增強的線上文件</block>
+  <block id="ddd51e3a52a14385d0b60fcaf5dfe038" category="list-text">目前、《支援》線上文件參考頁面上的標籤會指出推出每個REST端點或參數時的發行版、包括採用《支援》更新版本的更新版本。ONTAP ONTAP ONTAP</block>
+  <block id="2abfff2974f589f7a217325f304e0ec5" category="section-title">部分9.8 ONTAP</block>
+  <block id="67c4467b9d90249efeb3de541a9cc553" category="paragraph">由於資料豐富、因此可大幅擴充不景API的廣度和深度。ONTAP ONTAP其中包含多項新功能、可提升您自動化ONTAP 部署及管理功能的能力。此外、支援也已改善、可協助從舊版ONTAPI移轉至REST。</block>
+  <block id="0f1777fe9d7503978fa560d01dc6f49a" category="list-text">為了協助您更新ONTAPI自動化、NetApp提供一組需要一或多個輸入參數的ONTAPI呼叫清單、以及將這些呼叫對應到等效ONTAP 的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效指令API呼叫。請參閱<block ref="b7822a036760b0668f0d2b8313956600" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="abdf317b8f58236a4195d452834d45c9" category="list-text">API端點提供ONTAP 全新的功能、以利實現全新的功能</block>
+  <block id="cf1724d8d3131e94ad854521ae7d4f4a" category="list-text">REST API已新增對ONTAP 新核心的支援、無法透過ONTAPI取得這些功能。這包括支援ONTAP REST API以支援SS3儲存區和服務、SnapMirror營運不中斷和檔案系統分析。</block>
+  <block id="35d207b2ca355b3e7e3a5d74f2b2afe4" category="list-text">擴充支援以增強安全性</block>
+  <block id="464aebcdd9770cb945a307d7eac64f0b" category="list-text">透過支援多種服務與傳輸協定、包括Azure Key Vault、Google Cloud Key Management Services、IPSec及憑證簽署要求、安全性已獲得增強。</block>
+  <block id="d94d27f597c0934bda8dbb95acf619c3" category="list-text">提升簡易性的增強功能</block>
+  <block id="31001cec0e2a7aa1674330c54c5cf6c3" category="list-text">利用REST API、提供更有效率且更現代化的工作流程。ONTAP例如、OneClick韌體更新現已可供多種不同類型的韌體使用。</block>
+  <block id="c66e346c00fb27a786c7ab8aab00e61b" category="list-text">現在、「樣版」文件頁面上有標籤、指出推出的每個REST端點或參數的版本均為「樣版」、包括9.8版的新增標籤。ONTAP ONTAP</block>
+  <block id="1482f7989113f72ca0be0b6011b2a73e" category="list-text">現在更多的舊版ONTAPI呼叫具有對應的REST API等效項目。此外、我們也提供文件來協助識別應使用哪個REST端點來取代現有的ONTAPI呼叫。</block>
+  <block id="7b877f8f81aaeb44b31dd25569c45deb" category="list-text">擴充效能指標</block>
+  <block id="f8ad546722fba29d7bec9c27636f94a1" category="list-text">REST API的效能指標已經過擴充、包括數個新的儲存設備和網路物件。</block>
+  <block id="3447b91e516e4fc6b5dba827fcb68bee" category="section-title">更新ONTAP</block>
+  <block id="233202a320ee56fd791ddbaed5bf3fda" category="paragraph">藉由引進三種新的資源類別、每種資源類別都有多個REST端點、藉此延伸出R靜止API的功能範圍：ONTAP ONTAP</block>
+  <block id="aae155889087fca42368d9fab8b54ee6" category="list-text">NDMP</block>
+  <block id="1ef5c995db2292c818d9f9e8bba7c9e4" category="list-text">物件存放區</block>
+  <block id="acdc6b4f6edd40f37bce01247a32ff86" category="list-text">SnapLock</block>
+  <block id="5e7e332dddfb791231951b893494c932" category="paragraph">此外、還在多個現有資源類別中引進一或多個新的REST端點：ONTAP</block>
+  <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="list-text">NAS</block>
+  <block id="a5fa5746370b608090b994a97b49e98b" category="list-text">網路</block>
+  <block id="70d9e3c68d42d6ec42ab792e06c44357" category="list-text">NVMe</block>
+  <block id="62a0282d39568be094470486eaf70c4f" category="list-text">SAN</block>
+  <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">儲存設備</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="list-text">支援</block>
+  <block id="7dd2a92fd3f41a5334edf46f95d77e71" category="section-title">部分9.6 ONTAP</block>
+  <block id="047d1d8fe1b5e3b9705cbf62a3148908" category="paragraph">支援原創於支援的REST API、可大幅延伸至支援的32個部分。ONTAP ONTAP支援大部分的靜態組態和管理工作的不支援使用支援。ONTAP ONTAP</block>
+  <block id="93c7e2d3efdd24270657a920554979a5" category="paragraph">REST API在ONTAP 32：9.6中包含下列關鍵領域及更多內容：</block>
+  <block id="e710f9addfdf1e48c1320d497696c4fc" category="list-text">叢集設定</block>
+  <block id="5440df0c2e9178ddecf7c9d671322af7" category="list-text">傳輸協定組態</block>
+  <block id="89c3bcf0ecc1114f8d19734d9156cb40" category="list-text">資源配置</block>
+  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="list-text">效能監控</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="list-text">資料保護</block>
+  <block id="4d3eb4b74688cbcce2793e7fa6452654" category="list-text">應用程式感知資料管理</block>
+  <block id="f8bedbdd0c328c354d2e8ba4e389bae1" category="summary">有多種選項可讓ONTAP 您自動化部署和管理功能。</block>
+  <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">瞭ONTAP 解功能自動化選項</block>
+  <block id="09b61c4c135233e31eb7b12d4a296b18" category="paragraph">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。您可以直接或透過NetApp Python用戶端程式庫存取REST API。此外、NetApp也支援ONTAP 使用Ansible及其他高階軟體抽象化的功能進行功能不全的自動化。</block>
+  <block id="7510bbb3e3ce7994c1993c8698e3169e" category="admonition">ONTAPI API也稱為Network Manageability SDK或ZAPI、是以程式設計方式存取及管理ONTAP 效益儲存系統的老舊技術。現在、這個靜態API是一項策略性技術、應該盡可能選用。ONTAP</block>
+  <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">原生存取ONTAP 靜態API</block>
+  <block id="ae77e4f93e27bd095e1158ccc1bb27f8" category="paragraph">您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。您應該先檢閱本網站上的所有文件。</block>
+  <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">調整舊版ONTAPI程式碼以使用REST</block>
+  <block id="4c557aa1edc9db8b42f1265ae600f253" category="paragraph">如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱<block ref="3f8b8a296b98a2427cd0fe076ddc5c7d" category="inline-link-rx"></block> 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、</block>
+  <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">使用NetApp Python用戶端程式庫</block>
+  <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python用戶端程式庫</block>
+  <block id="7985c67b4ff49ccabd48db90e57852eb" category="paragraph">Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。您應該先檢閱本網站上的文件、包括 <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block>。</block>
+  <block id="47139a5580026883093b61e1de623719" category="section-title">使用Ansible</block>
+  <block id="4956e155e9e91d90d4a7af3019a3980c" category="paragraph">Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。您應該先檢閱本網站上的文件、包括 <block ref="db69795f6822fbede287b8f9090c22dc" category="inline-link-macro-rx"></block>。</block>
+  <block id="57416e369db3fa6709c6114a5d28e38f" category="doc">正在擷取叢集軟體版本</block>
+  <block id="f6207a6668d08d8fc8c0fd8d02772db8" category="paragraph">每筆API交易都包含HTTP要求和相關回應。本圖例說明如何擷取ONTAP 叢集所使用的版本的資訊。</block>
+  <block id="15fc2d856a08b9dcaa71e500a1ab83c5" category="inline-image-macro">簡單REST API呼叫的圖例</block>
+  <block id="902052a0ca25bce54cba73bea386b28e" category="paragraph"><block ref="902052a0ca25bce54cba73bea386b28e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e2a3074658911bf1de23b5d225e3e531" category="paragraph">從用戶端傳送到伺服器的要求包含下列項目：</block>
+  <block id="5ad6712125e855f87f1f57ee8955d5bb" category="list-text">取得動詞</block>
+  <block id="35e7396d97125d13fced8d76841411fd" category="list-text">叢集的URL路徑</block>
+  <block id="7f2e65d10a1cd8eefbde52258df207ca" category="list-text">查詢參數（欄位）</block>
+  <block id="f675460059eeb768ec47e105e889b153" category="list-text">要求標頭、包括授權</block>
+  <block id="5a4bc8c2caa05fbd9176234fdb066497" category="paragraph">從伺服器傳送到用戶端的回應包含下列項目：</block>
+  <block id="1b2a1d97817dee4df7fa73df2277fe55" category="list-text">狀態代碼200</block>
+  <block id="4494efe174ad9e4c83bc75af384574e0" category="list-text">包含叢集軟體版本的回應本文</block>
+  <block id="3e25960a79dbc69b674cd4ec67a72c62" category="doc">您好：World</block>
+  <block id="a30f2db6f9a8c5629dc89b408b5d97e4" category="paragraph">您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST API並確認其可用度。</block>
+  <block id="f1d5e3ebc77f66e2befb5941d10019ee" category="paragraph">您的工作站必須具備Curl公用程式。此外、您必須具備下列條件：</block>
+  <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">知識集區管理LIF的IP位址或主機名稱ONTAP</block>
+  <block id="ec4f05f95246e64e1875be5ee79905b2" category="list-text">有權存取ONTAP REST API（叢集資源）之帳戶的使用者名稱和密碼。</block>
+  <block id="da932131b500d8e907961663d8ef346b" category="admonition">如果您的認證資料包含特殊字元、您必須根據您使用的Shell、以Curl可接受的方式來設定其格式。例如、您可以在每個特殊字元之前插入反斜槓、或將整個「username:password」字串換成單引號。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
+  <block id="58866791801e443554927396816c827c" category="list-text">在本機工作站的命令列介面上、擷取ONTAP 版本的資訊：</block>
+  <block id="8a35977a6f21dff949427e42cf6d3999" category="paragraph">"curl -X Get -u username:password -k <block ref="1f92f5c8813ca60ee841c4440a7f8600" category="inline-link-rx"></block></block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
+  <block id="8f16ff6e69de104981a3a1310efeec43" category="paragraph">「curl -X Get -u admin: password -k」<block ref="b4fca2fe6e3fd6a6068dfacae02b2532" category="inline-link-rx"></block></block>
+  <block id="42ac9c1cc1752704f9d6980ce41b7ba3" category="paragraph">此版本資訊會以Json格式顯示。ONTAP</block>
+  <block id="625c92078d49d59bd332d26752459a1c" category="doc">準備使用ONTAP R靜止API</block>
+  <block id="b3d01b53079f4b9fbda29e6a55f54947" category="paragraph">您應該採取幾個步驟來準備使用ONTAP 靜態API。</block>
+  <block id="59382e918ffb6e6d1580a8b17e6e1e2c" category="section-title">體驗豐富的功能。ONTAP 9.</block>
+  <block id="edca3acbd939d4adbc6fd1775e2aa7d0" category="inline-link">概念9 ONTAP</block>
+  <block id="7f22baf1d1c4dbcf7e51a6ce50ea7bcb" category="paragraph">您應該有ONTAP 使用此產品的經驗。這包括瞭解基本概念和術語、以及系統管理的一些經驗。請參閱<block ref="fe839e5e9dcf42e7a7beb586cd30f140" category="inline-link-rx"></block> 開始使用。</block>
+  <block id="0182974655f974e8429fb64bb3d15eb2" category="section-title">檢視REST概念與實作</block>
+  <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">靜態API ONTAP</block>
+  <block id="be156535e85658a14f21eed0945afff8" category="paragraph">請務必詳閱 <block ref="ccb6647c24ffc2522d48edc97b2b7273" category="inline-link-macro-rx"></block> 如需有關ONTAP REST概念的資訊、以及有關如何設計靜態API的詳細資訊、請參閱。</block>
+  <block id="848c9ae1e7e981016f6df28d16d2cedd" category="section-title">軟體開發背景</block>
+  <block id="a02beec7b8a899e8a4e50ec1d2df453e" category="paragraph">對於軟體開發技術和程序有一些經驗是很有幫助的、包括一或多種程式設計語言、以及常見的公用程式、例如Curl。</block>
+  <block id="2bb2ed6116b46f438fbcd4a9a0bad6fd" category="paragraph">您應該瞭解中建議的其他資訊資源 <block ref="91f6d3295d7ae30385e2f3285f307e42" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="cc64aef30dda7a27f1a668974ac1e3a8" category="doc">Python用戶端程式庫總覽</block>
+  <block id="61f3e167c95c469dd90a86ddd901388f" category="paragraph">NetApp ONTAP R靜止Python用戶端程式庫是一套套件、可讓您安裝及使用來撰寫指令碼、以存取ONTAP 靜態API。它支援多種基礎服務、包括連線管理、非同步處理、例外處理和錯誤訊息。使用Python用戶端程式庫、您可以快速開發強大的程式碼、以支援ONTAP 自動化的功能、實現各項功能的自動化部署。</block>
+  <block id="62d9ca2fe651fae37328aad210b89e08" category="paragraph">從ONTAP 功能性的9.6開始、您可以選擇使用Python用戶端程式庫來存取ONTAP 靜態API。程式庫提供用戶端開發環境、並提供多項基礎服務、例如連線管理、非同步處理、例外處理及錯誤訊息。下載並安裝ONTAP 完《支援使用者的支援》（NetApp）的支援套件後、您可以快速建立健全的Python指令碼、以支援ONTAP 自動化的功能。</block>
+  <block id="6353689d5872d03a15424fcc44ff9a38" category="admonition">NetApp維護GitHub儲存庫、其中包含程式碼範例和其他實用資訊。您可以瀏覽至_examples_資料夾、使用Python用戶端程式庫存取範例。</block>
+  <block id="e5a1747d44133108641b2ef511e802b0" category="inline-link">REST Python GitHub儲存庫ONTAP</block>
+  <block id="62277cb84205b149ab77912513497f3a" category="paragraph"><block ref="62277cb84205b149ab77912513497f3a" category="inline-link-rx"></block></block>
+  <block id="d63266d909698767690c10fa377a617c" category="doc">準備使用Python用戶端程式庫</block>
+  <block id="2bd79d6acb3653385bb4bcf89818b61a" category="paragraph">您應該先準備環境、再使用Python用戶端程式庫。</block>
+  <block id="56aa3ed9dba484ac641c5247a15b1ed6" category="section-title">基本需求</block>
+  <block id="6b7a8efcc6df45bbea2b4aa419b1787c" category="paragraph">您必須使用Python 3.5或更新版本。此外、也需要下列套件：</block>
+  <block id="7a7a2588855c417f37bd7fd01abaeddb" category="list-text">要求2.22.1或更新版本</block>
+  <block id="3e257ffb35bcf31e076fe4e166d80a61" category="list-text">申請工具帶0.9.1或更新版本</block>
+  <block id="eb93ca3be958adb37c694d6232204f5b" category="list-text">marmallow 3.2.1或更新版本</block>
+  <block id="11593a40313671a88f29e6475859f238" category="section-title">套件名稱與版本</block>
+  <block id="364c42d2725eeecf011214a366b6186d" category="paragraph">Python用戶端程式庫套件的名稱為* NetApp-ONTAP*。與套件相關的版本是ONTAP 由程式庫產生的版本號與次要版本號的組合、以及ONTAP 在版本2中為用戶端產生的次要版本。例如、有效的版本號碼包括：9.6.1、9.6.2和9.2.1。</block>
+  <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">安裝</block>
+  <block id="85ca39724867fb05bf4fd74b5fcac448" category="paragraph">您必須使用pip從Python套件索引（PyPi）網站安裝NetApp_ONTAP套件。</block>
+  <block id="9526c4af8cb7f4cacf6131573eda8be8" category="section-title">文件與其他資源</block>
+  <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">請參閱_NetApp開發人員網路_以取得文件與其他資源的連結。</block>
+  <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">用於擷取叢集組態的指令碼</block>
+  <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">下列指令碼提供如何使用Python用戶端程式庫的簡單範例。您可以在CLI中使用Python 3執行指令碼、以擷取ONTAP 叢集組態。</block>
+  <block id="17332aa1fd5861b55b1cfe91240e73d1" category="doc">REST API入門</block>
+  <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">您可以快速開始使用ONTAP 靜止API和其他自動化技術。在準備並瞭解基本的要求回應流程之後、您可以使用Curl來發出簡單的API呼叫。這項準備工作提供在即時系統上使用更複雜工作流程之前所需的簡介和觀點。</block>
+  <block id="c51932c28f2d865cc8b2b0211769ca8f" category="paragraph">您可以存取ONTAP 所有的靜止API呼叫詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。</block>
+  <block id="765005864f316ffe6cd14a5468133456" category="admonition">您可以在當地ONTAP 的餐廳或NetApp開發人員網路網站上存取API參考內容。</block>
+  <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">存取ONTAP 《程式碼API》文件頁面</block>
+  <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。</block>
+  <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">您必須具備下列條件：</block>
+  <block id="4c00680cb601dcd1be164318ed4c2a88" category="list-text">有權存取ONTAP 靜態API的帳戶使用者名稱和密碼</block>
+  <block id="2bc3d06698b6c0a0cff5dd4519390843" category="list-text">在瀏覽器中輸入URL、然後按* Enter *：</block>
+  <block id="b112c8c17f296b55ffc035363cc1cac3" category="paragraph">https://&lt;ip_address&gt;/docs/api`</block>
+  <block id="86537fad07b98a84cd28189507075143" category="list-text">使用ONTAP 這個帳戶登入。</block>
+  <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP</block>
+  <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。</block>
+  <block id="9d8a954ab180ff9153df9280ac9c3c7f" category="section-title">存取NetApp DevNet上的參考內容</block>
+  <block id="c94bdeb8a782c72386767d4c7becc162" category="paragraph">您可以在ONTAP NetApp開發人員網路網站上存取《靜態API參考文件》。</block>
+  <block id="b91bc699a905879f81b6d1321e652cbd" category="list-text">瀏覽ONTAP 至NetApp開發人員網路網站上的*《*》《*》《Rest API*》網頁：</block>
+  <block id="6a63b53f3b2aa312b323d97ef5f8c1ee" category="inline-link">NetApp DevNet：ONTAP 無憂API</block>
+  <block id="3ed5229516b6cbe9a83c3af31dfe7e8f" category="paragraph"><block ref="3ed5229516b6cbe9a83c3af31dfe7e8f" category="inline-link-rx"></block></block>
+  <block id="efb08c83b1593d6a73a8ac4f456e4247" category="list-text">向下捲動並在*線上REST API Reference（*線上REST API參考）*下方、按一下適當ONTAP 的鏈結以取得適當的版本資訊。</block>
+  <block id="7ccaa0673dcbf1129469d5f4407e7b74" category="paragraph">您可以使用這些API呼叫來存取S3型物件儲存設備。</block>
+  <block id="62254758dcfe975098fab22609c8aa79" category="section-title">桶</block>
+  <block id="51bd7d165e8c40b2785e7cc20641c92e" category="paragraph">儲存區是物件的容器、使用物件名稱空間來進行結構化。每個S3物件伺服器都可以有多個儲存區。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
+  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">服務</block>
+  <block id="0ce533be2fabb323cea3390612055d60" category="paragraph">您可以建立及管理ONTAP 包含伺服器和庫位組態在內的SS3組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="bd96d411ebb8705b0ef857c4d7b8c9c9" category="section-title">服務桶</block>
+  <block id="fb6c989652f69df6c8547cd9dfd4fcf4" category="paragraph">儲存區是物件的容器、使用物件名稱空間來進行結構化。您可以管理特定S3伺服器的儲存區。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="section-title">S3群組</block>
+  <block id="e45e8737cd6cf0e48b59cefd68229fc8" category="paragraph">您可以建立S3使用者群組、並在群組層級管理存取控制。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="29c67008363344d9ca92cd75f29fe2c9" category="section-title">S3原則</block>
+  <block id="d294313e121bfbd45fa5b55ca0e3324d" category="paragraph">您可以建立S3原則、並將其與資源建立關聯、以定義各種權限。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="section-title">使用者</block>
+  <block id="fcb4876473d3ad9e68e00cb94089cd42" category="paragraph">S3使用者帳戶會保留在S3伺服器上。使用者帳戶是以一對金鑰為基礎、並與其控制的儲存區相關聯。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="25bc31920c0cb35661551d04296e539d" category="paragraph">您可以使用這些API呼叫來管理叢集所使用的實體和邏輯網路資源。</block>
+  <block id="d89e657dbcb29d1b725fae1a012c3573" category="section-title">乙太網路廣播網域</block>
+  <block id="c16737a4e599bb09d061c55a7ecad532" category="paragraph">乙太網路廣播網域是一組實體連接埠、看起來像是同一個實體網路的一部分。當從網域中的其中一個連接埠進行廣播時、所有連接埠都會接收封包。每個廣播網域都是IPspace的一部分。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="34b8a9807da64737f07ac9e419c9f546" category="section-title">乙太網路連接埠</block>
+  <block id="af23f5cf37eca36a088ece4df6d53de0" category="paragraph">乙太網路連接埠是實體或虛擬網路端點。這些連接埠可合併為連結集合體群組（LAG）、或使用虛擬LAN（VLAN）分隔。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="e325fff9585fc408988fbbc8bc5f44b8" category="section-title">乙太網路交換器連接埠</block>
+  <block id="9d47789045e3c6c4eea55da48da63763" category="paragraph">您可以擷取乙太網路交換器的連接埠資訊。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="d5475e63e438a4a7c94c131d28345b80" category="section-title">乙太網路交換器</block>
+  <block id="773987a8838f6b882339b536359bdac5" category="paragraph">您可以擷取或修改ONTAP 用於叢集或儲存網路的乙太網路交換器組態。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="9f5cdc1f5a4f26490d6217f7d1030e32" category="section-title">Fibre Channel介面</block>
+  <block id="1fbb0cc82af906c09c88b2ff07a9af6b" category="paragraph">Fibre Channel介面是與SVM相關聯的邏輯端點。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="a5745ae7b8ab4ab67a6ba9a615ced665" category="section-title">Fibre Channel連接埠</block>
+  <block id="9491a7372139acacd450acd17119ed0a" category="paragraph">Fibre Channel連接埠是ONTAP 指位於某個節點上的實體介面卡、用於連接至Fibre Channel網路。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="08f9a2efa94b3c5213c47c4eeb5ba2fd" category="section-title">HTTP Proxy</block>
+  <block id="75bbbcd48175f605a8ab4e577fb5834d" category="paragraph">您可以為SVM或叢集IPSpace設定HTTP Proxy。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="2bf344088245c441fd4af9e89e2513c1" category="section-title">BGP對等群組</block>
+  <block id="59ebb6ef1a0a1fc8f946c90ef14db7ae" category="paragraph">您可以建立及管理邊界閘道傳輸協定對等群組。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="2509615af9bbdb5fbb73b349c029291a" category="section-title">IP介面</block>
+  <block id="3db65e1e11eace7de9f98bf448ab6551" category="paragraph">邏輯介面（LIF）是具有其他組態屬性的IP位址。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="fd4c92e6709b093e5c4f8085fb79e919" category="section-title">IP路由</block>
+  <block id="25ca85e84eff0554f0f56f3bab46f56f" category="paragraph">路由表是用於將流量轉送到目的地的IP路由集合。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="7a8bb34f7474b39291c18680a8e2fcec" category="section-title">IP服務原則</block>
+  <block id="e975796826e53ec2250961610abb5553" category="paragraph">IP服務原則會定義特定LIF提供的服務。服務原則可在SVM或IPspace的內容中設定。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="d686186657dc867241ca2a0f2a61422f" category="section-title">IPspaces</block>
+  <block id="0e73635ba64bf30abe23d6c9ccc20453" category="paragraph">IPspace會建立網路空間來支援一或多個SVM。IPspace可彼此隔離、提供安全性與隱私。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="0b7e67b6cdcf0432b624d53588d520fb" category="doc">SVM</block>
+  <block id="5782655b9fc988fc3096ea1fe0953ee6" category="paragraph">您可以使用這些API呼叫來管理儲存虛擬機器（SVM）。</block>
+  <block id="93735cd742fbfd0bc4709b8eab7b7a9c" category="section-title">移轉</block>
+  <block id="d92df4d35fd041e8f77172eda0a2a252" category="paragraph">您可以將SVM從來源叢集移轉至目的地叢集。新的端點提供完整的控制、包括暫停、恢復、擷取狀態及中止移轉作業的功能。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="20b974944bd89d74b6906ef955914c75" category="section-title">對等權限</block>
+  <block id="df8234ad9243e2442684ae38b139385c" category="paragraph">您可以指派對等權限來啟用SVM對等關係。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="20a07d06a4b1bc423793cd5bc530bb3d" category="section-title">對等端點</block>
+  <block id="cfb6c2e3fe9889f322f94cc8d50809b1" category="paragraph">對等關係可在SVM之間建立連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="642223473862db290604321fe2ebe763" category="section-title">SVM</block>
+  <block id="96586887fdfb43d20f718252d1593e59" category="paragraph">您可以管理繫結至叢集的SVM。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="c6e190b284633c48e39e55049da3cce8" category="section-title">網路</block>
+  <block id="b06d186d36b68be654fee4adc22d7f69" category="paragraph">您可以使用這些端點來更新及擷取每個資料SVM的Web服務安全性組態。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="53cb0643f3f1046c67b92faf9e6e0cf3" category="paragraph">您可以使用這些API呼叫來管理ONTAP 支援的叢集和相關資源。</block>
+  <block id="3824ce9b3abc70c7c5c21eda0ab912d0" category="section-title">容量資源池</block>
+  <block id="c374efd8a5043c884177979a9179dd43" category="paragraph">容量集區授權模式可讓您從共用集區為每個叢集節點授權儲存容量。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="51bdc8bf999c93768e182fae54e64934" category="section-title">機箱</block>
+  <block id="99b820b11503d1ddcde3fda74f356736" category="paragraph">機箱是支援叢集的硬體架構。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="9b99bf7d2bfd4b09363304c166832734" category="section-title">叢集</block>
+  <block id="e3b0a47831aef1054eb5f4066ce35fb9" category="paragraph">一個由一個或多個節點組成的叢集、以及定義儲存系統的相關組態設定。ONTAP此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="a940a548ba41bc988f99d51fd02f21de" category="section-title">韌體</block>
+  <block id="871834a540368bdf84b4395990e29ca9" category="paragraph">您可以擷取韌體更新要求的歷程記錄。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="12ceff2290bb9039beaa8f36d5dec226" category="section-title">工作</block>
+  <block id="904697e660d4cbfdd62c3a59759bc4df" category="paragraph">非同步REST API要求是使用工作鎖定的背景工作來執行。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="e1fb647d9c9ac78261c2aa60b4cac7b5" category="section-title">授權執行個體</block>
+  <block id="71b47385ee618a2fae2664a10e7b792e" category="paragraph">每個授權均可以個別套件的形式進行管理。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="05f5893732f0ae263d259d7a6d53ef55" category="section-title">授權管理員</block>
+  <block id="b369b16e92f996e00351db6e130a541d" category="paragraph">您可以管理與ONTAP 某個叢集相關之每個授權管理程式執行個體的組態和其他相關資訊。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="f6aca2dcfee051b254bbcb878dc70d09" category="section-title">授權</block>
+  <block id="0d600f41a8266499c57370c6800ad857" category="paragraph">授權可讓您實作特定ONTAP 的功能。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="2e97b5e5f53687c2edc46f6cfe0a5451" category="section-title">協調員</block>
+  <block id="daa83199ce876d3906471f4305486d9b" category="paragraph">您可以管理與MetroCluster 之相關的中介程序、包括新增或移除中介程序執行個體。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="1749d12df3df2319d3eee218a277ff83" category="section-title">MetroCluster</block>
+  <block id="331f16c67bfb37015af72877c3a297fb" category="paragraph">您可以建立及管理MetroCluster 一套功能豐富的部署、包括執行切換或切換作業。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="7b5585e8b5e62fe2683b466045870056" category="section-title">診斷MetroCluster</block>
+  <block id="a9137e9b0f9b61df9e234a600351501e" category="paragraph">您可以對MetroCluster 整個部署執行診斷作業、並擷取結果。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="1a866229c550618dfa1ff7b2bbca3d93" category="section-title">解決災難恢復群組MetroCluster</block>
+  <block id="1ee7729933ef643d54d0e99b88ecb1be" category="paragraph">您可以執行MetroCluster 與「不中斷災難恢復」群組相關的作業。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="ffad460970904ec2c9c9af099e0391f8" category="section-title">資訊互連MetroCluster</block>
+  <block id="6e9a92f1a47bed9d13132a992dd338e0" category="paragraph">您可以擷取MetroCluster 「不互通」狀態。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="cf8683a46a9fce46da2b0e7bac364b41" category="section-title">節點MetroCluster</block>
+  <block id="4ec82023640bc5601dde6e6d89b314d7" category="paragraph">您可以在MetroCluster 一套功能性的部署中擷取個別節點的狀態。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="4bc6b7be3ed7ef45661c92ef64ef7e57" category="section-title">營運MetroCluster</block>
+  <block id="0a13542ee64f2d946239d0a9a6209e97" category="paragraph">您可以擷取最近執行的作業清單、以利MetroCluster 執行某個版本的功能。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="187c6ad3a74cc93ac6c2229d398e383e" category="section-title">節點</block>
+  <block id="6948f5672b15a5beb2cb0e185c900849" category="paragraph">由一或多個節點組成的叢集。ONTAP此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="b137167e861629d461972de6fa2c4574" category="section-title">NTP金鑰</block>
+  <block id="027c387eedd276acbd377127cf756b7f" category="paragraph">網路時間傳輸協定（NTP）可設定為使用ONTAP 共享的私密金鑰、在受到信任的外部NTP時間伺服器之間使用。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="7e68cdae9094c04d3db96fce117b064c" category="section-title">NTP伺服器</block>
+  <block id="7e92cad37d54932d7be472286c10dad7" category="paragraph">您可以使用這些API呼叫來設定ONTAP 「靜態網路時間傳輸協定」設定、包括外部NTP伺服器和金鑰。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="1478901a98af45e1095839fa3df30322" category="paragraph">對等物件代表端點、並支援叢集對等關係。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="ccdb7bf9d93e5652b57cabcc8c41e061" category="section-title">排程</block>
+  <block id="62ab609b605a05f43f98599818f46170" category="paragraph">排程可用於自動化工作的執行。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="719d067b229178f03bcfa1da4ac4dede" category="section-title">軟體</block>
+  <block id="cb32862c2302b4cbb3b8a44e2226df17" category="paragraph">一個包含叢集軟體設定檔、軟體套件集合、以及軟體歷史記錄的叢集。ONTAP此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="45cd51d7dc9ee8cde1ea6dfb973f7002" category="paragraph">您可以使用這些端點來更新Web服務組態、以及擷取目前的組態。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="19e28f133d3f6f61397443b9a434bda8" category="paragraph">您可以使用這些API呼叫來管理ONTAP 用來支援叢集的功能。</block>
+  <block id="3b6c41c1f8397d3d6c4a39586bfc97f7" category="section-title">自動更新</block>
+  <block id="6403a27a515eaf92633945f4270c6cc4" category="paragraph">自動更新功能ONTAP 可下載並套用最新的軟體更新、讓您的整個系統保持最新狀態。有多種端點類別可支援此功能、包括狀態、組態和更新。這些資源類型是ONTAP 以引用的功能為參考9.10。</block>
+  <block id="6645e0ebb53d4b6e68be7936af3a8039" category="section-title">AutoSupport</block>
+  <block id="f0d5ad06fbd80e449410ccfbaa33addd" category="paragraph">NetApp會收集組態與狀態的詳細資料及錯誤、並將資訊報告給NetApp。AutoSupport此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="c232c3e85ee1366820a448bc348281f4" category="section-title">資訊AutoSupport</block>
+  <block id="5522bdbec44062de52fbbabadd62cf9a" category="paragraph">每個節點都會維護AutoSupport 可產生及擷取的各項資訊。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="c72a28b1b443b9f22b75ff4529e4b636" category="section-title">組態備份</block>
+  <block id="3506658d5cf5065b7ffa16fd3cef2140" category="paragraph">您可以使用這些API來擷取及更新目前的備份設定。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="d2b5de1cf6ae99abd7206c9547256b80" category="section-title">組態備份作業</block>
+  <block id="77dcd58a6b64031a5ee1ff93d8bcebcf" category="paragraph">您可以建立、擷取及刪除組態備份檔案。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="84a2b6436ddb40c75b8b3e5ad743656f" category="section-title">核心傾印</block>
+  <block id="0ae2ed9e360218bc8a7361630749a37d" category="paragraph">您可以使用這些端點來擷取及管理叢集或節點產生的記憶體核心傾印。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="2a942848121349f87fa5e6d09b4c0232" category="section-title">EMS</block>
+  <block id="17fd4a0ef48b8b4d4bb164c383edef90" category="paragraph">事件管理系統（EMS）會收集事件、並將通知傳送至一或多個目的地。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="24db2db65660162c9cae9ae2b55718ea" category="section-title">EMS目的地</block>
+  <block id="1e41d5cb71bc9df0ed8a068602666bc1" category="paragraph">EMS目的地會決定通知的傳送方式和傳送位置。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="88386e1cec5fbbeb2091685054c5c411" category="section-title">EMS目的地執行個體</block>
+  <block id="584e730a66345b9ec98cdcdad19129a9" category="paragraph">EMS目的地執行個體是依類型和位置定義。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="a631a01c80e3de0135e4ab5fa80a3501" category="section-title">EMS活動</block>
+  <block id="9da55d7f0afa2a45da614995dd22f9d9" category="paragraph">這是叢集的系統事件即時集合。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="d1f48be46780b4da8fc3bc7cdd279568" category="section-title">EMS篩選器</block>
+  <block id="958762edbcb92f83ef353032a702db62" category="paragraph">EMS篩選器可共同識別需要額外處理的事件。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="43892382daa7fe80f6f1a0c10c47b27c" category="section-title">EMS會篩選執行個體</block>
+  <block id="b32cbc34620cb1c8e6e3c04c7cd84ea6" category="paragraph">EMS篩選執行個體是套用至事件的規則集合。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="c70dd9bf7100bb0727e205edece2fe65" category="section-title">EMS訊息</block>
+  <block id="3214c401b746a3c3a353deaffe421701" category="paragraph">提供對EMS事件目錄的存取。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="ecd2dc08fe228d4f0f3210bdc9b6c90a" category="section-title">篩選執行個體的EMS規則</block>
+  <block id="e292f6535bbde80538aaf44d4a29f929" category="paragraph">可針對EMS篩選器的特定執行個體管理規則清單。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="245d4f1f6d25ca75b13988e60faba80f" category="section-title">篩選執行個體的EMS規則執行個體</block>
+  <block id="58d17198c3d3a389072585844a168044" category="paragraph">EMS篩選器特定執行個體的個別規則。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="305af65222ed3fff91f5c8bcdfe17162" category="section-title">SNMP</block>
+  <block id="3f7136cad28b177ed253f0b3d73c84c9" category="paragraph">您可以啟用和停用叢集的SNMP和設陷作業。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="19b833b71103b9973103a10d4028c114" category="section-title">SNMP設陷主機</block>
+  <block id="5769fecce260b4a846cf5c56a6499898" category="paragraph">SNMP設陷主機是一種系統、設定為從ONTAP 功能區接收SNMP設陷。您可以擷取及定義主機。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="7e02da6e354a94f76d34d87e880bd155" category="section-title">SNMP設陷主機執行個體</block>
+  <block id="b26d022aeb288cb83538385118383ca5" category="paragraph">您可以管理特定的SNMP設陷主機。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="e77de590cd71a55fe09a65e34442907d" category="section-title">SNMP使用者</block>
+  <block id="c3b7775b2eccd350a3b590c2c1c7e7a3" category="paragraph">您可以定義及管理SNMP使用者。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="38c0177ff71717e4ebdead24f8237be5" category="section-title">SNMP使用者執行個體</block>
+  <block id="b6fc3f4cebfd4495ccd03b001112b524" category="paragraph">您可以管理引擎ID與管理SVM或資料SVM相關聯的特定SNMP使用者。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="ddcc73c0369a0b65c748dc3e5194759a" category="paragraph">網路資料管理傳輸協定提供備份NAS裝置的標準。您可以使用這些API呼叫來管理NDMP服務。</block>
+  <block id="9250e564d64f55011e433f17ac824f44" category="section-title">NDMP模式</block>
+  <block id="e78d7ab79adaa44183fd6bddec381b9e" category="paragraph">NDMP操作模式可以是SVM範圍或節點範圍。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="c69526c8ce76ad278f888adee538f04e" category="section-title">NDMP節點</block>
+  <block id="e2c8cf4362fd8da934b960c0838f7f52" category="paragraph">您可以管理節點的NDMP組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="59b9883b4ec82d64efbe374d16d050a1" category="section-title">NDMP工作階段</block>
+  <block id="9dfd95a51120838c5f0411955b6b8ee0" category="paragraph">您可以擷取及刪除特定SVM或節點的NDMP工作階段詳細資料。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="d6c90b0f4204e92a3f329aaf4ce9e01c" category="section-title">NDMP SVM</block>
+  <block id="abb764733c7f995370e6d297ff1c5dbd" category="paragraph">您可以管理SVM的NDMP組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="26588e848f6effc048fa7260c0143fb6" category="section-title">NDMP SVM使用者密碼</block>
+  <block id="69e5d40b354916efb315e4d7da2c3224" category="paragraph">您可以在SVM內容中為特定NDMP使用者產生及擷取密碼。這種資源類型是ONTAP 以《不含資料的9.8 REST API」推出、ONTAP 並以《不含資料的升級版：</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="doc">雲端</block>
+  <block id="309e7aa37e1bfea74efcababb5902309" category="paragraph">您可以使用這些API呼叫來管理雲端中物件儲存資源的連線。</block>
+  <block id="91fadc5613280f76b916f1fd236e43e9" category="section-title">目標</block>
+  <block id="42505ed890a81cb2bef8c94c82effedf" category="paragraph">目標代表雲端中的物件儲存資源。每個目標都包含連線至儲存資源所需的組態資訊。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="26480427f609b5d339095df99aa09f7c" category="paragraph">您可以使用這些API呼叫來管理支援非揮發性記憶體Express（NVMe）的資源。</block>
+  <block id="11b0f3090bfc7e369a36e9cc90c4f582" category="section-title">Fibre Channel登入</block>
+  <block id="2935855efa69a27eefb72573bc4066e1" category="paragraph">Fibre Channel登入代表由登入ONTAP 到該功能的Fibre Channel啟動器所建立的連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="65c280309cb16c4db0a31c86b28b804c" category="section-title">NVMe介面</block>
+  <block id="574ab269e7caa83c4f904627c177d111" category="paragraph">NVMe介面是設定為支援NVMe over Fabrics（NVMe）傳輸協定的網路介面。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="0845ef772913e6fb6b0cbb8ad6dae1d0" category="section-title">NVMe服務</block>
+  <block id="d7135e19354e1577f81ff90fca13afcd" category="paragraph">NVMe服務可定義SVM的NVMe控制器目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="60f0443ad11fd726953afc1b7f16c188" category="section-title">NVMe子系統控制器</block>
+  <block id="055c2c82f5f90d21db7da7a6ed60c13e" category="paragraph">NVMe子系統控制器代表主機與儲存解決方案之間的動態連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="433ced2138f5d40b7adbfa80ca0f3e16" category="section-title">NVMe子系統對應</block>
+  <block id="816c0720f92a2711cb0cd082d1076aa6" category="paragraph">NVMe子系統對應是NVMe命名空間與NVMe子系統的關聯。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="1361b47201058431e29c4f4e3cab651c" category="section-title">NVMe子系統</block>
+  <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe子系統可維護一組NVMe連線主機的組態狀態和命名空間存取控制。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="13d28e8dfc702e3456e0767dff9a128a" category="section-title">命名空間</block>
+  <block id="ce9f5c2bc40cd88e3ff682c6b88a8186" category="paragraph">NVMe命名空間是一組可定址邏輯區塊、顯示給使用NVMe over Fabrics傳輸協定連線至SVM的主機。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">資源類別總覽</block>
+  <block id="b2169c6a3a0ae080710868637b995ad7" category="paragraph">透過「靜態API」提供的資源ONTAP 會依照類別進行組織、如ONTAP 「靜態API」文件頁所示。以下是每個資源與基礎資源路徑的簡短說明、以及其他適當的使用考量。</block>
+  <block id="1d1927ef8ecb65f8a47a28bdaad73c8d" category="paragraph">本節說明最新版產品的剩餘資源。如果您需要瞭解先前版本所做的變更、請參閱_Release Notes_。</block>
+  <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、您也可以使用查詢參數上的屬性值來存取物件。</block>
+  <block id="35ddd64ed03dd1579ce39e6e82ff721f" category="inline-link-macro">其他休息考量</block>
+  <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
+  <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
+  <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">您可以使用這些API呼叫來管理儲存區域網路（SAN）資源。</block>
+  <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel登入代表光纖通道啟動器所建立的連線、這些啟動器已登入ONTAP 到了功能鏈路。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="6c1e0dfe5a404cce67f1db281a50ea76" category="section-title">Fibre Channel Protocol服務</block>
+  <block id="b125a3961f250d22b3eed929040d8e9a" category="paragraph">光纖通道傳輸協定（FCP）服務可定義SVM的光纖通道目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="362aaf53838180aef26894961e18a234" category="section-title">Fibre Channel WWPN別名</block>
+  <block id="bec2206da79fc1b03bfc7f4f6c7bda42" category="paragraph">全球連接埠名稱（WWPN）是唯一識別光纖通道連接埠的64位元值。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="58f3779afe9da9ffdc085dc3064306f7" category="section-title">igroup</block>
+  <block id="68c0fd93c2b023ed4f45e053c2c0475e" category="paragraph">啟動器群組（igroup）是光纖通道WWPN（全球連接埠名稱）、iSCSI IQN（合格名稱）和iSCSI EUI（延伸唯一識別碼）的集合、可識別主機啟動器。這種資源類型最初是以ONTAP 引用功能不適用的功能為設計目標。</block>
+  <block id="2b77121b57a073f6a912696b1d7a31d8" category="paragraph">巢狀igroup是ONTAP 功能更新的功能、包含了更新版的支援功能、REST API也加入了支援功能。此REST資源類型隨ONTAP 附於引用的地方。9.9</block>
+  <block id="631b740ef1e6620839e8143382936b10" category="section-title">iSCSI認證</block>
+  <block id="ff405aa42851c6e5daf11546e79e3980" category="paragraph">iSCSI認證物件包含啟動器和ONTAP 物件所使用的驗證認證資料。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="0ce9193c4743638434ef94331f17def2" category="section-title">iSCSI服務</block>
+  <block id="1dfd42e3c5ed950e1ad51c88566f0777" category="paragraph">iSCSI服務可定義SVM的iSCSI目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="401ea405ada422dc57c71ecc462575ab" category="section-title">iSCSI工作階段</block>
+  <block id="4ec7a22296b883954f318da87ad08cf3" category="paragraph">iSCSI工作階段是一或多個TCP連線、可將iSCSI啟動器與iSCSI目標連結。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="6f68434a65995c923defc360224ffecc" category="section-title">LUN屬性</block>
+  <block id="5863e0f99ad1402d808798b272c35423" category="paragraph">LUN屬性是呼叫者定義的名稱/值配對、可選擇性地與LUN一起儲存。屬性可用來儲存少量的應用程式專屬中繼資料、ONTAP 而不被支援。端點可讓您建立、更新、刪除及探索LUN的屬性。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="2bcfa5513eb7e40b556060fcb5df869d" category="section-title">LUN對應</block>
+  <block id="c1899d8ac0f131825213c510da4ad1d1" category="paragraph">LUN對應是LUN與啟動器群組之間的關聯。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="304c5c7bce84cce1f1ab6cffef80fad8" category="section-title">LUN對應報告節點</block>
+  <block id="602c3dee864ac1118043c79730115b22" category="paragraph">報告節點是叢集節點、可透過SAN傳輸協定、將連至對應LUN的網路路徑做為ONTAP 供應器的選擇性LUN對應（SLE）功能的一部分、進行通告。新的端點可讓您新增、移除及探索LUN對應的報告節點。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="7b3c6a2d089eb1b6f8959e7e61a50c07" category="section-title">LUN</block>
+  <block id="cf304f8d071581c8a16443a669547c31" category="paragraph">LUN是儲存區域網路（SAN）中儲存設備的邏輯代表。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="f094fdd1ff33d53f9180e4e35ace68f1" category="section-title">連接埠集</block>
+  <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">連接埠集是與_portSet_ Storage VM相關聯的光纖通道或iSCSI網路介面的集合。雖然ONTAP 此功能已存在於先前版本的支援、但其餘API現在已加入支援。此REST資源類型隨ONTAP 附於引用的地方。9.9</block>
+  <block id="1fbd05569b3face9ed656a6b7e9ed6be" category="section-title">VVOL繫結</block>
+  <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VMware虛擬磁碟區（vVol）繫結是指類「傳輸協定端點」的LUN與類「VVOL」的LUN之間的關聯。vVol繫結REST API可讓您建立、刪除及探索vVol繫結。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="b4ad45acb73dc252050e525d981a2d6d" category="paragraph">以儲存為基礎的傳統WORM（一次寫入、多次讀取）光學解決方案實作、可長期保留資料。SnapLock您可以使用這些API呼叫來管理SnapLock 功能。</block>
+  <block id="ce0be71e33226e4c1db2bcea5959f16b" category="section-title">記錄</block>
+  <block id="03aaf72a36d8a4b49208da200f94b4cf" category="paragraph">此功能是根據特定磁碟區上包含記錄的目錄和檔案來建立。SnapLock記錄檔會根據最大記錄檔大小來填入和歸檔。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="1d4022cc69557a9759f903689e5c6337" category="section-title">法規遵循時鐘</block>
+  <block id="02c81912a7634089043ac791429c0c06" category="paragraph">法規遵循時鐘決定SnapLock 了物件的到期時間。時鐘必須在REST API之外初始化、且無法變更。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="90cf707e60635de8b651c0d98ae0973e" category="section-title">事件保留</block>
+  <block id="21632c1548a44b25024b7b882a17cac7" category="paragraph">您可以使用SnapLock 「以事件為基礎的保留」（EBR）功能、定義事件發生後檔案保留的時間。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="45c59e56e0fe071dfc474240e10a2bff" category="section-title">檔案保留與權限刪除</block>
+  <block id="dc72092dda0c282c5ff09f3938ea287f" category="paragraph">您可以管理SnapLock 由現象所建立檔案的保留時間。如有需要、您也可以刪除SnapLock 在企業版上未過期的WORM檔案。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="fb00578ec9d3fa400747c530aa16a46b" category="admonition">唯一具有執行刪除作業權限的內建角色是vsadmin-SnapLock。</block>
+  <block id="fed16d3aa6b063ea96e275143a07ccb9" category="section-title">檔案指紋</block>
+  <block id="bbada9713c694fc554c600df104fea52" category="paragraph">您可以檢視及管理描述檔案和磁碟區的核心資訊、例如類型和到期日。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="1e3a85ebb1c233113bf042fe963e7cf5" category="section-title">合法持有</block>
+  <block id="c8affb4b638fb272e9f0ea2b1c6af6fe" category="paragraph">您可以使用這些API呼叫來管理訴訟程序中的檔案。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="e498749f3c42246d50b15c81c101d988" category="doc">應用程式</block>
+  <block id="e126569377e0b2c42e1f2b3f1f4a111c" category="paragraph">您可以使用這些API呼叫來管理ONTAP 功能豐富的應用程式資源。</block>
+  <block id="53407aeec220be7474e15c2a9f182a5a" category="section-title">應用程式快照</block>
+  <block id="d82ec776cd833da582973d01b1875122" category="paragraph">應用程式支援Snapshot複本、可隨時建立或還原。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="1ddf333c6654f7f89c739dddfb4cc429" category="section-title">應用程式</block>
+  <block id="6c5dba7ca23cbe6a8f7fba0f3ffae13c" category="paragraph">這個功能可根據類型來安排、包括範本、應用程式、元件和Snapshot複本。ONTAP此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="6165c4352e1504dbaeef34d0cc50c187" category="section-title">一致性群組</block>
+  <block id="7d68becf2598a5efeb5b687dfe7bb035" category="paragraph">一致性群組是一組磁碟區、在執行某些作業（例如快照）時、會將這些磁碟區群組在一起。此功能可在一組磁碟區中執行單一磁碟區作業、藉此延伸相同的損毀一致性和資料完整性。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="a3b7af87c74d80ecedac76f490bfc38a" category="section-title">一致性群組快照</block>
+  <block id="000c4dd933d539d502d855e482ad30ed" category="paragraph">您可以使用這些端點來複製、建立、清查及還原一致性群組的快照。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="a4273e3e312edbc9d5bd7c188aecc370" category="doc">名稱服務</block>
+  <block id="4cbf67c663a0aa1becab1170ca932173" category="paragraph">您可以使用這些API呼叫來管理ONTAP 支援的名稱服務。</block>
+  <block id="b075b481f21fbb627e5042d98a2e27c9" category="section-title">DDNS</block>
+  <block id="83df374f1b14e7e892413b9679071d0f" category="paragraph">您可以顯示動態DNS（DDNS）資訊、並管理DDNS子系統。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="section-title">DNS</block>
+  <block id="f97bb8cb9c33354ac4515053dad458e0" category="paragraph">DNS支援ONTAP 將整個叢集整合到您的網路中。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="bd267bd12514496474e44b08af357845" category="section-title">主機記錄</block>
+  <block id="47ef31c7170557cd8b99e608cdfb0001" category="paragraph">這些端點可讓您顯示指定主機名稱的IP位址、以及IP位址的主機名稱。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="2363dee608bcd9f6ce7f980bfdad5789" category="section-title">LDAP</block>
+  <block id="bf174dc4f6f36d6d0f560f114ed35af0" category="paragraph">LDAP伺服器可用來維護使用者資訊。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="98f8c716c137eebb477ab782d431477c" category="section-title">本機主機</block>
+  <block id="6d5bdff627ee96fb9a3d1ce46d18fe48" category="paragraph">您可以使用這些端點來顯示及管理主機名稱的本機對應。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="82efbf64272cb17196c4e27b3694cadb" category="section-title">名稱對應</block>
+  <block id="8de221752bd6a162ef831c894ff99445" category="paragraph">名稱對應可讓您將身分識別從一個名稱網域對應到另一個名稱網域。例如、您可以將身分識別從CIFS對應至UNIX、Kerberos對應至UNIX、並將UNIX對應至CIFS。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="214d81d8672097921e223fb3e62fa879" category="section-title">NIS</block>
+  <block id="29d694e39bf428e6908248736cf6c34b" category="paragraph">NIS伺服器可用來驗證使用者和用戶端工作站。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="69191005b4ee9f6b5f263cb192e44de2" category="section-title">UNIX使用者與群組</block>
+  <block id="b4e81f372193d464553e67bfc6e6a475" category="paragraph">本地UNIX使用者和群組已成為先前ONTAP 版本的一部分。不過、REST API現在已新增支援功能、可讓您顯示及管理使用者和群組。這些REST資源類型採用ONTAP 了9.9技術、ONTAP 並透過功能升級至功能強大的版本。</block>
+  <block id="7e70a3f5fe5680525cb2b864b84dd895" category="paragraph">您可以使用這些API呼叫來管理叢集和SVM的CIFS和NFS設定。</block>
+  <block id="eda63b570db82e05c2fd7b5f0c3bb20f" category="section-title">稽核</block>
+  <block id="966e21f100dbe85ef8662bb918080be7" category="paragraph">有些CIFS和NFS事件可記錄在SVM上、有助於提升安全性。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="5694877f9acb80427bb084dc540bff58" category="section-title">稽核記錄重新導向</block>
+  <block id="7f10c6261c4b6c29a47a7c3f7a01e279" category="paragraph">您可以將NAS稽核事件重新導向至特定SVM。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="31e39608982442406853c159bf64d7ea" category="section-title">CIFS網域</block>
+  <block id="772ba71e6aaaa5e3a9d9cdecd907e2e2" category="paragraph">叢集和SVM層級已新增CIFS網域支援、並加入多種端點類別。您可以擷取網域組態、以及建立和移除慣用的網域控制器。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
+  <block id="ae8f54c516c1e697ca7e99fc7d868bda" category="section-title">CIFS主目錄搜尋路徑</block>
+  <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">您可以在CIFS伺服器上建立SMB使用者的主目錄、而不需為每位使用者建立個別的SMB共用區。主目錄搜尋路徑是SVM根目錄的一組絕對路徑。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="396c3f48c117673117684dd56e4ea358" category="section-title">CIFS本機群組</block>
+  <block id="075f810b99d746a8b62911ab066db558" category="paragraph">CIFS伺服器可在決定共用、檔案和目錄存取權限時、使用本機群組進行授權。這種資源類型採用ONTAP 了引用的是包含9.9的功能、ONTAP 並以版本號9、10大幅擴充。</block>
+  <block id="b4aed1589395fdc65c17587b27f7bb8c" category="section-title">CIFS服務</block>
+  <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="bc60013b8245b6824eb1f7867b61b741" category="section-title">CIFS工作階段</block>
+  <block id="71a26588e1c1d8e12094fdd21dc0d287" category="paragraph">您可以使用此API擷取CIFS工作階段的詳細資訊。這種資源類型是ONTAP 以《不含資料的9.8 REST API」推出、ONTAP 並以《不含資料的升級版：</block>
+  <block id="6bd56802bbe66c487b39108b4e4b3f2e" category="section-title">CIFS共用</block>
+  <block id="d5f4fec8a6c653ca7e90ff237d4a4316" category="paragraph">在CIFS伺服器上定義的SMB共用。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="064575167733ca9bd85e0b4b367d1ca9" category="section-title">CIFS共用ACL</block>
+  <block id="f0f651567e26868dafe0ee9cc161686c" category="paragraph">存取控制清單（ACL）可控制對CIFS共用上資料夾和檔案的存取。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="2fc8aeb9ce1675007558f9a4a074f9c3" category="section-title">CIFS UNIX symlink對應</block>
+  <block id="4b80e635bedb2121ad330680ea44b192" category="paragraph">CIFS和UNIX用戶端都可以存取相同的資料存放區。當UNIX用戶端建立符號連結時、這些對應會提供另一個檔案或資料夾的參考、以支援CIFS用戶端。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="e99032409deaffcf7a867a648155dc5d" category="section-title">檔案存取追蹤</block>
+  <block id="0e4b06b0058fdbacdf88073fd79121e1" category="paragraph">您可以使用這些API呼叫來追蹤特定檔案的存取。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="81584289d536a476e74f5bc4906831af" category="section-title">檔案安全性權限</block>
+  <block id="fcec747a1dc241bef6344882e6ae9843" category="paragraph">您可以使用這些API呼叫來顯示已授予Windows或Unix使用者特定檔案或資料夾的有效權限。您也可以管理NTFS檔案安全性和稽核原則。這種資源類型是ONTAP 以《不經意的9.8 REST API」推出、ONTAP 並以《不經意的9.9版技術大幅提升。</block>
+  <block id="1a0f4bec43cf474af35c9e77aa8c28af" category="section-title">FPolicy</block>
+  <block id="8596c9ab6bb5d2f478817a1caec93cb9" category="paragraph">FPolicy是檔案存取通知架構、用於監控及管理SVM上的檔案存取事件。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="c1746aa388178e56fc9071ad1d30c228" category="section-title">FPolicy連線</block>
+  <block id="3f689cafff034d41de3da8f0516fe489" category="paragraph">這些端點可讓您顯示及更新外部FPolicy伺服器的連線狀態資訊。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="371f109f46145b3f27492990eb0a9113" category="section-title">FPolicy引擎</block>
+  <block id="122ff0ce49c4f38afa14758549e568d5" category="paragraph">FPolicy引擎可讓您識別接收檔案存取通知的外部伺服器。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="3bd9fd6d8026d51bcd37c5f3db077df7" category="section-title">FPolicy活動</block>
+  <block id="03b1d8e8ff974db009222575c8272446" category="paragraph">此組態可識別檔案存取的監控方式、以及產生的事件。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="cc0e7740c7c0f284b16f9a531a2fb567" category="section-title">FPolicy原則</block>
+  <block id="b0360b82f5e5e81032b52f6277974c5a" category="paragraph">FPolicy架構元素的容器、包括FPolicy引擎和事件。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="7f1fb7408267003fd39631c254d0d9ae" category="section-title">鎖定</block>
+  <block id="239f703364a5564124a3d68e8344a9c2" category="paragraph">鎖定是一種同步機制、可強制限制同時存取許多用戶端同時存取相同檔案的檔案。您可以使用這些端點來擷取和刪除鎖定。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="4e4e0f527af77484c5cbf5196e421a3d" category="section-title">NFS連線用戶端</block>
+  <block id="5b9e40af6e6a77e9d9451375cfc0a9b7" category="paragraph">您可以顯示已連線用戶端的清單、其中包含其連線的詳細資料。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="5e02bcf13960addb442383f8370c14f1" category="section-title">NFS匯出原則</block>
+  <block id="bfeb5028a4eb91a06394c3b6e69e6843" category="paragraph">包括說明NFS匯出的規則在內的原則。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="6aa53caebe4b6ae8c4c8f34880b6d95d" category="section-title">NFS Kerberos介面</block>
+  <block id="3afad2708eee4dd712bb3209aed66314" category="paragraph">Kerberos介面的組態設定。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="a925a741511b2b8f933ad6404892439b" category="section-title">NFS Kerberos領域</block>
+  <block id="6e6a672cb006cae7c7f795db9567f05a" category="paragraph">Kerberos領域的組態設定。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="2af5a2ae61f951c7a5e94ca007df0d15" category="section-title">NFS服務</block>
+  <block id="dfd8f44648780896a0502d4dca1cf245" category="paragraph">NFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="d096166c57e2b6d919e03cce85418d64" category="paragraph">稽核S3事件是一項安全性改善、可讓您追蹤及記錄特定S3事件。S3稽核事件選取器可依每個SVM設定為每個儲存區。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="58799a9de037b62a01e5ef1453837248" category="section-title">VScan</block>
+  <block id="8d7b8bae5e0de7390b46a9e4b8e7d7cd" category="paragraph">一項安全功能、可保護您的資料免受病毒和其他惡意程式碼的侵害。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="794e647721bb174bd33eddbe2e97da3d" category="section-title">VScan存取原則</block>
+  <block id="bc6432862ecb3075c79ab1b849350e67" category="paragraph">VScan原則可在用戶端存取檔案物件時、主動掃描檔案物件。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="67f19b53fb829d6ea610820aab8ecc04" category="section-title">VScan隨需原則</block>
+  <block id="5f6f9da8cb335b242fa16ae86bdd0b2d" category="paragraph">VScan原則可讓檔案物件立即依需求或根據設定的排程進行掃描。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="4974caee8c34d629bb161cdea414869a" category="section-title">VScan掃描器資源池</block>
+  <block id="611195abdbd7da41ddc1c888f9f1885e" category="paragraph">一組屬性、用於管理ONTAP 介於更新和外部掃毒伺服器之間的連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="2cf615c2df2664a7f35487c706d47001" category="section-title">VScan伺服器狀態</block>
+  <block id="c63c72a4f34ffdf5a780e1fc0e879ca8" category="paragraph">外部掃毒伺服器的狀態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="5d715f632f7a3e61ffcbef7a0fab4e08" category="paragraph">您可以使用這些API呼叫來管理實體和邏輯儲存設備。</block>
+  <block id="9ae13d2c1be8f54b085efa704ea4d7ee" category="section-title">Aggregate度量</block>
+  <block id="11ef5f9828b3bc010c9ca7626ca89c36" category="paragraph">您可以擷取特定Aggregate的歷史度量資料。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="0823e490e6bba6fc21a38adab6d7a963" category="section-title">Aggregate plexes</block>
+  <block id="047c7e41b8c756eddd17b5648fe92f42" category="paragraph">集合體內的實體版的實體版次。WAFL此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="d5350d8759b1ec84607e47908809058e" category="section-title">集合體</block>
+  <block id="ad3f50e1f14f54f3c331c20f8fe3bb1d" category="paragraph">集合體由一或多個RAID群組組成。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="b60c0d4d7e79d2d9eb6b397ca8529c4c" category="section-title">橋接器</block>
+  <block id="0e0bc638aefadb39816902d5da83fa4d" category="paragraph">您可以擷取叢集中的橋接器。此資源類型隨ONTAP 附於引用的資料檔9.9。</block>
+  <block id="2d4aef30a49a581a6ed89ce840054235" category="section-title">磁碟</block>
+  <block id="000d956158860eb60225484bae0cbb4a" category="paragraph">叢集中的實體磁碟。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本、更新版本為32個版本。</block>
+  <block id="ae19a8684ec907889cac06096d90615b" category="section-title">檔案複製</block>
+  <block id="e7883f7cebee57d8be228644d145fe07" category="paragraph">您可以使用這些端點來建立檔案複製、擷取分割狀態、以及管理分割負載。檔案複製端點資源是ONTAP 以支援還原9.6的方式推出、並以ONTAP 支援還原9.8的方式擴充。他們再次以ONTAP 版本9.10大幅擴充。</block>
+  <block id="f24ce81f056d5acd59788df7f5ab36a1" category="section-title">FlexCache</block>
+  <block id="d53d395c26cc1120919a40cf2bb3bcc0" category="paragraph">此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
+  <block id="12b9060463c7d0d9fd882b398f4b6426" category="section-title">來源FlexCache</block>
+  <block id="11f88b423dd71668044f4d32239e38bc" category="paragraph">不只是來源磁碟區的持續快取、FlexCache這種資源類型最初是以ONTAP 引用功能不適用的功能為設計目標。支援功能已透過ONTAP 支援透過HTTP修補方法進行的更新、以支援更新。</block>
+  <block id="f5520ac447b7ce4cc60a84b00fe90b91" category="section-title">受監控的檔案</block>
+  <block id="16750416870169f8a547b041c15fb9ca" category="paragraph">您可以指定特定檔案以進行其他監控。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">連接埠</block>
+  <block id="a7ed048576f99b28a7ac7d127a048121" category="paragraph">叢集的儲存連接埠。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="9ab8fc3354a61f6ad2350f17305fc866" category="section-title">QoS原則</block>
+  <block id="8719f60286ad321c9136cdebcda6779b" category="paragraph">服務品質原則組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="807c87dbc2a84cfb9ed828623f9216ac" category="section-title">QoS工作負載</block>
+  <block id="40bfd79f754a21d30d27146e76e53e9a" category="paragraph">QoS工作負載代表QoS追蹤的儲存物件。您可以擷取QoS工作流程。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="48b9817af3fdae7035b6862c98196584" category="section-title">qtree</block>
+  <block id="f46974aa6acf92306910967155e721fd" category="paragraph">您可以使用這些API呼叫來管理qtree、這是一種邏輯分隔的檔案系統。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="bb1c10ea5234afcb091a28054d68573b" category="section-title">配額報告</block>
+  <block id="13ac41c0f5b92c0695d1031496644111" category="paragraph">報告配額、這是一種限制或追蹤檔案或空間使用量的技術。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="b9104e60761a7668c71846e0def23f3a" category="section-title">配額規則</block>
+  <block id="3d2b6a6ce4f64b7fe85f62253d8f24dc" category="paragraph">用於強制執行配額的規則。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
+  <block id="bb53c62475a4f28295dfd71302a53a3d" category="section-title">磁碟櫃</block>
+  <block id="0fdd859e13285f0b588a3a1c1a944ff1" category="paragraph">叢集中的磁碟櫃。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="623fb58af5512173351f2a5e63dd6d85" category="section-title">Snapshot原則</block>
+  <block id="8ef47f0b39d18608f0fb9ff542a85d30" category="paragraph">快照是根據原則建立。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="2a3d38eca452a2699cd2b11129719514" category="section-title">Snapshot排程</block>
+  <block id="37a1c3e03252e951f2b7b6f459b3bc21" category="paragraph">您可以控制快照排程。此資源類型是ONTAP 全新重新設計的、採用了NetApp 9.8。</block>
+  <block id="0052efad5d260a806d52bfcfe640936f" category="section-title">交換器</block>
+  <block id="e7d94a62c027b853f0db823acc6113d8" category="paragraph">您可以擷取叢集中的交換器。此資源類型隨ONTAP 附於引用的資料檔9.9。</block>
+  <block id="5fa1f27a4db085455efad8586d12878b" category="section-title">磁帶設備</block>
+  <block id="90e266ad3e10e1435b856e7f8c7998ca" category="paragraph">您可以擷取叢集中的磁帶設備。此資源類型隨ONTAP 附於引用的資料檔9.9。</block>
+  <block id="161bf0559542afedb1ca0bf946c7ee93" category="section-title">頂尖指標</block>
+  <block id="45b52a0afc333164581afc6ff628dcfd" category="paragraph">頂端度量端點可讓您決定依特定度量篩選之磁碟區的活動。您可以根據用戶端、目錄、檔案和使用者來進行篩選。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="a3e42b640d5ce90ec9ccf40644a7beb2" category="section-title">Volume效率原則</block>
+  <block id="f3822b87f60b51928fef4d239475d31e" category="paragraph">您可以使用這些API呼叫來設定套用至整個Volume的效率。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="c2b3f5e16089ee9d9af58cbb5c2cbd06" category="paragraph">邏輯容器用於將資料提供給用戶端。此資源類型最初是以ONTAP 不含REST API的功能推出。API所使用的許多參數值都已透過ONTAP 包含空間管理的值在內的各個方面、大幅擴充。</block>
+  <block id="17d828c8326ae52c5d2a5bd801e5a59b" category="section-title">Volume檔案</block>
+  <block id="88df77acac312e5edd7fce693cdcaa37" category="paragraph">您可以擷取磁碟區上特定目錄的檔案和目錄清單。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
+  <block id="e5a3f41cd596ffa6c5340d3d92b4b3e8" category="section-title">Volume Snapshot</block>
+  <block id="87098ebfbdf9f76cfa6a8b400124cecc" category="paragraph">Volume的快照。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="5b601547f8aa3a93b2be784742d56f50" category="paragraph">這些API呼叫可用於管理叢集和SVM安全性設定。</block>
+  <block id="9b945efebb006547a94415eadaa12921" category="section-title">帳戶</block>
+  <block id="24e7cd4ec777036322f32b55a87d5bce" category="paragraph">叢集和SVM的使用者帳戶集合。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="5a5fb6684999bac1ca581809abbd53ad" category="section-title">帳戶名稱</block>
+  <block id="ec3e5f0707efe5d62c929bd9fd725078" category="paragraph">範圍內使用者帳戶的組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="187f8868291bfb72a7e033dd667af916" category="section-title">Active Directory Proxy</block>
+  <block id="5bfa71d20e72cfa3885c1399635e02fe" category="paragraph">您可以在Active Directory伺服器上管理SVM帳戶資訊。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">反勒索軟體</block>
+  <block id="d7741d8eafdec4ae992161e15c2ae508" category="paragraph">可偵測可能含有勒索軟體威脅的檔案。ONTAP端點有數種類別。您可以擷取這些可疑檔案的清單、並將其從磁碟區中移除。此資源類型隨ONTAP 附於引用的功能為NetApp資源9.10.1。</block>
+  <block id="97140b7fab1bb651b5fc8173a48e9824" category="paragraph">決定稽核記錄檔記錄內容的設定。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="f260003a35e4d85e558fddca87a44bc3" category="section-title">稽核目的地</block>
+  <block id="355af35bea1f9a472b4aee466d9acada" category="paragraph">這些設定可控制稽核記錄資訊如何轉送到遠端系統或Splunk伺服器。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="f553cd67933721b76f9ccab00ac4a892" category="section-title">稽核訊息</block>
+  <block id="128e41ee771b7497af81a9dab1ca20ec" category="paragraph">您可以擷取稽核記錄訊息。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="69500631fd60fd52ad3d029cb8aa50e0" category="section-title">AWS KMS</block>
+  <block id="db2f22ea891f2ac95aba2f82a4352ae0" category="paragraph">這組API呼叫可讓您使用Amazon Web Services Key Management Service來儲存ONTAP 此等加密金鑰。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="69e4f9faea00db8647cdf1c81c23c6d8" category="section-title">Azure Key Vault</block>
+  <block id="adf1c22aa54eb7f2cce2db93dc9c061c" category="paragraph">這組API呼叫可讓您使用Azure Key Vault來儲存ONTAP 功能完善的加密金鑰。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="5a6c0d2579b31142130f20104fa58ea6" category="section-title">憑證</block>
+  <block id="2e0ee80929bfbc4dd08313ae001e7f52" category="paragraph">API呼叫可用於安裝、顯示ONTAP 及刪除由資訊技術所使用的憑證。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="3031b41cbb19093d814e6930f3e56570" category="section-title">叢集安全性</block>
+  <block id="73466d1f59642e03b8c81d0b1875b437" category="paragraph">您可以擷取整個叢集的安全性詳細資料、並更新某些參數。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
+  <block id="de7a4b58aa20c707a993012c821ffcae" category="section-title">GCP KMS</block>
+  <block id="ad9b161528b083800d5054d4feb9ec8a" category="paragraph">這組API呼叫可讓您使用Google Cloud Platform Key Management Service來儲存及管理ONTAP 此等加密金鑰。這種資源類型最初是以ONTAP 《不只是用作參考資料的參考資料9、8、8、9、8不過ONTAP 、這項功能已重新設計、因此在更新資源類型時、將會被視為全新功能、如更新於本文件中的9.9。</block>
+  <block id="99a98e067af6b09e64f3740767096c96" category="section-title">IPsec</block>
+  <block id="c78f0d76ddea2a641c1fd047b64d3b75" category="paragraph">網際網路傳輸協定安全性（IPSec）是一套傳輸協定、可在基礎IP網路上的兩個端點之間提供安全性。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="006138580199bd3b75b397daaf66da34" category="section-title">IPsec CA憑證</block>
+  <block id="49594609d9f640b0c454c45b305cb943" category="paragraph">您可以新增、移除及擷取IPSec CA憑證。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
+  <block id="edc104bcf18fda8f2113e04baac67d3f" category="section-title">IPsec原則</block>
+  <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">您可以使用這組API呼叫來管理適用於IPSec部署的原則。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="3d2b68c7bdb9f30e1ccfb464eeb00966" category="section-title">IPsec安全關聯</block>
+  <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">您可以使用這組API呼叫來管理在進行IPSec部署時有效的安全關聯。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
+  <block id="a4c782a0e5bd7be239b96d4d35ffe4fb" category="section-title">關鍵管理程式組態</block>
+  <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">這些端點可讓您擷取及更新金鑰管理程式的組態。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
+  <block id="5e2f9eab3699a50f20260789850a272c" category="section-title">關鍵經理</block>
+  <block id="cf7e0e9fe8835740b4490dd285c70e4e" category="paragraph">金鑰管理程式可讓ONTAP 支援的用戶端模組安全地儲存金鑰。此資源類型採用ONTAP 了更新ONTAP 版本的32、6、6、9、6、9、6、5、6、5、5</block>
+  <block id="afcd6712bee083e0a41753fd140a0495" category="section-title">主要儲存區</block>
+  <block id="8e534dc2397390aadbe32ec748d96a3d" category="paragraph">金鑰庫說明金鑰管理程式的類型。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
+  <block id="a49c9c380ec2e13191e995f949a1c440" category="section-title">LDAP驗證</block>
+  <block id="6c6082904240c6ec5957f81a0fbb1d62" category="paragraph">這些API呼叫是用來擷取及管理叢集LDAP伺服器組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="8c4bb3ded6662bac8e6e9acbf843524d" category="section-title">登入訊息</block>
+  <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">用於顯示及管理ONTAP 由資訊技術所使用的登入訊息。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="6a36d99c2ac30ed84aa720f045f9fb79" category="section-title">NIS驗證</block>
+  <block id="0435d401767ed66c66ec6b98940edb55" category="paragraph">這些設定可用來擷取及管理叢集NIS伺服器組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="22df0a92ffce80c2c0b94f54238b8ec0" category="section-title">密碼驗證</block>
+  <block id="5a2049402058b884646ba056f5eb32b6" category="paragraph">這包括用來變更使用者帳戶密碼的API呼叫。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="7ceacf64cc5732c8c39d8622d4e2d44c" category="section-title">角色執行個體的權限</block>
+  <block id="726766d18432f47239ac755ac8fce078" category="paragraph">管理特定角色的權限。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="28885526cbecfb56bee4aca9d16e4280" category="section-title">公開金鑰驗證</block>
+  <block id="7db7ebca58c159f027efcd52eaaecd90" category="paragraph">您可以使用這些API呼叫來設定使用者帳戶的公開金鑰。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="a5cd3ed116608dac017f14c046ea56bf" category="section-title">角色</block>
+  <block id="73f3c293e004a376520d3734e8e0476f" category="paragraph">這些角色可讓您將權限指派給使用者帳戶。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="74fa3a518ab1198e0b6ab902e54e3958" category="section-title">角色執行個體</block>
+  <block id="ee0b0b92be7dced35b0607c73807d3ea" category="paragraph">角色的特定執行個體。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="9097811650a92eb8b7172820dc0a2722" category="section-title">SAML服務供應商</block>
+  <block id="387eced4e75b45bde2bc33ce86181e16" category="paragraph">您可以顯示及管理SAML服務供應商的組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="section-title">SSH</block>
+  <block id="77c81798920a42ea55801b67d1902e16" category="paragraph">這些呼叫可讓您設定SSH組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
+  <block id="8d74e9b6f76905c251cac67ba143095e" category="section-title">SSH SVM</block>
+  <block id="04da7052ae3148365ddf3af010db695e" category="paragraph">這些端點可讓您擷取所有SVM的SSH安全組態。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
+  <block id="794cb725c5631ad99b5b7c000307f0df" category="doc">SnapMirror</block>
+  <block id="2c938210904a3ccb2bb466c75aae25b4" category="paragraph">您可以使用這些API呼叫來管理SnapMirror資料保護技術。</block>
+  <block id="9e476387322a5c250893cf9c5c4ce78c" category="section-title">原則</block>
+  <block id="74f525d06ddb24dba72494718d6a778f" category="paragraph">SnapMirror原則會套用至關係、並控制每個關係的組態屬性和行為。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="ea96be9e75d8d3d690aedae5040edf2f" category="section-title">關係</block>
+  <block id="6051810223d7d640e8104859ac825bf3" category="paragraph">非同步和同步關係均可建立所需的連線傳輸資料。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="8221f97d1274e16b57c726f05dfc3ea7" category="section-title">關係轉移</block>
+  <block id="c76837312025a879c77fbb723b7e215e" category="paragraph">您可以透過現有的SnapMirror關係來管理SnapMirror傳輸。此資源類型隨ONTAP 附於NetApp 9.6。</block>
+  <block id="1b18b55a054bdd1b04a8c8f5c862bc4f" category="doc">準備好使用工作流程</block>
+  <block id="cdbbcb4acb019584472990be1e68660f" category="paragraph">您應該先做好準備、再使用工作流程程序。</block>
+  <block id="4e9340308dca4d4fa10ce0a1c9d5c96a" category="section-title">瞭解工作流程中使用的API呼叫</block>
+  <block id="ee7a9ae73028cfda6ec52c2a5e7c84f0" category="paragraph">「支援API」線上文件頁面包含每次REST API呼叫的詳細資料。ONTAP工作流程範例中使用的每個API呼叫都只包含您在文件頁面上找到呼叫所需的資訊、而非在此重複這些詳細資料。找到特定API呼叫之後、您可以檢閱通話的完整詳細資料、包括輸入參數、輸出格式、HTTP狀態代碼及要求處理類型。</block>
+  <block id="457726be17407daf1c955d43ea661695" category="paragraph">工作流程中的每個API呼叫都包含下列資訊、可協助您在文件頁面上找到呼叫：</block>
+  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="list-text">類別</block>
+  <block id="765304ffcf8618a62227ccee634b1d12" category="paragraph">API呼叫會在文件頁面上組織成功能相關的區域或類別。若要尋找特定的API呼叫、請捲動至頁面底部、然後按一下適用的API類別。</block>
+  <block id="94e58690c162ba826800973567ad1063" category="paragraph">HTTP方法可識別在資源上執行的動作。每個API呼叫都是透過單一HTTP方法執行。</block>
+  <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">路徑</block>
+  <block id="0564266fb62d9d7133097f1bae879dde" category="paragraph">路徑會決定動作在執行通話時套用到的特定資源。路徑字串會附加至核心URL、以構成識別資源的完整URL。</block>
+  <block id="3af7790bee98254ae139d4927f1bb354" category="section-title">建構URL以直接存取REST API</block>
+  <block id="cb9e0022deebe15c9fcf226449b0ffca" category="paragraph">除了「介紹」文件頁面之外、您也可以直接透過編程語言（例如Python）存取「介紹」API。ONTAP ONTAP在此情況下、核心URL與存取線上文件頁面時所使用的URL略有不同。直接存取API時、您必須將「/API」附加至網域和連接埠字串。例如：「https://ontap.mycompany.com/api`</block>
+  <block id="87d9604d2178e58e4d22b66dc74675f2" category="list-text"><block ref="87d9604d2178e58e4d22b66dc74675f2" category="inline-link-macro-rx"></block></block>
+  <block id="b04c0c0415c8329423a4dc5d04335c63" category="list-text"><block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block></block>
+  <block id="efa1dd0050ca05b6c44b7b778e28c93b" category="doc">工作流程1：更新叢集聯絡人並檢查工作狀態</block>
+  <block id="7de269085c4e23e4ff26c31b7122144d" category="paragraph">此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷背景工作是否成功完成。</block>
+  <block id="530cddf0f41aa70491fa5a19e26768cb" category="section-title">1.更新叢集的聯絡資訊</block>
+  <block id="4a79b9839f0a471eb4a2d3d7f2bf76f9" category="paragraph">您可以發出API呼叫來更新聯絡資訊。由於要求以非同步方式執行、因此您必須確認相關工作是否成功。</block>
+  <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/叢集</block>
+  <block id="288aae25bc408055f50c21c991903a44" category="paragraph">非同步</block>
+  <block id="66b29b9f2bdc949a7545046fbe59fcef" category="listing-title">捲髮</block>
+  <block id="8f2622c34a0d14fa4c9c3a13011b9b6c" category="paragraph">傳回具有相關識別碼的工作物件。</block>
+  <block id="6f5089fd2df9f1fabec1177bfdc6290f" category="section-title">2.擷取工作狀態</block>
+  <block id="82437d3826cc31eff7495baa268e454c" category="paragraph">您必須擷取工作狀態、以判斷非同步要求是否已成功完成。</block>
+  <block id="98dbba5c9ef16c64ae0471156940f706" category="cell">/cluster / jobs/｛uuid｝</block>
+  <block id="2fe4167817733fec8e6ba1afddf78f1b" category="paragraph">同步</block>
+  <block id="50ccf1eac00654a4ac10e12d843b2025" category="paragraph">會傳回具有狀態和其他欄位的工作物件。</block>
+  <block id="1517c8d2b9873d41e7190a1ac6ff93cc" category="summary">使用REST API管理EMS組態。</block>
+  <block id="5b4f03d6bb02bf1a4943d2fd721bca50" category="doc">利用REST API管理EMS事件通知ONTAP</block>
+  <block id="7ae7146ab14a911070a9b67bb88d3193" category="paragraph">您可以使用ONTAP Sesrest API來設定事件管理系統（EMS）事件通知傳送給您的重要性、以及擷取具有特定屬性的所有EMS訊息或特定訊息。您可以使用REST API來協助自動化與EMS相關的工作、節省使用其他EMS訊息方法的時間。</block>
+  <block id="1099d399c75060b79e3ad383bf9aaaca" category="inline-link">Python指令碼</block>
+  <block id="619a84d9c14dd4e8431c29139707919c" category="paragraph">以下範例說明如何使用ONTAP Resrest API來處理EMS訊息。在每個範例中、請務必在方括弧&lt;&gt;中指定資訊的值。您也可以參考範例<block ref="93282e4588c19699b4435477b6d0187b" category="inline-link-rx"></block> 這說明如何將許多與EMS相關的活動自動化。</block>
+  <block id="c25e3541a8e8d23fbd7bc417366e087a" category="section-title">檢視特定事件記錄</block>
+  <block id="53d5e5ab3f1018d37b93775c447bf8c5" category="paragraph">使用「Get /support/ES/events」API呼叫、您可以擷取特定事件訊息、例如最新訊息、包含特定文字的訊息、或是具有特定嚴重性的訊息。</block>
+  <block id="f615b69d52993b779bce7b1c6728c21d" category="listing-title">申請範例：擷取最新訊息</block>
+  <block id="8b395980037bcca82c69c1da89a28918" category="listing-title">回應範例</block>
+  <block id="ce82b9076790e11cac5d1aa3bcd41aa5" category="listing-title">申請範例：擷取內含特定文字和嚴重性的訊息</block>
+  <block id="0cc4ccc760bba90b3392a98e6a6ec9e5" category="section-title">檢視現有的EMS組態</block>
+  <block id="11bd634909ab0002d27896579c235553" category="paragraph">使用「Get /support/ES/」API呼叫、您可以擷取現有EMS通知組態的相關資訊。</block>
+  <block id="6f76c699e041eacfac4485d0f16323e1" category="listing-title">申請範例</block>
+  <block id="5415ddffb113099234fe3c0d76f7749a" category="section-title">建立新的EMS通知組態</block>
+  <block id="9bf42ad17c089dd9891c431d5a1c5c2f" category="paragraph">您可以同時使用數個API呼叫來建立新的EMS組態、以自訂接收訊息的方式和時間。</block>
+  <block id="2b24417cd71c7c073f9c43c6702b281e" category="list-text">設定全系統的電子郵件設定。例如：</block>
+  <block id="d6a7eb66a65f3937689937ed206de56a" category="list-text">定義使用特定規則來符合特定訊息的篩選條件。例如：</block>
+  <block id="4d3eb0a7fcad51868e2c47187c83128f" category="list-text">建立訊息的目的地。例如：</block>
+  <block id="411009bbd509e2b00a1f4543b3c1ca74" category="section-title">不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP</block>
+  <block id="304905cae974c3b05217421398eee9f1" category="paragraph">利用此功能、您可以使用比支援許多工作的CLI更少的命令來自動化工作流程。ONTAP ONTAP例如、您可以使用單一POST API方法來建立篩選器、而非使用多個CLI命令。下表顯示完成一般EMS工作所需的CLI命令、以及對應的REST API呼叫：</block>
+  <block id="de134183bea5df515a6756a539ce6f18" category="cell">CLI ONTAP</block>
+  <block id="2368af484e43b6e0fc7814eb71cba236" category="cell">《Get /support/EMS》（取得/支援/EMS）</block>
+  <block id="8b64f73d0c930b953467d71771168fcb" category="cell">「事件組態顯示」</block>
+  <block id="9f14a0e7f948d7c4687191b2963b4b88" category="cell">"POST /support/ES/DESTINS/DESTINATION"</block>
+  <block id="2130e4445c18121e61a0496381717d89" category="list-text">事件通知目的地建立</block>
+  <block id="b0f540062794ffac7297b2f00a005457" category="list-text">建立活動通知</block>
+  <block id="67263db3668d1ed303c86b613bbb802c" category="cell">《Get /support/ES/events》（取得/支援/緊急醫療服務/活動</block>
+  <block id="3eb95dd087771082d8d97c1dfe80b359" category="cell">「事件記錄顯示」</block>
+  <block id="7f1ea7967a4a624ec172c4dbad038d5a" category="cell">"POST /support/ES/filer"</block>
+  <block id="9b8f1b89d54261f317c44e8ccd1c91cd" category="list-text">「事件篩選器create -filter名稱&lt;Filter name&gt;」</block>
+  <block id="42d9b7d3455dfaa83fb3e81bad6cce7c" category="list-text">「事件篩選規則add -filter名稱&lt;Filter name&gt;」</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
+  <block id="3b580ecb7e3414e24089f175032dabf3" category="inline-link">靜態API EMS Python指令碼範例ONTAP</block>
+  <block id="acfce8bc71a552130aa0ccb8784fe895" category="list-text"><block ref="acfce8bc71a552130aa0ccb8784fe895" category="inline-link-rx"></block></block>
+  <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">REST API：自動通知高嚴重性事件ONTAP</block>
+  <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
+  <block id="c8d653c789443dfa6dd7b54e86148f7c" category="summary">使用ONTAP REST API管理DACL和SACL檔案權限。</block>
+  <block id="c50ee9e545662286884e42e140649f09" category="doc">利用REST API管理DACL和SACL檔案權限ONTAP</block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">請按這裡</block>
+  <block id="7d455208ee42ecd7867fb39b027bcf1c" category="paragraph">使用系統存取控制清單（SACL）和自由存取控制清單（DACL）來指派檔案物件的權限。ONTAP從靜止9.9.1開始ONTAP 、ONTAP 包含端點、可指派SACL和DACL權限給檔案、並自動化檔案安全權限。（您可以深入瞭ONTAP 解在執行版本號之前、將SACL和DACL權限自動化的選項<block ref="9cac8aefabbfb93ff43b7791e34383b9" category="inline-link-rx"></block>）。</block>
+  <block id="bf2066acabfd343a809da20949dc54e0" category="paragraph">從ONTAP 靜止9.9.1開始、您可以使用單一REST API呼叫來取代多個CLI命令或ONTAPI呼叫。下列範例說明如何使用ONTAP R靜止API來處理檔案權限。在每個範例中、請務必在方括弧&lt;&gt;中指定資訊的值。</block>
+  <block id="52c2a6d4c018d7d1bf8a8eb602e46e7e" category="paragraph">您也可以參考範例<block ref="0177ee26baf5ba4c15becf2582f3ab08" category="inline-link-rx"></block> 這說明如何將許多SACL和DACL相關活動自動化。</block>
+  <block id="19f7b4a4dbcb6361568e48dfa0435a6c" category="section-title">檢視有效權限</block>
+  <block id="428084c0000a04b8e91d28436016ef1a" category="paragraph">使用「Get /傳輸 協定/file-Security /有效權限/」API呼叫、您可以擷取特定檔案或目錄的目前權限。</block>
+  <block id="20090a7c19d3f16ea7ce066b8b9f031e" category="listing-title">申請範例：</block>
+  <block id="ebc2d9d98f6a4f7b344429c8411e0dab" category="section-title">檢視所有稽核資訊</block>
+  <block id="d2a0c57c327ad35c037b4e63fc912893" category="paragraph">使用「Get /傳輸 協定/file-Security /permissions/」API呼叫、您可以擷取特定檔案或目錄的所有稽核資訊。</block>
+  <block id="62119ab02b7f5c5c6d8698c4ec962f3e" category="section-title">套用新權限</block>
+  <block id="d56a84695518a1643241bb70bcfd22dc" category="paragraph">您可以使用「POST /傳輸 協定/file-Security /權限/」API呼叫、將新的安全性描述元套用至檔案或目錄。</block>
+  <block id="7d986aa6827f53816cefdf1f0049c38b" category="section-title">更新安全性描述元資訊</block>
+  <block id="0b22253d9f6241bf0350ec66f24bfa31" category="paragraph">您可以使用「修補程式/傳輸協定/檔案安全性/權限/」API呼叫來更新檔案或目錄的特定安全性描述元資訊、例如主要擁有者、群組或控制旗標。</block>
+  <block id="50c9441280e27d3ff54a612e499e063b" category="section-title">刪除現有的SACL/DACL存取控制項目（ACE）</block>
+  <block id="d33bccaf67eae3c8f65c012f20973eba" category="paragraph">您可以使用「刪除/medias/file-security/permissions/」API呼叫、從目錄的檔案中刪除現有的ACE。此範例會將變更傳播至任何子物件。</block>
+  <block id="931f6691d15d77b0e0fe9fc70de2b615" category="paragraph">利用此功能、您可以使用比支援許多工作的CLI更少的命令來自動化工作流程。ONTAP ONTAP例如、您可以使用單一POST API方法來修改檔案的安全性描述元、而非使用多個CLI命令。下表顯示完成一般檔案系統權限工作所需的CLI命令、以及對應的REST API呼叫：</block>
+  <block id="f778c6da6bf9a458b710a39182352949" category="cell">「Get /傳輸 協定/file-Security /有效權限/」</block>
+  <block id="5f7113a4943de281bc5047f65e391330" category="paragraph">「vserver安全性檔案目錄show-aive-permissions」</block>
+  <block id="f40f7b5338aed8818a9fcf853a0ee22a" category="cell">「POST /傳輸協定/檔案安全性/權限/」</block>
+  <block id="aa107cbea70d6c241798c9a9d00592e8" category="list-text">「vserver安全性檔案目錄NTFS建立」</block>
+  <block id="797ea0cd6b9101634027df062146beaa" category="list-text">「vserver安全檔案目錄NTFS DACL add」</block>
+  <block id="eed72d452a46e4df789597794672512f" category="list-text">「vserver安全檔案目錄NTFS SACL add」</block>
+  <block id="421a920288f4b435b433e11f31611cd4" category="list-text">「vserver安全性檔案目錄原則建立」</block>
+  <block id="04e4fcd87af1d9e6c37efc8fbec5165f" category="list-text">「vserver安全性檔案目錄原則工作新增」</block>
+  <block id="d608fe77c8f3415819d5f89e2f46e862" category="list-text">「適用Vserver安全檔案目錄」</block>
+  <block id="be1918482fc8de757bc6a0c9475602c7" category="cell">「修補程式/傳輸協定/檔案安全性/權限/」</block>
+  <block id="bc8edb1a4258ae50e5280eb11c7f6a5c" category="paragraph">「vserver安全性檔案目錄NTFS修改」</block>
+  <block id="94e1cc167c8b21e2dee8ae6449422dc8" category="cell">「刪除/傳輸協定/檔案安全性/權限/」</block>
+  <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text">「Vserver安全檔案目錄NTFS DACL移除」</block>
+  <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text">「Vserver安全檔案目錄NTFS SACL移除」</block>
+  <block id="be37d97521654067f502ca21542fc23e" category="inline-link">靜態API DACL/SACL權限範例Python指令碼ONTAP</block>
+  <block id="5085ad1bbb70dc377ddd4434496cf250" category="list-text"><block ref="5085ad1bbb70dc377ddd4434496cf250" category="inline-link-rx"></block></block>
+  <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">利用REST API簡化檔案安全權限的管理ONTAP</block>
+  <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
+  <block id="e27a275b9610ff6148df553179ccf77f" category="inline-link">搭配ONTAP 使用私有CLI passThrough搭配使用REST API（適用於ONTAP 版本9.9.1之前的版本）</block>
+  <block id="194ed1689d54a84f11e8266e9e92d197" category="list-text"><block ref="194ed1689d54a84f11e8266e9e92d197" category="inline-link-rx"></block></block>
+  <block id="b4cd15e8e24635e4a72a8cce25d314ca" category="sidebar">自動化文件ONTAP</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">版本資訊</block>
+  <block id="0c5518b5db3a9e2425db3b5de6d30634" category="sidebar">自動化選項ONTAP</block>
+  <block id="ec8bc6c5f8fe5dc6045b9edfffae614a" category="sidebar">準備使用REST API</block>
+  <block id="e78273b83daaaecb5744859fa531181b" category="sidebar">REST實作詳細資料</block>
+  <block id="015f8c34f52b6ef8a3361958660f5e88" category="sidebar">其他考量</block>
+  <block id="caea8340e2d186a540518d08602aa065" category="sidebar">自動化</block>
+  <block id="fa3072c5dcc3c24dc044383b1ee6e52d" category="sidebar">可與Ansible ONTAP</block>
+  <block id="1cad56f823354795cae3db2ac36569ec" category="sidebar">自動化部落格</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多資源</block>
+  <block id="16761f90ea92726a06e16dfb23549c0a" category="sidebar">NetApp DevNet</block>
+  <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">9文件ONTAP</block>
+  <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">文件ONTAP Select</block>
+  <block id="5f6e122585e52ed38be95d84c84f7806" category="sidebar">自動化技術</block>
+  <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">如何存取REST API</block>
+  <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">輸入變數</block>
+  <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">解讀API回應</block>
+  <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">使用工作物件進行非同步處理</block>
+  <block id="a9fc82c0b447e076647e2d844f9a70f3" category="sidebar">存取ONTAP CLI</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
+  <block id="466b9c64436468f52860809312c8a835" category="sidebar">瞭解自動化選項</block>
+  <block id="5201581c33f8ca3c8850ac4a788dbda3" category="sidebar">擷取叢集軟體版本</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">總覽</block>
+  <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">用於擷取叢集組態的指令碼</block>
+  <block id="e6b088db24ebe67ed0e9567d309387ec" category="sidebar">工作流程</block>
+  <block id="57bf92c591d867814abf9287e2781651" category="sidebar">工作流程1：更新叢集聯絡人並檢查狀態</block>
+  <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">使用ONTAP REST API管理功能</block>
+  <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS事件通知</block>
+  <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL和SACL權限</block>
+</blocks>

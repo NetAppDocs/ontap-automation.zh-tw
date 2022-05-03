@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: resources/name_services.html 
+keywords:  
+summary:  
+---
+= 名稱服務
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用這些API呼叫來管理ONTAP 支援的名稱服務。
+
+
+
+==== DDNS
+
+您可以顯示動態DNS（DDNS）資訊、並管理DDNS子系統。此資源類型是ONTAP 更新的功能、採用了更新的功能。
+
+
+
+==== DNS
+
+DNS支援ONTAP 將整個叢集整合到您的網路中。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 主機記錄
+
+這些端點可讓您顯示指定主機名稱的IP位址、以及IP位址的主機名稱。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
+
+
+
+==== LDAP
+
+LDAP伺服器可用來維護使用者資訊。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 本機主機
+
+您可以使用這些端點來顯示及管理主機名稱的本機對應。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
+
+
+
+==== 名稱對應
+
+名稱對應可讓您將身分識別從一個名稱網域對應到另一個名稱網域。例如、您可以將身分識別從CIFS對應至UNIX、Kerberos對應至UNIX、並將UNIX對應至CIFS。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NIS
+
+NIS伺服器可用來驗證使用者和用戶端工作站。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== UNIX使用者與群組
+
+本地UNIX使用者和群組已成為先前ONTAP 版本的一部分。不過、REST API現在已新增支援功能、可讓您顯示及管理使用者和群組。這些REST資源類型採用ONTAP 了9.9技術、ONTAP 並透過功能升級至功能強大的版本。

@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: rest/performance_metrics.html 
+keywords:  
+summary:  
+---
+= 儲存資源的效能指標
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+此功能可收集所選SVM儲存物件和傳輸協定的效能指標、並透過REST API回報此資訊。ONTAP您可以使用此資料來監控ONTAP 整個系統的效能。
+
+對於特定的儲存物件或傳輸協定、效能資料分為三類：
+
+* IOPS
+* 延遲
+* 處理量
+
+
+在每個類別中、您可以使用下列一種或多種資料類型：
+
+* 讀取（R）
+* 寫入（W）
+* 其他（O）
+* 總計（T）
+
+
+下表摘要說明ONTAP 透過「REST API」提供的效能資料、包括新增時的版本。如需詳細資訊、請參閱ONTAP 您的系統資訊的REST API線上文件頁面。
+
+|===
+| 儲存物件或傳輸協定 | IOPS | 延遲 | 處理量 | 發行版ONTAP 
+
+
+| 乙太網路連接埠 | 不適用 | 不適用 | RWT | 9.8 
+
+
+| FC連接埠 | RWOT | RWOT | RWT | 9.8 
+
+
+| IP介面 | 不適用 | 不適用 | RWT | 9.8 
+
+
+| FC介面 | RWOT | RWOT | RWT | 9.8 
+
+
+| NVMe命名空間 | RWOT | RWOT | RWOT | 9.8 
+
+
+| qtree統計資料 | 原始RWOT | 不適用 | 原始RWOT | 9.8 
+
+
+| Volume FlexCache | RWOT | RWOT | RWT | 9.8 
+
+
+| 節點–程序使用率 | 以數值形式處理使用率 | 以數值形式處理使用率 | 以數值形式處理使用率 | 9.8 
+
+
+| 雲端磁碟區 | RWOT | RWOT | 無法應用 | 9.7 
+
+
+| LUN | RWOT | RWOT | RWOT | 9.7 
+
+
+| Aggregate | RWOT | RWOT | RWOT | 9.7 
+
+
+| SVM NFS傳輸協定 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM CIFS傳輸協定 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM FCP傳輸協定 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM iSCSI傳輸協定 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM NVMe傳輸協定 | RWOT | RWOT | RWT | 9.7 
+
+
+| 叢集 | RWOT | RWOT | RWOT | 9.6 
+
+
+| 磁碟區 | RWOT | RWOT | RWOT | 9.6 
+|===

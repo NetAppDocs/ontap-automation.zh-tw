@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_1_update_cluster_contact.html 
+keywords:  
+summary:  
+---
+= 工作流程1：更新叢集聯絡人並檢查工作狀態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷背景工作是否成功完成。
+
+
+
+===== 1.更新叢集的聯絡資訊
+
+您可以發出API呼叫來更新聯絡資訊。由於要求以非同步方式執行、因此您必須確認相關工作是否成功。
+
+|===
+| 類別 | HTTP方法 | 路徑 
+
+
+| 叢集 | 修補程式 | /叢集 
+|===
+非同步
+
+.捲髮
+[source, curl]
+----
+curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
+{
+  "contact": "support@company-demo.com"
+}
+----
+傳回具有相關識別碼的工作物件。
+
+[source, json]
+----
+{ "job": {
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+  }
+}
+----
+
+
+===== 2.擷取工作狀態
+
+您必須擷取工作狀態、以判斷非同步要求是否已成功完成。
+
+|===
+| 類別 | HTTP方法 | 路徑 
+
+
+| 叢集 | 取得 | /cluster / jobs/｛uuid｝ 
+|===
+同步
+
+.捲髮
+[source, curl]
+----
+curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
+----
+會傳回具有狀態和其他欄位的工作物件。
+
+[source, json]
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----

@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: rest/rest_api_versioning.html 
+keywords:  
+summary:  
+---
+= REST API版本管理ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+包含在更新版本編號中的REST API ONTAP 會指派ONTAP 一個版本編號、此編號與更新版本編號無關。您應該注意ONTAP 到發行版的版本包含API、以及這會如何影響您對API的使用。
+
+
+NOTE: 所有版本ONTAP 的更新版本均使用相同版本的REST API。
+
+從功能升級到功能升級到功能升級到功能升級ONTAP ONTAP:: 版本1
+
+
+.相關連結
+* link:../rn/whats_new.html["發行說明 ONTAP"]
+

@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: resources/snapmirror.html 
+keywords:  
+summary:  
+---
+= SnapMirror
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用這些API呼叫來管理SnapMirror資料保護技術。
+
+
+
+==== 原則
+
+SnapMirror原則會套用至關係、並控制每個關係的組態屬性和行為。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 關係
+
+非同步和同步關係均可建立所需的連線傳輸資料。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 關係轉移
+
+您可以透過現有的SnapMirror關係來管理SnapMirror傳輸。此資源類型隨ONTAP 附於NetApp 9.6。

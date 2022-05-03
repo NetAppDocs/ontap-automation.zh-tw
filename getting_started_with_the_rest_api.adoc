@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: getting_started_with_the_rest_api.html 
+keywords:  
+summary:  
+---
+= REST API入門
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以快速開始使用ONTAP 靜止API和其他自動化技術。在準備並瞭解基本的要求回應流程之後、您可以使用Curl來發出簡單的API呼叫。這項準備工作提供在即時系統上使用更複雜工作流程之前所需的簡介和觀點。

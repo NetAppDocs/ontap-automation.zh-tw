@@ -1,0 +1,38 @@
+---
+section: resources
+title: 剩餘資源摘要
+entries:
+- title: 總覽
+  url: "/resources/overview_categories.html"
+- title: 應用程式
+  url: "/resources/application.html"
+- title: 雲端
+  url: "/resources/cloud.html"
+- title: 叢集
+  url: "/resources/cluster.html"
+- title: 名稱服務
+  url: "/resources/name_services.html"
+- title: NAS
+  url: "/resources/nas.html"
+- title: NDMP
+  url: "/resources/ndmp.html"
+- title: 網路
+  url: "/resources/networking.html"
+- title: NVMe
+  url: "/resources/nvme.html"
+- title: 物件存放區
+  url: "/resources/object_store.html"
+- title: SAN
+  url: "/resources/san.html"
+- title: 安全性
+  url: "/resources/security.html"
+- title: SnapLock
+  url: "/resources/snaplock.html"
+- title: SnapMirror
+  url: "/resources/snapmirror.html"
+- title: 儲存設備
+  url: "/resources/storage.html"
+- title: 支援
+  url: "/resources/support.html"
+- title: SVM
+  url: "/resources/svm.html"

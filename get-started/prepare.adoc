@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: get-started/prepare.html 
+keywords:  
+summary:  
+---
+= 準備使用ONTAP R靜止API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該採取幾個步驟來準備使用ONTAP 靜態API。
+
+
+
+===== 體驗豐富的功能。ONTAP 9.
+
+您應該有ONTAP 使用此產品的經驗。這包括瞭解基本概念和術語、以及系統管理的一些經驗。請參閱 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-concepts/home.html["概念9 ONTAP"^] 開始使用。
+
+
+
+===== 檢視REST概念與實作
+
+請務必詳閱 link:../rest/rest_web_services_foundation.html["靜態API ONTAP"] 如需有關ONTAP REST概念的資訊、以及有關如何設計靜態API的詳細資訊、請參閱。
+
+
+
+===== 軟體開發背景
+
+對於軟體開發技術和程序有一些經驗是很有幫助的、包括一或多種程式設計語言、以及常見的公用程式、例如Curl。
+
+
+
+===== 取得更多資訊
+
+您應該瞭解中建議的其他資訊資源 link:../additional/get_more_information.html["取得更多資訊"]。

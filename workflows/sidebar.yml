@@ -1,0 +1,8 @@
+---
+section: workflows
+title: 工作流程
+entries:
+- title: 準備好使用工作流程
+  url: "/workflows/prepare_workflows.html"
+- title: 工作流程1：更新叢集聯絡人並檢查狀態
+  url: "/workflows/wf_1_update_cluster_contact.html"

@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: rest/access_rest_api.html 
+keywords:  
+summary:  
+---
+= 如何存取ONTAP NetApp的
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以ONTAP 使用多種不同的方法來存取靜態API。
+
+
+
+=== 網路考量
+
+您可以透過下列介面連線至REST API：
+
+* 叢集管理LIF
+* 節點管理 LIF
+* SVM管理LIF
+
+
+您選擇使用的LIF必須設定為支援HTTPS管理傳輸協定。此外、網路中的防火牆組態必須允許HTTPS流量。
+
+
+TIP: 您應該永遠使用叢集管理LIF。這會在所有節點之間平衡API要求負載、避免節點離線或發生連線問題。
+
+
+
+=== 介紹API線上文件頁面ONTAP
+
+使用網頁瀏覽器時、「支援API」線上文件頁面提供存取點。ONTAP除了提供直接執行個別API呼叫的方法、此頁面還包含API的詳細說明、包括每個呼叫的輸入參數和其他選項。API呼叫分為功能類別。請參閱 link:../resources/overview_categories.html["剩餘資源摘要"] 以取得更多資訊。
+
+用於存取API最新版本文件頁面的URL格式為：
+
+https://<cluster_mgmt_ip_address>/docs/api`
+
+
+
+=== 自訂軟體與工具
+
+您可以ONTAP 使用多種不同的程式設計語言和工具來存取VMware API。熱門選項包括Python、Java、Curl和PowerShell。使用API的程式、指令碼或工具會做為REST Web服務用戶端。使用程式設計語言可更深入瞭解API、並提供自動化ONTAP 的機會來進行支援。
+
+用於直接存取最新版API的基礎URL格式如下：
+
+https://<cluster_mgmt_ip_address>/api`
+
+若要存取支援多個版本的特定API版本、URL格式如下：
+
+https://<cluster_mgmt_ip_address>/api/v1`

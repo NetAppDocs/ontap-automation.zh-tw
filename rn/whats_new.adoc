@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: rn/whats_new.html 
+keywords:  
+summary:  
+---
+= 更新功能：利用靜止API與自動化技術ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。
+
+
+
+== 零點9.10.1 ONTAP
+
+而供應的功能也不斷擴大。ONTAP ONTAP我們新增了超過一百個新的端點、以支援ONTAP 全新的功能、以及對現有功能的增強功能。其餘API增強功能的摘要如下所示。
+
+應用程式一致性群組:: 一致性群組是一組磁碟區、在執行某些作業（例如快照）時、會將這些磁碟區群組在一起。此功能可在一組磁碟區中執行單一磁碟區作業、藉此延伸相同的損毀一致性和資料完整性。對於大型的多Volume工作負載應用程式而言、這項功能非常重要。
+SVM移轉:: 您可以將SVM從來源叢集移轉至目的地叢集。新的端點提供完整的控制、包括暫停、恢復、擷取狀態及中止移轉作業的功能。
+檔案複製與管理:: Volume層級的檔案複製與管理功能已增強。新的REST端點支援檔案移動、複製及分割作業。
+改善S3稽核:: 稽核S3事件是一項安全性改善、可讓您追蹤及記錄特定S3事件。S3稽核事件選取器可依每個SVM設定為每個儲存區。
+勒索軟體防禦:: 可偵測可能含有勒索軟體威脅的檔案。ONTAP您可以擷取這些可疑檔案的清單、並將其從磁碟區中移除。
+其他安全性增強功能:: 有幾項一般的安全性增強功能可擴充現有的傳輸協定並引進新功能。IPsec、金鑰管理、SSH組態和檔案權限等方面已有改善。
+CIFS網域和本機群組:: 叢集與SVM層級已新增CIFS網域支援。您可以擷取網域組態、以及建立和移除慣用的網域控制器。
+擴充Volume分析:: Volume分析和指標已透過其他端點進行擴充、以支援熱門檔案、目錄和使用者。
+支援增強功能:: 多項新功能增強了支援。自動更新ONTAP 功能可下載並套用最新的軟體更新、讓您的更新版不中斷。您也可以擷取及管理節點產生的記憶體核心傾印。
+
+
+
+
+== 部分9.9.1 ONTAP
+
+而供應器的功能也不斷擴充、ONTAP ONTAP有新的API端點可用於現有ONTAP 的功能、包括SAN連接埠集和Vserver檔案目錄安全性。此外、我們也新增了端點、以支援ONTAP 全新的功能與增強功能。相關文件也有所改善。以下為增強功能的摘要。
+
+將ONTAPI對應至ONTAP Rest 9 API:: 為了協助您將ONTAP 自己的自動化程式碼轉換為REST API、NetApp提供API對應文件。此參考包含每個的ONTAPI呼叫清單和REST API等效值。地圖文件已更新、加入全新ONTAP 的《更新版》、以涵蓋全新的《更新版》、《更新版》。請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895["用於REST API對應的ONTAPI"^] 以取得更多資訊。
+API端點提供ONTAP 全新的功能、以利更新的功能:: REST API已新增對ONTAP 無法透過ONTAPI API取得的全新功能的支援功能。這包括支援巢狀igroup和Google Cloud Key Management Services。
+改善從ONTAPI移轉至REST的支援:: 更多舊版ONTAPI呼叫現在具有對應的REST API等效項目。這包括本機Unix使用者和群組、不需用戶端、SAN連接埠集和磁碟區空間屬性、即可管理NTFS檔案安全性。這些變更也包含在更新的ONTAPI中、以供REST對應文件使用。
+增強的線上文件:: 目前、《支援》線上文件參考頁面上的標籤會指出推出每個REST端點或參數時的發行版、包括採用《支援》更新版本的更新版本。ONTAP ONTAP ONTAP
+
+
+
+
+== 部分9.8 ONTAP
+
+由於資料豐富、因此可大幅擴充不景API的廣度和深度。ONTAP ONTAP其中包含多項新功能、可提升您自動化ONTAP 部署及管理功能的能力。此外、支援也已改善、可協助從舊版ONTAPI移轉至REST。
+
+將ONTAPI對應至ONTAP Rest 9 API:: 為了協助您更新ONTAPI自動化、NetApp提供一組需要一或多個輸入參數的ONTAPI呼叫清單、以及將這些呼叫對應到等效ONTAP 的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效指令API呼叫。請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886["用於REST API對應的ONTAPI"^] 以取得更多資訊。
+API端點提供ONTAP 全新的功能、以利實現全新的功能:: REST API已新增對ONTAP 新核心的支援、無法透過ONTAPI取得這些功能。這包括支援ONTAP REST API以支援SS3儲存區和服務、SnapMirror營運不中斷和檔案系統分析。
+擴充支援以增強安全性:: 透過支援多種服務與傳輸協定、包括Azure Key Vault、Google Cloud Key Management Services、IPSec及憑證簽署要求、安全性已獲得增強。
+提升簡易性的增強功能:: 利用REST API、提供更有效率且更現代化的工作流程。ONTAP例如、OneClick韌體更新現已可供多種不同類型的韌體使用。
+增強的線上文件:: 現在、「樣版」文件頁面上有標籤、指出推出的每個REST端點或參數的版本均為「樣版」、包括9.8版的新增標籤。ONTAP ONTAP
+改善從ONTAPI移轉至REST的支援:: 現在更多的舊版ONTAPI呼叫具有對應的REST API等效項目。此外、我們也提供文件來協助識別應使用哪個REST端點來取代現有的ONTAPI呼叫。
+擴充效能指標:: REST API的效能指標已經過擴充、包括數個新的儲存設備和網路物件。
+
+
+
+
+== 更新ONTAP
+
+藉由引進三種新的資源類別、每種資源類別都有多個REST端點、藉此延伸出R靜止API的功能範圍：ONTAP ONTAP
+
+* NDMP
+* 物件存放區
+* SnapLock
+
+
+此外、還在多個現有資源類別中引進一或多個新的REST端點：ONTAP
+
+* 叢集
+* NAS
+* 網路
+* NVMe
+* SAN
+* 安全性
+* 儲存設備
+* 支援
+
+
+
+
+== 部分9.6 ONTAP
+
+支援原創於支援的REST API、可大幅延伸至支援的32個部分。ONTAP ONTAP支援大部分的靜態組態和管理工作的不支援使用支援。ONTAP ONTAP
+
+REST API在ONTAP 32：9.6中包含下列關鍵領域及更多內容：
+
+* 叢集設定
+* 傳輸協定組態
+* 資源配置
+* 效能監控
+* 資料保護
+* 應用程式感知資料管理
+

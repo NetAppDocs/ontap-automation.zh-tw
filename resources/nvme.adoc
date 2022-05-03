@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: resources/nvme.html 
+keywords:  
+summary:  
+---
+= NVMe
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用這些API呼叫來管理支援非揮發性記憶體Express（NVMe）的資源。
+
+
+
+==== Fibre Channel登入
+
+Fibre Channel登入代表由登入ONTAP 到該功能的Fibre Channel啟動器所建立的連線。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NVMe介面
+
+NVMe介面是設定為支援NVMe over Fabrics（NVMe）傳輸協定的網路介面。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NVMe服務
+
+NVMe服務可定義SVM的NVMe控制器目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
+
+
+
+==== NVMe子系統控制器
+
+NVMe子系統控制器代表主機與儲存解決方案之間的動態連線。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NVMe子系統對應
+
+NVMe子系統對應是NVMe命名空間與NVMe子系統的關聯。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== NVMe子系統
+
+NVMe子系統可維護一組NVMe連線主機的組態狀態和命名空間存取控制。此資源類型隨ONTAP 附於NetApp 9.6。
+
+
+
+==== 命名空間
+
+NVMe命名空間是一組可定址邏輯區塊、顯示給使用NVMe over Fabrics傳輸協定連線至SVM的主機。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。

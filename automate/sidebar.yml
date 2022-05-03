@@ -1,0 +1,8 @@
+---
+section: automate
+title: 自動化技術
+entries:
+- title: 可與Ansible ONTAP
+  url: "/automate/ontap_ansible.html"
+- title: 自動化部落格
+  url: "/automate/blogs.html"
