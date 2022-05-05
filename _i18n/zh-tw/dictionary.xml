@@ -9,10 +9,8 @@
   <block id="85e5e87731b3318f19ef33e2fb42f8b4" category="paragraph">提供ONTAP 有關支援功能的文件（CLI命令除外）。</block>
   <block id="774a065cb3548cc61fb0ec3bc1494fbe" category="inline-link">供應說明文件中心 ONTAP</block>
   <block id="04b0bb6aae6dc41149097cc24034df97" category="list-text"><block ref="04b0bb6aae6dc41149097cc24034df97" category="inline-link-rx"></block></block>
-  <block id="874bbaff78a1a5929b6a69396bce843d" category="paragraph">提供ONTAP 有關支援功能的文件、以供參考。</block>
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">系統管理程式資源ONTAP ONTAP</block>
   <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
-  <block id="d36ee6fe6aa657c937857a18101e0782" category="paragraph">提供規劃、管理及支援ONTAP 功能所需的文件及其他實用連結。</block>
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">支援的開發人員資源ONTAP</block>
   <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">用於REST API對應資訊的ONTAPI</block>
   <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
@@ -876,7 +874,6 @@
   <block id="ae8f54c516c1e697ca7e99fc7d868bda" category="section-title">CIFS主目錄搜尋路徑</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">您可以在CIFS伺服器上建立SMB使用者的主目錄、而不需為每位使用者建立個別的SMB共用區。主目錄搜尋路徑是SVM根目錄的一組絕對路徑。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="396c3f48c117673117684dd56e4ea358" category="section-title">CIFS本機群組</block>
-  <block id="075f810b99d746a8b62911ab066db558" category="paragraph">CIFS伺服器可在決定共用、檔案和目錄存取權限時、使用本機群組進行授權。這種資源類型採用ONTAP 了引用的是包含9.9的功能、ONTAP 並以版本號9、10大幅擴充。</block>
   <block id="b4aed1589395fdc65c17587b27f7bb8c" category="section-title">CIFS服務</block>
   <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
   <block id="bc60013b8245b6824eb1f7867b61b741" category="section-title">CIFS工作階段</block>
@@ -944,7 +941,6 @@
   <block id="f5520ac447b7ce4cc60a84b00fe90b91" category="section-title">受監控的檔案</block>
   <block id="16750416870169f8a547b041c15fb9ca" category="paragraph">您可以指定特定檔案以進行其他監控。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">連接埠</block>
-  <block id="a7ed048576f99b28a7ac7d127a048121" category="paragraph">叢集的儲存連接埠。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="9ab8fc3354a61f6ad2350f17305fc866" category="section-title">QoS原則</block>
   <block id="8719f60286ad321c9136cdebcda6779b" category="paragraph">服務品質原則組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="807c87dbc2a84cfb9ed828623f9216ac" category="section-title">QoS工作負載</block>
@@ -1173,4 +1169,70 @@
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">使用ONTAP REST API管理功能</block>
   <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS事件通知</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL和SACL權限</block>
+  <block id="54614c33cd18b45a05af04b2ab151311" category="paragraph">提供ONTAP 有關支援功能的文件、以供參考。</block>
+  <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">包括規劃、管理及支援ONTAP 功能所需的文件和其他實用連結。</block>
+  <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">產品庫ONTAP</block>
+  <block id="c2d5813d8be4192f243cf259ee486461" category="list-text"><block ref="c2d5813d8be4192f243cf259ee486461" category="inline-link-rx"></block></block>
+  <block id="314c9b4dff5f24c292fa071348953ece" category="paragraph">存取先前ONTAP 版本的發行說明及其他文件。</block>
+  <block id="b59cced8914a5ae4b2997c54c8cfeb8d" category="section-title">零點9.11.1. ONTAP</block>
+  <block id="fed998214be47115214a92dcb94e441c" category="paragraph">藉由將近一百個新的API呼叫、即可繼續擴充《無線更新API》的功能。ONTAP ONTAP這些端點支援全新ONTAP 的功能、以及現有功能的增強功能。此版本著重於支援客戶從ONTAP 無法支援的API（Data ONTAP ONTAPI或ZAPI）移轉至R靜止API。</block>
+  <block id="d6e857e52e070e2d7dc74670d30f4681" category="list-text">精細RBAC</block>
+  <block id="abc796662cfaf549fac897b99e75df46" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或視需要建立新角色。每個角色都可以與一個或多個存取定義相關聯、每個定義都會識別命令或REST API呼叫、以及所需的存取層級。也可以使用新的存取權限、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。</block>
+  <block id="a3139937e50cf495467ef74d1e2841ff" category="list-text">效能計數器</block>
+  <block id="654266e542ab86fb9663ace26fddbb0a" category="list-text">先前ONTAP 發行的版本保留了系統運作特性的統計資訊。9.11.1版已增強此資訊、現在可透過REST API取得。系統管理員或自動化程序可以存取資料、以判斷系統效能。統計資訊由計數器管理子系統維護、以資料庫格式顯示、並使用表格和列。這項增強功能可ONTAP 讓靜態API更接近Data ONTAP 於使用靜態API（ONTAPI或ZAPI）。</block>
+  <block id="13a73a2c197166eea31c701558811cf4" category="list-text">Aggregate管理</block>
+  <block id="208620b0414871fca67f3c1e66a5d1f3" category="list-text">加強了對不經改良的儲存集合體的管理ONTAP 。您可以使用更新的REST端點、將Aggregate移至線上和離線狀態、以及管理備援磁碟機。</block>
+  <block id="2da073b1bbcf0d975fb958ca55de6a07" category="list-text">IP子網路功能</block>
+  <block id="5397339ae64eef12a3fbbe9af0ab8470" category="list-text">此功能已擴充為支援IP子網路。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。</block>
+  <block id="92b25ca356d0711c23fa00a11a838f16" category="list-text">多重系統管理員驗證</block>
+  <block id="e7d8af28980ef8f99ebba710f535c906" category="list-text">多重管理員驗證功能提供靈活的授權架構、可保護ONTAP 對各種指令或作業的存取。您可以定義用來識別受限命令的規則。當使用者要求存取特定命令時、可ONTAP 視情況由多位元管理員授予核准。</block>
+  <block id="4f254b5768d1e18364bedb0b2402d10a" category="list-text">SnapMirror增強功能</block>
+  <block id="5f3e5b310eaf255b1da217cd7d703fc7" category="list-text">SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP</block>
+  <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">名稱服務快取支援</block>
+  <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">支援快取功能的支援功能已增強了名稱服務、可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。</block>
+  <block id="6c0d25ee401578483c4dfffa365b9ea0" category="section-title">Fibre Channel Fabric</block>
+  <block id="392cdf2ebad4890343218b2779c17ff3" category="paragraph">您可以使用Fibre Channel（FC）Fabric REST API端點來擷取FC網路的相關資訊。這包括ONTAP 連接到整個叢集與FC架構、組成光纖的交換器、以及作用中區域的連線。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="0e7eec875e1f37460a721166947e4e8e" category="section-title">IP子網路</block>
+  <block id="5a09483804ff20be38e6c855da808ed2" category="paragraph">支援IP子網路的功能已經擴大。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="751e4e85711e2518633cee5b9da90a2f" category="paragraph">您可以存取特定SVM執行個體的其他效能指標資料。共有四份清單可供選擇、每份清單都提供ONTAP FlexVol 有關列舉和FlexGroup 列舉的資料。清單包括：</block>
+  <block id="0f558243fbf45f1cd840fff01957f57b" category="list-text">用戶端</block>
+  <block id="f60bce136c62f7ab3c73aa4f0d5fcae9" category="list-text">目錄</block>
+  <block id="91f3a2c0e4424c87689525da44c4db11" category="list-text">檔案</block>
+  <block id="bfff97f6c83321c8784e8850db2da12f" category="paragraph">這些資源類型均隨ONTAP 附於引用資料的功能。</block>
+  <block id="dd1cc17036adbbdb0074432af6a7a58b" category="section-title">SVM MetroCluster</block>
+  <block id="06a467722471a55dde81911330523907" category="paragraph">您可以擷取MetroCluster 有關整個SVM配對的資訊、以供參考。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="67e3defb688be7685ce637d90e158565" category="paragraph">先前ONTAP 發行的版本保留了系統運作特性的統計資訊。隨著9.11.1版本的推出、資訊已經過強化、現在可透過REST API取得。此功能可ONTAP 讓RureREST API更接近Data ONTAP 於使用該API（ONTAPI或ZAPI）的同位元。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="af29aa178ae43211319e28f627e96590" category="section-title">感測器</block>
+  <block id="a7eb63cda27c2652ccce4025d6971e7d" category="paragraph">您可以使用這些端點來擷取所有平台環境感測器的詳細資料。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="d870fba37d68752041265a286259efaf" category="section-title">應用程式記錄</block>
+  <block id="4b3884b394eaf8adab98582dbe5a979d" category="paragraph">獨立式應用程式AutoSupport 可發出POST要求、將EMS事件及選擇性產生的功能套件記錄在ONTAP 一個系統上。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="ab0cf104f39708eabd07b8cb67e149ba" category="section-title">快取</block>
+  <block id="9565a5f8023ba13977b682ff9926c605" category="paragraph">支援快取的支援服務可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可以透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="4c885663da9566f7ff78e30b5c49bd30" category="section-title">LDAP架構</block>
+  <block id="a56273e0ba8ea7b3936e2c23836bce15" category="paragraph">您可以建立、修改及列出ONTAP 由功能性開發所使用的LDAP架構。其中包含四種預設架構。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="146af53866e72090bed5ee8202fb16a6" category="section-title">netgroup檔案</block>
+  <block id="519958cfc29f20a2cea0438ac050e8bd" category="paragraph">您可以擷取netgroup檔案詳細資料、並刪除SVM的檔案。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="f2be2bb6f022a2ec208f7b9ce6a2c155" category="section-title">CIFS連線</block>
+  <block id="292b052ce2719671eb57c58f83562861" category="paragraph">您可以擷取已建立的CIFS連線清單。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="4d6ac2d984cc413aff1fe87f7e0fa660" category="paragraph">CIFS伺服器可在決定共用、檔案和目錄存取權限時、使用本機群組進行授權。這種資源類型採用ONTAP 了引用的是包含9.9的功能、ONTAP 並以版本號9、10大幅擴充。</block>
+  <block id="494abb7dd5b763270d790ff3ee48084d" category="section-title">CIFS NetBios</block>
+  <block id="c775568e4d8c67f72b663a73cb197aba" category="paragraph">您可以顯示叢集的NetBios連線相關資訊。詳細資料包括IP位址和已登錄的NetBios名稱。此資訊可協助您疑難排解名稱解析問題。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="ef5c06085d29fcbcb6138c9c185bda09" category="section-title">CIFS工作階段檔案</block>
+  <block id="7c652b32ce4519406f03f09a9ce29110" category="paragraph">您可以根據多個篩選選項、擷取CIFS工作階段的開啟檔案清單。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="94a2d8f06ad95f4f574506a5f9b95aa7" category="section-title">CIFS陰影複製</block>
+  <block id="7adcc24f3e21384d34551c471bc32af6" category="paragraph">Microsoft遠端Volume陰影複製服務是現有Microsoft VSS功能的延伸。它延伸VSS功能、支援SMB共用的陰影複製。此功能現在可透過ONTAP 靜止API取得。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="6fd52b48358df3c671bb7b3860da8a55" category="section-title">CIFS使用者與群組大量匯入</block>
+  <block id="63f4ee6b7fd934fe707edb4b8c4d57dc" category="paragraph">您可以使用新的REST API端點來執行CIFS本機使用者、群組和群組成員資格資訊的大量匯入、以及監控要求的狀態。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="1deaf7cba2dce61080af964b90af69c6" category="section-title">NFS連線用戶端對應</block>
+  <block id="dd286c6ea02dd70eb8505c2eae2a0f20" category="paragraph">連線用戶端的NFS對應資訊可透過新的端點取得。您可以擷取有關節點、SVM和IP位址的詳細資料。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="88882495c6bab93dd3c2b495093552f5" category="section-title">檔案搬移</block>
+  <block id="372394bf9fc945311be3935c83ca5258" category="paragraph">您可以使用這些REST API端點、在兩FlexVol 個REST Volume之間或FlexGroup 在一個靜態Volume內移動檔案。接受申請後、您可以監控進度和狀態。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="283176e6feb211f8532b2c7c9263cd08" category="section-title">資源池</block>
+  <block id="d15846f45a1f4b49fe2803b2a7f9a82d" category="paragraph">您可以建立共用儲存資源池、並擷取叢集中的儲存資源池。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
+  <block id="e6349d14d4601aa8ecdd1040b495f453" category="paragraph">叢集的儲存連接埠。此資源類型採用ONTAP 了NetApp 9.6技術、ONTAP 並以NetApp 9.11.1技術強化。</block>
+  <block id="192e7108f5ecb3d6c9efb673e84c4942" category="paragraph">多重管理員驗證功能提供靈活的授權架構、可保護ONTAP 對各種指令或作業的存取。有17個新的端點支援定義、要求及核准下列領域的存取：</block>
+  <block id="1f4da964f8eab62e96e8cfe406e44364" category="list-text">規則</block>
+  <block id="b134a801a1a3888498968fc4ea760cf7" category="list-text">要求</block>
+  <block id="3d2e7e9224f83f4694b1be45b9e158ba" category="list-text">核准群組</block>
+  <block id="91c9a56d680aaaf645cf6a17c6a57626" category="paragraph">提供多位管理員核准存取的選項、可提升ONTAP 您的支援和IT環境的安全性。這些資源類型均隨ONTAP 附於引用資料的功能。</block>
 </blocks>
