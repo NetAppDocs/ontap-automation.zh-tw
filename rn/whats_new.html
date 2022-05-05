@@ -939,7 +939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 10:26:43 +0000">05/03/2022</time>
+    <time datetime="2022-05-05 12:23:33 +0000">05/05/2022</time>
     
   
 
@@ -950,6 +950,46 @@
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="零點9-11-1-ontap">零點9.11.1. ONTAP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>藉由將近一百個新的API呼叫、即可繼續擴充《無線更新API》的功能。ONTAP ONTAP這些端點支援全新ONTAP 的功能、以及現有功能的增強功能。此版本著重於支援客戶從ONTAP 無法支援的API（Data ONTAP ONTAPI或ZAPI）移轉至R靜止API。</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">精細RBAC</dt>
+<dd>
+<p>以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或視需要建立新角色。每個角色都可以與一個或多個存取定義相關聯、每個定義都會識別命令或REST API呼叫、以及所需的存取層級。也可以使用新的存取權限、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。</p>
+</dd>
+<dt class="hdlist1">效能計數器</dt>
+<dd>
+<p>先前ONTAP 發行的版本保留了系統運作特性的統計資訊。9.11.1版已增強此資訊、現在可透過REST API取得。系統管理員或自動化程序可以存取資料、以判斷系統效能。統計資訊由計數器管理子系統維護、以資料庫格式顯示、並使用表格和列。這項增強功能可ONTAP 讓靜態API更接近Data ONTAP 於使用靜態API（ONTAPI或ZAPI）。</p>
+</dd>
+<dt class="hdlist1">Aggregate管理</dt>
+<dd>
+<p>加強了對不經改良的儲存集合體的管理ONTAP 。您可以使用更新的REST端點、將Aggregate移至線上和離線狀態、以及管理備援磁碟機。</p>
+</dd>
+<dt class="hdlist1">IP子網路功能</dt>
+<dd>
+<p>此功能已擴充為支援IP子網路。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。</p>
+</dd>
+<dt class="hdlist1">多重系統管理員驗證</dt>
+<dd>
+<p>多重管理員驗證功能提供靈活的授權架構、可保護ONTAP 對各種指令或作業的存取。您可以定義用來識別受限命令的規則。當使用者要求存取特定命令時、可ONTAP 視情況由多位元管理員授予核准。</p>
+</dd>
+<dt class="hdlist1">SnapMirror增強功能</dt>
+<dd>
+<p>SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP</p>
+</dd>
+<dt class="hdlist1">名稱服務快取支援</dt>
+<dd>
+<p>支援快取功能的支援功能已增強了名稱服務、可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -1173,16 +1213,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
