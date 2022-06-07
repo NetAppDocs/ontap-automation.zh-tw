@@ -16,25 +16,13 @@ summary:
 [role="lead"]
 有幾篇部落格文章可協助您更深入瞭解ONTAP 各種技術和方法來實現自動化。
 
-
-
-===== ONTAPI至REST對應
-
 NetApp支援從專屬的ONTAPI（前身為Zehyr）API移轉至更健全的全新ONTAP REST API。
 
 https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["NetApp.IO/202/12/17/ontapi-rit-mapping"^]
 
-
-
-===== 將私有CLI密碼與ONTAP REST API搭配使用
-
 CLI passThrough提供一種使用ONTAP REST API執行Rest CLI命令的技術。
 
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["NetApp.IO/202/11/09/Private - CLI/pass-ONTAP-REST - API"^]
-
-
-
-===== NetApp與Ansible快速入門：安裝Ansible
 
 如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。
 

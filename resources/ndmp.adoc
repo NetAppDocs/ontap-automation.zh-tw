@@ -16,32 +16,12 @@ summary:
 [role="lead"]
 網路資料管理傳輸協定提供備份NAS裝置的標準。您可以使用這些API呼叫來管理NDMP服務。
 
-
-
-==== NDMP模式
-
 NDMP操作模式可以是SVM範圍或節點範圍。此資源類型隨ONTAP 附於NetApp 9.7。
-
-
-
-==== NDMP節點
 
 您可以管理節點的NDMP組態。此資源類型隨ONTAP 附於NetApp 9.7。
 
-
-
-==== NDMP工作階段
-
 您可以擷取及刪除特定SVM或節點的NDMP工作階段詳細資料。此資源類型隨ONTAP 附於NetApp 9.7。
 
-
-
-==== NDMP SVM
-
 您可以管理SVM的NDMP組態。此資源類型隨ONTAP 附於NetApp 9.7。
-
-
-
-==== NDMP SVM使用者密碼
 
 您可以在SVM內容中為特定NDMP使用者產生及擷取密碼。這種資源類型是ONTAP 以《不含資料的9.8 REST API」推出、ONTAP 並以《不含資料的升級版：

@@ -18,7 +18,7 @@ summary:
 
 
 
-=== 支援支援支援ONTAP
+== 支援支援支援ONTAP
 
 * https://docs.netapp.com/us-en/ontap/["供應說明文件ONTAP"^]
 +
@@ -40,7 +40,7 @@ summary:
 
 
 
-=== 支援的開發人員資源ONTAP
+== 支援的開發人員資源ONTAP
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^]
 +
@@ -62,7 +62,7 @@ NetApp Python用戶端程式庫的文件。
 
 
 
-=== 影片
+== 影片
 
 * https://www.youtube.com/watch?v=Wws3SB5d9Ss["NetApp ONTAP 方面的Python用戶端程式庫入門"^]
 +
@@ -72,7 +72,7 @@ NetApp Python用戶端程式庫簡介、以及如何開始使用程式庫撰寫�
 
 
 
-=== NetApp資源
+== NetApp資源
 
 * https://mysupport.netapp.com/["NetApp支援"^]
 +

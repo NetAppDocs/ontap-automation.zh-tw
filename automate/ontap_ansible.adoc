@@ -18,14 +18,14 @@ summary:
 
 
 
-=== 影片
+== 影片
 
-video::L5DZBV_Sg9E[youtube, width=848,height=480]
+video::L5DZBV_Sg9E[youtube,width=848,height=480]
 上述影片也可透過NetApp TV取得、網址為 link:https://tv.netapp.com/detail/video/6217195551001["Ansible認證模組"^]。
 
-video::ZlmQ5IuVZD8[youtube, width=848,height=480]
+video::ZlmQ5IuVZD8[youtube,width=848,height=480]
 
 
-=== 開發人員資源
+== 開發人員資源
 
 請參閱 link:https://www.netapp.com/devops-solutions/ansible/["NetApp Ansible DevOps解決方案"^] 以取得DevOps環境中Ansible入門指南的說明。

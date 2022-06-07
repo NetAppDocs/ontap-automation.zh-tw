@@ -21,7 +21,7 @@ summary:
 
 TIP: 對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、您也可以使用查詢參數上的屬性值來存取物件。
 
-.相關連結
+.相關資訊
 * link:../rest/object_references_and_access.html["其他休息考量"]
 * link:../reference/api_reference.html["API 參考"]
 * link:../rn/whats_new.html["發行說明 ONTAP"]

@@ -18,25 +18,25 @@ ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管�
 
 
 
-=== 一般設計差異
+== 一般設計差異
 
 此產品的設計與功能完全不同、ONTAPCLI命令和參數不會直接對應至REST API呼叫。即使可能有相似性、輸入參數的詳細資料也可能有所不同。例如、數字單位可能是以位元組為單位指定、或是使用字尾（例如KB）。您應該檢閱 link:input_variables.html["控制API要求的輸入變數"] 以及 link:../reference/api_reference.html["API 參考"] 以取得更多資訊。
 
 
 
-=== 透過REST API公開的資料SVM
+== 透過REST API公開的資料SVM
 
 支援多種儲存虛擬機器（SVM）ONTAP 。不過ONTAP 、只有資料SVM會透過REST API直接曝露在外。說明叢集和節點的組態資訊可透過REST API取得、但是叢集和節點不會視為個別的SVM。
 
 
 
-=== 從ONTAPI移轉至REST
+== 從ONTAPI移轉至REST
 
 REST API是自動化ONTAP 作業系統管理的主要策略選擇。如果您目前使用的是ONTAPI API、則應考慮移轉至REST API。NetApp提供對應文件、協助從ONTAPI移轉至REST。
 
 
 
-=== 在ONTAPI中對SnapDiff可用度所做的變更
+== 在ONTAPI中對SnapDiff可用度所做的變更
 
 從ONTAP 功能性版本的E59.10.1開始、SnapDiff v1和v2 ONTAPI呼叫將無法叫用。任何啟動SnapDiff v1或v2 ONTAPI呼叫的第三方應用程式、都無法從ONTAP 版本資訊的版本9.10.1開始運作。支援SnapDiff v3 REST的備份應用程式、使用者應先確認其是否支援、再升級至版本RE-9.10.1。ONTAP ONTAP
 
@@ -49,6 +49,7 @@ SnapDiff API在ONTAP 整個發行版中的可用度定義如下：
 
 如需詳細資訊、請參閱 link:../rn/whats_new.html["發行說明 ONTAP"]。
 
-link:../rest/input_variables.html["控制API要求的輸入變數"]
+.相關資訊
+* link:../rest/input_variables.html["控制API要求的輸入變數"]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^]
