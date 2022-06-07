@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/interpret_api_response.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/interpret_api_response.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/interpret_api_response.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/interpret_api_response.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/interpret_api_response.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/index.html">
         自動化文件ONTAP
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 10:26:43 +0000">05/03/2022</time>
+    <time datetime="2022-06-07 16:06:36 +0000">06/07/2022</time>
     
   
 
@@ -953,8 +945,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="http狀態代碼">HTTP狀態代碼</h3>
+<div class="sect1">
+<h2 id="http狀態代碼">HTTP狀態代碼</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>以下說明了由靜止API使用的HTTP狀態代碼ONTAP 。</p>
 </div>
@@ -1025,8 +1018,10 @@
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="回應標頭">回應標頭</h3>
+</div>
+<div class="sect1">
+<h2 id="回應標頭">回應標頭</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>許多標頭都包含在ONTAP 由該功能產生的HTTP回應中。</p>
 </div>
@@ -1043,8 +1038,10 @@
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="回應本文">回應本文</h3>
+</div>
+<div class="sect1">
+<h2 id="回應本文">回應本文</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>API要求所產生的回應本文內容、會因物件、處理類型、以及要求的成功或失敗而有所不同。回應一律以Json呈現。</p>
 </div>
@@ -1083,14 +1080,18 @@
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="hal連結">HAL連結</h3>
+</div>
+<div class="sect1">
+<h2 id="hal連結">HAL連結</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>支援HyperMedia做為應用程式狀態引擎（HATEOAS）的機制是使用HAL。ONTAP當傳回識別特定資源的物件或屬性時、也會隨附一個由Hal-encoded編碼的連結、讓您輕鬆找到並判斷有關資源的其他詳細資料。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="錯誤">錯誤</h3>
+</div>
+<div class="sect1">
+<h2 id="錯誤">錯誤</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>如果發生錯誤、回應本文會傳回錯誤物件。</p>
 </div>
@@ -1171,6 +1172,7 @@
 </div>
 </dd>
 </dl>
+</div>
 </div>
 </div>
 
@@ -1319,4 +1321,5 @@
     </script>
     <script src='/zh-tw/ontap-automation/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-automation/js/sidebar.js'></script>
   </body></html>

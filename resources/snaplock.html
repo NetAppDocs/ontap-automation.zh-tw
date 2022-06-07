@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/snaplock.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/snaplock.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/snaplock.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/snaplock.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/snaplock.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/snaplock.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/snaplock.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/snaplock.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/snaplock.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/snaplock.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/index.html">
         自動化文件ONTAP
       </a></li><li class="subfolders "><a href="#">
@@ -939,40 +931,25 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 10:26:43 +0000">05/03/2022</time>
+    <time datetime="2022-06-07 16:06:36 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>以儲存為基礎的傳統WORM（一次寫入、多次讀取）光學解決方案實作、可長期保留資料。SnapLock您可以使用這些API呼叫來管理SnapLock 功能。</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="記錄">記錄</h4>
 <div class="paragraph">
 <p>此功能是根據特定磁碟區上包含記錄的目錄和檔案來建立。SnapLock記錄檔會根據最大記錄檔大小來填入和歸檔。此資源類型隨ONTAP 附於NetApp 9.7。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="法規遵循時鐘">法規遵循時鐘</h4>
 <div class="paragraph">
 <p>法規遵循時鐘決定SnapLock 了物件的到期時間。時鐘必須在REST API之外初始化、且無法變更。此資源類型隨ONTAP 附於NetApp 9.7。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="事件保留">事件保留</h4>
 <div class="paragraph">
 <p>您可以使用SnapLock 「以事件為基礎的保留」（EBR）功能、定義事件發生後檔案保留的時間。此資源類型隨ONTAP 附於NetApp 9.7。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="檔案保留與權限刪除">檔案保留與權限刪除</h4>
 <div class="paragraph">
 <p>您可以管理SnapLock 由現象所建立檔案的保留時間。如有需要、您也可以刪除SnapLock 在企業版上未過期的WORM檔案。此資源類型隨ONTAP 附於NetApp 9.7。</p>
 </div>
@@ -988,18 +965,11 @@
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="檔案指紋">檔案指紋</h4>
 <div class="paragraph">
 <p>您可以檢視及管理描述檔案和磁碟區的核心資訊、例如類型和到期日。此資源類型隨ONTAP 附於NetApp 9.7。</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="合法持有">合法持有</h4>
 <div class="paragraph">
 <p>您可以使用這些API呼叫來管理訴訟程序中的檔案。此資源類型隨ONTAP 附於NetApp 9.7。</p>
-</div>
 </div>
 
     </article>
@@ -1147,4 +1117,5 @@
     </script>
     <script src='/zh-tw/ontap-automation/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-automation/js/sidebar.js'></script>
   </body></html>

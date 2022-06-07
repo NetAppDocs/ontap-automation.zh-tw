@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/access_rest_api.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/access_rest_api.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/index.html">
         自動化文件ONTAP
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 10:26:43 +0000">05/03/2022</time>
+    <time datetime="2022-06-07 16:06:36 +0000">06/07/2022</time>
     
   
 
@@ -953,8 +945,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="網路考量">網路考量</h3>
+<div class="sect1">
+<h2 id="網路考量">網路考量</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>您可以透過下列介面連線至REST API：</p>
 </div>
@@ -987,8 +980,10 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="介紹api線上文件頁面ontap">介紹API線上文件頁面ONTAP</h3>
+</div>
+<div class="sect1">
+<h2 id="介紹api線上文件頁面ontap">介紹API線上文件頁面ONTAP</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用網頁瀏覽器時、「支援API」線上文件頁面提供存取點。ONTAP除了提供直接執行個別API呼叫的方法、此頁面還包含API的詳細說明、包括每個呼叫的輸入參數和其他選項。API呼叫分為功能類別。請參閱 <a href="../resources/overview_categories.html">"剩餘資源摘要"</a> 以取得更多資訊。</p>
 </div>
@@ -999,8 +994,10 @@
 <p><a href="https://&lt;cluster_mgmt_ip_address&gt;/docs/api`" class="bare">https://&lt;cluster_mgmt_ip_address&gt;/docs/api`</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="自訂軟體與工具">自訂軟體與工具</h3>
+</div>
+<div class="sect1">
+<h2 id="自訂軟體與工具">自訂軟體與工具</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>您可以ONTAP 使用多種不同的程式設計語言和工具來存取VMware API。熱門選項包括Python、Java、Curl和PowerShell。使用API的程式、指令碼或工具會做為REST Web服務用戶端。使用程式設計語言可更深入瞭解API、並提供自動化ONTAP 的機會來進行支援。</p>
 </div>
@@ -1015,6 +1012,7 @@
 </div>
 <div class="paragraph">
 <p><a href="https://&lt;cluster_mgmt_ip_address&gt;/api/v1`" class="bare">https://&lt;cluster_mgmt_ip_address&gt;/api/v1`</a></p>
+</div>
 </div>
 </div>
 
@@ -1163,4 +1161,5 @@
     </script>
     <script src='/zh-tw/ontap-automation/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-automation/js/sidebar.js'></script>
   </body></html>

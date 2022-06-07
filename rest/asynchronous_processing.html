@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/asynchronous_processing.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/asynchronous_processing.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/asynchronous_processing.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/asynchronous_processing.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/asynchronous_processing.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/asynchronous_processing.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/asynchronous_processing.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/asynchronous_processing.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/asynchronous_processing.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/asynchronous_processing.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/index.html">
         自動化文件ONTAP
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 10:26:43 +0000">05/03/2022</time>
+    <time datetime="2022-06-07 16:06:36 +0000">06/07/2022</time>
     
   
 
@@ -956,8 +948,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="控制處理要求的方式">控制處理要求的方式</h3>
+<div class="sect1">
+<h2 id="控制處理要求的方式">控制處理要求的方式</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>您可以使用「RETON_Timeout」查詢參數來控制處理非同步API呼叫的方式。使用此參數有兩種可能的結果。</p>
 </div>
@@ -990,8 +983,10 @@
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="查詢與api要求相關聯的工作物件">查詢與API要求相關聯的工作物件</h3>
+</div>
+<div class="sect1">
+<h2 id="查詢與api要求相關聯的工作物件">查詢與API要求相關聯的工作物件</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>HTTP回應中傳回的工作物件包含數個內容。您可以在後續的API呼叫中查詢狀態內容、以判斷要求是否成功完成。工作物件永遠處於下列其中一種狀態：</p>
 </div>
@@ -1037,8 +1032,10 @@
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="發出非同步要求的一般程序">發出非同步要求的一般程序</h3>
+</div>
+<div class="sect1">
+<h2 id="發出非同步要求的一般程序">發出非同步要求的一般程序</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>您可以使用下列高階程序來完成非同步API呼叫。此範例假設不使用「recnute_timeout」參數、或是背景工作完成之前的時間過期。</p>
 </div>
@@ -1071,8 +1068,14 @@
 </li>
 </ol>
 </div>
-<div class="paragraph">
+<div class="ulist">
+<div class="title">相關資訊</div>
+<ul>
+<li>
 <p><a href="../workflows/wf_1_update_cluster_contact.html">"工作流程1：更新叢集聯絡人並檢查工作狀態"</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -1221,4 +1224,5 @@
     </script>
     <script src='/zh-tw/ontap-automation/js/www-ntap.js'></script>
     <script src='/zh-tw/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/ontap-automation/js/sidebar.js'></script>
   </body></html>
