@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: migrate/overview.html 
+keywords:  
+summary:  
+---
+= 總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp首先推出ONTAP REST API搭配NetApp 9.6。自此之後、API持續擴充成熟。現在、當您自動化ONTAP 管理您的支援部署時、它是較早的ONTAPI API API的首選策略替代方案。
+
+如果您使用的是ONTAPI、建議您開始移轉至ONTAP VMware API。本節將說明可用的資源、並重點說明支援移轉的實用功能和工具。
