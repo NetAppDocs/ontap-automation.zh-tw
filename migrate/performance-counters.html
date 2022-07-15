@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
   <head class="at-element-marker">
-  <title>雲端</title>
+  <title>效能計數器</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="雲端" />
+  <meta property="og:title" content="效能計數器" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-tw/ontap-automation/resources/cloud.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/ontap-automation/migrate/performance-counters.html" />
+	<meta property="og:description" content="從ONTAPI移轉至ONTAP 靜態API、即可存取ONTAP VMware效能計數器。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-tw/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="從ONTAPI移轉至ONTAP 靜態API、即可存取ONTAP VMware效能計數器。">
   <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/zh-tw/ontap-automation/images/favicon.ico" type="image/x-icon">
 
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[雲端](https://docs.netapp.com/zh-tw/ontap-automation/resources/cloud.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-automation/images/discuss-sm.svg" alt="" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/resources/cloud.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-automation/images/edit-sm.svg" alt="" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-automation/images/article-sm.svg" alt="" class="github-icon" />瞭解如何作出貢獻</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[效能計數器](https://docs.netapp.com/zh-tw/ontap-automation/migrate/performance-counters.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-automation/images/discuss-sm.svg" alt="" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/migrate/performance-counters.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/ontap-automation/images/edit-sm.svg" alt="" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/ontap-automation/images/article-sm.svg" alt="" class="github-icon" />瞭解如何作出貢獻</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此頁面上</div>
@@ -290,15 +290,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/cloud.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/cloud.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/cloud.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/cloud.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/cloud.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/migrate/performance-counters.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -520,8 +520,6 @@
 
 
 
-    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
-  
 
 
 
@@ -698,6 +696,8 @@
 
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -809,7 +809,7 @@
         總覽
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/application.html">
         應用程式
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/cloud.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/cloud.html">
         雲端
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/resources/cluster.html">
         叢集
@@ -878,7 +878,7 @@
         總覽
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/migrate/mapping.html">
         ONTAPI至REST對應
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/migrate/performance-counters.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/migrate/performance-counters.html">
         效能計數器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/ontap-automation/migrate/blogs.html">
         部落格
@@ -940,25 +940,357 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">雲端</h1>
+  <h1 class="n-doc__component-detail-heading">效能計數器</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-06-07 16:06:36 +0000">06/07/2022</time>
+    <time datetime="2022-07-15 22:33:39 +0000">07/15/2022</time>
     
   
 
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>您可以使用這些API呼叫來管理雲端中物件儲存資源的連線。</p>
+<p>利用此功能、支援VMware的使用者存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP</p>
 </div>
 <div class="paragraph">
-<p>目標代表雲端中的物件儲存資源。每個目標都包含連線至儲存資源所需的組態資訊。此資源類型隨ONTAP 附於NetApp 9.6。</p>
+<p>在使用版本《軟件》9.11.1之前ONTAP 、只ONTAP 能存取ONTAP 完整的一組《軟件分析管理器》物件、只能存取到CLI和ONTAPI介面。</p>
+</div>
+<div class="paragraph">
+<p>從使用者版本的《銷售資料》9.11.1開始ONTAP 、ONTAP 使用ONTAP 者可以透過《銷售資料》API來存取Counter Manager物件區段。使用者將自動化指令碼從ONTAPI移轉至ONTAP R靜止API時、必須瞭解效能計數器資料呈現給ONTAPI的方式、以及該資料呈現給REST API的方式之間的差異。</p>
+</div>
+<div class="paragraph">
+<p>請參閱 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449" target="_blank" rel="noopener">"NetApp Manager對應ONTAP"</a> 如需ONTAP 有關REST API可用的一組靜態計數器文件ONTAP 、請參閱《Rest 9.11.1》、以及有關計數器在ONTAPI和REST API使用量之間有何差異的資訊。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="使用ontapi存取效能計數器">使用ONTAPI存取效能計數器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>當ONTAPI使用時、效能計數器資料會分組在物件中。例如、在具有四個磁碟的節點中、磁碟效能計數器資料會分組為物件。系統中的每個實體磁碟都代表該物件的執行個體、您可以使用ONTAPI來存取單一磁碟執行個體的個別效能計數器。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="使用ontap-rest-api存取效能計數器">使用ONTAP REST API存取效能計數器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>使用靜態API、您可以將計數器管理器物件當作表格（例如「磁碟」）來存取。ONTAP這表示每個計數器管理器物件都會以自己的表格表示、而該計數器管理器物件的執行個體（例如系統中的個別磁碟）則會以該表格中的列存取。每一列都包含該執行個體的數個個別效能計數器。您可以將執行個體的單一效能計數器當作該表格列中的欄位來存取。</p>
+</div>
+<div class="paragraph">
+<p>在下列範例中、「host_Adapter」計數器管理程式物件會以表格格式表示、說明如何使用ONTAP REST API來存取每個效能計數器。系統中有數個主機介面卡、每個主機介面卡都有自己的效能計數器：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">執行個體名稱</th>
+<th class="tableblock halign-left valign-top" colspan="6">REST計數器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主機介面卡_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">總計_讀取作業</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">總計寫入作業</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">位元組_讀取</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">位元組寫入</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MAX_LINK_DATA速率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RSCN_count</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主機介面卡_2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">總計_讀取作業</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">總計寫入作業</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">位元組_讀取</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">位元組寫入</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MAX_LINK_DATA速率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RSCN_count</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主機介面卡_3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">總計_讀取作業</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">總計寫入作業</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">位元組_讀取</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">位元組寫入</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MAX_LINK_DATA速率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RSCN_count</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="瞭解rest-api範例的結構">瞭解REST API範例的結構</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>請使用下列REST API範例來協助瞭解計數器管理器表格的結構。這些範例也說明如何使用REST API來探索可用的端點、並利用它們深入瞭解系統效能。這些範例會探索「host_Adapter」計數器管理程式物件、逐步顯示物件及其包含的計數器值的詳細資訊。如果您在系統上試用這些範例、請務必在方括弧&lt;&gt;中提供您的值以供參考。</p>
+</div>
+<div class="sect2">
+<h3 id="探索可用的效能計數器表">探索可用的效能計數器表</h3>
+<div class="paragraph">
+<p>您可以使用此REST API呼叫來探索您可以查詢的所有計數器管理器表格：</p>
+</div>
+<div class="listingblock">
+<div class="title">申請範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">回應範例（縮短以縮短）：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "records": [
+    {
+      "name": "copy_manager",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager"
+        }
+      }
+    },
+    {
+      "name": "copy_manager:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "disk",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/disk"
+        }
+      }
+    },
+    {
+      "name": "host_adapter",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter"
+        }
+      }
+    }
+    ...
+  ],
+  "num_records": 68,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="查詢個別效能計數器表格">查詢個別效能計數器表格</h3>
+<div class="paragraph">
+<p>您可以使用此REST API呼叫來檢視某個特定表格（計數器管理器物件）的說明和中繼資料。輸出說明表格的用途、並說明表格記錄中每個效能計數器的資訊類型。在此範例中、我們會查詢「host_Adapter」表格：</p>
+</div>
+<div class="listingblock">
+<div class="title">申請範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables/host_adapter'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">回應範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "name": "host_adapter",
+  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI Host Adapters the storage system uses to connect to disks and tape drives.",
+  "counter_schemas": [
+    {
+      "name": "bytes_read",
+      "description": "Bytes read via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "bytes_written",
+      "description": "Bytes written via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "max_link_data_rate",
+      "description": "Max link data rate in Kilobytes per second for Host Adapter",
+      "type": "raw",
+      "unit": "kb_per_sec"
+    },
+    {
+      "name": "node.name",
+      "description": "System node name",
+      "type": "string",
+      "unit": "none"
+    },
+    {
+      "name": "rscn_count",
+      "description": "Number of RSCN(s) received by the FC HBA",
+      "type": "raw",
+      "unit": "none"
+    },
+    {
+      "name": "total_read_ops",
+      "description": "Total number of reads on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "total_write_ops",
+      "description": "Total number of writes on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="檢視效能計數器表格中的列">檢視效能計數器表格中的列</h3>
+<div class="paragraph">
+<p>您可以使用此REST API呼叫來檢視表格中的列、以瞭解計數器管理器物件存在哪些執行個體：</p>
+</div>
+<div class="listingblock">
+<div class="title">申請範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables/host_adapter/rows'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">回應範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "records": [
+    {
+      "id": "power-01:0b",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0b"
+        }
+      }
+    },
+    {
+      "id": "power-01:0c",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0c"
+        }
+      }
+    },
+    {
+      "id": "power-01:0d",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0d"
+        }
+      }
+    },
+    {
+      "id": "power-01:0e",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0e"
+        }
+      }
+    }
+  ],
+  "num_records": 4,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="查詢特定的計數器管理程式執行個體">查詢特定的計數器管理程式執行個體</h3>
+<div class="paragraph">
+<p>您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、我們要求系統中某個電源供應器的效能計數器資訊：</p>
+</div>
+<div class="listingblock">
+<div class="title">申請範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;ONTAP_IP_ADDRESS&gt;/api/cluster/counter/tables/host_adapter/rows/power-01:0b'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">回應範例：</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "counter_table": {
+    "name": "host_adapter"
+  },
+  "id": "power-01:0b",
+  "properties": [
+    {
+      "name": "node.name",
+      "value": "power-01"
+    }
+  ],
+  "counters": [
+    {
+      "name": "total_read_ops",
+      "value": 3600516
+    },
+    {
+      "name": "total_write_ops",
+      "value": 3591536
+    },
+    {
+      "name": "bytes_read",
+      "value": 86354320000
+    },
+    {
+      "name": "bytes_written",
+      "value": 480863081920
+    },
+    {
+      "name": "max_link_data_rate",
+      "value": 375000
+    },
+    {
+      "name": "rscn_count",
+      "value": 0
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows/power-01:0b"
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 
     </article>
