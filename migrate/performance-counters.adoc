@@ -1,0 +1,297 @@
+---
+sidebar: sidebar 
+permalink: migrate/performance-counters.html 
+keywords:  
+summary: 從ONTAPI移轉至ONTAP 靜態API、即可存取ONTAP VMware效能計數器。 
+---
+= 效能計數器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用此功能、支援VMware的使用者存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP
+
+在使用版本《軟件》9.11.1之前ONTAP 、只ONTAP 能存取ONTAP 完整的一組《軟件分析管理器》物件、只能存取到CLI和ONTAPI介面。
+
+從使用者版本的《銷售資料》9.11.1開始ONTAP 、ONTAP 使用ONTAP 者可以透過《銷售資料》API來存取Counter Manager物件區段。使用者將自動化指令碼從ONTAPI移轉至ONTAP R靜止API時、必須瞭解效能計數器資料呈現給ONTAPI的方式、以及該資料呈現給REST API的方式之間的差異。
+
+請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449["NetApp Manager對應ONTAP"^] 如需ONTAP 有關REST API可用的一組靜態計數器文件ONTAP 、請參閱《Rest 9.11.1》、以及有關計數器在ONTAPI和REST API使用量之間有何差異的資訊。
+
+
+
+== 使用ONTAPI存取效能計數器
+
+當ONTAPI使用時、效能計數器資料會分組在物件中。例如、在具有四個磁碟的節點中、磁碟效能計數器資料會分組為物件。系統中的每個實體磁碟都代表該物件的執行個體、您可以使用ONTAPI來存取單一磁碟執行個體的個別效能計數器。
+
+
+
+== 使用ONTAP REST API存取效能計數器
+
+使用靜態API、您可以將計數器管理器物件當作表格（例如「磁碟」）來存取。ONTAP這表示每個計數器管理器物件都會以自己的表格表示、而該計數器管理器物件的執行個體（例如系統中的個別磁碟）則會以該表格中的列存取。每一列都包含該執行個體的數個個別效能計數器。您可以將執行個體的單一效能計數器當作該表格列中的欄位來存取。
+
+在下列範例中、「host_Adapter」計數器管理程式物件會以表格格式表示、說明如何使用ONTAP REST API來存取每個效能計數器。系統中有數個主機介面卡、每個主機介面卡都有自己的效能計數器：
+
+|===
+| 執行個體名稱 6+| REST計數器 
+
+
+| 主機介面卡_1 | 總計_讀取作業 | 總計寫入作業 | 位元組_讀取 | 位元組寫入 | MAX_LINK_DATA速率 | RSCN_count 
+
+
+| 主機介面卡_2 | 總計_讀取作業 | 總計寫入作業 | 位元組_讀取 | 位元組寫入 | MAX_LINK_DATA速率 | RSCN_count 
+
+
+| 主機介面卡_3 | 總計_讀取作業 | 總計寫入作業 | 位元組_讀取 | 位元組寫入 | MAX_LINK_DATA速率 | RSCN_count 
+|===
+
+
+== 瞭解REST API範例的結構
+
+請使用下列REST API範例來協助瞭解計數器管理器表格的結構。這些範例也說明如何使用REST API來探索可用的端點、並利用它們深入瞭解系統效能。這些範例會探索「host_Adapter」計數器管理程式物件、逐步顯示物件及其包含的計數器值的詳細資訊。如果您在系統上試用這些範例、請務必在方括弧<>中提供您的值以供參考。
+
+
+
+=== 探索可用的效能計數器表
+
+您可以使用此REST API呼叫來探索您可以查詢的所有計數器管理器表格：
+
+.申請範例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
+----
+.回應範例（縮短以縮短）：
+[source, json]
+----
+{
+  "records": [
+    {
+      "name": "copy_manager",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager"
+        }
+      }
+    },
+    {
+      "name": "copy_manager:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/copy_manager%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "disk",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/disk"
+        }
+      }
+    },
+    {
+      "name": "host_adapter",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter"
+        }
+      }
+    }
+    ...
+  ],
+  "num_records": 68,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables"
+    }
+  }
+}
+----
+
+
+=== 查詢個別效能計數器表格
+
+您可以使用此REST API呼叫來檢視某個特定表格（計數器管理器物件）的說明和中繼資料。輸出說明表格的用途、並說明表格記錄中每個效能計數器的資訊類型。在此範例中、我們會查詢「host_Adapter」表格：
+
+.申請範例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+----
+.回應範例：
+[source, json]
+----
+{
+  "name": "host_adapter",
+  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI Host Adapters the storage system uses to connect to disks and tape drives.",
+  "counter_schemas": [
+    {
+      "name": "bytes_read",
+      "description": "Bytes read via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "bytes_written",
+      "description": "Bytes written via Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "max_link_data_rate",
+      "description": "Max link data rate in Kilobytes per second for Host Adapter",
+      "type": "raw",
+      "unit": "kb_per_sec"
+    },
+    {
+      "name": "node.name",
+      "description": "System node name",
+      "type": "string",
+      "unit": "none"
+    },
+    {
+      "name": "rscn_count",
+      "description": "Number of RSCN(s) received by the FC HBA",
+      "type": "raw",
+      "unit": "none"
+    },
+    {
+      "name": "total_read_ops",
+      "description": "Total number of reads on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "total_write_ops",
+      "description": "Total number of writes on Host Adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter"
+    }
+  }
+}
+----
+
+
+=== 檢視效能計數器表格中的列
+
+您可以使用此REST API呼叫來檢視表格中的列、以瞭解計數器管理器物件存在哪些執行個體：
+
+.申請範例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+----
+.回應範例：
+[source, json]
+----
+{
+  "records": [
+    {
+      "id": "power-01:0b",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0b"
+        }
+      }
+    },
+    {
+      "id": "power-01:0c",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0c"
+        }
+      }
+    },
+    {
+      "id": "power-01:0d",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0d"
+        }
+      }
+    },
+    {
+      "id": "power-01:0e",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0e"
+        }
+      }
+    }
+  ],
+  "num_records": 4,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows"
+    }
+  }
+}
+----
+
+
+=== 查詢特定的計數器管理程式執行個體
+
+您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、我們要求系統中某個電源供應器的效能計數器資訊：
+
+.申請範例：
+[source, curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
+----
+.回應範例：
+[source, json]
+----
+{
+  "counter_table": {
+    "name": "host_adapter"
+  },
+  "id": "power-01:0b",
+  "properties": [
+    {
+      "name": "node.name",
+      "value": "power-01"
+    }
+  ],
+  "counters": [
+    {
+      "name": "total_read_ops",
+      "value": 3600516
+    },
+    {
+      "name": "total_write_ops",
+      "value": 3591536
+    },
+    {
+      "name": "bytes_read",
+      "value": 86354320000
+    },
+    {
+      "name": "bytes_written",
+      "value": 480863081920
+    },
+    {
+      "name": "max_link_data_rate",
+      "value": 375000
+    },
+    {
+      "name": "rscn_count",
+      "value": 0
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows/power-01:0b"
+    }
+  }
+}
+----

@@ -1039,4 +1039,38 @@
   <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">移轉至REST API</block>
   <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">ONTAPI至REST對應</block>
   <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">部落格</block>
+  <block id="e8f0cbec7d559a5ded4ddfdaa7f21a88" category="summary">從ONTAPI移轉至ONTAP 靜態API、即可存取ONTAP VMware效能計數器。</block>
+  <block id="ad369f52b331d56f93a85b89efe98c46" category="paragraph">利用此功能、支援VMware的使用者存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP</block>
+  <block id="d2fe6ca70e862256ec5db4361e09d5b1" category="paragraph">在使用版本《軟件》9.11.1之前ONTAP 、只ONTAP 能存取ONTAP 完整的一組《軟件分析管理器》物件、只能存取到CLI和ONTAPI介面。</block>
+  <block id="36989422b5cc9879d4b033aff909b8d0" category="paragraph">從使用者版本的《銷售資料》9.11.1開始ONTAP 、ONTAP 使用ONTAP 者可以透過《銷售資料》API來存取Counter Manager物件區段。使用者將自動化指令碼從ONTAPI移轉至ONTAP R靜止API時、必須瞭解效能計數器資料呈現給ONTAPI的方式、以及該資料呈現給REST API的方式之間的差異。</block>
+  <block id="d61221b86306255b9a48df30bfcf7c44" category="inline-link">NetApp Manager對應ONTAP</block>
+  <block id="e927c87bfa41a93d4bafcd563d1490f8" category="paragraph">請參閱<block ref="01d9ddfa039589f3660f3e87ae07b925" category="inline-link-rx"></block> 如需ONTAP 有關REST API可用的一組靜態計數器文件ONTAP 、請參閱《Rest 9.11.1》、以及有關計數器在ONTAPI和REST API使用量之間有何差異的資訊。</block>
+  <block id="caf3ee040de28e9f6d46988870dece28" category="section-title">使用ONTAPI存取效能計數器</block>
+  <block id="acb7e7db7dc26e2ee7f0a6ca7889fc0e" category="paragraph">當ONTAPI使用時、效能計數器資料會分組在物件中。例如、在具有四個磁碟的節點中、磁碟效能計數器資料會分組為物件。系統中的每個實體磁碟都代表該物件的執行個體、您可以使用ONTAPI來存取單一磁碟執行個體的個別效能計數器。</block>
+  <block id="3786be7650bb73d3aca4f15ae8918df6" category="section-title">使用ONTAP REST API存取效能計數器</block>
+  <block id="25a6f074faebcb689360e5a8ed4cb46d" category="paragraph">使用靜態API、您可以將計數器管理器物件當作表格（例如「磁碟」）來存取。ONTAP這表示每個計數器管理器物件都會以自己的表格表示、而該計數器管理器物件的執行個體（例如系統中的個別磁碟）則會以該表格中的列存取。每一列都包含該執行個體的數個個別效能計數器。您可以將執行個體的單一效能計數器當作該表格列中的欄位來存取。</block>
+  <block id="b624cb182b45b8cd771b55f340bd48db" category="paragraph">在下列範例中、「host_Adapter」計數器管理程式物件會以表格格式表示、說明如何使用ONTAP REST API來存取每個效能計數器。系統中有數個主機介面卡、每個主機介面卡都有自己的效能計數器：</block>
+  <block id="8306b094d2e16f41079e29117db4bb23" category="cell">執行個體名稱</block>
+  <block id="fbec7db93c11926b216977db525ae3ab" category="cell">REST計數器</block>
+  <block id="f74fb34c9f03e41b8c43158d192c2d00" category="cell">主機介面卡_1</block>
+  <block id="d8a7543b7dce739012bd345b5a03eccb" category="cell">總計_讀取作業</block>
+  <block id="e27bc9a2caed78fe1b2b968b85b1dfd9" category="cell">總計寫入作業</block>
+  <block id="31057b5059a47701f78ecd9a1f74a071" category="cell">位元組_讀取</block>
+  <block id="477dba04d73005ccb3c67063b3a38723" category="cell">位元組寫入</block>
+  <block id="cf0e377beaa1e7766c218fd657cbbbd2" category="cell">MAX_LINK_DATA速率</block>
+  <block id="e1fe7012a83d918a6018ad433c5911c6" category="cell">RSCN_count</block>
+  <block id="5179155001c9f520ffb99f72e2b20b26" category="cell">主機介面卡_2</block>
+  <block id="e963b19eb0f4d2b1cf056e63183513d8" category="cell">主機介面卡_3</block>
+  <block id="b8e21401d171e2074defa8652af924bd" category="section-title">瞭解REST API範例的結構</block>
+  <block id="31e2f56402a33c38bb51a024fb126484" category="paragraph">請使用下列REST API範例來協助瞭解計數器管理器表格的結構。這些範例也說明如何使用REST API來探索可用的端點、並利用它們深入瞭解系統效能。這些範例會探索「host_Adapter」計數器管理程式物件、逐步顯示物件及其包含的計數器值的詳細資訊。如果您在系統上試用這些範例、請務必在方括弧&lt;&gt;中提供您的值以供參考。</block>
+  <block id="bec1d0d2213e6c86ce1d238db29c19d4" category="section-title">探索可用的效能計數器表</block>
+  <block id="f277ad098d40e91b5eb2ab7a35f6508e" category="paragraph">您可以使用此REST API呼叫來探索您可以查詢的所有計數器管理器表格：</block>
+  <block id="5e15906e971267826a4f4e09b907e18d" category="listing-title">回應範例（縮短以縮短）：</block>
+  <block id="50932c8d3176ea01109499bc172117ea" category="section-title">查詢個別效能計數器表格</block>
+  <block id="987e44df4701f85b99bed446c53704d0" category="paragraph">您可以使用此REST API呼叫來檢視某個特定表格（計數器管理器物件）的說明和中繼資料。輸出說明表格的用途、並說明表格記錄中每個效能計數器的資訊類型。在此範例中、我們會查詢「host_Adapter」表格：</block>
+  <block id="8a651b733e43788e6c813c286a2ed976" category="listing-title">回應範例：</block>
+  <block id="76f44ea931b02455d8f2c37f92aafe27" category="section-title">檢視效能計數器表格中的列</block>
+  <block id="445271c2961902f1af016fe036a233ca" category="paragraph">您可以使用此REST API呼叫來檢視表格中的列、以瞭解計數器管理器物件存在哪些執行個體：</block>
+  <block id="48cea788f1e546862ce3c6b34e79dd3d" category="section-title">查詢特定的計數器管理程式執行個體</block>
+  <block id="3fae5b493cbf17e185ee077370c17c3c" category="paragraph">您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、我們要求系統中某個電源供應器的效能計數器資訊：</block>
 </blocks>
