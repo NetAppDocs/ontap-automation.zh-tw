@@ -1073,4 +1073,12 @@
   <block id="445271c2961902f1af016fe036a233ca" category="paragraph">您可以使用此REST API呼叫來檢視表格中的列、以瞭解計數器管理器物件存在哪些執行個體：</block>
   <block id="48cea788f1e546862ce3c6b34e79dd3d" category="section-title">查詢特定的計數器管理程式執行個體</block>
   <block id="3fae5b493cbf17e185ee077370c17c3c" category="paragraph">您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、我們要求系統中某個電源供應器的效能計數器資訊：</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
+  <block id="b5ec85c168694921a9de5eadfa6243a8" category="paragraph">此部分的部分限制或限制可能會影響API的使用及自動化程式碼的開發。ONTAP以下說明這些限制。一般而ONTAP 言、每個版本都適用於所有支援的支援的版本、其中有REST API可供使用。如ONTAP 需詳細資訊、請參閱「_版本_」欄位。</block>
+  <block id="3428b552896ca875d0afc0a87f353a49" category="admonition">其餘API則是ONTAP 以32個9.6開始提供。</block>
+  <block id="3a7bd150a3b127f640a55f3e4295ae12" category="paragraph">_版本：All Supported _ ONTAP</block>
+  <block id="3806b2980e70701200d32d0a7249795f" category="paragraph">每個REST API用戶端要求都會由ONTAP 支援團隊接收、並置於輸入佇列中、然後再進行處理。在到達率極高的情況下、保留這些API要求的輸入等候佇列可能會暫時填滿。發生這種情況時、會拒絕每個額外的溢位要求。在這些情況下：</block>
+  <block id="b313d34412fbec083537488efb6a7265" category="list-text">可辨識傳入連線超過等待佇列深度、並記錄連線失敗的訊息。ONTAP</block>
+  <block id="b497355f60941f025ea8887fd49f2692" category="list-text">REST用戶端會觀察失敗的連線、但確切的行為可能取決於用戶端。例如、NMSDK用戶端會顯示「無法連線至SSL」訊息。</block>
+  <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API輸入等待佇列已滿是罕見的事件。但拒絕過多的要求可提供保護、防止DOS攻擊。</block>
 </blocks>
