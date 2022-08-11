@@ -97,7 +97,3 @@ REST API所提供的安全性主要是以ONTAP 現有的資訊安全功能為基
 執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。
 
 
-
-.相關資訊
-* link:security_using_rbac.html["使用RBAC的安全性"]
-

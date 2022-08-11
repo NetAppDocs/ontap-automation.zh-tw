@@ -27,8 +27,9 @@ NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和
 Aggregate管理:: 加強了對不經改良的儲存集合體的管理ONTAP 。您可以使用更新的REST端點、將Aggregate移至線上和離線狀態、以及管理備援磁碟機。
 IP子網路功能:: 此功能已擴充為支援IP子網路。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。
 多重系統管理員驗證:: 多重管理員驗證功能提供靈活的授權架構、可保護ONTAP 對各種指令或作業的存取。您可以定義用來識別受限命令的規則。當使用者要求存取特定命令時、可ONTAP 視情況由多位元管理員授予核准。
-SnapMirror增強功能:: SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP
+SnapMirror增強功能:: SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP與此相關、我們提供支援來建立及管理大量Snapshot複本。
 名稱服務快取支援:: 支援快取功能的支援功能已增強了名稱服務、可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。
+ONTAPI報告工具:: ONTAPI報告工具可協助客戶和合作夥伴識別其環境中的ONTAPI使用量。除了Python軟體之外、NetApp隨選實驗室也提供影片和不斷演進的支援。此工具可在從ONTAPI移轉至ONTAP REST API時提供另一項資源。
 
 
 

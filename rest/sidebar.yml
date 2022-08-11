@@ -26,8 +26,6 @@ entries:
     url: "/rest/users_ontapi_api_ontap_cli.html"
   - title: 存取ONTAP CLI
     url: "/rest/access_ontap_cli.html"
-  - title: 使用RBAC的安全性
-    url: "/rest/security_using_rbac.html"
   - title: 儲存資源的效能指標
     url: "/rest/performance_metrics.html"
 - section: resources

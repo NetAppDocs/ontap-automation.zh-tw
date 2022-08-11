@@ -161,25 +161,6 @@
   <block id="fba54022e3b47aa328af3bc5b2fd6c5b" category="paragraph">在HTTP層級、API交易會使用基本驗證。每個要求都會新增一個HTTP標頭、其中使用者名稱和密碼為基礎64字串。</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">驗證ONTAP</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。</block>
-  <block id="1eff307bdee34970a4f1fba8b03f2362" category="inline-link-macro">使用RBAC的安全性</block>
-  <block id="46c2a957c1f02e81b9096c86660e0264" category="paragraph"><block ref="46c2a957c1f02e81b9096c86660e0264" category="inline-link-macro-rx"></block></block>
-  <block id="18b4b706d794eaf9349903da4fc0390f" category="paragraph">REST API可在使用ONTAP 時擴充角色型存取控制（RBAC）功能。您可以建立具有自訂角色的使用者帳戶、以限制其餘端點的存取。</block>
-  <block id="b74460ea0e79c18a13e8aaf7ba6b5575" category="section-title">為REST端點建立角色</block>
-  <block id="6a4ac1ce41cb9afd36c8a1b4345eb15a" category="paragraph">REST角色是透過一組或多個權限來定義。每項權限都包含指向REST端點的路徑、以及相關的存取層級。每個端點的存取權限均以三個層級之一提供、並決定可用於資源的HTTP方法。存取層級包括：</block>
-  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="list-text">全部</block>
-  <block id="0525ebcee9d40246b4c3fe60fa9dffdf" category="paragraph">可使用所有HTTP方法</block>
-  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="list-text">唯讀</block>
-  <block id="38c8b11da703697447ae0e841de8ff94" category="paragraph">只能使用Get</block>
-  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">無</block>
-  <block id="e170b518f0b1211531e4d6a5dc28bd24" category="paragraph">不允許存取</block>
-  <block id="46c2882c6847f54514352d1885b51de6" category="paragraph">以下是可指派給REST角色的兩種權限範例：</block>
-  <block id="4fb0f5d620d25bedf9de124abeecb3dd" category="list-text">「access="readonly」、path="/API/storage / volume」</block>
-  <block id="a6c54762c776264191d718908cc8793a" category="list-text">「access="none"、path="/API/SnapMirror/Policies」</block>
-  <block id="fc2e8f1e6bdb078d903709febae2f81c" category="section-title">建立具有自訂角色的使用者帳戶</block>
-  <block id="efce0b822abdb6a64b62590d47b2243d" category="paragraph">在高層級、您可以建立具有自訂REST角色的帳戶、如下所示：</block>
-  <block id="5cbfeffa3e5b9da20fef5c63f1ade205" category="list-text">建立可存取HTTP管理傳輸協定的使用者帳戶。</block>
-  <block id="388dcc6806f032ea576d4bf906f82f93" category="list-text">以所需的權限建立REST角色。</block>
-  <block id="54f15799e869b562c4b17306f16e44af" category="list-text">將使用者帳戶與角色建立關聯。</block>
   <block id="42a4074843d4a69faa8c790fcb72ca0a" category="doc">ONTAPI API API和ONTAP CLI的使用者</block>
   <block id="18aadc11d3c5f40e8c8474e03cf706af" category="paragraph">ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管理ONTAP 各種儲存系統。REST API和ONTAPI API API呼叫之間、以及REST API和ONTAP REST CLI之間存在差異。在正式作業環境中使用REST API之前、您應該先瞭解這些差異。</block>
   <block id="1b3d9b05305989cf6898b061409738ed" category="section-title">一般設計差異</block>
@@ -356,7 +337,6 @@
   <block id="3b182148c9c0009822cea2178fd99584" category="cell">使用者驗證失敗。</block>
   <block id="bbf94b34eb32268ada57a3be5062fe7d" category="cell">403.</block>
   <block id="722969577a96ca3953e84e3d949dee81" category="cell">禁止</block>
-  <block id="832bcd57b678ba711a9e21562156a359" category="cell">由於授權（RBAC）錯誤、存取遭拒。</block>
   <block id="4f4adcbf8c6f66dcfc8a3282ac2bf10a" category="cell">404..</block>
   <block id="9e076f5885f5cc16a4b5aeb8de4adff5" category="cell">找不到</block>
   <block id="24ff0a9484d837d82e7f8f8218e196b6" category="cell">要求中提及的資源不存在。</block>
@@ -986,7 +966,6 @@
   <block id="92b25ca356d0711c23fa00a11a838f16" category="list-text">多重系統管理員驗證</block>
   <block id="e7d8af28980ef8f99ebba710f535c906" category="list-text">多重管理員驗證功能提供靈活的授權架構、可保護ONTAP 對各種指令或作業的存取。您可以定義用來識別受限命令的規則。當使用者要求存取特定命令時、可ONTAP 視情況由多位元管理員授予核准。</block>
   <block id="4f254b5768d1e18364bedb0b2402d10a" category="list-text">SnapMirror增強功能</block>
-  <block id="5f3e5b310eaf255b1da217cd7d703fc7" category="list-text">SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP</block>
   <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">名稱服務快取支援</block>
   <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">支援快取功能的支援功能已增強了名稱服務、可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。</block>
   <block id="392cdf2ebad4890343218b2779c17ff3" category="paragraph">您可以使用Fibre Channel（FC）Fabric REST API端點來擷取FC網路的相關資訊。這包括ONTAP 連接到整個叢集與FC架構、組成光纖的交換器、以及作用中區域的連線。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。</block>
@@ -1081,4 +1060,8 @@
   <block id="b313d34412fbec083537488efb6a7265" category="list-text">可辨識傳入連線超過等待佇列深度、並記錄連線失敗的訊息。ONTAP</block>
   <block id="b497355f60941f025ea8887fd49f2692" category="list-text">REST用戶端會觀察失敗的連線、但確切的行為可能取決於用戶端。例如、NMSDK用戶端會顯示「無法連線至SSL」訊息。</block>
   <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API輸入等待佇列已滿是罕見的事件。但拒絕過多的要求可提供保護、防止DOS攻擊。</block>
+  <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">由於授權錯誤、存取遭拒。</block>
+  <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP與此相關、我們提供支援來建立及管理大量Snapshot複本。</block>
+  <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI報告工具</block>
+  <block id="bc17bb7b3d848d1ecddda052e3af0ca2" category="list-text">ONTAPI報告工具可協助客戶和合作夥伴識別其環境中的ONTAPI使用量。除了Python軟體之外、NetApp隨選實驗室也提供影片和不斷演進的支援。此工具可在從ONTAPI移轉至ONTAP REST API時提供另一項資源。</block>
 </blocks>
