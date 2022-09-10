@@ -22,7 +22,7 @@ NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和
 
 藉由將近一百個新的API呼叫、即可繼續擴充《無線更新API》的功能。ONTAP ONTAP這些端點支援全新ONTAP 的功能、以及現有功能的增強功能。此版本著重於支援客戶從ONTAP 無法支援的API（Data ONTAP ONTAPI或ZAPI）移轉至R靜止API。
 
-精細RBAC:: 以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或視需要建立新角色。每個角色都可以與一個或多個存取定義相關聯、每個定義都會識別命令或REST API呼叫、以及所需的存取層級。也可以使用新的存取權限、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。
+精細RBAC:: 以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。新的存取層級可用於REST角色、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 link:../rest/rbac_overview.html["RBAC安全性總覽"] 以取得更多資訊。
 效能計數器:: 先前ONTAP 發行的版本保留了系統運作特性的統計資訊。9.11.1版已增強此資訊、現在可透過REST API取得。系統管理員或自動化程序可以存取資料、以判斷系統效能。統計資訊由計數器管理子系統維護、以資料庫格式顯示、並使用表格和列。這項增強功能可ONTAP 讓靜態API更接近Data ONTAP 於使用靜態API（ONTAPI或ZAPI）。
 Aggregate管理:: 加強了對不經改良的儲存集合體的管理ONTAP 。您可以使用更新的REST端點、將Aggregate移至線上和離線狀態、以及管理備援磁碟機。
 IP子網路功能:: 此功能已擴充為支援IP子網路。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。

@@ -1,0 +1,203 @@
+---
+sidebar: sidebar 
+permalink: rest/rbac_wf_create_user.html 
+keywords:  
+summary:  
+---
+= 建立具有角色的使用者
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用下列工作流程、建立具有相關REST角色的使用者。在檢閱工作流程之前、您應該先熟悉一般準備步驟。
+
+
+
+== 準備以ONTAP 指派的角色建立一個名不副的使用者
+
+在建立角色並將其指派ONTAP 給某個不穩定使用者帳戶之前、您應該先檢閱主要的安全需求和選項、做好準備。
+
+此版本可決定哪些REST端點和RBAC功能可供使用。ONTAP
+
+您需要識別要保護的資源或命令、以及範圍（叢集或SVM）。
+
+在識別資源和範圍之後、您需要判斷要授與的存取層級。
+
+使用者可ONTAP 透過REST API或CLI或兩者存取功能。
+
+使用現有的內建角色比較方便、但您可以視需要建立新的自訂角色。
+
+根據安全需求和ONTAP 不必要存取、您需要選擇是要建立休息或傳統角色。
+
+
+
+== 建立具有自訂角色的使用者
+
+下列工作流程包含建立自訂REST角色並將其與新使用者帳戶建立關聯所需的一般步驟。使用者和角色都有SVM範圍、並與特定資料SVM相關聯。
+
+
+NOTE: 此工作流程旨在說明完整的流程。有些步驟可能是選擇性的、或是需要根據您的環境進行變更。
+
+
+
+=== 1.列出叢集中的資料SVM
+
+執行下列REST API呼叫、列出叢集中的SVM。輸出中會提供每個SVM的UUID和名稱。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/SVM/svms 
+|===
+.Curl範例
+[source, curl]
+----
+curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=name' -u admin:password -k --header 'Accept: */*'
+----
+從您要建立新使用者和角色的清單中選取所需的SVM。
+
+
+
+=== 2.列出定義給SVM的使用者
+
+執行下列REST API呼叫、列出您所選SVM中定義的使用者。您可以透過擁有者參數來識別SVM。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/SECSecurity /帳戶 
+|===
+.Curl範例
+[source, curl]
+----
+curl --location -i --request GET 'https://10.222.81.101/api/security/accounts/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
+----
+根據已在SVM中定義的使用者、為新使用者選擇唯一名稱。
+
+
+
+=== 3.列出定義給SVM的其餘角色
+
+執行下列REST API呼叫、列出您所選SVM中定義的角色。您可以透過擁有者參數來識別SVM。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/SECSecurity /角色 
+|===
+.Curl範例
+[source, curl]
+----
+curl --location -i --request GET 'https://10.222.81.101/api/security/roles/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
+----
+根據已在SVM中定義的角色、為新角色選擇唯一名稱。
+
+
+
+=== 4.建立自訂REST角色
+
+執行下列REST API呼叫、以在SVM中建立自訂REST角色。角色一開始只有一個權限會建立*無*的預設存取權、因此會拒絕所有存取權。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /角色 
+|===
+.JSONN輸入範例
+[source, json]
+----
+{
+  "name": "dprole1",
+  "owner": {
+    "name": "dmp",
+    "uuid": "752d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api", "access": "none"},
+  ]
+}
+----
+.Curl範例
+[source, curl]
+----
+curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+----
+（可選）再次執行步驟3以顯示新角色。您也可以在ONTAP CLI中顯示角色。
+
+
+
+=== 5.新增更多權限以更新角色
+
+執行下列REST API呼叫、視需要新增權限以修改角色。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECURIE/角色/｛Oner.uuid｝/｛name｝/權限 
+|===
+.JSONN輸入範例
+[source, json]
+----
+{
+  "path": "/api/storage/volumes", "access": "readonly"}
+}
+----
+.Curl範例
+[source, curl]
+----
+curl --location -i --request POST 'https://10.222.81.101/api/security/roles/752d96be-f17c-11ec-9d19-005056bbad91/dprole1/privileges' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+----
+（可選）再次執行步驟3以顯示新角色。您也可以在ONTAP CLI中顯示角色。
+
+
+
+=== 6.建立使用者
+
+執行下列REST API呼叫以建立使用者帳戶。上面建立的角色「dprole1」與新使用者相關聯。
+
+
+TIP: 您可以包含沒有角色的使用者。在這種情況下、您需要修改使用者以指派角色。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /帳戶 
+|===
+.JSONN輸入範例
+[source, json]
+----
+{
+  "owner": {"uuid":"daf84055-248f-11ed-a23d-005056ac4fe6"},
+  "name": "david",
+  "applications": [
+      {"application":"ssh",
+       "authentication_methods":["password"],
+       "second_authentication_method":"none"}
+  ],
+  "role":"dprole1",
+  "password":"netapp123"
+}
+----
+.Curl範例
+[source, curl]
+----
+curl --location -i --request POST 'https://10.222.81.101/api/security/accounts' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+----
+您可以使用新使用者的認證登入SVM管理介面。
