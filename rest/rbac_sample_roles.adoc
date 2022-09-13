@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_sample_roles.html 
 keywords:  
-summary:  
+summary: 根據您的環境、您可以使用不同的方式來使用此功能。ONTAP以下是一些常見案例。在每個案例中、重點都是特定的安全性和管理目標、以及對應角色定義的範例。 
 ---
 = 角色定義範例
 :hardbreaks:

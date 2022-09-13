@@ -576,7 +576,6 @@
   <block id="17332aa1fd5861b55b1cfe91240e73d1" category="doc">REST API入門</block>
   <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">您可以快速開始使用ONTAP 靜止API和其他自動化技術。在準備並瞭解基本的要求回應流程之後、您可以使用Curl來發出簡單的API呼叫。這項準備工作提供在即時系統上使用更複雜工作流程之前所需的簡介和觀點。</block>
   <block id="c51932c28f2d865cc8b2b0211769ca8f" category="paragraph">您可以存取ONTAP 所有的靜止API呼叫詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。</block>
-  <block id="765005864f316ffe6cd14a5468133456" category="admonition">您可以在當地ONTAP 的餐廳或NetApp開發人員網路網站上存取API參考內容。</block>
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">存取ONTAP 《程式碼API》文件頁面</block>
   <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">您必須具備下列條件：</block>
@@ -586,12 +585,8 @@
   <block id="86537fad07b98a84cd28189507075143" category="list-text">使用ONTAP 這個帳戶登入。</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP</block>
   <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。</block>
-  <block id="9d8a954ab180ff9153df9280ac9c3c7f" category="section-title">存取NetApp DevNet上的參考內容</block>
-  <block id="c94bdeb8a782c72386767d4c7becc162" category="paragraph">您可以在ONTAP NetApp開發人員網路網站上存取《靜態API參考文件》。</block>
-  <block id="b91bc699a905879f81b6d1321e652cbd" category="list-text">瀏覽ONTAP 至NetApp開發人員網路網站上的*《*》《*》《Rest API*》網頁：</block>
   <block id="6a63b53f3b2aa312b323d97ef5f8c1ee" category="inline-link">NetApp DevNet：ONTAP 無憂API</block>
   <block id="3ed5229516b6cbe9a83c3af31dfe7e8f" category="paragraph"><block ref="3ed5229516b6cbe9a83c3af31dfe7e8f" category="inline-link-rx"></block></block>
-  <block id="efb08c83b1593d6a73a8ac4f456e4247" category="list-text">向下捲動並在*線上REST API Reference（*線上REST API參考）*下方、按一下適當ONTAP 的鏈結以取得適當的版本資訊。</block>
   <block id="7ccaa0673dcbf1129469d5f4407e7b74" category="paragraph">您可以使用這些API呼叫來存取S3型物件儲存設備。</block>
   <block id="51bd7d165e8c40b2785e7cc20641c92e" category="paragraph">儲存區是物件的容器、使用物件名稱空間來進行結構化。每個S3物件伺服器都可以有多個儲存區。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
   <block id="0ce533be2fabb323cea3390612055d60" category="paragraph">您可以建立及管理ONTAP 包含伺服器和庫位組態在內的SS3組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
@@ -1075,7 +1070,6 @@
   <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">使用每種角色時都有優點和缺點。請參閱 <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">休息</block>
-  <block id="411937541f9b6022414480ec98e9755c" category="cell">其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。之後、他們也逐漸發展為支援CLI存取。</block>
   <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="cell">傳統</block>
   <block id="4d43d1a54808136d96375f219fc0dcb2" category="cell">以上是ONTAP 支援支援支援支援支援支援的舊角色。這些產品是針對ONTAP 整個CLI環境而推出、並持續成為RBAC安全性的基礎。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="section-title">範圍</block>
@@ -1103,7 +1097,6 @@
   <block id="8cf982806ff9edbe00ff4b0b3bf7d35a" category="paragraph">您可以ONTAP 透過REST API或命令列介面來建立及管理等功能。存取詳細資料如下所述。</block>
   <block id="aba3d4b49c454e1974970e7b5514b001" category="section-title">REST API</block>
   <block id="eeba57b75c93ed3bdf549a9f1fe3a9d9" category="paragraph">在使用RBAC角色和使用者帳戶時、可以使用多個端點。表格中的前四個用於建立及管理角色。最後兩個用於建立及管理使用者帳戶。</block>
-  <block id="6463a333fcb15c8030c87eb9b29fbbda" category="admonition">請參閱ONTAP 「線上」 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 詳細資料請參閱文件。</block>
   <block id="2a6ba72e93aa7fa676d07973ed2716bb" category="cell">端點</block>
   <block id="674137167efaa07fbce7a0d3970c747e" category="cell">安全性/角色</block>
   <block id="0d0d537aabf360d3d02a985805096459" category="cell">此端點可讓您建立新的REST角色。從功能性的問題9.11.1開始ONTAP 、您也可以建立傳統角色。在這種情況ONTAP 下、由功能變數根據輸入參數來決定角色類型。您也可以擷取已定義角色的清單。</block>
@@ -1256,7 +1249,18 @@
   <block id="ddb5039e238e533f2698aca2a0cad69a" category="paragraph">執行下列REST API呼叫以建立使用者帳戶。上面建立的角色「dprole1」與新使用者相關聯。</block>
   <block id="41840c66a2790635e8d2e99b8901a85e" category="admonition">您可以包含沒有角色的使用者。在這種情況下、您需要修改使用者以指派角色。</block>
   <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">您可以使用新使用者的認證登入SVM管理介面。</block>
-  <block id="e8d3ba2faa2de68a783129c5654b8806" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。新的存取層級可用於REST角色、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="9bad86383b422495c8d6e881b6b0084b" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="sidebar">RBAC安全性</block>
   <block id="80164c28762060fa56d042df66e7553d" category="sidebar">建立具有角色的使用者</block>
+  <block id="485855357f10b438740d2ed039caaa84" category="admonition">您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或是NetApp所維護文件的靜態複本。</block>
+  <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">存取ONTAP 一份《R靜止API參考文件》</block>
+  <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。</block>
+  <block id="dabf3cc81191d48460fa3508e371a53c" category="list-text"><block ref="dabf3cc81191d48460fa3508e371a53c" category="inline-link-rx"></block></block>
+  <block id="c0076edc80c1407ceda2d5911e6d288b" category="list-text"><block ref="c0076edc80c1407ceda2d5911e6d288b" category="inline-link-rx"></block></block>
+  <block id="e12d5fae570ab26cdfadd64c30e4ae21" category="list-text"><block ref="e12d5fae570ab26cdfadd64c30e4ae21" category="inline-link-rx"></block></block>
+  <block id="f7c5a1bcb357ec457e5da54b44ff52d8" category="list-text"><block ref="f7c5a1bcb357ec457e5da54b44ff52d8" category="inline-link-rx"></block></block>
+  <block id="87a1e5bb26fa6c8f049bab63283cd932" category="list-text"><block ref="87a1e5bb26fa6c8f049bab63283cd932" category="inline-link-rx"></block></block>
+  <block id="92ecf2461519a0850a03fefd557a9caa" category="list-text"><block ref="92ecf2461519a0850a03fefd557a9caa" category="inline-link-rx"></block></block>
+  <block id="57ffddb99e11d6096024019ec78a7294" category="cell">其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。建立REST角色會自動建立傳統的_mapping角色。</block>
+  <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">您可以在ONTAP 線上存取此功能 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需詳細資訊、包括如何使用API的範例、請參閱文件。</block>
+  <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。新的存取層級可用於REST角色、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
 </blocks>

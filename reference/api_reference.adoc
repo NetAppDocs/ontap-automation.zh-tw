@@ -17,7 +17,7 @@ summary:
 您可以存取ONTAP 所有的靜止API呼叫詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。
 
 
-NOTE: 您可以在當地ONTAP 的餐廳或NetApp開發人員網路網站上存取API參考內容。
+NOTE: 您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或是NetApp所維護文件的靜態複本。
 
 
 
@@ -46,19 +46,17 @@ https://<ip_address>/docs/api`
 
 
 
-== 存取NetApp DevNet上的參考內容
+== 存取ONTAP 一份《R靜止API參考文件》
 
 [role="lead"]
-您可以在ONTAP NetApp開發人員網路網站上存取《靜態API參考文件》。
+您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
 
-.步驟
-. 瀏覽ONTAP 至NetApp開發人員網路網站上的*《*》《*》《Rest API*》網頁：
-+
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/["零點9.11.1. ONTAP"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879871/html/["零點9.10.1 ONTAP"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876964/html/["部分9.9.1 ONTAP"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874708/html/["部分9.8 ONTAP"^]
+* https://library.netapp.com/ecmdocs/ECMLP2862544/html/["更新ONTAP"^]
+* https://library.netapp.com/ecmdocs/ECMLP2856304/html/["部分9.6 ONTAP"^]
+
+
 https://devnet.netapp.com/restapi.php["NetApp DevNet：ONTAP 無憂API"^]
-
-. 向下捲動並在*線上REST API Reference（*線上REST API參考）*下方、按一下適當ONTAP 的鏈結以取得適當的版本資訊。
-+
-畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP
-
-. 如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。
-

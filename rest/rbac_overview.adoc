@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_overview.html 
 keywords:  
-summary:  
+summary: 包含強大且可擴充的角色型存取控制（RBAC）功能。ONTAP您可以為每個帳戶指派不同的角色、以控制使用者對透過REST API和CLI公開之資源的存取。這些角色定義不同ONTAP 層級的管理存取權限、以供各種不同的使用者使用。 
 ---
 = RBAC安全性總覽
 :hardbreaks:
@@ -39,7 +39,7 @@ NOTE: 使用每種角色時都有優點和缺點。請參閱 link:../rest/work_r
 | 類型 | 說明 
 
 
-| 休息 | 其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。之後、他們也逐漸發展為支援CLI存取。 
+| 休息 | 其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。建立REST角色會自動建立傳統的_mapping角色。 
 
 
 | 傳統 | 以上是ONTAP 支援支援支援支援支援支援的舊角色。這些產品是針對ONTAP 整個CLI環境而推出、並持續成為RBAC安全性的基礎。 
