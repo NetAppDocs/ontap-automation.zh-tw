@@ -34,7 +34,7 @@ NOTE: 如果您的認證資料包含特殊字元、您必須根據您使用的Sh
 * 範例 *
 
 +
-「curl -X Get -u admin: password -k」'https://10.222.81.101/api/cluster?fields=version"`[]
+「curl -X Get -u admin: password -k "https://10.222.81.101/api/cluster?fields=version"`[]
 
 
 
