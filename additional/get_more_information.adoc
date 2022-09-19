@@ -20,13 +20,9 @@ summary:
 
 == 支援支援支援ONTAP
 
-* https://docs.netapp.com/us-en/ontap/["供應說明文件ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-family/["產品文件資料ONTAP"^]
 +
-提供ONTAP 有關支援功能的文件（CLI命令除外）。
-
-* https://docs.netapp.com/ontap-9/index.jsp["供應說明文件中心 ONTAP"^]
-+
-提供ONTAP 有關支援功能的文件、以供參考。
+提供ONTAP 有關支援功能的文件。
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["系統管理程式資源ONTAP ONTAP"^]
 +
@@ -42,7 +38,7 @@ summary:
 
 == 支援的開發人員資源ONTAP
 
-* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html["用於REST API對應資訊的ONTAPI"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["用於REST API對應資訊的ONTAPI"^]
 +
 提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。
 

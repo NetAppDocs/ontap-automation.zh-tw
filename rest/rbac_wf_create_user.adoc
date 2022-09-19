@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rest/rbac_wf_create_user.html 
-keywords:  
+keywords: rbac, workflow, create role, create user 
 summary: 您可以使用下列工作流程、建立具有相關REST角色的使用者。在檢閱工作流程之前、您應該先熟悉一般準備步驟。 
 ---
 = 建立具有角色的使用者
