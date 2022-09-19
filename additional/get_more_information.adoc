@@ -42,15 +42,15 @@ summary:
 
 == 支援的開發人員資源ONTAP
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html["用於REST API對應資訊的ONTAPI"^]
 +
 提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。
 
-* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 版本9.10.1"^]
+* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 產品特色9.11.1"^]
 +
 PyPI的NetApp Python用戶端程式庫套件。
 
-* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["適用於9.10.1的NetApp PCL文件"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1的NetApp PCL文件"^]
 +
 NetApp Python用戶端程式庫的文件。
 
