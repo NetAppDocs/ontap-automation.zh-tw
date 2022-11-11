@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/object_store.html 
-keywords:  
-summary:  
+keywords: object store resources 
+summary: 您可以使用這些API呼叫來存取S3型物件儲存設備。 
 ---
 = 物件存放區
 :hardbreaks:

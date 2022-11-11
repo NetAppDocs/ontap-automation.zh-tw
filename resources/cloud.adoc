@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/cloud.html 
-keywords:  
-summary:  
+keywords: cloud resources 
+summary: 您可以使用這些API呼叫來管理雲端中物件儲存資源的連線。 
 ---
 = 雲端
 :hardbreaks:

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: rest/access_rest_api.html 
-keywords:  
-summary:  
+keywords: accessing the rest api, lif 
+summary: 您可以ONTAP 使用多種不同的方法來存取靜態API。 
 ---
-= 如何存取ONTAP NetApp的
+= 如何存取ONTAP 靜態API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

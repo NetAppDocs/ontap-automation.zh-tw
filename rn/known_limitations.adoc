@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rn/known_limitations.html 
-keywords:  
-summary:  
+keywords: limitations, known limitations 
+summary: 此部分的部分限制或限制可能會影響API的使用及自動化程式碼的開發。ONTAP 
 ---
 = 已知限制
 :hardbreaks:

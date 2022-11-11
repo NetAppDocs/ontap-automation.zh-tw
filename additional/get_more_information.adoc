@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: additional/get_more_information.html 
-keywords:  
-summary:  
+keywords: more information, additional resources 
+summary: 您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。 
 ---
 = 取得更多資訊
 :hardbreaks:
@@ -38,15 +38,15 @@ summary:
 
 == 支援的開發人員資源ONTAP
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["用於REST API對應資訊的ONTAPI"^]
+* link:../migrate/mapping.html["用於REST API對應的ONTAPI"]
 +
-提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。
+提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。選取適當ONTAP 的版本。
 
-* https://pypi.org/project/netapp-ontap["PyPI：NetApp ONTAP 產品特色9.11.1"^]
+* https://pypi.org/project/netapp-ontap["PyPI：ONTAP NetApp"^]
 +
 PyPI的NetApp Python用戶端程式庫套件。
 
-* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1的NetApp PCL文件"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["適用於9.12的NetApp PCL文件"^]
 +
 NetApp Python用戶端程式庫的文件。
 

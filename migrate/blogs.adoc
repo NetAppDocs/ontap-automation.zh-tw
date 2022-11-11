@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/blogs.html 
-keywords:  
-summary:  
+keywords: blogs, blog articles 
+summary: 有幾篇部落格文章可協助您更深入瞭解如何從ONTAPI移轉至ONTAP 靜態API。 
 ---
 = 部落格內容：移轉至ONTAP RsREST API
 :hardbreaks:

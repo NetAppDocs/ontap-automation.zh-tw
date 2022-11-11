@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/script_retrieve_cluster_configuration.html 
-keywords:  
-summary:  
+keywords: Python, sample script, Python example 
+summary: 您可以在CLI中使用Python 3執行指令碼、以擷取ONTAP 叢集組態。 
 ---
 = 用於擷取叢集組態的指令碼
 :hardbreaks:

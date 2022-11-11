@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference/api_reference.html 
-keywords:  
-summary:  
+keywords: reference, API reference, ONTAP API documentation 
+summary: API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。 
 ---
 = API 參考
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-您可以存取ONTAP 所有的靜止API呼叫詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。
+API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。
 
 
 NOTE: 您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或是NetApp所維護文件的靜態複本。
@@ -51,6 +51,7 @@ https://<ip_address>/docs/api`
 [role="lead"]
 您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
 
+* https://library.netapp.com/ecmdocs/ECMLP2884821/html/["零點9.12.1. ONTAP"^]
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/["零點9.11.1. ONTAP"^]
 * https://library.netapp.com/ecmdocs/ECMLP2879871/html/["零點9.10.1 ONTAP"^]
 * https://library.netapp.com/ecmdocs/ECMLP2876964/html/["部分9.9.1 ONTAP"^]

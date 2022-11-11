@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: workflows/wf_1_update_cluster_contact.html 
-keywords:  
-summary:  
+keywords: workflow 
+summary: 此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷背景工作是否成功完成。 
 ---
 = 工作流程1：更新叢集聯絡人並檢查工作狀態
 :hardbreaks:

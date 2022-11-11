@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/nas.html 
-keywords:  
-summary:  
+keywords: nas resources 
+summary: 您可以使用這些API呼叫來管理叢集和SVM的CIFS和NFS設定。 
 ---
 = NAS
 :hardbreaks:
@@ -16,6 +16,8 @@ summary:
 [role="lead"]
 您可以使用這些API呼叫來管理叢集和SVM的CIFS和NFS設定。
 
+您可以管理針對ONTAP 某個叢集定義的Active Directory帳戶。這包括建立新帳戶、以及顯示、更新及刪除帳戶。此支援是ONTAP 以支援功能支援的功能為補充。9.12
+
 有些CIFS和NFS事件可記錄在SVM上、有助於提升安全性。此資源類型隨ONTAP 附於NetApp 9.6。
 
 您可以將NAS稽核事件重新導向至特定SVM。此資源類型是ONTAP 更新的功能、採用了更新的功能。
@@ -23,6 +25,8 @@ summary:
 您可以擷取已建立的CIFS連線清單。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。
 
 叢集和SVM層級已新增CIFS網域支援、並加入多種端點類別。您可以擷取網域組態、以及建立和移除慣用的網域控制器。此資源類型是ONTAP 更新的、採用了更新版的功能。
+
+新增了端點、以支援CIFS群組原則的建立與管理。組態資訊可透過套用至所有或特定SVM的群組原則物件來使用和管理。此支援是ONTAP 以支援功能支援的功能為補充。9.12
 
 您可以在CIFS伺服器上建立SMB使用者的主目錄、而不需為每位使用者建立個別的SMB共用區。主目錄搜尋路徑是SVM根目錄的一組絕對路徑。此資源類型隨ONTAP 附於NetApp 9.6。
 

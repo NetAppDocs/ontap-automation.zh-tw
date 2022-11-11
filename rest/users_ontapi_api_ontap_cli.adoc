@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/users_ontapi_api_ontap_cli.html 
-keywords: snapdiff 
-summary:  
+keywords: snapdiff, migrating to rest 
+summary: ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管理ONTAP 各種儲存系統。REST API和ONTAPI API API呼叫之間、以及REST API和ONTAP REST CLI之間存在差異。 
 ---
 = ONTAPI API API和ONTAP CLI的使用者
 :hardbreaks:
@@ -32,7 +32,7 @@ ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管�
 
 == 從ONTAPI移轉至REST
 
-REST API是自動化ONTAP 作業系統管理的主要策略選擇。如果您目前使用的是ONTAPI API、則應考慮移轉至REST API。NetApp提供對應文件、協助從ONTAPI移轉至REST。
+REST API是自動化ONTAP 作業系統管理的主要策略選擇。如果您目前使用的是ONTAPI API、則應考慮移轉至REST API。NetApp提供對應文件、協助從ONTAPI移轉至REST。請參閱 link:../migrate/mapping.html["用於REST API對應的ONTAPI"] 以取得更多資訊。
 
 
 

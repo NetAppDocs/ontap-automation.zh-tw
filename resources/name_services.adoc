@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/name_services.html 
-keywords:  
-summary:  
+keywords: name services resources 
+summary: 您可以使用這些API呼叫來管理ONTAP 支援的名稱服務。 
 ---
 = 名稱服務
 :hardbreaks:
@@ -16,7 +16,7 @@ summary:
 [role="lead"]
 您可以使用這些API呼叫來管理ONTAP 支援的名稱服務。
 
-支援快取的支援服務可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可以透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。
+支援快取的支援服務可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可以透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。此資源類型隨ONTAP 附於引用的功能。9.11
 
 您可以顯示動態DNS（DDNS）資訊、並管理DDNS子系統。此資源類型是ONTAP 更新的功能、採用了更新的功能。
 
@@ -26,13 +26,13 @@ DNS支援ONTAP 將整個叢集整合到您的網路中。此資源類型隨ONTAP
 
 LDAP伺服器可用來維護使用者資訊。此資源類型隨ONTAP 附於NetApp 9.6。
 
-您可以建立、修改及列出ONTAP 由功能性開發所使用的LDAP架構。其中包含四種預設架構。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。
+您可以建立、修改及列出ONTAP 由功能性開發所使用的LDAP架構。其中包含四種預設架構。此資源類型隨ONTAP 附於引用的功能。9.11
 
 您可以使用這些端點來顯示及管理主機名稱的本機對應。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
 
 名稱對應可讓您將身分識別從一個名稱網域對應到另一個名稱網域。例如、您可以將身分識別從CIFS對應至UNIX、Kerberos對應至UNIX、並將UNIX對應至CIFS。此資源類型隨ONTAP 附於NetApp 9.6。
 
-您可以擷取netgroup檔案詳細資料、並刪除SVM的檔案。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。
+您可以擷取netgroup檔案詳細資料、並刪除SVM的檔案。此資源類型隨ONTAP 附於引用的功能。9.11
 
 NIS伺服器可用來驗證使用者和用戶端工作站。此資源類型隨ONTAP 附於NetApp 9.6。
 

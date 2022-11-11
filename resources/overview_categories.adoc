@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/overview_categories.html 
-keywords:  
-summary:  
+keywords: resources, resource categories 
+summary: 透過「靜態API」提供的資源ONTAP 會依照類別進行組織、如ONTAP 「靜態API」文件頁所示。 
 ---
 = 資源類別總覽
 :hardbreaks:

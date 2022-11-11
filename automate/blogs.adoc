@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: automate/blogs.html 
-keywords:  
-summary:  
+keywords: automation, automation blogs 
+summary: 我們提供數篇部落格文章、協助您更瞭解自動化ONTAP 部署的各種技術和方法。 
 ---
 = 部落格關於ONTAP 自動化
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-有幾篇部落格文章可協助您更深入瞭解ONTAP 各種技術和方法來實現自動化。
+我們提供數篇部落格文章、協助您更瞭解自動化ONTAP 部署的各種技術和方法。
 
 CLI passThrough提供一種使用ONTAP REST API執行Rest CLI命令的技術。
 

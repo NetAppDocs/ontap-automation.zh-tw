@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/prepare_pcl.html 
-keywords:  
-summary:  
+keywords: python client library, prepare, pcl 
+summary: 您應該先準備本機執行時間環境、再使用Python用戶端程式庫。 
 ---
 = 準備使用Python用戶端程式庫
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-您應該先準備環境、再使用Python用戶端程式庫。
+您應該先準備本機執行時間環境、再使用Python用戶端程式庫。
 
 您必須使用Python 3.5或更新版本。此外、也需要下列套件：
 

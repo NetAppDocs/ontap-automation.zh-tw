@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/interpret_api_response.html 
-keywords:  
-summary:  
+keywords: response, api response, status codes 
+summary: 每個API要求都會對用戶端產生回應。您應該檢查回應、判斷回應是否成功、並視需要擷取其他資料。 
 ---
 = 解讀API回應
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/operational_characteristics.html 
-keywords:  
-summary:  
+keywords: operation, request and response, crud 
+summary: 您可以ONTAP 使用多種不同的方法來存取靜態API。 
 ---
 = 基本營運特性
 :hardbreaks:

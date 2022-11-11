@@ -2,7 +2,7 @@
 permalink: manage/ems-rest-api.html 
 sidebar: sidebar 
 keywords: ems, configuration, workflow 
-summary: 使用REST API管理EMS組態。 
+summary: 您可以ONTAP 使用REST API來管理E地 環管理系統組態。 
 ---
 = 利用REST API管理EMS事件通知ONTAP
 :allow-uri-read: 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
-keywords:  
-summary: 從ONTAPI移轉至ONTAP 靜態API、即可存取ONTAP VMware效能計數器。 
+keywords: performance, performance counters 
+summary: 使用者可透過VMware的支援中心、存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP 
 ---
 = 效能計數器
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 從ONTAPI移轉至ONTAP 靜態API、即可存取ONTAP VMware效能計�
 
 
 [role="lead"]
-利用此功能、支援VMware的使用者存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP
+使用者可透過VMware的支援中心、存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP
 
 在使用版本《軟件》9.11.1之前ONTAP 、只ONTAP 能存取ONTAP 完整的一組《軟件分析管理器》物件、只能存取到CLI和ONTAPI介面。
 
 從使用者版本的《銷售資料》9.11.1開始ONTAP 、ONTAP 使用ONTAP 者可以透過《銷售資料》API來存取Counter Manager物件區段。使用者將自動化指令碼從ONTAPI移轉至ONTAP R靜止API時、必須瞭解效能計數器資料呈現給ONTAPI的方式、以及該資料呈現給REST API的方式之間的差異。
 
-請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449["NetApp Manager對應ONTAP"^] 如需ONTAP 有關REST API可用的一組靜態計數器文件ONTAP 、請參閱《Rest 9.11.1》、以及有關計數器在ONTAPI和REST API使用量之間有何差異的資訊。
+請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885053["R129.12.1 ONTAPI-to-REST Counter Manager對應ONTAP"^] 如需ONTAP 有關REST API可用的一組靜態計數器文件ONTAP 、請參閱《Rest 9.11.1》、以及有關計數器在ONTAPI和REST API使用量之間有何差異的資訊。
 
 
 

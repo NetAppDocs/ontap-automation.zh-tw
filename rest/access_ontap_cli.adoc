@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/access_ontap_cli.html 
-keywords:  
-summary:  
+keywords: cli, ontap cli, cli passthrough 
+summary: 為了協助CLI和ONTAPI API使用者移轉ONTAP 至靜態API、ONTAP 我們提供REST端點來存取CLI。您可以使用此傳遞功能來執行任何CLI命令。 
 ---
 = 透過REST API存取ONTAP REST CLI
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/object_references_and_access.html 
-keywords:  
-summary:  
+keywords: objects, access paths, uuid, uuidv4, collections, object collection 
+summary: 透過REST API曝光的資源執行個體或物件ONTAP 、可透過多種不同的方式進行參考和存取。 
 ---
 = 物件參考與存取
 :hardbreaks:

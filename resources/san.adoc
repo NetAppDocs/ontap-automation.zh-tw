@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/san.html 
-keywords:  
-summary:  
+keywords: san resources 
+summary: 您可以使用這些API呼叫來管理SAN資源。 
 ---
 = SAN
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rn/whats_new.html 
-keywords:  
-summary:  
+keywords: new features, new in release 
+summary: NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。 
 ---
 = 更新功能：利用靜止API與自動化技術ONTAP
 :hardbreaks:
@@ -18,6 +18,17 @@ NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和
 
 
 
+== 零點9.12.1. ONTAP
+
+藉由40多個新的API呼叫、更新版的功能將不斷擴充。ONTAP ONTAP這些端點支援ONTAP 全新的功能、以及現有功能的增強功能。本版本著重於安全性與NAS功能的改善。
+
+安全性增強功能:: Amazon Web Services包含金鑰管理服務、可為金鑰和其他機密提供安全的儲存。您可以透過REST API存取此服務、以便ONTAP 讓效益分析能夠將加密金鑰安全地儲存在雲端。此外、您也可以建立及列出與NetApp儲存加密搭配使用的驗證金鑰。
+Active Directory:: 您可以管理針對ONTAP 某個叢集定義的Active Directory帳戶。這包括建立新帳戶、以及顯示、更新及刪除帳戶。
+CIFS群組原則:: REST API已經過增強、可支援CIFS群組原則的建立與管理。組態資訊可透過套用至所有或特定SVM的群組原則物件來使用和管理。
+
+
+
+
 == 零點9.11.1. ONTAP
 
 藉由將近一百個新的API呼叫、即可繼續擴充《無線更新API》的功能。ONTAP ONTAP這些端點支援全新ONTAP 的功能、以及現有功能的增強功能。此版本著重於支援客戶從ONTAP 無法支援的API（Data ONTAP ONTAPI或ZAPI）移轉至R靜止API。
@@ -28,6 +39,7 @@ Aggregate管理:: 加強了對不經改良的儲存集合體的管理ONTAP 。�
 IP子網路功能:: 此功能已擴充為支援IP子網路。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。
 多重系統管理員驗證:: 多重管理員驗證功能提供靈活的授權架構、可保護ONTAP 對各種指令或作業的存取。您可以定義用來識別受限命令的規則。當使用者要求存取特定命令時、可ONTAP 視情況由多位元管理員授予核准。
 SnapMirror增強功能:: SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP與此相關、我們提供支援來建立及管理大量Snapshot複本。
+儲存資源池:: 我們新增了多個端點、以便存取ONTAP 功能豐富的功能。支援建立及列出叢集中的儲存資源池、以及依ID更新及刪除特定資源池。
 名稱服務快取支援:: 支援快取功能的支援功能已增強了名稱服務、可提升效能與恢復能力。ONTAP名稱服務快取的組態現在可透過REST API存取。可在多個層級套用設定、包括：主機、UNIX使用者、UNIX群組和網路群組。
 ONTAPI報告工具:: ONTAPI報告工具可協助客戶和合作夥伴識別其環境中的ONTAPI使用量。除了Python軟體之外、NetApp隨選實驗室也提供影片和不斷演進的支援。此工具可在從ONTAPI移轉至ONTAP REST API時提供另一項資源。
 

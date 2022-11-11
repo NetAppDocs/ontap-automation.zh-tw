@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/hello_world.html 
-keywords:  
-summary:  
+keywords: simple API call 
+summary: 您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST API並確認其可用度。 
 ---
 = 您好：World
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_api_versioning.html 
-keywords:  
-summary:  
+keywords: versioning, REST API versioning 
+summary: 包含在更新版本編號中的REST API ONTAP 會指派ONTAP 一個版本編號、此編號與更新版本編號無關。您應該注意ONTAP 到發行版的版本包含API、以及這會如何影響您對API的使用。 
 ---
 = REST API版本管理ONTAP
 :hardbreaks:

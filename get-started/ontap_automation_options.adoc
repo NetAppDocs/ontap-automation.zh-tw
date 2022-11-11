@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap, ontap automation, rest, ontap rest api, python client library, ontap ansible 
-summary: 有多種選項可讓ONTAP 您自動化部署和管理功能。 
+keywords: ontap automation, rest rest api, python client library, ansible 
+summary: 從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。您可以直接或透過NetApp Python用戶端程式庫存取REST API。 
 ---
 = 瞭ONTAP 解功能自動化選項
 :hardbreaks:

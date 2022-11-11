@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/asynchronous_processing.html 
-keywords:  
-summary:  
+keywords: asynchronous, asynchronous processing, job, job object 
+summary: 在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。 
 ---
 = 使用工作物件進行非同步處理
 :hardbreaks:

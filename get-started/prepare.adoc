@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/prepare.html 
-keywords:  
-summary:  
+keywords: prepare, preparation 
+summary: 您應該採取幾個步驟來準備使用ONTAP 靜態API。 
 ---
 = 準備使用ONTAP R靜止API
 :hardbreaks:

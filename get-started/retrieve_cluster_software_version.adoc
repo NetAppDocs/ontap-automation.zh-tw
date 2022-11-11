@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/retrieve_cluster_software_version.html 
-keywords:  
-summary:  
+keywords: transaction, API transaction, request, response 
+summary: 每筆API交易都包含HTTP要求和相關回應。 
 ---
 = 正在擷取叢集軟體版本
 :hardbreaks:

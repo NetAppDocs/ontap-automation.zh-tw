@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: getting_started_with_the_rest_api.html 
-keywords:  
-summary:  
+keywords: get started, getting started 
+summary: 您可以快速開始使用ONTAP 靜止API和其他自動化技術。在準備並瞭解基本的要求回應流程之後、您可以使用Curl來發出簡單的API呼叫。 
 ---
 = REST API入門
 :hardbreaks:

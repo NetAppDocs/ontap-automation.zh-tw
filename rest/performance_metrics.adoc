@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/performance_metrics.html 
-keywords:  
-summary:  
+keywords: performance, performance metrics 
+summary: 此功能可收集所選SVM儲存物件和傳輸協定的效能指標、並透過REST API回報此資訊。ONTAP您可以使用此資料來監控ONTAP 整個系統的效能。 
 ---
 = 儲存資源的效能指標
 :hardbreaks:

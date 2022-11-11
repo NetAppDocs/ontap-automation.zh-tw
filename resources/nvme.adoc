@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/nvme.html 
-keywords:  
-summary:  
+keywords: nvme resources 
+summary: 您可以使用這些API呼叫來管理支援NVMe的資源。 
 ---
 = NVMe
 :hardbreaks:

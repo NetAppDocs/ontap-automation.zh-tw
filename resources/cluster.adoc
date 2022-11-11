@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/cluster.html 
-keywords:  
-summary:  
+keywords: cluster resources 
+summary: 您可以使用這些API呼叫來管理ONTAP 支援的叢集和相關資源。 
 ---
 = 叢集
 :hardbreaks:
@@ -22,6 +22,8 @@ summary:
 
 一個由一個或多個節點組成的叢集、以及定義儲存系統的相關組態設定。ONTAP此資源類型隨ONTAP 附於NetApp 9.6。
 
+Counter Manager子系統會擷取各種有關的統計資訊ONTAP 。您可以存取此資訊來評估系統效能。此資源類型隨ONTAP 附於引用的功能。9.11
+
 您可以擷取韌體更新要求的歷程記錄。此資源類型是ONTAP 更新的功能、採用了更新的功能。
 
 非同步REST API要求是使用工作鎖定的背景工作來執行。此資源類型隨ONTAP 附於NetApp 9.6。
@@ -34,7 +36,7 @@ summary:
 
 您可以管理與MetroCluster 之相關的中介程序、包括新增或移除中介程序執行個體。此資源類型是ONTAP 更新的功能、採用了更新的功能。
 
-您可以建立及管理MetroCluster 一套功能豐富的部署、包括執行切換或切換作業。此資源類型是ONTAP 更新的功能、採用了更新的功能。
+您可以建立及管理MetroCluster 一套功能豐富的部署、包括執行切換或切換作業。此資源類型為ONTAP 更新版本、更新版本為9.11、更新版本為更新版本9.8。
 
 您可以對MetroCluster 整個部署執行診斷作業、並擷取結果。此資源類型是ONTAP 更新的功能、採用了更新的功能。
 
@@ -60,7 +62,7 @@ summary:
 
 排程可用於自動化工作的執行。此資源類型隨ONTAP 附於NetApp 9.6。
 
-您可以使用這些端點來擷取所有平台環境感測器的詳細資料。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。
+您可以使用這些端點來擷取所有平台環境感測器的詳細資料。此資源類型隨ONTAP 附於引用的功能。9.11
 
 一個包含叢集軟體設定檔、軟體套件集合、以及軟體歷史記錄的叢集。ONTAP此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
