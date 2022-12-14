@@ -16,30 +16,44 @@ summary: 您可以使用這些API呼叫來管理叢集所使用的實體和邏�
 [role="lead"]
 您可以使用這些API呼叫來管理叢集所使用的實體和邏輯網路資源。
 
+.BGP對等群組
 您可以建立及管理邊界閘道傳輸協定對等群組。此資源類型隨ONTAP 附於NetApp 9.7。
 
+.乙太網路廣播網域
 乙太網路廣播網域是一組實體連接埠、看起來像是同一個實體網路的一部分。當從網域中的其中一個連接埠進行廣播時、所有連接埠都會接收封包。每個廣播網域都是IPspace的一部分。此資源類型隨ONTAP 附於NetApp 9.6。
 
+.乙太網路連接埠
 乙太網路連接埠是實體或虛擬網路端點。這些連接埠可合併為連結集合體群組（LAG）、或使用虛擬LAN（VLAN）分隔。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
+.乙太網路交換器連接埠
 您可以擷取乙太網路交換器的連接埠資訊。此資源類型是ONTAP 更新的功能、採用了更新的功能。
 
+.乙太網路交換器
 您可以擷取或修改ONTAP 用於叢集或儲存網路的乙太網路交換器組態。此資源類型為ONTAP 更新版本、更新版本為9.11、更新版本為更新版本9.8。
 
+.Fibre Channel Fabric
 您可以使用Fibre Channel（FC）Fabric REST API端點來擷取FC網路的相關資訊。這包括ONTAP 連接到整個叢集與FC架構、組成光纖的交換器、以及作用中區域的連線。此資源類型隨ONTAP 附於引用的功能。9.11
 
+.Fibre Channel介面
 Fibre Channel介面是與SVM相關聯的邏輯端點。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
+.Fibre Channel連接埠
 Fibre Channel連接埠是ONTAP 指位於某個節點上的實體介面卡、用於連接至Fibre Channel網路。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
+.HTTP Proxy
 您可以為SVM或叢集IPSpace設定HTTP Proxy。此資源類型隨ONTAP 附於NetApp 9.7。
 
+.IP介面
 邏輯介面（LIF）是具有其他組態屬性的IP位址。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
+.IP路由
 路由表是用於將流量轉送到目的地的IP路由集合。此資源類型隨ONTAP 附於NetApp 9.6。
 
+.IP服務原則
 IP服務原則會定義特定LIF提供的服務。服務原則可在SVM或IPspace的內容中設定。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
+.IP子網路
 支援IP子網路的功能已經擴大。ONTAPREST API可讓您存取ONTAP 組態設定、並管理一個叢集內的IP子網路。此資源類型隨ONTAP 附於引用的功能。9.11
 
+.IPspaces
 IPspace會建立網路空間來支援一或多個SVM。IPspace可彼此隔離、提供安全性與隱私。此資源類型隨ONTAP 附於NetApp 9.6。

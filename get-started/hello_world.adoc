@@ -16,6 +16,7 @@ summary: 您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST AP
 [role="lead"]
 您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST API並確認其可用度。
 
+.開始之前
 您的工作站必須具備Curl公用程式。此外、您必須具備下列條件：
 
 * 知識集區管理LIF的IP位址或主機名稱ONTAP
@@ -38,4 +39,5 @@ NOTE: 如果您的認證資料包含特殊字元、您必須根據您使用的Sh
 
 
 
+.完成後
 此版本資訊會以Json格式顯示。ONTAP

@@ -28,4 +28,5 @@ CLI存取的基礎資源路徑為「/Private / CLI」。如ONTAP 需透過REST A
 
 NOTE: NetApp維護GitHub儲存庫、其中包含程式碼範例和其他實用資訊。您可以存取儲存庫、以取得如何使用CLI傳遞功能的範例。
 
+.相關連結
 https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["靜態Python GitHub儲存庫- CLI傳遞範例ONTAP"^]

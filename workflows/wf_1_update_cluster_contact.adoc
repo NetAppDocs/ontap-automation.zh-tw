@@ -28,6 +28,7 @@ summary: 此工作流程會更新叢集聯絡資訊。由於要求是以非同�
 
 | 叢集 | 修補程式 | /叢集 
 |===
+.處理類型
 非同步
 
 .捲髮
@@ -38,6 +39,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
   "contact": "support@company-demo.com"
 }
 ----
+.Json輸出
 傳回具有相關識別碼的工作物件。
 
 [source, json]
@@ -64,6 +66,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
 
 | 叢集 | 取得 | /cluster / jobs/｛uuid｝ 
 |===
+.處理類型
 同步
 
 .捲髮
@@ -71,6 +74,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
 ----
 curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
 ----
+.輸出
 會傳回具有狀態和其他欄位的工作物件。
 
 [source, json]

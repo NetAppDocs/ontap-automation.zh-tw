@@ -16,10 +16,12 @@ summary: 我們提供數篇部落格文章、協助您更瞭解自動化ONTAP �
 [role="lead"]
 我們提供數篇部落格文章、協助您更瞭解自動化ONTAP 部署的各種技術和方法。
 
+.將私有CLI密碼與ONTAP REST API搭配使用
 CLI passThrough提供一種使用ONTAP REST API執行Rest CLI命令的技術。
 
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["NetApp.IO/202/11/09/Private - CLI/pass-ONTAP-REST - API"^]
 
+.NetApp與Ansible快速入門：安裝Ansible
 如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。
 
 https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["NetApp.IO/202018年10月8日/ NetApp與Ansible安裝入門"^]

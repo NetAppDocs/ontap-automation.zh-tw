@@ -22,16 +22,22 @@ summary: 您可以使用下列工作流程、建立具有相關REST角色的使�
 
 在建立角色並將其指派ONTAP 給某個不穩定使用者帳戶之前、您應該先檢閱主要的安全需求和選項、做好準備。
 
+.您使用的ONTAP 是哪個版本？
 此版本可決定哪些REST端點和RBAC功能可供使用。ONTAP
 
+.識別受保護的資源和範圍
 您需要識別要保護的資源或命令、以及範圍（叢集或SVM）。
 
+.使用者應該擁有哪些存取權限？
 在識別資源和範圍之後、您需要判斷要授與的存取層級。
 
+.使用者將如何存取ONTAP 此產品？
 使用者可ONTAP 透過REST API或CLI或兩者存取功能。
 
+.其中一個內建角色是否足夠、或是需要自訂角色？
 使用現有的內建角色比較方便、但您可以視需要建立新的自訂角色。
 
+.需要哪種角色？
 根據安全需求和ONTAP 不必要存取、您需要選擇是要建立休息或傳統角色。
 
 
@@ -61,6 +67,7 @@ NOTE: 此工作流程旨在說明完整的流程。有些步驟可能是選擇�
 ----
 curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=name' -u admin:password -k --header 'Accept: */*'
 ----
+.完成後
 從您要建立新使用者和角色的清單中選取所需的SVM。
 
 
@@ -81,6 +88,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=na
 ----
 curl --location -i --request GET 'https://10.222.81.101/api/security/accounts/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
 ----
+.完成後
 根據已在SVM中定義的使用者、為新使用者選擇唯一名稱。
 
 
@@ -101,6 +109,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/security/accounts/?o
 ----
 curl --location -i --request GET 'https://10.222.81.101/api/security/roles/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
 ----
+.完成後
 根據已在SVM中定義的角色、為新角色選擇唯一名稱。
 
 
@@ -135,6 +144,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/security/roles/?owne
 ----
 curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 ----
+.完成後
 （可選）再次執行步驟3以顯示新角色。您也可以在ONTAP CLI中顯示角色。
 
 
@@ -162,6 +172,7 @@ curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --d
 ----
 curl --location -i --request POST 'https://10.222.81.101/api/security/roles/752d96be-f17c-11ec-9d19-005056bbad91/dprole1/privileges' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 ----
+.完成後
 （可選）再次執行步驟3以顯示新角色。您也可以在ONTAP CLI中顯示角色。
 
 
@@ -200,4 +211,5 @@ TIP: 您可以包含沒有角色的使用者。在這種情況下、您需要修
 ----
 curl --location -i --request POST 'https://10.222.81.101/api/security/accounts' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 ----
+.完成後
 您可以使用新使用者的認證登入SVM管理介面。

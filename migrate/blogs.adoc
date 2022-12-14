@@ -16,14 +16,17 @@ summary: 有幾篇部落格文章可協助您更深入瞭解如何從ONTAPI移�
 [role="lead"]
 有幾篇部落格文章可協助您更深入瞭解如何從ONTAPI移轉至ONTAP 靜態API。
 
+.ONTAPI至REST對應
 NetApp透過ONTAP 對應文件、提供從專屬的ONTAPI API移轉至靜態API的支援。
 
 https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["NetApp.IO/202/12/17/ontapi-rit-mapping"^]
 
+.將自動化技術從ONTAP ONTAPI轉型為靜態API
 有幾項技術可協助您根據ONTAP REST API來改造您的非自動化環境。
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["www.netapp.com/blog/transform-automation-ontap-rest-api"^]
 
+.使用ONTAPI使用報告工具從ONTAPI進行轉換
 NetApp提供一項工具、協助客戶和合作夥伴移轉至ONTAP 靜態API。
 
 https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["NetApp.IO/2022/03/21/Transit-from ontapizapi-use-ontapi-use-report-Tool"^]

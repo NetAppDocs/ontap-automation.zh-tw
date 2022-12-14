@@ -26,6 +26,7 @@ NOTE: 您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或�
 [role="lead"]
 您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。
 
+.開始之前
 您必須具備下列條件：
 
 * 知識集區管理LIF的IP位址或主機名稱ONTAP
@@ -60,4 +61,5 @@ https://<ip_address>/docs/api`
 * https://library.netapp.com/ecmdocs/ECMLP2856304/html/["部分9.6 ONTAP"^]
 
 
+.相關資訊
 https://devnet.netapp.com/restapi.php["NetApp DevNet：ONTAP 無憂API"^]

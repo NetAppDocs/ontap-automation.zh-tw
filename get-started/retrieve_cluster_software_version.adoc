@@ -18,6 +18,7 @@ summary: 每筆API交易都包含HTTP要求和相關回應。
 
 image:rest_call_01.png["簡單REST API呼叫的圖例"]
 
+.HTTP要求
 從用戶端傳送到伺服器的要求包含下列項目：
 
 * 取得動詞
@@ -26,6 +27,7 @@ image:rest_call_01.png["簡單REST API呼叫的圖例"]
 * 要求標頭、包括授權
 
 
+.HTTP回應
 從伺服器傳送到用戶端的回應包含下列項目：
 
 * 狀態代碼200
