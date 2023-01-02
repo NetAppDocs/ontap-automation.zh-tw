@@ -514,7 +514,6 @@
   <block id="5a4bc8c2caa05fbd9176234fdb066497" category="paragraph">從伺服器傳送到用戶端的回應包含下列項目：</block>
   <block id="1b2a1d97817dee4df7fa73df2277fe55" category="list-text">狀態代碼200</block>
   <block id="4494efe174ad9e4c83bc75af384574e0" category="list-text">包含叢集軟體版本的回應本文</block>
-  <block id="3e25960a79dbc69b674cd4ec67a72c62" category="doc">您好：World</block>
   <block id="a30f2db6f9a8c5629dc89b408b5d97e4" category="paragraph">您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST API並確認其可用度。</block>
   <block id="f1d5e3ebc77f66e2befb5941d10019ee" category="paragraph">您的工作站必須具備Curl公用程式。此外、您必須具備下列條件：</block>
   <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">知識集區管理LIF的IP位址或主機名稱ONTAP</block>
@@ -1534,4 +1533,5 @@
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">將自動化技術從ONTAP ONTAPI轉型為靜態API</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">使用ONTAPI使用報告工具從ONTAPI進行轉換</block>
   <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">輸入佇列已滿時、REST API要求遭拒</block>
+  <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">您的第一個API呼叫</block>
 </blocks>

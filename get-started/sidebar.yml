@@ -9,5 +9,5 @@ entries:
   url: "/get-started/prepare.html"
 - title: 擷取叢集軟體版本
   url: "/get-started/retrieve_cluster_software_version.html"
-- title: 您好：World
-  url: "/get-started/hello_world.html"
+- title: 您的第一個API呼叫
+  url: "/get-started/first_call.html"
