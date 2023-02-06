@@ -14,7 +14,7 @@ summary: 如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP �
 
 
 [role="lead"]
-如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP 靜態API。本節將說明可用的資源、並重點介紹可支援移轉的實用功能與工具。
+如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP 靜態API。有許多實用的資源和工具可用來支援您的移轉作業。
 
 
 NOTE: NetApp首先推出ONTAP REST API搭配NetApp 9.6。自此之後、API持續擴充成熟。現在、它是自動化ONTAP 管理您的各種部署時、優先選用ONTAPI的策略性替代方案。

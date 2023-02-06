@@ -660,8 +660,6 @@
   <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe子系統可維護一組NVMe連線主機的組態狀態和命名空間存取控制。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="ce9f5c2bc40cd88e3ff682c6b88a8186" category="paragraph">NVMe命名空間是一組可定址邏輯區塊、顯示給使用NVMe over Fabrics傳輸協定連線至SVM的主機。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
   <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">資源類別總覽</block>
-  <block id="b2169c6a3a0ae080710868637b995ad7" category="paragraph">透過「靜態API」提供的資源ONTAP 會依照類別進行組織、如ONTAP 「靜態API」文件頁所示。以下是每個資源與基礎資源路徑的簡短說明、以及其他適當的使用考量。</block>
-  <block id="1d1927ef8ecb65f8a47a28bdaad73c8d" category="paragraph">本節說明最新版產品的剩餘資源。如果您需要瞭解先前版本所做的變更、請參閱_Release Notes_。</block>
   <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、您也可以使用查詢參數上的屬性值來存取物件。</block>
   <block id="35ddd64ed03dd1579ce39e6e82ff721f" category="inline-link-macro">其他休息考量</block>
   <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
@@ -1266,7 +1264,6 @@
   <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
   <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP 靜態API。</block>
-  <block id="a4b91b72885f9acc20754bbfdf70a0ba" category="paragraph">如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP 靜態API。本節將說明可用的資源、並重點介紹可支援移轉的實用功能與工具。</block>
   <block id="b3a25dcbc5dbce2ff68dbfa04004bcf8" category="admonition">NetApp首先推出ONTAP REST API搭配NetApp 9.6。自此之後、API持續擴充成熟。現在、它是自動化ONTAP 管理您的各種部署時、優先選用ONTAPI的策略性替代方案。</block>
   <block id="67aba80d01179bffdadcdf811b49cc44" category="summary">使用者可透過VMware的支援中心、存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP</block>
   <block id="6be98e5db6d305c8664913cfad46b09c" category="inline-link">R129.12.1 ONTAPI-to-REST Counter Manager對應ONTAP</block>
@@ -1534,4 +1531,8 @@
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">使用ONTAPI使用報告工具從ONTAPI進行轉換</block>
   <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">輸入佇列已滿時、REST API要求遭拒</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">您的第一個API呼叫</block>
+  <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">透過「靜態API」提供的資源ONTAP 會依類別進行整理、如ONTAP 《The》（英文）、API線上文件所示。下文將簡短說明每項資源、並在適當情況下提供額外的使用考量。</block>
+  <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">更新功能ONTAP</block>
+  <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">本摘要所述的其餘資源是根據產品的最新版本而定。如果您需要瞭解先前版本的變更、請參閱 <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP 靜態API。有許多實用的資源和工具可用來支援您的移轉作業。</block>
 </blocks>

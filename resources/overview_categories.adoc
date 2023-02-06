@@ -14,9 +14,9 @@ summary: 透過「靜態API」提供的資源ONTAP 會依照類別進行組織�
 
 
 [role="lead"]
-透過「靜態API」提供的資源ONTAP 會依照類別進行組織、如ONTAP 「靜態API」文件頁所示。以下是每個資源與基礎資源路徑的簡短說明、以及其他適當的使用考量。
+透過「靜態API」提供的資源ONTAP 會依類別進行整理、如ONTAP 《The》（英文）、API線上文件所示。下文將簡短說明每項資源、並在適當情況下提供額外的使用考量。
 
-本節說明最新版產品的剩餘資源。如果您需要瞭解先前版本所做的變更、請參閱_Release Notes_。
+本摘要所述的其餘資源是根據產品的最新版本而定。如果您需要瞭解先前版本的變更、請參閱 link:../rn/whats_new.html["更新功能ONTAP"] 以及 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。
 
 
 TIP: 對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、您也可以使用查詢參數上的屬性值來存取物件。
@@ -24,5 +24,4 @@ TIP: 對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以�
 .相關資訊
 * link:../rest/object_references_and_access.html["其他休息考量"]
 * link:../reference/api_reference.html["API 參考"]
-* link:../rn/whats_new.html["發行說明 ONTAP"]
 
