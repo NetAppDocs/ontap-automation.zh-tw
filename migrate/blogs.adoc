@@ -26,6 +26,11 @@ https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["NetApp.IO/202/12/17/ontapi
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["www.netapp.com/blog/transform-automation-ontap-rest-api"^]
 
+.將私有CLI密碼與ONTAP REST API搭配使用
+為了協助CLI和ONTAP 支援功能的使用者移轉至ONTAP 靜態API、ONTAP 我們提供一個私有REST API端點、可用來存取任何CLI命令。
+
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api"^]
+
 .使用ONTAPI使用報告工具從ONTAPI進行轉換
 NetApp提供一項工具、協助客戶和合作夥伴移轉至ONTAP 靜態API。
 
