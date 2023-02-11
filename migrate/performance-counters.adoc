@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
-keywords: performance, performance counters 
-summary: 使用者可透過VMware的支援中心、存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP 
+keywords: performance, performance counters, mapping 
+summary: 《The》介紹各個系統效能的豐富資訊ONTAP ONTAP 。它會將這些資料匯出為效能計數器、您可以用來評估ONTAP 您的作業系統效能、並協助達成您的效能目標。 
 ---
 = 效能計數器
 :hardbreaks:
@@ -14,58 +14,140 @@ summary: 使用者可透過VMware的支援中心、存取效能計數器資訊�
 
 
 [role="lead"]
-使用者可透過VMware的支援中心、存取效能計數器資訊、並匯出許多不同的效能計數器指標。ONTAP ONTAP ONTAP
-
-在使用版本《軟件》9.11.1之前ONTAP 、只ONTAP 能存取ONTAP 完整的一組《軟件分析管理器》物件、只能存取到CLI和ONTAPI介面。
-
-從使用者版本的《銷售資料》9.11.1開始ONTAP 、ONTAP 使用ONTAP 者可以透過《銷售資料》API來存取Counter Manager物件區段。使用者將自動化指令碼從ONTAPI移轉至ONTAP R靜止API時、必須瞭解效能計數器資料呈現給ONTAPI的方式、以及該資料呈現給REST API的方式之間的差異。
-
-請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885053["R129.12.1 ONTAPI-to-REST Counter Manager對應ONTAP"^] 如需ONTAP 有關REST API可用的一組靜態計數器文件ONTAP 、請參閱《Rest 9.11.1》、以及有關計數器在ONTAPI和REST API使用量之間有何差異的資訊。
+《The》介紹各個系統效能的豐富資訊ONTAP ONTAP 。它會將此資料匯出為一組_效能計數器_、您可以用來評估ONTAP 您的整套系統效能、並協助達成您的效能目標。
 
 
 
-== 使用ONTAPI存取效能計數器
+== 存取ONTAP 效能計數器
 
-當ONTAPI使用時、效能計數器資料會分組在物件中。例如、在具有四個磁碟的節點中、磁碟效能計數器資料會分組為物件。系統中的每個實體磁碟都代表該物件的執行個體、您可以使用ONTAPI來存取單一磁碟執行個體的個別效能計數器。
+您可以ONTAP 使用兩個不同的API、以及ONTAP 透過VMware命令列介面來存取VMware效能計數器。
+
+
+NOTE: 在自動化管理您的VMware部署時、支援使用支援功能的API是首選且具策略性的選項ONTAP ONTAP 。
 
 
 
-== 使用ONTAP REST API存取效能計數器
+=== ONTAPI API
 
-使用靜態API、您可以將計數器管理器物件當作表格（例如「磁碟」）來存取。ONTAP這表示每個計數器管理器物件都會以自己的表格表示、而該計數器管理器物件的執行個體（例如系統中的個別磁碟）則會以該表格中的列存取。每一列都包含該執行個體的數個個別效能計數器。您可以將執行個體的單一效能計數器當作該表格列中的欄位來存取。
+NetApp Network Manageability SDK提供ONTAPI API。使用ONTAPI時、效能計數器會在物件集合內定義。每個物件對應於系統的實體或虛擬元件。根據系統組態、每個物件可以有一個或多個執行個體。
 
-在下列範例中、「host_Adapter」計數器管理程式物件會以表格格式表示、說明如何使用ONTAP REST API來存取每個效能計數器。系統中有數個主機介面卡、每個主機介面卡都有自己的效能計數器：
+例如ONTAP 、如果您的支援系統有四個實體磁碟、則會有四個執行個體 `disk` 物件、每個物件都有自己的一組效能計數器。您可以使用ONTAPI來存取每個磁碟執行個體的個別計數器。
+
+
+
+=== 靜態API ONTAP
+
+從VMware版本9.11.1開始ONTAP 、您也可以透過REST API存取效能資料。在這種情況下、效能計數器會組織成相當於ONTAPI物件的表格。每個表格列都相當於ONTAPI物件的執行個體。
+
+例如ONTAP 、如果您的支援系統有四個實體磁碟 `disk` 表格將包含四列。每一列都可以個別存取、並包含一組效能計數器、可在該列中作為欄位或欄位使用。
+
+
+
+== 準備使用REST API
+
+您應該先準備好、再使用ONTAP REST API存取效能計數器。
+
+
+
+=== 效能計數器會組織在表格中
+
+ONTAPI物件的子集可透過ONTAP REST API取得、並顯示為表格。例如、ONTAPI *主機介面卡*物件透過REST API呈現為*主機_adpater*表格。系統中的每個主機介面卡都是一列、有自己的一組效能計數器。
 
 |===
-| 執行個體名稱 6+| REST計數器 
+| 執行個體名稱 6+| 效能計數器 
 
 
-| 主機介面卡_1 | 總計_讀取作業 | 總計寫入作業 | 位元組_讀取 | 位元組寫入 | MAX_LINK_DATA速率 | RSCN_count 
+| 主機介面卡_1 | 總計_read_ops_1 | 總計寫入作業1 | 位元組_read_1 | 位元組寫入的1 | MAX_LINK_DATA速率1 | RSCN_count_1 
 
 
-| 主機介面卡_2 | 總計_讀取作業 | 總計寫入作業 | 位元組_讀取 | 位元組寫入 | MAX_LINK_DATA速率 | RSCN_count 
+| 主機介面卡_2 | 總計_read_ops_2. | 總計寫入作業次數 | 位元組_read_2 | 位元組寫入資料2 | MAX_LINK_DATA速率2 | RSCN_count_2 
 
 
-| 主機介面卡_3 | 總計_讀取作業 | 總計寫入作業 | 位元組_讀取 | 位元組寫入 | MAX_LINK_DATA速率 | RSCN_count 
+| 主機介面卡_3 | 總計_read_ops_3. | 總計寫入作業3 | 位元組_read_3 | 位元組寫入資料3. | MAX_LINK_DATA速率3 | RSCN_count_3 
 |===
 
 
-== 瞭解REST API範例的結構
+=== 其餘端點的摘要
 
-請使用下列REST API範例來協助瞭解計數器管理器表格的結構。這些範例也說明如何使用REST API來探索可用的端點、並利用它們深入瞭解系統效能。這些範例會探索「host_Adapter」計數器管理程式物件、逐步顯示物件及其包含的計數器值的詳細資訊。如果您在系統上試用這些範例、請務必在方括弧<>中提供您的值以供參考。
+共有四個主要端點可供存取ONTAP 不景效能計數器和相關表格。
+
+
+NOTE: 每個REST端點都提供唯讀存取、而且僅支援* Get* HTTP方法。請參閱 link:../reference/api_reference.html["API 參考"] 以取得更多資訊。
+
+* */叢集/計數器/表格*
++
+傳回計數器表格及其架構定義的集合。
+
+* */叢集/計數器/表格/｛name｝*
++
+傳回單一命名計數器表格的相關資訊。
+
+* */叢集/計數器/表格/｛counter_name｝/資料列*
++
+傳回命名計數器表格中的列集合。
+
+* */叢集/計數器/表格/｛counter_name｝/列/｛id｝*
++
+從命名的計數器表格傳回特定列。
 
 
 
-=== 探索可用的效能計數器表
 
-您可以使用此REST API呼叫來探索您可以查詢的所有計數器管理器表格：
 
-.申請範例：
+=== 從ONTAPI移轉至REST API
+
+NetApp提供廣泛的支援、可將自動化程式碼從ONTAPI移轉至ONTAP REST API。這包括對應文件、以識別特定ONTAPI物件REST API中可用的等效效能計數器表。
+
+請參閱您ONTAP 所使用之版本資訊的適當對應文件：
+
+* https://docs.netapp.com/us-en/ontap-pcmap-9121/["零點9.12.1效能計數器對應ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-pcmap-9111/["零點9.11.1效能計數器對應ONTAP"^]
+
+
+
+
+== 開始使用ONTAP 靜態API
+
+以下範例說明如何使用REST API來存取ONTAP VMware效能計數器。這包括擷取可用表格的清單、以及探索表格結構。
+
+
+
+=== 開始之前
+
+請先檢閱下列資訊、再使用範例。
+
+.身分證明ONTAP
+您需要ONTAP 一個包含密碼在內的管理員帳戶。
+
+.叢集管理IP
+您將需要為ONTAP 您的支援系統設定叢集管理IP位址。
+
+.所有API呼叫都使用Get方法
+下列所有範例僅可用於擷取HTTP Get方法的資訊。
+
+.變動替代
+每個Curl範例都包含一個或多個以大寫和方括弧括住文字表示的變數。請務必將這些變數替換成適合您環境的實際值。
+
+.範例符合端點
+下列範例順序說明如何使用可用於擷取效能計數器的REST端點。請參閱 <<eps,其餘端點的摘要>> 以取得更多資訊。
+
+
+
+=== 範例1：所有效能計數器表
+
+您可以使用此REST API呼叫來探索所有可用的計數器管理器表格。
+
+.Curl範例
+[%collapsible%open]
+====
 [source, curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
 ----
-.回應範例（縮短以縮短）：
+====
+.Json輸出範例
+[%collapsible]
+====
 [source, json]
 ----
 {
@@ -95,16 +177,551 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
       }
     },
     {
+      "name": "disk:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/disk%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "disk:raid_group",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/disk%3Araid_group"
+        }
+      }
+    },
+    {
+      "name": "external_cache",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/external_cache"
+        }
+      }
+    },
+    {
+      "name": "fcp",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcp"
+        }
+      }
+    },
+    {
+      "name": "fcp:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcp%3Anode"
+        }
+      }
+    },
+    {
+      "name": "fcp_lif",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcp_lif"
+        }
+      }
+    },
+    {
+      "name": "fcp_lif:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcp_lif%3Anode"
+        }
+      }
+    },
+    {
+      "name": "fcp_lif:port",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcp_lif%3Aport"
+        }
+      }
+    },
+    {
+      "name": "fcp_lif:svm",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcp_lif%3Asvm"
+        }
+      }
+    },
+    {
+      "name": "fcvi",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/fcvi"
+        }
+      }
+    },
+    {
+      "name": "headroom_aggregate",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/headroom_aggregate"
+        }
+      }
+    },
+    {
+      "name": "headroom_cpu",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/headroom_cpu"
+        }
+      }
+    },
+    {
       "name": "host_adapter",
       "_links": {
         "self": {
           "href": "/api/cluster/counter/tables/host_adapter"
         }
       }
+    },
+    {
+      "name": "iscsi_lif",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/iscsi_lif"
+        }
+      }
+    },
+    {
+      "name": "iscsi_lif:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/iscsi_lif%3Anode"
+        }
+      }
+    },
+    {
+      "name": "iscsi_lif:svm",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/iscsi_lif%3Asvm"
+        }
+      }
+    },
+    {
+      "name": "lif",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/lif"
+        }
+      }
+    },
+    {
+      "name": "lif:svm",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/lif%3Asvm"
+        }
+      }
+    },
+    {
+      "name": "lun",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/lun"
+        }
+      }
+    },
+    {
+      "name": "lun:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/lun%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "lun:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/lun%3Anode"
+        }
+      }
+    },
+    {
+      "name": "namespace",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/namespace"
+        }
+      }
+    },
+    {
+      "name": "namespace:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/namespace%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "nfs_v4_diag",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/nfs_v4_diag"
+        }
+      }
+    },
+    {
+      "name": "nic_common",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/nic_common"
+        }
+      }
+    },
+    {
+      "name": "nvmf_lif",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/nvmf_lif"
+        }
+      }
+    },
+    {
+      "name": "nvmf_lif:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/nvmf_lif%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "nvmf_lif:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/nvmf_lif%3Anode"
+        }
+      }
+    },
+    {
+      "name": "nvmf_lif:port",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/nvmf_lif%3Aport"
+        }
+      }
+    },
+    {
+      "name": "object_store_client_op",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/object_store_client_op"
+        }
+      }
+    },
+    {
+      "name": "path",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/path"
+        }
+      }
+    },
+    {
+      "name": "processor",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/processor"
+        }
+      }
+    },
+    {
+      "name": "processor:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/processor%3Anode"
+        }
+      }
+    },
+    {
+      "name": "qos",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos"
+        }
+      }
+    },
+    {
+      "name": "qos:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "qos:policy_group",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos%3Apolicy_group"
+        }
+      }
+    },
+    {
+      "name": "qos_detail",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos_detail"
+        }
+      }
+    },
+    {
+      "name": "qos_detail_volume",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos_detail_volume"
+        }
+      }
+    },
+    {
+      "name": "qos_volume",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos_volume"
+        }
+      }
+    },
+    {
+      "name": "qos_volume:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qos_volume%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "qtree",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qtree"
+        }
+      }
+    },
+    {
+      "name": "qtree:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/qtree%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "svm_cifs",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_cifs"
+        }
+      }
+    },
+    {
+      "name": "svm_cifs:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_cifs%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "svm_cifs:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_cifs%3Anode"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v3",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v3"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v3:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v3%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v3:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v3%3Anode"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v4",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v4"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v41",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v41"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v41:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v41%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v41:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v41%3Anode"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v42",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v42"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v42:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v42%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v42:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v42%3Anode"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v4:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v4%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "svm_nfs_v4:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/svm_nfs_v4%3Anode"
+        }
+      }
+    },
+    {
+      "name": "system",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/system"
+        }
+      }
+    },
+    {
+      "name": "system:constituent",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/system%3Aconstituent"
+        }
+      }
+    },
+    {
+      "name": "system:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/system%3Anode"
+        }
+      }
+    },
+    {
+      "name": "token_manager",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/token_manager"
+        }
+      }
+    },
+    {
+      "name": "volume",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/volume"
+        }
+      }
+    },
+    {
+      "name": "volume:node",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/volume%3Anode"
+        }
+      }
+    },
+    {
+      "name": "volume:svm",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/volume%3Asvm"
+        }
+      }
+    },
+    {
+      "name": "wafl",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/wafl"
+        }
+      }
+    },
+    {
+      "name": "wafl_comp_aggr_vol_bin",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/wafl_comp_aggr_vol_bin"
+        }
+      }
+    },
+    {
+      "name": "wafl_hya_per_aggregate",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/wafl_hya_per_aggregate"
+        }
+      }
+    },
+    {
+      "name": "wafl_hya_sizer",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/wafl_hya_sizer"
+        }
+      }
     }
-    ...
   ],
-  "num_records": 68,
+  "num_records": 71,
   "_links": {
     "self": {
       "href": "/api/cluster/counter/tables"
@@ -112,39 +729,45 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
   }
 }
 ----
+====
 
 
-=== 查詢個別效能計數器表格
+=== 範例2：特定表格的高層資訊
 
-您可以使用此REST API呼叫來檢視某個特定表格（計數器管理器物件）的說明和中繼資料。輸出說明表格的用途、並說明表格記錄中每個效能計數器的資訊類型。在此範例中、我們會查詢「host_Adapter」表格：
+您可以使用此REST API呼叫來顯示特定表格的說明和中繼資料。輸出內容包括表格用途、以及每個效能計數器所包含的資料類型。本範例使用*主機介面卡*表格。
 
-.申請範例：
+.Curl範例
+[%collapsible%open]
+====
 [source, curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
 ----
-.回應範例：
+====
+.Json輸出範例
+[%collapsible]
+====
 [source, json]
 ----
 {
   "name": "host_adapter",
-  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI Host Adapters the storage system uses to connect to disks and tape drives.",
+  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI host adapters the storage system uses to connect to disks and tape drives.",
   "counter_schemas": [
     {
       "name": "bytes_read",
-      "description": "Bytes read via Host Adapter",
+      "description": "Bytes read through a host adapter",
       "type": "rate",
       "unit": "per_sec"
     },
     {
       "name": "bytes_written",
-      "description": "Bytes written via Host Adapter",
+      "description": "Bytes written through a host adapter",
       "type": "rate",
       "unit": "per_sec"
     },
     {
       "name": "max_link_data_rate",
-      "description": "Max link data rate in Kilobytes per second for Host Adapter",
+      "description": "Max link data rate in Kilobytes per second for a host adapter",
       "type": "raw",
       "unit": "kb_per_sec"
     },
@@ -162,13 +785,13 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
     },
     {
       "name": "total_read_ops",
-      "description": "Total number of reads on Host Adapter",
+      "description": "Total number of reads on a host adapter",
       "type": "rate",
       "unit": "per_sec"
     },
     {
       "name": "total_write_ops",
-      "description": "Total number of writes on Host Adapter",
+      "description": "Total number of writes on a host adapter",
       "type": "rate",
       "unit": "per_sec"
     }
@@ -180,56 +803,46 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
   }
 }
 ----
+====
 
 
-=== 檢視效能計數器表格中的列
+=== 範例3：特定表格中的所有列
 
-您可以使用此REST API呼叫來檢視表格中的列、以瞭解計數器管理器物件存在哪些執行個體：
+您可以使用此REST API呼叫來檢視表格中的所有列。這表示Counter Manager物件存在哪些執行個體。
 
-.申請範例：
+.Curl範例
+[%collapsible%open]
+====
 [source, curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
 ----
-.回應範例：
+====
+.Json輸出範例
+[%collapsible]
+====
 [source, json]
 ----
 {
   "records": [
     {
-      "id": "power-01:0b",
+      "id": "dmp-adapter-01",
       "_links": {
         "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0b"
+          "href": "/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01"
         }
       }
     },
     {
-      "id": "power-01:0c",
+      "id": "dmp-adapter-02",
       "_links": {
         "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0c"
-        }
-      }
-    },
-    {
-      "id": "power-01:0d",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0d"
-        }
-      }
-    },
-    {
-      "id": "power-01:0e",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0e"
+          "href": "/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-02"
         }
       }
     }
   ],
-  "num_records": 4,
+  "num_records": 2,
   "_links": {
     "self": {
       "href": "/api/cluster/counter/tables/host_adapter/rows"
@@ -237,51 +850,57 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
   }
 }
 ----
+====
 
 
-=== 查詢特定的計數器管理程式執行個體
+=== 範例4：特定表格中的單一列
 
-您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、我們要求系統中某個電源供應器的效能計數器資訊：
+您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、會要求其中一個主機介面卡的效能資料。
 
-.申請範例：
+.Curl範例
+[%collapsible%open]
+====
 [source, curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01'
 ----
-.回應範例：
+====
+.Json輸出範例
+[%collapsible]
+====
 [source, json]
 ----
 {
   "counter_table": {
     "name": "host_adapter"
   },
-  "id": "power-01:0b",
+  "id": "dmp-adapter-01",
   "properties": [
     {
       "name": "node.name",
-      "value": "power-01"
+      "value": "dmp-node-01"
     }
   ],
   "counters": [
     {
       "name": "total_read_ops",
-      "value": 3600516
+      "value": 25098
     },
     {
       "name": "total_write_ops",
-      "value": 3591536
+      "value": 48925
     },
     {
       "name": "bytes_read",
-      "value": 86354320000
+      "value": 1003799680
     },
     {
       "name": "bytes_written",
-      "value": 480863081920
+      "value": 6900961600
     },
     {
       "name": "max_link_data_rate",
-      "value": 375000
+      "value": 0
     },
     {
       "name": "rscn_count",
@@ -290,8 +909,9 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
   ],
   "_links": {
     "self": {
-      "href": "/api/cluster/counter/tables/host_adapter/rows/power-01:0b"
+      "href": "/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01"
     }
   }
 }
 ----
+====
