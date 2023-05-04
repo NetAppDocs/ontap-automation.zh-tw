@@ -2,11 +2,13 @@
 section: migrate
 title: 移轉至REST API
 entries:
-- title: 總覽
+- title: ONTAPI 停用
   url: "/migrate/overview.html"
 - title: ONTAPI至REST對應
   url: "/migrate/mapping.html"
 - title: 效能計數器
   url: "/migrate/performance-counters.html"
-- title: 部落格
+- title: 工具與軟體
+  url: "/migrate/software.html"
+- title: 部落格文章
   url: "/migrate/blogs.html"

@@ -46,7 +46,7 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 +
 PyPI的NetApp Python用戶端程式庫套件。
 
-* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["適用於9.12的NetApp PCL文件"^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["適用於 9.13.1 的 NetApp PCL 文件"^]
 +
 NetApp Python用戶端程式庫的文件。
 

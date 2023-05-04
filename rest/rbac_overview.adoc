@@ -32,7 +32,7 @@ NOTE: 藉助於《更新版本》（及後續版本）、可持續擴充及大�
 角色有兩種類型。他們是ONTAP 根據不同環境的需求而推出、並隨之量身打造。
 
 
-NOTE: 使用每種角色時都有優點和缺點。請參閱 link:../rest/work_roles_users.html#comparing-the-role-types["比較角色類型"] 以取得更多資訊。
+NOTE: 使用每種角色時都有優點和缺點。請參閱 link:../rest/rbac_roles_users.html#comparing-the-role-types["比較角色類型"] 以取得更多資訊。
 
 [cols="20,80"]
 |===

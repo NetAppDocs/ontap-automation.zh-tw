@@ -80,7 +80,10 @@ Counter Manager子系統會擷取各種有關的統計資訊ONTAP 。您可以�
 對等物件代表端點、並支援叢集對等關係。此資源類型隨ONTAP 附於NetApp 9.6。
 
 .效能計數器
-先前ONTAP 發行的版本保留了系統運作特性的統計資訊。隨著9.11.1版本的推出、資訊已經過強化、現在可透過REST API取得。此功能可ONTAP 讓RureREST API更接近Data ONTAP 於使用該API（ONTAPI或ZAPI）的同位元。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1。
+先前ONTAP 發行的版本保留了系統運作特性的統計資訊。隨著9.11.1版本的推出、資訊已經過強化、現在可透過REST API取得。此功能可ONTAP 讓RureREST API更接近Data ONTAP 於使用該API（ONTAPI或ZAPI）的同位元。此資源類型隨ONTAP 附於引用的功能。9.11
+
+.資源標籤
+您可以使用標記將 REST API 資源分組。您可以這樣做、將特定專案或組織群組中的相關資源建立關聯。使用標記有助於更有效地組織及追蹤資源。ONTAP 9.13 引進了這種資源類型。
 
 .排程
 排程可用於自動化工作的執行。此資源類型隨ONTAP 附於NetApp 9.6。

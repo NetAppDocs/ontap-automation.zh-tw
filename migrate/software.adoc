@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: migrate/software.html 
+keywords:  
+summary:  
+---
+= 工具與軟體
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 提供 Python 指令碼範例和其他相關軟體、以支援您從 ONTAPI 移轉至 ONTAP REST API 。以下說明這些樣本中最重要的部分。
+
+
+NOTE: 所有 Python 程式碼範例均可在中取得 https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^] GitHub 儲存庫。
+
+.ONTAPI 使用報告工具
+ONTAPI 使用報告工具旨在協助 NetApp 專業服務、客戶及合作夥伴識別其 ONTAP 環境中的 ONTAPI 使用情形。下表說明三種不同使用案例的指令碼。
+
+[cols="20,80"]
+|===
+| 指令碼 | 說明 
+
+
+| apache_scraper.py | Apache 記錄剪貼簿、可尋找針對 ONTAP 節點發出的 ONTAPI 呼叫 
+
+
+| session_stats.py | 從 ONTAP 擷取工作階段統計資料的 CLI 指令碼 
+
+
+| zapi_to_rest.py | 擷取所傳遞之 ONTAPI 呼叫和屬性其餘詳細資料的指令碼 
+|===
+請參閱 https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool["ONTAPI 使用報告工具"^] 以取得更多資訊。
+
+.專用 CLI 傳遞
+其餘 API 則涵蓋 ONTAP 提供的功能與設施。不過、在某些情況下、透過 REST API 直接存取 ONTAP CLI 可能會很有用。
+
+如需此功能的簡介、請參閱 link:../rest/access_ontap_cli.html["透過REST API存取ONTAP REST CLI"]。如需 Python 範例、請參閱 https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["REST CLI 傳遞範例"^]。
+
+.Python用戶端程式庫
+Python 用戶端程式庫是一個套件、您可以安裝並使用它來存取 ONTAP REST API 搭配 Python 。它可讓您快速開發健全的程式碼、以自動化 ONTAP 部署。
+
+如需 Python 用戶端程式庫的簡介、請參閱 link:../python/overview_pcl.html["Python用戶端程式庫總覽"]。如需 Python 範例、請參閱 https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Python 用戶端程式庫範例"^]。
