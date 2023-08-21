@@ -42,3 +42,9 @@ Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ON
 == 使用Ansible
 
 Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。您應該先檢閱本網站上的文件、包括 link:../automate/ontap_ansible.html["可執行的自動化功能ONTAP"]。
+
+
+
+== BlueXP 自動化目錄
+
+NetApp https://console.bluexp.netapp.com/automationCatalog/["BlueXP 自動化目錄"^] 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取解決方案、協助您自動化部署及整合 ONTAP 及其他 NetApp 產品。請參閱 https://docs.netapp.com/us-en/netapp-automation/["NetApp 自動化"^] 自動化解決方案說明文件。
