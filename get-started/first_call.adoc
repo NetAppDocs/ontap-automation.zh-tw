@@ -14,7 +14,7 @@ summary: 您可以發出 Curl 命令、開始使用 ONTAP REST API 並確認其�
 
 
 [role="lead"]
-您可以發出 Curl 命令、開始使用 ONTAP REST API 並確認其可用度。
+您可以發出簡單的 Curl 命令、開始使用 ONTAP REST API 並確認其可用度。
 
 .開始之前
 除了在工作站上使用 Curl 公用程式外、您還需要下列項目：

@@ -1663,7 +1663,6 @@
   <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">使用 Curl 時的另一個選項是移除授權標頭、改用 Curl * user* 參數。例如：</block>
   <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
   <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">您必須為環境替換適當的認證。使用此參數執行 cURL 命令時、會為您產生授權標頭。</block>
-  <block id="76b8f173097880ead5a0f4cfd6e0618c" category="section-title">使用捲曲範例搭配 Bash Shell</block>
   <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">如果您直接使用工作流程捲曲範例、則必須使用適合您環境的值來更新這些範例所包含的變數。您可以手動編輯範例、或仰賴 Bash Shell 執行以下所述的替代作業。</block>
   <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">使用 Bash 的優點之一是、您可以在 Shell 工作階段中一次設定變數值、而非每個 Curl 命令一次。</block>
   <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">開啟 Linux 或類似作業系統隨附的 Bash Shell 。</block>
@@ -1676,10 +1675,8 @@
   <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">更新叢集聯絡人並確認工作狀態</block>
   <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷相關的背景工作是否成功完成。</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">步驟 1 ：更新叢集聯絡資訊</block>
-  <block id="5b65398d9afd1a14a452f4645c7fb774" category="paragraph">您可以發出API呼叫來更新聯絡資訊。</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTP 方法和端點</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">此 REST API 呼叫使用下列方法和端點。</block>
-  <block id="75e17ff813d0ed4dba4fcb32abc673e6" category="paragraph">會傳回工作物件的識別碼。您應該儲存 ID 值、以便在下一個步驟中使用、做為變數 $job_ID 。</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">步驟 2 ：擷取工作狀態</block>
   <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">您應該擷取工作的狀態、以判斷非同步要求是否成功完成。</block>
   <block id="4044a674901deb07947f235775f9654d" category="paragraph">狀態值和其他欄位會包含在傳回的工作物件中。</block>
@@ -1696,7 +1693,6 @@
   <block id="66c1b4c7f3dc385b68a9fa903ccd016d" category="cell">查詢</block>
   <block id="a734854ee8bdd547b3a1a8eeee4f56a8" category="cell">選取您要傳回的值。範例包括<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block> 和<block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>。</block>
   <block id="d68c817e523bebfd3bb5d6e6aed3c2f7" category="paragraph-title">捲曲範例：擷取叢集聯絡資訊</block>
-  <block id="defb04d386d33eda3cf981695c9da0e8" category="paragraph">此範例說明如何擷取單一欄位。若要取得整個叢集組態、您需要移除<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數。</block>
   <block id="361f902ffbf6412778b4224d2f0f31a2" category="section-title">路徑變數</block>
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">每個 REST API 呼叫所使用的端點路徑可以包含各種識別碼。每個 ID 對應特定的資源執行個體。範例包括叢集 ID 和 SVM ID 。</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。例如：</block>
@@ -1706,4 +1702,15 @@
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">取得叢集組態</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">更新叢集連絡人</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">列出 SVM</block>
+  <block id="c17ef84c021b2307b064e8e24b8013a6" category="paragraph">您可以發出簡單的 Curl 命令、開始使用 ONTAP REST API 並確認其可用度。</block>
+  <block id="a98b00db4ce1fec40c21222810430c05" category="section-title">JSON 輸入範例</block>
+  <block id="09e5af60e7e961d326ecb94915481554" category="paragraph">某些 REST API 呼叫（例如使用 POST 或修補程式的呼叫）需要 JSON 輸入以供要求主體使用。JSON 輸入範例與捲曲範例分開呈現、以供清楚說明。您可以將 JSON 輸入範例與下列其中一種技術搭配使用。</block>
+  <block id="4d8521855bcfebae2c0518f634b5dcbd" category="paragraph-title">儲存至本機檔案</block>
+  <block id="399feb8e89d476ceeca1f9a576fb97ef" category="paragraph">您可以將 JSON 範例複製到檔案中、並將其儲存在本機上。Curl 命令是使用來參照檔案<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 參數、其值會以 a 表示檔案名稱<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> 前置碼：</block>
+  <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">在捲曲範例之後貼到終端機</block>
+  <block id="d44e4ebc435b8a720eca9d2dce5b7c87" category="paragraph">首先、您需要將捲曲範例複製並貼到終端機殼層。然後編輯範例以完全移除<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 最後的參數、並以取代<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> 參數。最後、在 JSON 範例中複製並貼上、使其遵循 Curl 命令和更新的參數。</block>
+  <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">使用範例搭配 Bash</block>
+  <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">您可以發出 API 呼叫來更新叢集聯絡資訊。</block>
+  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">工作物件即會傳回。您應該儲存工作識別碼、以便在下一個步驟中使用、做為變數 $job_ID 。</block>
+  <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">此範例說明如何擷取單一欄位。若要取得整個叢集物件和組態、您需要移除<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數。</block>
 </blocks>
