@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_get_cluster.html 
+keywords: workflow, get cluster, cluster configuration 
+summary: 您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。 
+---
+= 取得叢集組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 取得 
+
+
+| 取得 | /叢集 
+|===
+.捲曲範例的其他輸入參數
+除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| 欄位 | 查詢 | 否 | 選取您要傳回的值。範例包括 `contact` 和 `version`。 
+|===
+.捲曲範例：擷取叢集聯絡資訊
+此範例說明如何擷取單一欄位。若要取得整個叢集組態、您需要移除 `fields` 查詢參數。
+
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster?fields=contact" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Json輸出範例
+[listing]
+----
+{
+  "contact": "support@company-demo.com"
+}
+----

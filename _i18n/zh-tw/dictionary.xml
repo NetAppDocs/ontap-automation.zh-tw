@@ -227,7 +227,6 @@
   <block id="c4408d335012a56ff58937d78050efad" category="list-text">接受</block>
   <block id="43e5eac57fb1fee548fbabb2345d61d5" category="list-text">此標頭應設定為「application/hal+json」。如果改為「application/json」、則除了擷取下一批記錄所需的連結之外、不會傳回任何的HAL連結。如果標頭是這兩個值以外的其他值、則回應中「content-type」標頭的預設值為「application/hal+json」。</block>
   <block id="9cd8a2455b1839ff98ef70c05b9b5983" category="list-text">授權</block>
-  <block id="1ef8df17a9442d1f08a0df818861c5e5" category="list-text">基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。</block>
   <block id="a3ba8461439f7d0176ef3944696ea2ac" category="section-title">申請本文</block>
   <block id="973ab3cad185dec8eac7662330e49f1c" category="paragraph">申請本文的內容會因特定通話而有所不同。HTTP要求本文包含下列其中一項：</block>
   <block id="b86f5c6ed2b7d52e2940495dc8a984f4" category="list-text">具有輸入變數的Json物件</block>
@@ -408,12 +407,9 @@
   <block id="51c033a34d63a2d1737e1b6bdf842d1f" category="list-text">取得工作的目前狀態。</block>
   <block id="b281ec87e30bc1058b3173012f46c637" category="list-text">如果工作處於非終端機狀態、請再次執行迴圈。</block>
   <block id="6caaacff3c8abae5d9b2e02a5e4d0829" category="list-text">當工作達到終端機狀態（成功、失敗）時停止。</block>
-  <block id="13d76f06d267496e8846be9e378c6df8" category="inline-link-macro">工作流程1：更新叢集聯絡人並檢查工作狀態</block>
-  <block id="5a683654a64ec8dd5cecf5ff4ead9469" category="paragraph"><block ref="5a683654a64ec8dd5cecf5ff4ead9469" category="inline-link-macro-rx"></block></block>
   <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">REST API版本管理ONTAP</block>
   <block id="a131529b4b9e76bc39353ef1aa209dd9" category="paragraph">包含在更新版本編號中的REST API ONTAP 會指派ONTAP 一個版本編號、此編號與更新版本編號無關。您應該注意ONTAP 到發行版的版本包含API、以及這會如何影響您對API的使用。</block>
   <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">所有版本ONTAP 的更新版本均使用相同版本的REST API。</block>
-  <block id="bfed0b768d4205be491cf9aab9ef5bf1" category="list-text">從功能升級到功能升級到功能升級到功能升級ONTAP ONTAP</block>
   <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">版本1</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相關連結</block>
   <block id="fa229fc458ab35ecd4519d4dcca0e7bb" category="list-text"><block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block></block>
@@ -507,14 +503,8 @@
   <block id="5a4bc8c2caa05fbd9176234fdb066497" category="paragraph">從伺服器傳送到用戶端的回應包含下列項目：</block>
   <block id="1b2a1d97817dee4df7fa73df2277fe55" category="list-text">狀態代碼200</block>
   <block id="4494efe174ad9e4c83bc75af384574e0" category="list-text">包含叢集軟體版本的回應本文</block>
-  <block id="a30f2db6f9a8c5629dc89b408b5d97e4" category="paragraph">您可以在CLI上發出簡單的Curl命令、開始使用ONTAP REST API並確認其可用度。</block>
-  <block id="f1d5e3ebc77f66e2befb5941d10019ee" category="paragraph">您的工作站必須具備Curl公用程式。此外、您必須具備下列條件：</block>
   <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">知識集區管理LIF的IP位址或主機名稱ONTAP</block>
-  <block id="ec4f05f95246e64e1875be5ee79905b2" category="list-text">有權存取ONTAP REST API（叢集資源）之帳戶的使用者名稱和密碼。</block>
-  <block id="da932131b500d8e907961663d8ef346b" category="admonition">如果您的認證資料包含特殊字元、您必須根據您使用的Shell、以Curl可接受的方式來設定其格式。例如、您可以在每個特殊字元之前插入反斜槓、或將整個「username:password」字串換成單引號。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
-  <block id="58866791801e443554927396816c827c" category="list-text">在本機工作站的命令列介面上、擷取ONTAP 版本的資訊：</block>
-  <block id="8a35977a6f21dff949427e42cf6d3999" category="paragraph">"curl -X Get -u username:password -k <block ref="1f92f5c8813ca60ee841c4440a7f8600" category="inline-link-rx"></block></block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
   <block id="42ac9c1cc1752704f9d6980ce41b7ba3" category="paragraph">此版本資訊會以Json格式顯示。ONTAP</block>
   <block id="625c92078d49d59bd332d26752459a1c" category="doc">準備使用ONTAP R靜止API</block>
@@ -776,32 +766,12 @@
   <block id="6051810223d7d640e8104859ac825bf3" category="paragraph">非同步和同步關係均可建立所需的連線傳輸資料。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="c76837312025a879c77fbb723b7e215e" category="paragraph">您可以透過現有的SnapMirror關係來管理SnapMirror傳輸。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="1b18b55a054bdd1b04a8c8f5c862bc4f" category="doc">準備好使用工作流程</block>
-  <block id="cdbbcb4acb019584472990be1e68660f" category="paragraph">您應該先做好準備、再使用工作流程程序。</block>
-  <block id="4e9340308dca4d4fa10ce0a1c9d5c96a" category="section-title">瞭解工作流程中使用的API呼叫</block>
-  <block id="ee7a9ae73028cfda6ec52c2a5e7c84f0" category="paragraph">「支援API」線上文件頁面包含每次REST API呼叫的詳細資料。ONTAP工作流程範例中使用的每個API呼叫都只包含您在文件頁面上找到呼叫所需的資訊、而非在此重複這些詳細資料。找到特定API呼叫之後、您可以檢閱通話的完整詳細資料、包括輸入參數、輸出格式、HTTP狀態代碼及要求處理類型。</block>
-  <block id="457726be17407daf1c955d43ea661695" category="paragraph">工作流程中的每個API呼叫都包含下列資訊、可協助您在文件頁面上找到呼叫：</block>
-  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="list-text">類別</block>
-  <block id="765304ffcf8618a62227ccee634b1d12" category="paragraph">API呼叫會在文件頁面上組織成功能相關的區域或類別。若要尋找特定的API呼叫、請捲動至頁面底部、然後按一下適用的API類別。</block>
-  <block id="94e58690c162ba826800973567ad1063" category="paragraph">HTTP方法可識別在資源上執行的動作。每個API呼叫都是透過單一HTTP方法執行。</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">路徑</block>
-  <block id="0564266fb62d9d7133097f1bae879dde" category="paragraph">路徑會決定動作在執行通話時套用到的特定資源。路徑字串會附加至核心URL、以構成識別資源的完整URL。</block>
-  <block id="3af7790bee98254ae139d4927f1bb354" category="section-title">建構URL以直接存取REST API</block>
-  <block id="cb9e0022deebe15c9fcf226449b0ffca" category="paragraph">除了「介紹」文件頁面之外、您也可以直接透過編程語言（例如Python）存取「介紹」API。ONTAP ONTAP在此情況下、核心URL與存取線上文件頁面時所使用的URL略有不同。直接存取API時、您必須將「/API」附加至網域和連接埠字串。例如：「https://ontap.mycompany.com/api`</block>
-  <block id="87d9604d2178e58e4d22b66dc74675f2" category="list-text"><block ref="87d9604d2178e58e4d22b66dc74675f2" category="inline-link-macro-rx"></block></block>
-  <block id="b04c0c0415c8329423a4dc5d04335c63" category="list-text"><block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block></block>
-  <block id="efa1dd0050ca05b6c44b7b778e28c93b" category="doc">工作流程1：更新叢集聯絡人並檢查工作狀態</block>
   <block id="7de269085c4e23e4ff26c31b7122144d" category="paragraph">此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷背景工作是否成功完成。</block>
-  <block id="530cddf0f41aa70491fa5a19e26768cb" category="section-title">1.更新叢集的聯絡資訊</block>
-  <block id="4a79b9839f0a471eb4a2d3d7f2bf76f9" category="paragraph">您可以發出API呼叫來更新聯絡資訊。由於要求以非同步方式執行、因此您必須確認相關工作是否成功。</block>
   <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/叢集</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">非同步</block>
-  <block id="66b29b9f2bdc949a7545046fbe59fcef" category="listing-title">捲髮</block>
-  <block id="8f2622c34a0d14fa4c9c3a13011b9b6c" category="paragraph">傳回具有相關識別碼的工作物件。</block>
-  <block id="6f5089fd2df9f1fabec1177bfdc6290f" category="section-title">2.擷取工作狀態</block>
-  <block id="82437d3826cc31eff7495baa268e454c" category="paragraph">您必須擷取工作狀態、以判斷非同步要求是否已成功完成。</block>
   <block id="98dbba5c9ef16c64ae0471156940f706" category="cell">/cluster / jobs/｛uuid｝</block>
   <block id="2fe4167817733fec8e6ba1afddf78f1b" category="paragraph">同步</block>
-  <block id="50ccf1eac00654a4ac10e12d843b2025" category="paragraph">會傳回具有狀態和其他欄位的工作物件。</block>
   <block id="5b4f03d6bb02bf1a4943d2fd721bca50" category="doc">利用REST API管理EMS事件通知ONTAP</block>
   <block id="7ae7146ab14a911070a9b67bb88d3193" category="paragraph">您可以使用ONTAP Sesrest API來設定事件管理系統（EMS）事件通知傳送給您的重要性、以及擷取具有特定屬性的所有EMS訊息或特定訊息。您可以使用REST API來協助自動化與EMS相關的工作、節省使用其他EMS訊息方法的時間。</block>
   <block id="1099d399c75060b79e3ad383bf9aaaca" category="inline-link">Python指令碼</block>
@@ -900,7 +870,6 @@
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">總覽</block>
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">用於擷取叢集組態的指令碼</block>
   <block id="e6b088db24ebe67ed0e9567d309387ec" category="sidebar">工作流程</block>
-  <block id="57bf92c591d867814abf9287e2781651" category="sidebar">工作流程1：更新叢集聯絡人並檢查狀態</block>
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">使用ONTAP REST API管理功能</block>
   <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS事件通知</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL和SACL權限</block>
@@ -1174,7 +1143,6 @@
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。建立REST角色會自動建立傳統的_mapping角色。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">您可以在ONTAP 線上存取此功能 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需詳細資訊、包括如何使用API的範例、請參閱文件。</block>
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。新的存取層級可用於REST角色、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="1620bfae18b24c9aeb26299384e3355d" category="paragraph">「curl -X Get -u admin: password -k <block ref="9b818800381d633e2ed9a126d3941682" category="inline-link-rx"></block></block>
   <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">所有ONTAP 產品文件</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">產品文件資料ONTAP</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
@@ -1470,8 +1438,6 @@
   <block id="0a783c3ce00e8d3af4931704ca629ba3" category="paragraph-title">其中一個內建角色是否足夠、或是需要自訂角色？</block>
   <block id="531201515c1ec0bfadb1f37e57c2222d" category="paragraph-title">需要哪種角色？</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">處理類型</block>
-  <block id="11a1b77794af7e7ad738c9603dcf8730" category="paragraph-title">Json輸出</block>
-  <block id="29c2c02a361c9d7028472e5d92cd4a54" category="paragraph-title">輸出</block>
   <block id="56aa3ed9dba484ac641c5247a15b1ed6" category="paragraph-title">基本需求</block>
   <block id="11593a40313671a88f29e6475859f238" category="paragraph-title">套件名稱與版本</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="paragraph-title">安裝</block>
@@ -1636,4 +1602,108 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="4ab1add905aec7c143d5425426b1470e" category="summary">您可以發出 Curl 命令、開始使用 ONTAP REST API 並確認其可用度。</block>
+  <block id="78a7b7c7971a80951fd85f4b28e7518c" category="paragraph">除了在工作站上使用 Curl 公用程式外、您還需要下列項目：</block>
+  <block id="7bfe29215621deb70a47f902294281bf" category="list-text">ONTAP 叢集管理 LIF 的 IP 位址或 FQDN</block>
+  <block id="6c62a36f8e262347f2ba79452265a020" category="list-text">具有存取 ONTAP REST API 權限的帳戶的 ONTAP 認證</block>
+  <block id="21569412cc525b31a0c126598a680b86" category="admonition">如果您的認證包含特殊字元、您必須根據所使用的殼層、將其格式化為可接受的格式。例如、您可以在每個特殊字元之前插入反斜線、或將整個認證字串換成雙引號。</block>
+  <block id="81c7a329d4f4793f536260d6cec23a04" category="list-text">在本機工作站的命令列介面上、發出下列命令：</block>
+  <block id="b5b73d02b288e67898182f6b6f76e267" category="paragraph"><block ref="429d1cce820c881fb624c558f06b534f" prefix="" category="inline-code"></block></block>
+  <block id="f9c5f8c688d72b2f67cbb721eb8bd53e" category="summary">在將 ONTAP 工作流程用於即時部署之前、您應該先熟悉其結構和格式。</block>
+  <block id="0b79795d3efc95b9976c7c5b933afce2" category="section-title">簡介</block>
+  <block id="f5d6d63dd550f378522648a645333f6d" category="paragraph">工作流程_是完成特定管理工作或目標所需的一或多個步驟順序。ONTAP 工作流程包含您完成每項工作所需的核心步驟和參數。它們是自訂 ONTAP 自動化環境的起點。</block>
+  <block id="122f0884abaeb43a4eccb0ddc5dbdbb8" category="paragraph-title">步驟類型</block>
+  <block id="4e91dc3707946c5fde9a76d95d86ab96" category="paragraph">ONTAP 工作流程中的每個步驟都是下列其中一種類型：</block>
+  <block id="6f01c5142da7df41a4b71dc3f7570bda" category="list-text">REST API呼叫（詳細資料如Curl和Json範例）</block>
+  <block id="f0c298fa6a4d2b967cd3572a4ce8c34f" category="list-text">執行或叫用其他 ONTAP 工作流程</block>
+  <block id="45632949cdd1c5466795de61555ae0ca" category="list-text">其他相關工作（例如做組態決策）</block>
+  <block id="b75a89b63647fdd9b09694c37ca63bf9" category="paragraph-title">REST API 呼叫</block>
+  <block id="a8492c61ad8067f69139069d55e20ede" category="paragraph">大部分的工作流程步驟都是 REST API 呼叫。這些步驟使用通用格式、其中包括捲髮範例和其他資訊。請參閱 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需 REST API 呼叫的詳細資訊、請參閱。</block>
+  <block id="67159a63ec04dcd49136183d2862cd66" category="paragraph-title">單一步驟工作流程</block>
+  <block id="5570ed8b3997fd4a9427eb890ee775d9" category="paragraph">工作流程只能包含一個步驟。這些單一步驟工作流程的格式與包含多個步驟的工作流程略有不同。例如、會移除明確的步驟名稱。工作流程動作應根據標題加以清除。</block>
+  <block id="cc10a6127f01a14ee7d08690e5476c21" category="paragraph">這些工作流程的設計儘可能通用、以便在任何 ONTAP 環境中使用。有鑑於此、 REST API 呼叫會在捲曲範例和其他輸入中使用變數。其餘 API 呼叫則可輕鬆地適應不同的 ONTAP 環境。</block>
+  <block id="5e57b8d8be99da22a6cda01581fc3221" category="section-title">基礎 URL 格式</block>
+  <block id="604fbbb8706e844b0b4aa2616a3a72ec" category="paragraph">您可以透過 Curl 或 Python 等程式設計語言、直接存取 ONTAP REST API 。在這種情況下、基本 URL 與您在存取 ONTAP 線上文件或系統管理員時所使用的 URL 不同。</block>
+  <block id="b2e546a32c02144282fc626a17b4123a" category="paragraph">直接存取 API 時、您需要將 *API* 附加到網域或 IP 位址。例如：</block>
+  <block id="1130426d3f04c52f410ac60e6ce8b230" category="paragraph"><block ref="3fb09ca3875413da44a9832d2ed627b7" prefix="" category="inline-code"></block></block>
+  <block id="224416f5b5ef9ebeb4b9501a363a46a3" category="paragraph">請參閱 <block ref="87d9604d2178e58e4d22b66dc74675f2" category="inline-link-macro-rx"></block> 如需存取 ONTAP REST API 的詳細資訊、</block>
+  <block id="3791b7d0d91a2238c40dbbfefa886cc7" category="section-title">通用輸入參數</block>
+  <block id="42f67270fcba9fb260d596a38b564570" category="paragraph">大多數 REST API 呼叫通常會使用數個輸入參數。這些參數通常未在個別工作流程中說明。您應該熟悉這些參數。請參閱 <block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="4cad1a5966d83b6ddc6a861ab5449fce" category="paragraph">如果特定捲曲範例需要其他參數、則會在每個工作流程的捲曲範例 * 其他輸入參數一節中加入這些參數。</block>
+  <block id="c7975313824cd849192810f63bcd9a1e" category="section-title">可變格式</block>
+  <block id="662081edc74f6dec8617a183354314a9" category="paragraph">工作流程範例所使用的 ID 值和其他變數是不透明的、可能會因每個 ONTAP 叢集而異。為了改善範例的可讀性、不使用實際值。而是使用變數。此方法以一致的格式和一組保留名稱為基礎、有幾項優點：</block>
+  <block id="6846bd19d3855d33378ece05b56de412" category="list-text">Curl 和 JSON 樣本更容易閱讀、更容易理解。</block>
+  <block id="89bd915fe5612063332c1abcee674fbb" category="list-text">因為所有關鍵字都使用相同的格式、所以您可以快速識別它們。</block>
+  <block id="d94ea72c6f873db4ad92c298e5f6c0b5" category="list-text">由於無法複製和重複使用這些值、因此沒有安全漏洞。</block>
+  <block id="262817c71879ed58754769cf3f684d4b" category="paragraph">這些變數已格式化為用於 Bash Shell 環境。每個變數都以美元符號開頭、並視需要以雙引號括住。這讓 Bash 能夠辨識他們的能力。大寫字母會持續用於名稱。</block>
+  <block id="d1970310ade44fffdc04c2b848f972f1" category="paragraph">以下是一些常見的變數關鍵字。此清單並非詳盡無遺、並會視需要使用其他關鍵字。其意義應根據背景而明確。</block>
+  <block id="220f3d3750583b9db48568a0b5b9a5f1" category="cell">關鍵字</block>
+  <block id="00fb17c50b70dc75802223ee442804c7" category="cell">$FQDN_IP</block>
+  <block id="e6b391a8d2c4d45902a23a8b6585703d" category="cell">URL</block>
+  <block id="f42332ef9ed7d9b54c78a421adffdd26" category="cell">ONTAP 叢集管理 LIF 的完整網域名稱或 IP 位址。</block>
+  <block id="8422281c7f63b05015c4269e5d39d708" category="cell">$叢 集 ID</block>
+  <block id="d2888ae6c2336e3de9f327d87d6d6e8c" category="cell">UUIDv4 值可識別執行 API 作業的 ONTAP 叢集。</block>
+  <block id="4ed5b72e5a5b649b5d306892bfcb0f7d" category="cell">$basic_auth</block>
+  <block id="bf50d5e661106d0abe925af3c2e6f7e7" category="cell">標頭</block>
+  <block id="7d8953ad437c7a74fa7c3eaa1037c286" category="cell">用於 HTTP 基本驗證的認證字串。</block>
+  <block id="71d08941d68cdfdc2782675a59475359" category="section-title">驗證選項</block>
+  <block id="189c9092755b5ec9acf4ef1fb0b54d46" category="paragraph">REST API 透過 ONTAP 9.13.1 提供的主要驗證方法是基本驗證。</block>
+  <block id="5f7f2e03d053c151ec8a08fd76564f5a" category="section-title">HTTP 基本驗證</block>
+  <block id="dc248dc9e4f71e5475b8cecc054f14d4" category="paragraph">使用基本驗證時、每個 HTTP 要求都必須包含使用者認證。傳送認證有兩個選項。</block>
+  <block id="303374a8533b38fb7d98a5790a54237c" category="paragraph-title">建構 HTTP 要求標頭</block>
+  <block id="1eb945a3e58fc6954932a5681f004ce7" category="paragraph">您可以手動建構授權標頭、並將其納入 HTTP 要求中。這可以在 CLI 中使用 cURL 命令或使用自動化程式碼的程式設計語言時完成。高層級步驟包括：</block>
+  <block id="de502eeb74b9db18547f010273db3a03" category="list-text">將使用者和密碼值與冒號串連在一起：</block>
+  <block id="4f765dee7c913da188ec3feb5803b2eb" category="paragraph"><block ref="4a88e1f19c3245879ff3b041cf65f2c0" prefix="" category="inline-code"></block></block>
+  <block id="1320cf2b61c91bbb314f468cb1b3faac" category="list-text">將整個字串轉換為 base64 ：</block>
+  <block id="3541da9612cccb446ac474f889742961" category="paragraph"><block ref="927aacc3bfdb5b911a7d032315797f39" prefix="" category="inline-code"></block></block>
+  <block id="942788e1858aada3519259908aefaa6e" category="list-text">建構要求標頭：</block>
+  <block id="3329f37c2d3fbc845a99400ebeaccffa" category="paragraph"><block ref="ad7510dc039743abb39bd92fafca587a" prefix="" category="inline-code"></block></block>
+  <block id="8069d08f897b1eab0ae8b8e27b7c85d5" category="paragraph">工作流程捲曲範例包括此標頭及變數 *$basic_AUTH* 、您必須先更新才能使用。</block>
+  <block id="549a8ef894c94e44e0caa995eaef719f" category="paragraph-title">使用 Curl 參數</block>
+  <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">使用 Curl 時的另一個選項是移除授權標頭、改用 Curl * user* 參數。例如：</block>
+  <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
+  <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">您必須為環境替換適當的認證。使用此參數執行 cURL 命令時、會為您產生授權標頭。</block>
+  <block id="76b8f173097880ead5a0f4cfd6e0618c" category="section-title">使用捲曲範例搭配 Bash Shell</block>
+  <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">如果您直接使用工作流程捲曲範例、則必須使用適合您環境的值來更新這些範例所包含的變數。您可以手動編輯範例、或仰賴 Bash Shell 執行以下所述的替代作業。</block>
+  <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">使用 Bash 的優點之一是、您可以在 Shell 工作階段中一次設定變數值、而非每個 Curl 命令一次。</block>
+  <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">開啟 Linux 或類似作業系統隨附的 Bash Shell 。</block>
+  <block id="8fe545575762c5e2da996636397d8976" category="list-text">設定您要執行的捲髮範例中所包含的變數值。例如：</block>
+  <block id="af3f9a43c563b71e1cb6eba057c67406" category="paragraph"><block ref="f17f552ff5676b0b95e7c1c4474e4a0e" prefix="" category="inline-code"></block></block>
+  <block id="a76ad0ce3b4ce85c64bbc3d3cd25bdd2" category="list-text">從工作流程頁面複製捲曲範例、然後貼到 Shell 終端機。</block>
+  <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">按下 *enter* 執行下列動作：</block>
+  <block id="198b3154f73c4a62a05f7a0089ea4f3a" category="list-text">請取代您設定的變數值</block>
+  <block id="9a6c9ba6963e8edb0564d74a05262568" category="list-text">執行 curl 命令</block>
+  <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">更新叢集聯絡人並確認工作狀態</block>
+  <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷相關的背景工作是否成功完成。</block>
+  <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">步驟 1 ：更新叢集聯絡資訊</block>
+  <block id="5b65398d9afd1a14a452f4645c7fb774" category="paragraph">您可以發出API呼叫來更新聯絡資訊。</block>
+  <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTP 方法和端點</block>
+  <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">此 REST API 呼叫使用下列方法和端點。</block>
+  <block id="75e17ff813d0ed4dba4fcb32abc673e6" category="paragraph">會傳回工作物件的識別碼。您應該儲存 ID 值、以便在下一個步驟中使用、做為變數 $job_ID 。</block>
+  <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">步驟 2 ：擷取工作狀態</block>
+  <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">您應該擷取工作的狀態、以判斷非同步要求是否成功完成。</block>
+  <block id="4044a674901deb07947f235775f9654d" category="paragraph">狀態值和其他欄位會包含在傳回的工作物件中。</block>
+  <block id="1e6808f43cf2da1acd44c6e982792490" category="summary">您可以列出在 ONTAP 叢集中定義的儲存虛擬機器（ SVM ）。在建立新的 SVM 之前、您可以將其做為尋找特定 SVM 識別碼或確保名稱唯一性的一部分。</block>
+  <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">列出 SVM</block>
+  <block id="e713e270523baa8c3aca351e280ceba0" category="cell">/svm/svms</block>
+  <block id="a3d2e020750395446da7d89e6da9765d" category="summary">您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。</block>
+  <block id="a01b413c1a87a4e0b5a27f7477459347" category="doc">取得叢集組態</block>
+  <block id="0510f6e6bd78b2ec3d88fb42187ae328" category="paragraph-title">捲曲範例的其他輸入參數</block>
+  <block id="a9ea431a49179a653fb353a3d8027b29" category="paragraph">除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。</block>
+  <block id="83f499a540b1323009c200d6f8cc9396" category="cell">參數</block>
+  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必要</block>
+  <block id="d05b6ed7d2345020440df396d6da7f73" category="cell">欄位</block>
+  <block id="66c1b4c7f3dc385b68a9fa903ccd016d" category="cell">查詢</block>
+  <block id="a734854ee8bdd547b3a1a8eeee4f56a8" category="cell">選取您要傳回的值。範例包括<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block> 和<block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>。</block>
+  <block id="d68c817e523bebfd3bb5d6e6aed3c2f7" category="paragraph-title">捲曲範例：擷取叢集聯絡資訊</block>
+  <block id="defb04d386d33eda3cf981695c9da0e8" category="paragraph">此範例說明如何擷取單一欄位。若要取得整個叢集組態、您需要移除<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數。</block>
+  <block id="361f902ffbf6412778b4224d2f0f31a2" category="section-title">路徑變數</block>
+  <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">每個 REST API 呼叫所使用的端點路徑可以包含各種識別碼。每個 ID 對應特定的資源執行個體。範例包括叢集 ID 和 SVM ID 。</block>
+  <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。例如：</block>
+  <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>。</block>
+  <block id="8e69453af156d83ee85c0320efa52ea2" category="list-text"><block ref="8e69453af156d83ee85c0320efa52ea2" category="inline-link-macro-rx"></block></block>
+  <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6 至 ONTAP 9.13.1</block>
+  <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">取得叢集組態</block>
+  <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">更新叢集連絡人</block>
+  <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">列出 SVM</block>
 </blocks>

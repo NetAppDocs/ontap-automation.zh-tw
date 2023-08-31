@@ -19,7 +19,7 @@ summary: 包含在更新版本編號中的REST API ONTAP 會指派ONTAP 一個�
 
 NOTE: 所有版本ONTAP 的更新版本均使用相同版本的REST API。
 
-從功能升級到功能升級到功能升級到功能升級ONTAP ONTAP:: 版本1
+ONTAP 9.6 至 ONTAP 9.13.1:: 版本1
 
 
 .相關連結

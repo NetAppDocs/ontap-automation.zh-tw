@@ -32,7 +32,7 @@ homepage:
     - title: 自動化選項ONTAP
       url: "/get-started/ontap_automation_options.html"
     - title: 準備使用REST API
-      url: "/get-started/prepare.html"
+      url: "/get-started/prepare_rest.html"
     - title: 您的第一個API呼叫
       url: "/get-started/first_call.html"
   - title: 靜態API ONTAP

@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_update_cluster_contact.html 
+keywords: workflow, update cluster, cluster contact, job, job state 
+summary: 此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷背景工作是否成功完成。 
+---
+= 更新叢集聯絡人並確認工作狀態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷相關的背景工作是否成功完成。
+
+
+
+== 步驟 1 ：更新叢集聯絡資訊
+
+您可以發出API呼叫來更新聯絡資訊。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 修補程式 | /叢集 
+|===
+.處理類型
+非同步
+
+.Curl範例
+[source, curl]
+----
+curl --location --include \
+--request PATCH "https://$FQDN_IP/api/cluster" \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, json]
+----
+{
+  "contact": "support@company-demo.com"
+}
+----
+.Json輸出範例
+會傳回工作物件的識別碼。您應該儲存 ID 值、以便在下一個步驟中使用、做為變數 $job_ID 。
+
+[source, json]
+----
+{ "job": {
+    "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      }
+    }
+  }
+}
+----
+
+
+== 步驟 2 ：擷取工作狀態
+
+您應該擷取工作的狀態、以判斷非同步要求是否成功完成。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /cluster / jobs/｛uuid｝ 
+|===
+.處理類型
+同步
+
+.Curl範例
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Json輸出範例
+狀態值和其他欄位會包含在傳回的工作物件中。
+
+[listing]
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----

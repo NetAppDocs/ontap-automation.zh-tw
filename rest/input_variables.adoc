@@ -49,13 +49,24 @@ NOTE: 並非所有的HTTP方法都可在每個REST端點上使用。此外、修
 |===
 
 
+== 路徑變數
+
+每個 REST API 呼叫所使用的端點路徑可以包含各種識別碼。每個 ID 對應特定的資源執行個體。範例包括叢集 ID 和 SVM ID 。
+
+
+
 == 要求標頭
 
 您必須在HTTP要求中包含多個標頭。
 
 內容類型:: 如果申請本文包含Json、則此標頭必須設定為「application/json」。
 接受:: 此標頭應設定為「application/hal+json」。如果改為「application/json」、則除了擷取下一批記錄所需的連結之外、不會傳回任何的HAL連結。如果標頭是這兩個值以外的其他值、則回應中「content-type」標頭的預設值為「application/hal+json」。
-授權:: 基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。
+授權:: 基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。例如：
++
+--
+`Authorization: Basic YWRtaW46cGV0ZXJzb24=`。
+
+--
 
 
 
