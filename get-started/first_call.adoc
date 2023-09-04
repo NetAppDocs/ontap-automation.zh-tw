@@ -32,14 +32,14 @@ NOTE: 如果您的認證包含特殊字元、您必須根據所使用的殼層�
 [source, curl]
 ----
 curl --request GET \
---user username:password \
-"https://$FQDN_IP/api/cluster?fields=version"
+"https://$FQDN_IP/api/cluster?fields=version" \
+--user username:password
 ----
 +
 * 範例 *
 
 +
-`curl --request GET --user admin:david123 "https://10.222.81.101/api/cluster?fields=version"`
+`curl --request GET "https://10.29.186.132/api/cluster?fields=version" --user admin:david123`
 
 
 

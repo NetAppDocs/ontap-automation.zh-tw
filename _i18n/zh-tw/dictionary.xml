@@ -183,7 +183,6 @@
   <block id="19f05b47f4b958662678fc11fd0ce414" category="paragraph">超文字傳輸傳輸協定（HTTP）是Web服務用戶端和伺服器用來交換有關資源的要求和回應訊息的傳輸協定。在設計Web服務應用程式時、HTTP方法會對應至資源及對應的狀態管理動作。HTTP為無狀態。因此、若要將一組相關的要求和回應建立關聯、以做為一筆交易的一部分、則必須在隨要求和回應資料流一起提供的HTTP標頭中加入額外資訊。</block>
   <block id="bd4c8bbdccbcb7826a3bc4ae421c0604" category="section-title">JSON格式化</block>
   <block id="171bf5afc5734ab1982f0d1e37b2b5e9" category="paragraph">雖然資訊可透過多種方式在Web服務用戶端和伺服器之間進行結構化和傳輸、但最受歡迎的選項是JavaScript物件表示法（Json）。Json是以純文字表示簡單資料結構的產業標準、用於傳輸描述資源的狀態資訊。這個靜態API使用Json來格式化每個HTTP要求和回應的實體中所包含的資料。ONTAP</block>
-  <block id="29fe0e3b021fed4ff52a274326d05c86" category="doc">如何存取ONTAP NetApp的</block>
   <block id="3c09024082538b393ae85161883b78ab" category="paragraph">您可以ONTAP 使用多種不同的方法來存取靜態API。</block>
   <block id="1391ec09425a9a140a4aef306e42d0cb" category="section-title">網路考量</block>
   <block id="480df78a66061b5c3b61f69d89342d23" category="paragraph">您可以透過下列介面連線至REST API：</block>
@@ -1608,7 +1607,6 @@
   <block id="6c62a36f8e262347f2ba79452265a020" category="list-text">具有存取 ONTAP REST API 權限的帳戶的 ONTAP 認證</block>
   <block id="21569412cc525b31a0c126598a680b86" category="admonition">如果您的認證包含特殊字元、您必須根據所使用的殼層、將其格式化為可接受的格式。例如、您可以在每個特殊字元之前插入反斜線、或將整個認證字串換成雙引號。</block>
   <block id="81c7a329d4f4793f536260d6cec23a04" category="list-text">在本機工作站的命令列介面上、發出下列命令：</block>
-  <block id="b5b73d02b288e67898182f6b6f76e267" category="paragraph"><block ref="429d1cce820c881fb624c558f06b534f" prefix="" category="inline-code"></block></block>
   <block id="f9c5f8c688d72b2f67cbb721eb8bd53e" category="summary">在將 ONTAP 工作流程用於即時部署之前、您應該先熟悉其結構和格式。</block>
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="section-title">簡介</block>
   <block id="f5d6d63dd550f378522648a645333f6d" category="paragraph">工作流程_是完成特定管理工作或目標所需的一或多個步驟順序。ONTAP 工作流程包含您完成每項工作所需的核心步驟和參數。它們是自訂 ONTAP 自動化環境的起點。</block>
@@ -1620,27 +1618,20 @@
   <block id="b75a89b63647fdd9b09694c37ca63bf9" category="paragraph-title">REST API 呼叫</block>
   <block id="a8492c61ad8067f69139069d55e20ede" category="paragraph">大部分的工作流程步驟都是 REST API 呼叫。這些步驟使用通用格式、其中包括捲髮範例和其他資訊。請參閱 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需 REST API 呼叫的詳細資訊、請參閱。</block>
   <block id="67159a63ec04dcd49136183d2862cd66" category="paragraph-title">單一步驟工作流程</block>
-  <block id="5570ed8b3997fd4a9427eb890ee775d9" category="paragraph">工作流程只能包含一個步驟。這些單一步驟工作流程的格式與包含多個步驟的工作流程略有不同。例如、會移除明確的步驟名稱。工作流程動作應根據標題加以清除。</block>
   <block id="cc10a6127f01a14ee7d08690e5476c21" category="paragraph">這些工作流程的設計儘可能通用、以便在任何 ONTAP 環境中使用。有鑑於此、 REST API 呼叫會在捲曲範例和其他輸入中使用變數。其餘 API 呼叫則可輕鬆地適應不同的 ONTAP 環境。</block>
   <block id="5e57b8d8be99da22a6cda01581fc3221" category="section-title">基礎 URL 格式</block>
-  <block id="604fbbb8706e844b0b4aa2616a3a72ec" category="paragraph">您可以透過 Curl 或 Python 等程式設計語言、直接存取 ONTAP REST API 。在這種情況下、基本 URL 與您在存取 ONTAP 線上文件或系統管理員時所使用的 URL 不同。</block>
   <block id="b2e546a32c02144282fc626a17b4123a" category="paragraph">直接存取 API 時、您需要將 *API* 附加到網域或 IP 位址。例如：</block>
   <block id="1130426d3f04c52f410ac60e6ce8b230" category="paragraph"><block ref="3fb09ca3875413da44a9832d2ed627b7" prefix="" category="inline-code"></block></block>
-  <block id="224416f5b5ef9ebeb4b9501a363a46a3" category="paragraph">請參閱 <block ref="87d9604d2178e58e4d22b66dc74675f2" category="inline-link-macro-rx"></block> 如需存取 ONTAP REST API 的詳細資訊、</block>
   <block id="3791b7d0d91a2238c40dbbfefa886cc7" category="section-title">通用輸入參數</block>
   <block id="42f67270fcba9fb260d596a38b564570" category="paragraph">大多數 REST API 呼叫通常會使用數個輸入參數。這些參數通常未在個別工作流程中說明。您應該熟悉這些參數。請參閱 <block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="4cad1a5966d83b6ddc6a861ab5449fce" category="paragraph">如果特定捲曲範例需要其他參數、則會在每個工作流程的捲曲範例 * 其他輸入參數一節中加入這些參數。</block>
   <block id="c7975313824cd849192810f63bcd9a1e" category="section-title">可變格式</block>
-  <block id="662081edc74f6dec8617a183354314a9" category="paragraph">工作流程範例所使用的 ID 值和其他變數是不透明的、可能會因每個 ONTAP 叢集而異。為了改善範例的可讀性、不使用實際值。而是使用變數。此方法以一致的格式和一組保留名稱為基礎、有幾項優點：</block>
   <block id="6846bd19d3855d33378ece05b56de412" category="list-text">Curl 和 JSON 樣本更容易閱讀、更容易理解。</block>
   <block id="89bd915fe5612063332c1abcee674fbb" category="list-text">因為所有關鍵字都使用相同的格式、所以您可以快速識別它們。</block>
   <block id="d94ea72c6f873db4ad92c298e5f6c0b5" category="list-text">由於無法複製和重複使用這些值、因此沒有安全漏洞。</block>
   <block id="262817c71879ed58754769cf3f684d4b" category="paragraph">這些變數已格式化為用於 Bash Shell 環境。每個變數都以美元符號開頭、並視需要以雙引號括住。這讓 Bash 能夠辨識他們的能力。大寫字母會持續用於名稱。</block>
-  <block id="d1970310ade44fffdc04c2b848f972f1" category="paragraph">以下是一些常見的變數關鍵字。此清單並非詳盡無遺、並會視需要使用其他關鍵字。其意義應根據背景而明確。</block>
   <block id="220f3d3750583b9db48568a0b5b9a5f1" category="cell">關鍵字</block>
   <block id="00fb17c50b70dc75802223ee442804c7" category="cell">$FQDN_IP</block>
   <block id="e6b391a8d2c4d45902a23a8b6585703d" category="cell">URL</block>
-  <block id="f42332ef9ed7d9b54c78a421adffdd26" category="cell">ONTAP 叢集管理 LIF 的完整網域名稱或 IP 位址。</block>
   <block id="8422281c7f63b05015c4269e5d39d708" category="cell">$叢 集 ID</block>
   <block id="d2888ae6c2336e3de9f327d87d6d6e8c" category="cell">UUIDv4 值可識別執行 API 作業的 ONTAP 叢集。</block>
   <block id="4ed5b72e5a5b649b5d306892bfcb0f7d" category="cell">$basic_auth</block>
@@ -1651,7 +1642,6 @@
   <block id="5f7f2e03d053c151ec8a08fd76564f5a" category="section-title">HTTP 基本驗證</block>
   <block id="dc248dc9e4f71e5475b8cecc054f14d4" category="paragraph">使用基本驗證時、每個 HTTP 要求都必須包含使用者認證。傳送認證有兩個選項。</block>
   <block id="303374a8533b38fb7d98a5790a54237c" category="paragraph-title">建構 HTTP 要求標頭</block>
-  <block id="1eb945a3e58fc6954932a5681f004ce7" category="paragraph">您可以手動建構授權標頭、並將其納入 HTTP 要求中。這可以在 CLI 中使用 cURL 命令或使用自動化程式碼的程式設計語言時完成。高層級步驟包括：</block>
   <block id="de502eeb74b9db18547f010273db3a03" category="list-text">將使用者和密碼值與冒號串連在一起：</block>
   <block id="4f765dee7c913da188ec3feb5803b2eb" category="paragraph"><block ref="4a88e1f19c3245879ff3b041cf65f2c0" prefix="" category="inline-code"></block></block>
   <block id="1320cf2b61c91bbb314f468cb1b3faac" category="list-text">將整個字串轉換為 base64 ：</block>
@@ -1662,11 +1652,9 @@
   <block id="549a8ef894c94e44e0caa995eaef719f" category="paragraph-title">使用 Curl 參數</block>
   <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">使用 Curl 時的另一個選項是移除授權標頭、改用 Curl * user* 參數。例如：</block>
   <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
-  <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">您必須為環境替換適當的認證。使用此參數執行 cURL 命令時、會為您產生授權標頭。</block>
   <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">如果您直接使用工作流程捲曲範例、則必須使用適合您環境的值來更新這些範例所包含的變數。您可以手動編輯範例、或仰賴 Bash Shell 執行以下所述的替代作業。</block>
   <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">使用 Bash 的優點之一是、您可以在 Shell 工作階段中一次設定變數值、而非每個 Curl 命令一次。</block>
   <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">開啟 Linux 或類似作業系統隨附的 Bash Shell 。</block>
-  <block id="8fe545575762c5e2da996636397d8976" category="list-text">設定您要執行的捲髮範例中所包含的變數值。例如：</block>
   <block id="af3f9a43c563b71e1cb6eba057c67406" category="paragraph"><block ref="f17f552ff5676b0b95e7c1c4474e4a0e" prefix="" category="inline-code"></block></block>
   <block id="a76ad0ce3b4ce85c64bbc3d3cd25bdd2" category="list-text">從工作流程頁面複製捲曲範例、然後貼到 Shell 終端機。</block>
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">按下 *enter* 執行下列動作：</block>
@@ -1704,13 +1692,27 @@
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">列出 SVM</block>
   <block id="c17ef84c021b2307b064e8e24b8013a6" category="paragraph">您可以發出簡單的 Curl 命令、開始使用 ONTAP REST API 並確認其可用度。</block>
   <block id="a98b00db4ce1fec40c21222810430c05" category="section-title">JSON 輸入範例</block>
-  <block id="09e5af60e7e961d326ecb94915481554" category="paragraph">某些 REST API 呼叫（例如使用 POST 或修補程式的呼叫）需要 JSON 輸入以供要求主體使用。JSON 輸入範例與捲曲範例分開呈現、以供清楚說明。您可以將 JSON 輸入範例與下列其中一種技術搭配使用。</block>
   <block id="4d8521855bcfebae2c0518f634b5dcbd" category="paragraph-title">儲存至本機檔案</block>
-  <block id="399feb8e89d476ceeca1f9a576fb97ef" category="paragraph">您可以將 JSON 範例複製到檔案中、並將其儲存在本機上。Curl 命令是使用來參照檔案<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 參數、其值會以 a 表示檔案名稱<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> 前置碼：</block>
   <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">在捲曲範例之後貼到終端機</block>
-  <block id="d44e4ebc435b8a720eca9d2dce5b7c87" category="paragraph">首先、您需要將捲曲範例複製並貼到終端機殼層。然後編輯範例以完全移除<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 最後的參數、並以取代<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> 參數。最後、在 JSON 範例中複製並貼上、使其遵循 Curl 命令和更新的參數。</block>
   <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">使用範例搭配 Bash</block>
   <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">您可以發出 API 呼叫來更新叢集聯絡資訊。</block>
   <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">工作物件即會傳回。您應該儲存工作識別碼、以便在下一個步驟中使用、做為變數 $job_ID 。</block>
   <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">此範例說明如何擷取單一欄位。若要取得整個叢集物件和組態、您需要移除<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數。</block>
+  <block id="e84f1016162859b425bf19a20c585781" category="paragraph"><block ref="0073b77e7a081cdc093bac4d7301bcd9" prefix="" category="inline-code"></block></block>
+  <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">在將工作流程用於即時 ONTAP 部署之前、您應該先熟悉工作流程的結構和格式。</block>
+  <block id="0ee204047e3ff10a0e6d606b38224615" category="paragraph">工作流程只能包含一個步驟。這些單一步驟工作流程的格式與包含多個步驟的工作流程略有不同。例如、會移除明確的步驟名稱。應根據工作流程標題來清除行動或作業。</block>
+  <block id="8d197ea17b19bf5b877d0bca6b13aa1c" category="paragraph">您可以透過 Curl 或程式設計語言直接存取 ONTAP REST API 。在這種情況下、基本 URL 與您在存取 ONTAP 線上文件或系統管理員時所使用的 URL 不同。</block>
+  <block id="96dc946163c536a828ef3f6ac5ab199d" category="paragraph">請參閱 <block ref="fd12ec3737d055cdf76a7f06b5b60e9a" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="8b601595dec3f885a40ef9fec71f259d" category="paragraph">如果特定 REST API 呼叫需要其他參數、則會包含在每個工作流程的捲曲範例 * 的 * 額外輸入參數一節中。</block>
+  <block id="dc9f325cca41d07c0fa65042753d1c30" category="paragraph">工作流程範例所使用的 ID 值和其他變數是不透明的、可能會因每個 ONTAP 叢集而異。為了改善範例的可讀性、不使用實際值。而是使用變數。這種方法以一致的格式和一組保留名稱為基礎、有幾項優點：</block>
+  <block id="5fdcf5dc19660a9231d7bb52846ce0da" category="paragraph">以下是一些常見的變數關鍵字。此清單並非詳盡無遺、並視需要使用其他變數。其意義應根據背景而明確。</block>
+  <block id="d756fcda47f15b15654659976d926844" category="cell">ONTAP 管理 LIF 的完整網域名稱或 IP 位址。</block>
+  <block id="4ed41f44ebd6b55c9188b2a4e9d3a9d6" category="paragraph">某些 REST API 呼叫（例如使用 POST 或修補程式的呼叫）需要在要求主體中輸入 JSON 。JSON 輸入範例與捲曲範例分開呈現、以供清楚說明。您可以將 JSON 輸入範例與下列其中一種技術搭配使用。</block>
+  <block id="2c6af158c642908d68661703a7ccb9a2" category="paragraph">您可以將 JSON 輸入範例複製到檔案中、並將其儲存在本機上。Curl 命令是使用來參照檔案<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 參數、其值會以 a 表示檔案名稱<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> 前置碼：</block>
+  <block id="38226c06e253f6675842109366b6a5ac" category="paragraph">首先、您需要將捲曲範例複製並貼到終端機殼層。然後編輯範例以完全移除<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 最後的參數、並以取代<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> 參數。最後、在 JSON 範例中複製並貼上、使其跟隨具有更新參數的 Curl 命令。您應該使用單引號來包裝 JSON 輸入範例。</block>
+  <block id="e3296c1de306965b7ce8c8d91cfdae69" category="paragraph">您可以手動建構授權標頭、並將其納入 HTTP 要求中。這可以在 CLI 中使用 cURL 命令或使用自動化程式碼的程式設計語言時完成。高階步驟包括：</block>
+  <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">您必須為環境替換適當的認證。認證並未在 base64 中編碼。使用此參數執行 cURL 命令時、會編碼字串、並為您產生授權標頭。</block>
+  <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">設定您要執行的捲髮範例所包含的變數值。例如：</block>
+  <block id="88c3404621959196699b6d5e21481f01" category="section-title">步驟 3 ：確認叢集聯絡資訊</block>
+  <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">執行工作流程 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
 </blocks>
