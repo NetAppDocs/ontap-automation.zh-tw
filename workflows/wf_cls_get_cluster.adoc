@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_get_cluster.html 
+permalink: workflows/wf_cls_get_cluster.html 
 keywords: workflow, get cluster, cluster configuration 
 summary: 您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。 
 ---

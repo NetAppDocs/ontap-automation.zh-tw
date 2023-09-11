@@ -766,7 +766,6 @@
   <block id="c76837312025a879c77fbb723b7e215e" category="paragraph">您可以透過現有的SnapMirror關係來管理SnapMirror傳輸。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="1b18b55a054bdd1b04a8c8f5c862bc4f" category="doc">準備好使用工作流程</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">路徑</block>
-  <block id="7de269085c4e23e4ff26c31b7122144d" category="paragraph">此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷背景工作是否成功完成。</block>
   <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/叢集</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">非同步</block>
   <block id="98dbba5c9ef16c64ae0471156940f706" category="cell">/cluster / jobs/｛uuid｝</block>
@@ -1660,8 +1659,6 @@
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">按下 *enter* 執行下列動作：</block>
   <block id="198b3154f73c4a62a05f7a0089ea4f3a" category="list-text">請取代您設定的變數值</block>
   <block id="9a6c9ba6963e8edb0564d74a05262568" category="list-text">執行 curl 命令</block>
-  <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">更新叢集聯絡人並確認工作狀態</block>
-  <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">此工作流程會更新叢集聯絡資訊。由於要求是以非同步方式處理、因此也說明如何判斷相關的背景工作是否成功完成。</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">步驟 1 ：更新叢集聯絡資訊</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTP 方法和端點</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">此 REST API 呼叫使用下列方法和端點。</block>
@@ -1685,7 +1682,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">每個 REST API 呼叫所使用的端點路徑可以包含各種識別碼。每個 ID 對應特定的資源執行個體。範例包括叢集 ID 和 SVM ID 。</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。例如：</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>。</block>
-  <block id="8e69453af156d83ee85c0320efa52ea2" category="list-text"><block ref="8e69453af156d83ee85c0320efa52ea2" category="inline-link-macro-rx"></block></block>
   <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6 至 ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">取得叢集組態</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">更新叢集連絡人</block>
@@ -1715,4 +1711,8 @@
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">設定您要執行的捲髮範例所包含的變數值。例如：</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">步驟 3 ：確認叢集聯絡資訊</block>
   <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">執行工作流程 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
+  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">更新叢集聯絡人並確認工作狀態</block>
+  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
+  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">您可以更新叢集的連絡人資訊。由於要求是以非同步方式處理、因此此工作流程也說明如何判斷相關的背景工作是否成功完成。</block>
+  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">REST 資源摘要</block>
 </blocks>

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_list_svms.html 
+permalink: workflows/wf_svm_list_svms.html 
 keywords: workflow, list SVMs 
 summary: 您可以列出在 ONTAP 叢集中定義的儲存虛擬機器（ SVM ）。在建立新的 SVM 之前、您可以將其做為尋找特定 SVM 識別碼或確保名稱唯一性的一部分。 
 ---

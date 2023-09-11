@@ -78,5 +78,5 @@ HTTP回應中傳回的工作物件包含數個內容。您可以在後續的API�
 
 
 .相關資訊
-* link:../workflows/wf_update_cluster_contact.html["更新叢集聯絡人並確認工作狀態"]
+* link:../workflows/wf_cls_update_contact.html["更新叢集聯絡人並確認工作狀態"]
 

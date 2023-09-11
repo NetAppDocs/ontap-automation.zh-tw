@@ -5,10 +5,10 @@ entries:
 - title: 叢集
   entries:
   - title: 取得叢集組態
-    url: "/workflows/wf_get_cluster.html"
+    url: "/workflows/wf_cls_get_cluster.html"
   - title: 更新叢集連絡人
-    url: "/workflows/wf_update_cluster_contact.html"
+    url: "/workflows/wf_cls_update_contact.html"
 - title: SVM
   entries:
   - title: 列出 SVM
-    url: "/workflows/wf_list_svms.html"
+    url: "/workflows/wf_svm_list_svms.html"
