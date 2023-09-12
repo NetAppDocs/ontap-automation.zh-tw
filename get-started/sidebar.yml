@@ -5,8 +5,6 @@ url: "/getting_started_with_the_rest_api.html"
 entries:
 - title: 瞭解自動化選項
   url: "/get-started/ontap_automation_options.html"
-- title: 準備使用REST API
-  url: "/get-started/prepare_rest.html"
 - title: 擷取叢集軟體版本
   url: "/get-started/retrieve_cluster_software_version.html"
 - title: 您的第一個API呼叫
