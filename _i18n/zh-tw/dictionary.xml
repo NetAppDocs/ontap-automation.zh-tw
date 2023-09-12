@@ -1669,7 +1669,6 @@
   <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">列出 SVM</block>
   <block id="e713e270523baa8c3aca351e280ceba0" category="cell">/svm/svms</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。</block>
-  <block id="a01b413c1a87a4e0b5a27f7477459347" category="doc">取得叢集組態</block>
   <block id="0510f6e6bd78b2ec3d88fb42187ae328" category="paragraph-title">捲曲範例的其他輸入參數</block>
   <block id="a9ea431a49179a653fb353a3d8027b29" category="paragraph">除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。</block>
   <block id="83f499a540b1323009c200d6f8cc9396" category="cell">參數</block>
@@ -1710,9 +1709,9 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">您必須為環境替換適當的認證。認證並未在 base64 中編碼。使用此參數執行 cURL 命令時、會編碼字串、並為您產生授權標頭。</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">設定您要執行的捲髮範例所包含的變數值。例如：</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">步驟 3 ：確認叢集聯絡資訊</block>
-  <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">執行工作流程 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
   <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">更新叢集聯絡人並確認工作狀態</block>
   <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
   <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">您可以更新叢集的連絡人資訊。由於要求是以非同步方式處理、因此此工作流程也說明如何判斷相關的背景工作是否成功完成。</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">REST 資源摘要</block>
+  <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">執行工作流程 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
 </blocks>

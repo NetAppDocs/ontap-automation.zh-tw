@@ -118,4 +118,4 @@ curl --request GET \
 
 == 步驟 3 ：確認叢集聯絡資訊
 
-執行工作流程 link:../workflows/wf_get_cluster.html["取得叢集組態"]。您應該設定 `fields` 查詢參數至 `contact`。
+執行工作流程 link:../workflows/wf_cls_get_cluster.html["取得叢集組態"]。您應該設定 `fields` 查詢參數至 `contact`。
