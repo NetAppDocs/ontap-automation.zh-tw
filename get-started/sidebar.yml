@@ -1,7 +1,6 @@
 ---
 section: get-started
 title: 開始使用
-url: "/getting_started_with_the_rest_api.html"
 entries:
 - title: 瞭解自動化選項
   url: "/get-started/ontap_automation_options.html"
@@ -9,5 +8,3 @@ entries:
   url: "/get-started/retrieve_cluster_software_version.html"
 - title: 您的第一個API呼叫
   url: "/get-started/first_call.html"
-- title: 準備好使用工作流程
-  url: "/get-started/prepare_workflows.html"

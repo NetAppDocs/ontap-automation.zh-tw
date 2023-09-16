@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: additional/get_more_information.html 
+permalink: additional/resources.html 
 keywords: more information, additional resources 
 summary: 您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。 
 ---
-= 取得更多資訊
+= 其他資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -23,6 +23,10 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 * https://docs.netapp.com/us-en/ontap-family/["產品文件資料ONTAP"^]
 +
 提供ONTAP 有關支援功能的文件。
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]
++
+ONTAP 9 版本資訊、內含目前版本的相關資訊。
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["系統管理程式資源ONTAP ONTAP"^]
 +

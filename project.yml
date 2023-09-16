@@ -28,11 +28,9 @@ homepage:
   - title: 開始使用
     links:
     - title: 版本資訊
-      url: "/rn/whats_new.html"
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: 自動化選項ONTAP
       url: "/get-started/ontap_automation_options.html"
-    - title: 準備使用REST API
-      url: "/get-started/prepare_rest.html"
     - title: 您的第一個API呼叫
       url: "/get-started/first_call.html"
   - title: 靜態API ONTAP
@@ -63,10 +61,10 @@ homepage:
       url: "/migrate/performance-counters.html"
     - title: 部落格文章
       url: "/migrate/blogs.html"
-  - title: 更多資源
+  - title: 知識與支援
     links:
-    - title: 取得更多資訊
-      url: "/additional/get_more_information.html"
+    - title: 其他資源
+      url: "/additional/resources.html"
     - title: NetApp DevNet
       url: https://devnet.netapp.com/restapi.php
     - title: 9文件ONTAP

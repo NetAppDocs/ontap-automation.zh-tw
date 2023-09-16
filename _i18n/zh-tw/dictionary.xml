@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
-  <block id="bf07f432276ee2fe7e55f9ea12c2ba5a" category="doc">取得更多資訊</block>
   <block id="f09943979dc3457d406cfb7e8205a032" category="paragraph">您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。</block>
   <block id="f372ae3b2fda116fe4b7463cbac902c0" category="section-title">支援支援支援ONTAP</block>
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">系統管理程式資源ONTAP ONTAP</block>
@@ -506,14 +505,7 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
   <block id="42ac9c1cc1752704f9d6980ce41b7ba3" category="paragraph">此版本資訊會以Json格式顯示。ONTAP</block>
-  <block id="625c92078d49d59bd332d26752459a1c" category="doc">準備使用ONTAP R靜止API</block>
-  <block id="b3d01b53079f4b9fbda29e6a55f54947" category="paragraph">您應該採取幾個步驟來準備使用ONTAP 靜態API。</block>
-  <block id="edca3acbd939d4adbc6fd1775e2aa7d0" category="inline-link">概念9 ONTAP</block>
-  <block id="7f22baf1d1c4dbcf7e51a6ce50ea7bcb" category="paragraph">您應該有ONTAP 使用此產品的經驗。這包括瞭解基本概念和術語、以及系統管理的一些經驗。請參閱<block ref="fe839e5e9dcf42e7a7beb586cd30f140" category="inline-link-rx"></block> 開始使用。</block>
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">靜態API ONTAP</block>
-  <block id="be156535e85658a14f21eed0945afff8" category="paragraph">請務必詳閱 <block ref="ccb6647c24ffc2522d48edc97b2b7273" category="inline-link-macro-rx"></block> 如需有關ONTAP REST概念的資訊、以及有關如何設計靜態API的詳細資訊、請參閱。</block>
-  <block id="a02beec7b8a899e8a4e50ec1d2df453e" category="paragraph">對於軟體開發技術和程序有一些經驗是很有幫助的、包括一或多種程式設計語言、以及常見的公用程式、例如Curl。</block>
-  <block id="2bb2ed6116b46f438fbcd4a9a0bad6fd" category="paragraph">您應該瞭解中建議的其他資訊資源 <block ref="91f6d3295d7ae30385e2f3285f307e42" category="inline-link-macro-rx"></block>。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -537,8 +529,6 @@
   <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">請參閱_NetApp開發人員網路_以取得文件與其他資源的連結。</block>
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">用於擷取叢集組態的指令碼</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">下列指令碼提供如何使用Python用戶端程式庫的簡單範例。您可以在CLI中使用Python 3執行指令碼、以擷取ONTAP 叢集組態。</block>
-  <block id="17332aa1fd5861b55b1cfe91240e73d1" category="doc">REST API入門</block>
-  <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">您可以快速開始使用ONTAP 靜止API和其他自動化技術。在準備並瞭解基本的要求回應流程之後、您可以使用Curl來發出簡單的API呼叫。這項準備工作提供在即時系統上使用更複雜工作流程之前所需的簡介和觀點。</block>
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">存取ONTAP 《程式碼API》文件頁面</block>
   <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">您必須具備下列條件：</block>
@@ -852,7 +842,6 @@
   <block id="caea8340e2d186a540518d08602aa065" category="sidebar">自動化</block>
   <block id="fa3072c5dcc3c24dc044383b1ee6e52d" category="sidebar">可與Ansible ONTAP</block>
   <block id="1cad56f823354795cae3db2ac36569ec" category="sidebar">自動化部落格</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多資源</block>
   <block id="16761f90ea92726a06e16dfb23549c0a" category="sidebar">NetApp DevNet</block>
   <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">9文件ONTAP</block>
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">文件ONTAP Select</block>
@@ -1147,7 +1136,6 @@
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">提供ONTAP 有關支援功能的文件。</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">您可以使用ONTAP REST API來管理DACL和SACL檔案權限。</block>
   <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">您可以ONTAP 使用REST API來管理E地 環管理系統組態。</block>
-  <block id="4ede72f0f2827c7ddcbfe1866b200a34" category="summary">您可以快速開始使用ONTAP 靜止API和其他自動化技術。在準備並瞭解基本的要求回應流程之後、您可以使用Curl來發出簡單的API呼叫。</block>
   <block id="166d9995800bde3bddfef3d2294b5aa9" category="summary">我們提供數篇部落格文章、協助您更瞭解自動化ONTAP 部署的各種技術和方法。</block>
   <block id="146b7b24c2b30a9357470549802fee41" category="summary">ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管理ONTAP 各種儲存系統。REST API和ONTAPI API API呼叫之間、以及REST API和ONTAP REST CLI之間存在差異。</block>
   <block id="8ac01f6d772ed92eb16c7e67bbf562e3" category="paragraph">REST API是自動化ONTAP 作業系統管理的主要策略選擇。如果您目前使用的是ONTAPI API、則應考慮移轉至REST API。NetApp提供對應文件、協助從ONTAPI移轉至REST。請參閱 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
@@ -1418,9 +1406,6 @@
   <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">NetApp與Ansible快速入門：安裝Ansible</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP要求</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP回應</block>
-  <block id="59382e918ffb6e6d1580a8b17e6e1e2c" category="paragraph-title">體驗豐富的功能。ONTAP 9.</block>
-  <block id="0182974655f974e8429fb64bb3d15eb2" category="paragraph-title">檢視REST概念與實作</block>
-  <block id="848c9ae1e7e981016f6df28d16d2cedd" category="paragraph-title">軟體開發背景</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
   <block id="a4ed418f7517459e684626971cd74fba" category="paragraph-title">零點9.7到9.10.1 ONTAP</block>
@@ -1714,4 +1699,8 @@
   <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">您可以更新叢集的連絡人資訊。由於要求是以非同步方式處理、因此此工作流程也說明如何判斷相關的背景工作是否成功完成。</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">REST 資源摘要</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">執行工作流程 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
+  <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">其他資源</block>
+  <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
+  <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">ONTAP 9 版本資訊、內含目前版本的相關資訊。</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
 </blocks>

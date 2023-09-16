@@ -2,6 +2,8 @@
 section: workflows
 title: 工作流程
 entries:
+- title: 準備好使用工作流程
+  url: "/workflows/prepare_workflows.html"
 - title: 叢集
   entries:
   - title: 取得叢集組態

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: get-started/prepare_workflows.html 
+permalink: workflows/prepare_workflows.html 
 keywords: workflows, preparation, prepare to use workflows 
 summary: 在將 ONTAP 工作流程用於即時部署之前、您應該先熟悉其結構和格式。 
 ---
