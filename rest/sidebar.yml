@@ -6,10 +6,6 @@ entries:
   entries:
   - title: REST Web服務基礎
     url: "/rest/rest_web_services_foundation.html"
-  - title: REST API版本管理ONTAP
-    url: "/rest/rest_api_versioning.html"
-  - title: 如何存取REST API
-    url: "/rest/access_rest_api.html"
   - title: 基本營運特性
     url: "/rest/operational_characteristics.html"
   - title: 輸入變數

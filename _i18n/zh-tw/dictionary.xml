@@ -405,12 +405,7 @@
   <block id="51c033a34d63a2d1737e1b6bdf842d1f" category="list-text">取得工作的目前狀態。</block>
   <block id="b281ec87e30bc1058b3173012f46c637" category="list-text">如果工作處於非終端機狀態、請再次執行迴圈。</block>
   <block id="6caaacff3c8abae5d9b2e02a5e4d0829" category="list-text">當工作達到終端機狀態（成功、失敗）時停止。</block>
-  <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">REST API版本管理ONTAP</block>
-  <block id="a131529b4b9e76bc39353ef1aa209dd9" category="paragraph">包含在更新版本編號中的REST API ONTAP 會指派ONTAP 一個版本編號、此編號與更新版本編號無關。您應該注意ONTAP 到發行版的版本包含API、以及這會如何影響您對API的使用。</block>
-  <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">所有版本ONTAP 的更新版本均使用相同版本的REST API。</block>
-  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">版本1</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相關連結</block>
-  <block id="fa229fc458ab35ecd4519d4dcca0e7bb" category="list-text"><block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block></block>
   <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">更新功能：利用靜止API與自動化技術ONTAP</block>
   <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">零點9.10.1 ONTAP</block>
@@ -1666,7 +1661,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">每個 REST API 呼叫所使用的端點路徑可以包含各種識別碼。每個 ID 對應特定的資源執行個體。範例包括叢集 ID 和 SVM ID 。</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">基本驗證必須使用編碼為基礎64字串的使用者名稱和密碼來設定。例如：</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>。</block>
-  <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6 至 ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">取得叢集組態</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">更新叢集連絡人</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">列出 SVM</block>
@@ -1682,7 +1676,6 @@
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">在將工作流程用於即時 ONTAP 部署之前、您應該先熟悉工作流程的結構和格式。</block>
   <block id="0ee204047e3ff10a0e6d606b38224615" category="paragraph">工作流程只能包含一個步驟。這些單一步驟工作流程的格式與包含多個步驟的工作流程略有不同。例如、會移除明確的步驟名稱。應根據工作流程標題來清除行動或作業。</block>
   <block id="8d197ea17b19bf5b877d0bca6b13aa1c" category="paragraph">您可以透過 Curl 或程式設計語言直接存取 ONTAP REST API 。在這種情況下、基本 URL 與您在存取 ONTAP 線上文件或系統管理員時所使用的 URL 不同。</block>
-  <block id="96dc946163c536a828ef3f6ac5ab199d" category="paragraph">請參閱 <block ref="fd12ec3737d055cdf76a7f06b5b60e9a" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="8b601595dec3f885a40ef9fec71f259d" category="paragraph">如果特定 REST API 呼叫需要其他參數、則會包含在每個工作流程的捲曲範例 * 的 * 額外輸入參數一節中。</block>
   <block id="dc9f325cca41d07c0fa65042753d1c30" category="paragraph">工作流程範例所使用的 ID 值和其他變數是不透明的、可能會因每個 ONTAP 叢集而異。為了改善範例的可讀性、不使用實際值。而是使用變數。這種方法以一致的格式和一組保留名稱為基礎、有幾項優點：</block>
   <block id="5fdcf5dc19660a9231d7bb52846ce0da" category="paragraph">以下是一些常見的變數關鍵字。此清單並非詳盡無遺、並視需要使用其他變數。其意義應根據背景而明確。</block>
@@ -1703,4 +1696,5 @@
   <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">ONTAP 9 版本資訊、內含目前版本的相關資訊。</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
+  <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">請參閱 <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
 </blocks>

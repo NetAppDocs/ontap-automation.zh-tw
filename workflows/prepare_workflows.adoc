@@ -52,7 +52,7 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 
 `https://ontap.demo-example.com/api`
 
-請參閱 link:../rest/access_rest_api.html["如何存取ONTAP 靜態API"] 以取得更多資訊。
+請參閱 link:../get-started/access_rest_api.html["如何存取ONTAP 靜態API"] 以取得更多資訊。
 
 
 
