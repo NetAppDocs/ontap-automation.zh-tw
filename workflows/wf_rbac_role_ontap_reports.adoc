@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_ontap_reports.html 
+keywords:  
+summary: XXX 
+---
+= 允許產生 ONTAP 報告
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以建立REST角色、讓使用者能夠產生ONTAP 各種報告。
+
+.關於此工作流程
+建立的角色具有下列特性：
+
+* 能夠擷取與容量和效能相關的所有儲存物件資訊（例如Volume、qtree、LUN、Aggregate、節點、 和SnapMirror關係）
+* 無法建立或修改較高層級的物件（例如磁碟區或SVM）
+
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /角色 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "name": "rest_role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api/storage/volumes", "access": "readonly"},
+      {"path": "/api/storage/qtrees", "access": "readonly"},
+      {"path": "/api/storage/luns", "access": "readonly"},
+      {"path": "/api/storage/aggregates", "access": "readonly"},
+      {"path": "/api/cluster/nodes", "access": "readonly"},
+      {"path": "/api/snapmirror/relationships", "access": "readonly"},
+      {"path": "/api/svm/svms", "access": "readonly"}
+  ]
+}
+----

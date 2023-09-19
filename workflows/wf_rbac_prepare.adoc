@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_prepare.html 
+keywords:  
+summary: XXX 
+---
+= 準備使用 RBAC
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+視您的環境而定、您可以使用多種不同的 ONTAP RBAC 功能。本節將以工作流程形式呈現幾種常見案例。在每個案例中、重點都是特定的安全性和管理目標。
+
+在建立任何角色並將角色指派給 ONTAP 使用者帳戶之前、您應該先檢閱下列主要安全需求和選項、以做好準備。此外、請務必檢閱上的一般工作流程概念 link:../workflows/prepare_workflows.html["準備好使用工作流程"]。
+
+.您使用的ONTAP 是哪個版本？
+此版本可決定哪些REST端點和RBAC功能可供使用。ONTAP
+
+.識別受保護的資源和範圍
+您需要識別要保護的資源或命令、以及範圍（叢集或SVM）。
+
+.使用者應該擁有哪些存取權限？
+在識別資源和範圍之後、您需要判斷要授與的存取層級。
+
+.使用者將如何存取ONTAP 此產品？
+使用者可ONTAP 透過REST API或CLI或兩者存取功能。
+
+.其中一個內建角色是否足夠、或是需要自訂角色？
+使用現有的內建角色比較方便、但您可以視需要建立新的自訂角色。
+
+.需要哪種角色？
+根據安全需求和ONTAP 不必要存取、您需要選擇是要建立休息或傳統角色。

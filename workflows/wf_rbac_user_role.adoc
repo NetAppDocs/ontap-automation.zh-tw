@@ -1,0 +1,245 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_user_role.html 
+keywords:  
+summary: 您可以使用此工作流程來建立具有相關 REST 角色的使用者。 
+---
+= 建立具有角色的使用者
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用此工作流程來建立具有相關 REST 角色的使用者。
+
+.關於此工作流程
+此工作流程包括建立自訂 REST 角色並將其與新使用者帳戶建立關聯所需的一般步驟。使用者和角色都有SVM範圍、並與特定資料SVM相關聯。某些步驟可能是選擇性的、或是需要根據您的環境而變更。
+
+
+
+== 步驟 1 ：列出叢集中的資料 SVM
+
+執行下列REST API呼叫、列出叢集中的SVM。輸出中會提供每個 SVM 的 UUID 和名稱。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/SVM/svms 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms?order_by=name" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.完成後
+從您要建立新使用者和角色的清單中選取所需的SVM。
+
+
+
+== 步驟 2 ：列出定義給 SVM 的使用者
+
+執行下列REST API呼叫、列出您所選SVM中定義的使用者。您可以透過擁有者參數來識別SVM。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/SECSecurity /帳戶 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/security/accounts?owner.name=dmp" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.完成後
+根據已在SVM中定義的使用者、為新使用者選擇唯一名稱。
+
+
+
+== 步驟 3 ：列出定義給 SVM 的其餘角色
+
+執行下列REST API呼叫、列出您所選SVM中定義的角色。您可以透過擁有者參數來識別SVM。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/SECSecurity /角色 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/security/roles?owner.name=dmp" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.完成後
+根據已在SVM中定義的角色、為新角色選擇唯一名稱。
+
+
+
+== 步驟 4 ：建立自訂 REST 角色
+
+執行下列REST API呼叫、以在SVM中建立自訂REST角色。角色一開始只有一個權限會建立*無*的預設存取權、因此會拒絕所有存取權。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /角色 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "name": "dprole1",
+  "owner": {
+    "name": "dmp",
+    "uuid": "752d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api", "access": "none"},
+  ]
+}
+----
+.完成後
+（可選）再次執行步驟3以顯示新角色。您也可以在ONTAP CLI中顯示角色。
+
+
+
+== 步驟 5 ：新增更多權限以更新角色
+
+執行下列REST API呼叫、視需要新增權限以修改角色。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECURIE/角色/｛Oner.uuid｝/｛name｝/權限 
+|===
+.捲曲範例的其他輸入參數
+除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| $SVM_ID | 路徑 | 是的 | 包含角色定義的 SVM UUID 。 
+
+
+| $Role_name | 路徑 | 是的 | 要更新的 SVM 中角色的名稱。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "path": "/api/storage/volumes",
+  "access": "readonly"
+}
+----
+.完成後
+（可選）再次執行步驟3以顯示新角色。您也可以在ONTAP CLI中顯示角色。
+
+
+
+== 步驟 6 ：建立使用者
+
+執行下列REST API呼叫以建立使用者帳戶。上述建立的角色 * dprole1* 與新使用者相關聯。
+
+
+TIP: 您可以包含沒有角色的使用者。在這種情況下、您需要修改使用者以指派角色。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /帳戶 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/accounts" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "owner": {"uuid":"daf84055-248f-11ed-a23d-005056ac4fe6"},
+  "name": "david",
+  "applications": [
+      {"application":"ssh",
+       "authentication_methods":["password"],
+       "second_authentication_method":"none"}
+  ],
+  "role":"dprole1",
+  "password":"netapp123"
+}
+----
+.完成後
+您可以使用新使用者的認證登入SVM管理介面。

@@ -21,10 +21,10 @@ summary: 您可以列出在 ONTAP 叢集中定義的儲存虛擬機器（ SVM �
 
 [cols="25,75"]
 |===
-| HTTP方法 | 取得 
+| HTTP方法 | 路徑 
 
 
-| 取得 | /svm/svms 
+| 取得 | /API/SVM/svms 
 |===
 .Curl範例
 [source, curl]

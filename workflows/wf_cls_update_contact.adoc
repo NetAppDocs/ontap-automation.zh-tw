@@ -30,7 +30,7 @@ summary: 您可以更新叢集的連絡人資訊。由於要求是以非同步�
 | HTTP方法 | 路徑 
 
 
-| 修補程式 | /叢集 
+| 修補程式 | /API/cluster 
 |===
 .處理類型
 非同步
@@ -82,7 +82,7 @@ curl --request PATCH \
 | HTTP方法 | 路徑 
 
 
-| 取得 | /cluster / jobs/｛uuid｝ 
+| 取得 | /api/cluster / 工作 / ｛ uuid ｝ 
 |===
 .處理類型
 同步

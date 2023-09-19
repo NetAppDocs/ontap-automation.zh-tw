@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_data_protection.html 
+keywords:  
+summary: XXX 
+---
+= 啟用資料保護的管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在某些情況下、您可能想要為使用者提供有限的資料保護功能。
+
+.關於此工作流程
+建立的傳統角色具有下列特性：
+
+* 能夠建立和刪除快照、以及更新SnapMirror關係
+* 無法建立或修改較高層級的物件、例如磁碟區或SVM
+
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /角色 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "volume snapshot create", "access": "all"},
+      {"path": "volume snapshot delete", "access": "all"},
+      {"path": "volume show", "access": "readonly"},
+      {"path": "vserver show", "access": "readonly"},
+      {"path": "snapmirror show", "access": "readonly"},
+      {"path": "snapmirror update", "access": "all"}
+  ]
+}
+----

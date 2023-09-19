@@ -17,6 +17,9 @@ summary: 瞭解基本的RBAC功能之後、您就可以開始使用ONTAP 各種�
 瞭解基本的RBAC功能之後、您就可以開始使用ONTAP 各種角色和使用者。
 
 
+NOTE: 請參閱 link:../workflows/wf_rbac_prepare.html["RBAC 工作流程"] 如需如何建立及使用 ONTAP REST API 角色的範例。
+
+
 
 == 管理存取
 

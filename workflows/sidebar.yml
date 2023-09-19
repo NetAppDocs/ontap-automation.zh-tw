@@ -10,6 +10,20 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: 更新叢集連絡人
     url: "/workflows/wf_cls_update_contact.html"
+- title: RBAC
+  entries:
+  - title: 準備使用 RBAC
+    url: "/workflows/wf_rbac_prepare.html"
+  - title: 建立角色
+    entries:
+    - title: 限制 SVM Volume 作業
+      url: "/workflows/wf_rbac_limit_svm.html"
+    - title: 啟用資料保護
+      url: "/workflows/wf_rbac_data_protection.html"
+    - title: 允許產生 ONTAP 報告
+      url: "/workflows/wf_rbac_ontap_reports.html"
+  - title: 建立具有角色的使用者
+    url: "/workflows/wf_rbac_user_role.html"
 - title: SVM
   entries:
   - title: 列出 SVM

@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_limit_svm.html 
+keywords:  
+summary: 您可以定義角色、以限制 SVM 內的儲存磁碟區管理。 
+---
+= 限制對SVM Volume作業的存取
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以定義角色、以限制 SVM 內的儲存磁碟區管理。
+
+.關於此工作流程
+首先會建立傳統角色、以開始允許存取所有主要的 Volume 管理功能（複製除外）。角色的定義具有下列特性：
+
+* 能夠執行所有CRUD Volume作業、包括Get、Create、Modify和Delete
+* 無法建立Volume複製
+
+
+接著您可以視需要選擇性地更新角色。在此工作流程中、角色會在第二個步驟中變更、以允許使用者建立 Volume 複製。
+
+
+
+== 步驟 1 ：建立角色
+
+您可以發出 API 呼叫來建立 RBAC 角色。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /角色 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+----
+
+
+== 步驟 2 ：更新角色
+
+您可以發出 API 呼叫來更新現有角色。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/SECSecurity /角色 
+|===
+.捲曲範例的其他輸入參數
+除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| $SVM_ID | 路徑 | 是的 | 這是包含角色定義的 SVM 的 UUID 。 
+
+
+| $Role_name | 路徑 | 是的 | 這是要更新的 SVM 中的角色名稱。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "path": "volume clone",
+  "access": "all"
+}
+----
