@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_cert_list_certificates.html 
+keywords: workflow, list certificates 
+summary: 您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 、以便擷取整個憑證。 
+---
+= 列出憑證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /API/security/certificates 
+|===
+.Curl 範例：傳回三個憑證
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/security/certificates?max_records=3" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Json輸出範例
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "dad822c2-573c-11ee-a310-005056aecc29",
+      "name": "vs0_17866DB5C933E2EA",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/dad822c2-573c-11ee-a310-005056aecc29"
+        }
+      }
+    },
+    {
+      "uuid": "7d8e5570-573c-11ee-a310-005056aecc29",
+      "name": "BuypassClass3RootCA",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/7d8e5570-573c-11ee-a310-005056aecc29"
+        }
+      }
+    },
+    {
+      "uuid": "7dbb2191-573c-11ee-a310-005056aecc29",
+      "name": "EntrustRootCertificationAuthority",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/7dbb2191-573c-11ee-a310-005056aecc29"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/security/certificates?max_records=3"
+    },
+    "next": {
+      "href": "/api/security/certificates?start.svm_id=sti214nscluster-1&start.uuid=7dbb2191-573c-11ee-a310-005056aecc29&max_records=3"
+    }
+  }
+}
+
+----

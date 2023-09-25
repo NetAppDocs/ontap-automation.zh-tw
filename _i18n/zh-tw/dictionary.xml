@@ -1688,7 +1688,6 @@
   <block id="18a5ea643c715c0e45aa53077e8f1429" category="cell">要更新的 SVM 中角色的名稱。</block>
   <block id="4fa346713b0e13aa5afd8dc51d0ddecb" category="section-title">步驟 6 ：建立使用者</block>
   <block id="3c597ed3165c87f6539fd81a53a11876" category="paragraph">執行下列REST API呼叫以建立使用者帳戶。上述建立的角色 * dprole1* 與新使用者相關聯。</block>
-  <block id="a2268d991f8aa28dc9e9d9d830cfcd50" category="admonition">您可以包含沒有角色的使用者。在這種情況下、您需要修改使用者以指派角色。</block>
   <block id="e3abdda2fcce71a97b7507b852418cf4" category="doc">允許產生 ONTAP 報告</block>
   <block id="c6ef9b731f6fad8f77a915b2ed739e76" category="paragraph">您可以建立REST角色、讓使用者能夠產生ONTAP 各種報告。</block>
   <block id="fddc78544f7292e6a6fd31d26110db0d" category="paragraph">建立的角色具有下列特性：</block>
@@ -1710,4 +1709,13 @@
   <block id="79a64e91efbdc6837abaf1d324269070" category="sidebar">限制 SVM Volume 作業</block>
   <block id="5379ed2904fea688a27b53224909e1fe" category="sidebar">啟用資料保護</block>
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">允許產生 ONTAP 報告</block>
+  <block id="0819bf309b404c2690cae22900701126" category="admonition">您可以建立沒有角色的使用者。在這種情況下、會為使用者指派預設角色（兩者皆可）<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 或<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>）取決於使用者是使用叢集或 SVM 範圍來定義。您需要修改使用者以指派不同的角色。</block>
+  <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 、以便擷取整個憑證。</block>
+  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">列出憑證</block>
+  <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 。</block>
+  <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/API/security/certificates</block>
+  <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">Curl 範例：傳回三個憑證</block>
+  <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">您應該確定 ONTAP 版本支援您計畫使用之工作流程中的所有 API 呼叫。請參閱 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">憑證與金鑰</block>
+  <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">列出憑證</block>
 </blocks>

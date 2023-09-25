@@ -17,6 +17,9 @@ summary: 在將 ONTAP 工作流程用於即時部署之前、您應該先熟悉�
 在將工作流程用於即時 ONTAP 部署之前、您應該先熟悉工作流程的結構和格式。
 
 
+TIP: 您應該確定 ONTAP 版本支援您計畫使用之工作流程中的所有 API 呼叫。請參閱 link:../reference/api_reference.html["API 參考"] 以取得更多資訊。
+
+
 
 == 簡介
 

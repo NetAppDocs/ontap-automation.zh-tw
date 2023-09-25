@@ -46,7 +46,7 @@ summary: 您可以定義角色、以限制 SVM 內的儲存磁碟區管理。
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -100,7 +100,7 @@ curl --request POST \
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
