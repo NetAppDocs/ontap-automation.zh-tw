@@ -4,7 +4,7 @@ permalink: workflows/wf_cert_list_certificates.html
 keywords: workflow, list certificates 
 summary: 您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 、以便擷取整個憑證。 
 ---
-= 列出憑證
+= 列出已安裝的憑證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1711,11 +1711,11 @@
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">允許產生 ONTAP 報告</block>
   <block id="0819bf309b404c2690cae22900701126" category="admonition">您可以建立沒有角色的使用者。在這種情況下、會為使用者指派預設角色（兩者皆可）<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 或<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>）取決於使用者是使用叢集或 SVM 範圍來定義。您需要修改使用者以指派不同的角色。</block>
   <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 、以便擷取整個憑證。</block>
-  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">列出憑證</block>
   <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做來查看特定憑證是否可用、或是取得特定憑證的 ID 。</block>
   <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/API/security/certificates</block>
   <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">Curl 範例：傳回三個憑證</block>
   <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">您應該確定 ONTAP 版本支援您計畫使用之工作流程中的所有 API 呼叫。請參閱 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">憑證與金鑰</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">列出憑證</block>
+  <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">列出已安裝的憑證</block>
 </blocks>
