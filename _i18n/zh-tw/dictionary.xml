@@ -1095,7 +1095,6 @@
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。建立REST角色會自動建立傳統的_mapping角色。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">您可以在ONTAP 線上存取此功能 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需詳細資訊、包括如何使用API的範例、請參閱文件。</block>
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。新的存取層級可用於REST角色、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">所有ONTAP 產品文件</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">產品文件資料ONTAP</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">提供ONTAP 有關支援功能的文件。</block>
@@ -1718,4 +1717,6 @@
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">憑證與金鑰</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">列出憑證</block>
   <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">列出已安裝的憑證</block>
+  <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">Max_Records</block>
+  <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">指定要傳回的記錄數。</block>
 </blocks>
