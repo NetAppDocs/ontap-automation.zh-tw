@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_cert_install_certificate.html 
+keywords: workflow, install certificate, x509, x.509 
+summary: 您可以在 ONTAP 叢集中安裝簽署的 X.509 憑證。您可以在設定需要加強驗證的 ONTAP 功能或傳輸協定時執行此動作。 
+---
+= 安裝憑證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在 ONTAP 叢集中安裝簽署的 X.509 憑證。您可以在設定需要加強驗證的 ONTAP 功能或傳輸協定時執行此動作。
+
+.開始之前
+您必須擁有要安裝的憑證。您也應該視需要確定已安裝任何中繼憑證。
+
+
+CAUTION: 使用以下 JSON 輸入範例之前、請務必先更新 `public_certificate` 為您的環境提供憑證的價值。
+
+
+
+== 步驟 1 ：安裝憑證
+
+您可以發出 API 呼叫來安裝憑證。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /API/security/certificates 
+|===
+.捲曲範例：在叢集層級安裝根 CA 憑證
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/certificates" \
+--include \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, json]
+----
+{
+    "type": "server_ca",
+    "public_certificate":
+    "-----BEGIN CERTIFICATE-----
+MIID0TCCArkCFGYdznvTVvaY1VZPNfy4yCCyPph6MA0GCSqGSIb3DQEBCwUAMIGk
+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTkMxDDAKBgNVBAcMA1JUUDEWMBQGA1UE
+CgwNT05UQVAgRXhhbXBsZTETMBEGA1UECwwKT05UQVAgOS4xNDEcMBoGA1UEAwwT
+Ki5vbnRhcC1leGFtcGxlLmNvbTEvMC0GCSqGSIb3DQEJARYgZGF2aWQucGV0ZXJz
+b25Ab250YXAtZXhhbXBsZS5jb20wHhcNMjMxMDA1MTUyOTE4WhcNMjQxMDA0MTUy
+OTE4WjCBpDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5DMQwwCgYDVQQHDANSVFAx
+FjAUBgNVBAoMDU9OVEFQIEV4YW1wbGUxEzARBgNVBAsMCk9OVEFQIDkuMTQxHDAa
+BgNVBAMMEyoub250YXAtZXhhbXBsZS5jb20xLzAtBgkqhkiG9w0BCQEWIGRhdmlk
+LnBldGVyc29uQG9udGFwLWV4YW1wbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAxQgy8mhb1Jhkf0D/MBodpzgW0aSp2jGbWJ+Zv2G8BXkp1762
+dPHRkv1hnx9JvwkK4Dba05GiCiD5t3gjH/jUQMSFb+VwDbVmubVFnXjkm/4Q7sea
+tMtA/ZpQdZbQFZ5RKtdWz7dzzPYEl2x8Q1Jc8Kh7NxERNMtgupGWZZn7mfXKYr4O
+N/+vgahIhDibS8YK5rf1w6bfmrik9E2D+PEab9DX/1DL5RX4tZ1H2OkyN2UxoBR6
+Fq7l6n1Hi/5yR0Oi1xStN6sO7EPoGak+KSlK41q+EcIKRo0bP4mEQp8WMjJuiTkb
+5MmeYoIpWEUgJK7S0M6Tp/3bTh2CST3AWxiNxQIDAQABMA0GCSqGSIb3DQEBCwUA
+A4IBAQABfBqOuROmYxdfrj93OyIiRoDcoMzvo8cHGNUsuhnlBDnL2O3qhWEs97s0
+mIy6zFMGnyNYa0t4i1cFsGDKP/JuljmYHjvv+2lHWnxHjTo7AOQCnXmQH5swoDbf
+o1Vjqz8Oxz+PRJ+PA3dF5/8zqaAR6QreAN/iFR++6nUq1sbbM7w03tthBVMgo/h1
+E9I2jVOZsqMFujm2CYfMs4XkZtrYmN6nZA8JcUpDjIWcAVbQYurMnna9r42oS3GB
+WB/FE9n+P+FfJyHJ93KGcCXbH5RF2pi3wLlHilbvVuCjLRrhJ8U20I5mZoiXvABc
+IpYuBcuKXLwAarhDEacXttVjC+Bq
+-----END CERTIFICATE-----"
+}
+----
+
+
+== 步驟 2 ：確認已安裝憑證
+
+執行工作流程 link:../workflows/wf_cert_list_certificates.html["列出已安裝的憑證"] 並確認憑證可供使用。

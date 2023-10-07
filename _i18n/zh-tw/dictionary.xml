@@ -1719,4 +1719,14 @@
   <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">列出已安裝的憑證</block>
   <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">Max_Records</block>
   <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">指定要傳回的記錄數。</block>
+  <block id="b933168f11c5a1fef62b427e5c4faba9" category="summary">您可以在 ONTAP 叢集中安裝簽署的 X.509 憑證。您可以在設定需要加強驗證的 ONTAP 功能或傳輸協定時執行此動作。</block>
+  <block id="86ba127d49846ec207c19190730b16ac" category="doc">安裝憑證</block>
+  <block id="5c88f057b69ff938c461962eab9693dc" category="paragraph">您必須擁有要安裝的憑證。您也應該視需要確定已安裝任何中繼憑證。</block>
+  <block id="6a9cd64c223b26e7117c3bc5cd084d43" category="admonition">使用以下 JSON 輸入範例之前、請務必先更新<block ref="d73414ceb92d4d043000a5e640fd38a8" prefix=" " category="inline-code"></block> 為您的環境提供憑證的價值。</block>
+  <block id="bc81a95e520df56e073aa3da00713e6b" category="section-title">步驟 1 ：安裝憑證</block>
+  <block id="7b92d99be03324f62f907c845be5b97c" category="paragraph">您可以發出 API 呼叫來安裝憑證。</block>
+  <block id="2a277cc2a72e1e678197b2173c54ece4" category="listing-title">捲曲範例：在叢集層級安裝根 CA 憑證</block>
+  <block id="f6c0383d899dc40b8c8d016d4b5f85de" category="section-title">步驟 2 ：確認已安裝憑證</block>
+  <block id="5b3cfccbac20b0363f1d4e2d4431ab0e" category="paragraph">執行工作流程 <block ref="cf365ce6cd35c6dbd8b87fe3303f2226" category="inline-link-macro-rx"></block> 並確認憑證可供使用。</block>
+  <block id="1346018f60bf3711f3e704204dc2db96" category="sidebar">安裝憑證</block>
 </blocks>

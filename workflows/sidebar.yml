@@ -8,6 +8,8 @@ entries:
   entries:
   - title: 列出憑證
     url: "/workflows/wf_cert_list_certificates.html"
+  - title: 安裝憑證
+    url: "/workflows/wf_cert_install_certificate.html"
 - title: 叢集
   entries:
   - title: 取得叢集組態
