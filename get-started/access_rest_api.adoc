@@ -40,7 +40,7 @@ TIP: 您應該永遠使用叢集管理 LIF 。這會在所有節點之間平衡 
 
 用於存取API最新版本文件頁面的URL格式為：
 
-https://<cluster_mgmt_ip_address>/docs/api`
+`\https://<cluster_mgmt_ip_address>/docs/api`
 
 
 
@@ -50,8 +50,8 @@ https://<cluster_mgmt_ip_address>/docs/api`
 
 用於直接存取最新版API的基礎URL格式如下：
 
-https://<cluster_mgmt_ip_address>/api`
+`\https://<cluster_mgmt_ip_address>/api`
 
 若要存取支援多個版本的特定API版本、URL格式如下：
 
-https://<cluster_mgmt_ip_address>/api/v1`
+`\https://<cluster_mgmt_ip_address>/api/v1`

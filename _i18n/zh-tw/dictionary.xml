@@ -193,13 +193,10 @@
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">剩餘資源摘要</block>
   <block id="424fc80aa929edad9729b9b006049584" category="paragraph">使用網頁瀏覽器時、「支援API」線上文件頁面提供存取點。ONTAP除了提供直接執行個別API呼叫的方法、此頁面還包含API的詳細說明、包括每個呼叫的輸入參數和其他選項。API呼叫分為功能類別。請參閱 <block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">用於存取API最新版本文件頁面的URL格式為：</block>
-  <block id="5577746582bcb9358092e3471e9dbcbb" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/docs/api`</block>
   <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">自訂軟體與工具</block>
   <block id="6e70b7cc1cd3e6a65b37dbcdde8ecd4a" category="paragraph">您可以ONTAP 使用多種不同的程式設計語言和工具來存取VMware API。熱門選項包括Python、Java、Curl和PowerShell。使用API的程式、指令碼或工具會做為REST Web服務用戶端。使用程式設計語言可更深入瞭解API、並提供自動化ONTAP 的機會來進行支援。</block>
   <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">用於直接存取最新版API的基礎URL格式如下：</block>
-  <block id="eb58b311b3cd61c57c1148d0c5ba0129" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/api`</block>
   <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">若要存取支援多個版本的特定API版本、URL格式如下：</block>
-  <block id="8b27cc8fdbb4b1dea164580b7fa49b37" category="paragraph">https://&lt;cluster_mgmt_ip_address&gt;/api/v1`</block>
   <block id="fc004b0a2e525fdc279e93342807a662" category="paragraph">您可以透過HTTP要求中設定的參數和變數來控制API呼叫的處理方式。</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">HTTP方法</block>
   <block id="1ca197be3e0d7fcd720e84d7a6a700e2" category="paragraph">下表顯示了由REST API支援的HTTP方法ONTAP 。</block>
@@ -1729,4 +1726,7 @@
   <block id="f6c0383d899dc40b8c8d016d4b5f85de" category="section-title">步驟 2 ：確認已安裝憑證</block>
   <block id="5b3cfccbac20b0363f1d4e2d4431ab0e" category="paragraph">執行工作流程 <block ref="cf365ce6cd35c6dbd8b87fe3303f2226" category="inline-link-macro-rx"></block> 並確認憑證可供使用。</block>
   <block id="1346018f60bf3711f3e704204dc2db96" category="sidebar">安裝憑證</block>
+  <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
+  <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
+  <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
 </blocks>
