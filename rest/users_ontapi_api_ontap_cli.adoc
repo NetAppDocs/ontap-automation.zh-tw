@@ -47,7 +47,7 @@ SnapDiff API在ONTAP 整個發行版中的可用度定義如下：
 * 僅限v3（僅限REST API）ONTAP
 
 
-如需詳細資訊、請參閱 link:../rn/whats_new.html["發行說明 ONTAP"]。
+如需詳細資訊、請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。
 
 .相關資訊
 * link:../rest/input_variables.html["控制API要求的輸入變數"]

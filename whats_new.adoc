@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: rn/whats_new.html 
+permalink: whats_new.html 
 keywords: new features, new in release 
 summary: NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。 
 ---
@@ -15,6 +15,9 @@ summary: NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強
 
 [role="lead"]
 NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。
+
+
+TIP: 您也應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^] 以取得其他資訊、包括已知的限制或問題。
 
 
 

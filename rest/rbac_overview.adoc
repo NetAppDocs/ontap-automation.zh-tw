@@ -17,7 +17,7 @@ summary: 包含強大且可擴充的角色型存取控制（RBAC）功能。ONTA
 包含強大且可擴充的角色型存取控制（RBAC）功能。ONTAP您可以為每個帳戶指派不同的角色、以控制使用者對透過REST API和CLI公開之資源的存取。這些角色定義不同ONTAP 層級的管理存取權限、以供各種不同的使用者使用。
 
 
-NOTE: 藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 link:../rest/rbac_overview.html#summary-of-rbac-evolution["RBAC演進摘要"] 和 link:../rn/whats_new.html["更新功能：利用靜止API與自動化技術ONTAP"] 以取得更多資訊。
+NOTE: 藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 link:../rest/rbac_overview.html#summary-of-rbac-evolution["RBAC演進摘要"] 和 link:../whats_new.html["更新功能：利用靜止API與自動化技術ONTAP"] 以取得更多資訊。
 
 
 

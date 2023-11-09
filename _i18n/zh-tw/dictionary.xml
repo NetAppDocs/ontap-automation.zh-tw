@@ -165,7 +165,6 @@
   <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
   <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">僅限v3（僅限REST API）ONTAP</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">發行說明 ONTAP</block>
-  <block id="e5adab4baa780b014bfe7130066b2a36" category="paragraph">如需詳細資訊、請參閱 <block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block>。</block>
   <block id="430e01911dcacc88e4a83d838ae504e2" category="paragraph"><block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block></block>
   <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">REST Web服務基礎</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
@@ -905,14 +904,6 @@
   <block id="f74fb34c9f03e41b8c43158d192c2d00" category="cell">主機介面卡_1</block>
   <block id="5179155001c9f520ffb99f72e2b20b26" category="cell">主機介面卡_2</block>
   <block id="e963b19eb0f4d2b1cf056e63183513d8" category="cell">主機介面卡_3</block>
-  <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
-  <block id="b5ec85c168694921a9de5eadfa6243a8" category="paragraph">此部分的部分限制或限制可能會影響API的使用及自動化程式碼的開發。ONTAP以下說明這些限制。一般而ONTAP 言、每個版本都適用於所有支援的支援的版本、其中有REST API可供使用。如ONTAP 需詳細資訊、請參閱「_版本_」欄位。</block>
-  <block id="3428b552896ca875d0afc0a87f353a49" category="admonition">其餘API則是ONTAP 以32個9.6開始提供。</block>
-  <block id="3a7bd150a3b127f640a55f3e4295ae12" category="paragraph">_版本：All Supported _ ONTAP</block>
-  <block id="3806b2980e70701200d32d0a7249795f" category="paragraph">每個REST API用戶端要求都會由ONTAP 支援團隊接收、並置於輸入佇列中、然後再進行處理。在到達率極高的情況下、保留這些API要求的輸入等候佇列可能會暫時填滿。發生這種情況時、會拒絕每個額外的溢位要求。在這些情況下：</block>
-  <block id="b313d34412fbec083537488efb6a7265" category="list-text">可辨識傳入連線超過等待佇列深度、並記錄連線失敗的訊息。ONTAP</block>
-  <block id="b497355f60941f025ea8887fd49f2692" category="list-text">REST用戶端會觀察失敗的連線、但確切的行為可能取決於用戶端。例如、NMSDK用戶端會顯示「無法連線至SSL」訊息。</block>
-  <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API輸入等待佇列已滿是罕見的事件。但拒絕過多的要求可提供保護、防止DOS攻擊。</block>
   <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">由於授權錯誤、存取遭拒。</block>
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP與此相關、我們提供支援來建立及管理大量Snapshot複本。</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI報告工具</block>
@@ -1103,7 +1094,6 @@
   <block id="2f652c73d7c77f77ad56e43e82a5a33c" category="summary">為了協助CLI和ONTAPI API使用者移轉ONTAP 至靜態API、ONTAP 我們提供REST端點來存取CLI。您可以使用此傳遞功能來執行任何CLI命令。</block>
   <block id="5c1a8f35406088e0d21c8beb1a46d2c4" category="summary">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。</block>
-  <block id="f06d994dc2c76601280d13d092043991" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="5c7637441553bbdd364a0c84153850ad" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">如何存取ONTAP 靜態API</block>
   <block id="b1999685ab0c81075d0f943a5d06a018" category="summary">每筆API交易都包含HTTP要求和相關回應。</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">每筆API交易都包含HTTP要求和相關回應。本圖例說明如何擷取ONTAP 叢集所使用的版本的資訊。</block>
@@ -1115,7 +1105,6 @@
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。選取適當ONTAP 的版本。</block>
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">PyPI：ONTAP NetApp</block>
   <block id="f1414234dbf1c874f89997d3c54bcfbc" category="list-text"><block ref="f1414234dbf1c874f89997d3c54bcfbc" category="inline-link-rx"></block></block>
-  <block id="d45d9e85cc7b83745a3636a19ac8b2bb" category="summary">此部分的部分限制或限制可能會影響API的使用及自動化程式碼的開發。ONTAP</block>
   <block id="eb0cda77424e206695a7e1df680678f7" category="paragraph">藉由40多個新的API呼叫、更新版的功能將不斷擴充。ONTAP ONTAP這些端點支援ONTAP 全新的功能、以及現有功能的增強功能。本版本著重於安全性與NAS功能的改善。</block>
   <block id="5f6c185eb38c56187fc699dfbe62654b" category="list-text">安全性增強功能</block>
   <block id="02225fa77795933e713b9af48999c77d" category="list-text">Amazon Web Services包含金鑰管理服務、可為金鑰和其他機密提供安全的儲存。您可以透過REST API存取此服務、以便ONTAP 讓效益分析能夠將加密金鑰安全地儲存在雲端。此外、您也可以建立及列出與NetApp儲存加密搭配使用的驗證金鑰。</block>
@@ -1389,11 +1378,9 @@
   <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI至REST對應</block>
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">將自動化技術從ONTAP ONTAPI轉型為靜態API</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">使用ONTAPI使用報告工具從ONTAPI進行轉換</block>
-  <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">輸入佇列已滿時、REST API要求遭拒</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">您的第一個API呼叫</block>
   <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">透過「靜態API」提供的資源ONTAP 會依類別進行整理、如ONTAP 《The》（英文）、API線上文件所示。下文將簡短說明每項資源、並在適當情況下提供額外的使用考量。</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">更新功能ONTAP</block>
-  <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">本摘要所述的其餘資源是根據產品的最新版本而定。如果您需要瞭解先前版本的變更、請參閱 <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">為了協助CLI和ONTAP 支援功能的使用者移轉至ONTAP 靜態API、ONTAP 我們提供一個私有REST API端點、可用來存取任何CLI命令。</block>
   <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
   <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
@@ -1729,4 +1716,8 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
+  <block id="3b4eb2c2464d0801cad28a2ce6319a1c" category="paragraph">本摘要所述的其餘資源是根據產品的最新版本而定。如果您需要瞭解先前版本的變更、請參閱 <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。</block>
+  <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="f3b85d23635afa201e61913278969401" category="paragraph">如需詳細資訊、請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
 </blocks>
