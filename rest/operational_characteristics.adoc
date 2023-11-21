@@ -80,20 +80,23 @@ NOTE: 「RETON_Timeout」查詢參數可用於非同步API呼叫、並可將非�
 
 REST API所提供的安全性主要是以ONTAP 現有的資訊安全功能為基礎。API使用下列安全性：
 
-* 傳輸層安全性
+傳輸層安全性:: 透過網路在用戶端和 ONTAP LIF 之間傳送的所有流量、通常會根據 ONTAP 組態設定、使用 TLS 進行加密。
+用戶端驗證:: 使用相同的驗證選項ONTAP 、也可以搭配使用搭配使用《Rsest ONTAP API》（《Rsest System Manager》）和《Network Manageability SDK》（網路管理SDK）。
+HTTP驗證:: 在 HTTP 層級、例如直接存取 ONTAP REST API 時、有兩個驗證選項、如下所述。在每種情況下、您都需要建立 HTTP 授權標頭、並將其納入每個要求中。
 +
-透過網路在ONTAP S還原LIF與用戶端之間傳送的所有流量、通常會根據ONTAP 還原組態設定、使用TLS加密。
+--
+[cols="25,75"]
+|===
+| 選項 | 說明 
 
-* 用戶端驗證
-+
-使用相同的驗證選項ONTAP 、也可以搭配使用搭配使用《Rsest ONTAP API》（《Rsest System Manager》）和《Network Manageability SDK》（網路管理SDK）。
 
-* HTTP驗證
-+
-在HTTP層級、API交易會使用基本驗證。每個要求都會新增一個HTTP標頭、其中使用者名稱和密碼為基礎64字串。
+| HTTP 基本驗證 | ONTAP 使用者名稱和密碼會與冒號串連在一起。字串會轉換為 base64 、並包含在要求標頭中。 
 
-* 驗證ONTAP
-+
-執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。
 
+| OAuth 2.0 | 從 ONTAP 9.14 開始、您可以從外部授權伺服器要求存取權杖、並將其作為承載權杖包含在要求標頭中。 
+|===
+如需 OAuth 2.0 及其如何在 ONTAP 中實作的詳細資訊、請參閱 https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0 實作總覽"^]。另請參閱 link:../workflows/prepare_workflows.html["準備好使用工作流程"] 請參閱本網站下方的。
+
+--
+驗證ONTAP:: 執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。
 

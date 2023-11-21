@@ -109,7 +109,7 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 
 == 驗證選項
 
-REST API 透過 ONTAP 9.13.1 提供的主要驗證方法是基本驗證。
+REST API 可用的主要驗證技術是 HTTP 基本驗證。從 ONTAP 9.14 開始、您也可以選擇使用開放式授權（ OAuth 2.0 ）架構搭配權杖型驗證和授權。
 
 
 
@@ -142,6 +142,30 @@ REST API 透過 ONTAP 9.13.1 提供的主要驗證方法是基本驗證。
 `--user username:password`
 
 您必須為環境替換適當的認證。認證並未在 base64 中編碼。使用此參數執行 cURL 命令時、會編碼字串、並為您產生授權標頭。
+
+
+
+=== OAuth 2.0
+
+使用 OAuth 2.0 時、您需要向外部授權伺服器要求存取權杖、並將其納入每個 HTTP 要求中。基本的高階步驟如下所述。另請參閱 https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0 實作總覽"^] 如需 OAuth 2.0 及如何搭配 ONTAP 使用的詳細資訊、請參閱。
+
+.準備好您的 ONTAP 環境
+在使用 REST API 存取 ONTAP 之前、您需要準備和設定 ONTAP 環境。在較高層級、步驟包括：
+
+* 識別 ONTAP 保護的資源和用戶端
+* 檢閱現有的 ONTAP REST 角色和使用者定義
+* 安裝及設定授權伺服器
+* 設計及設定用戶端授權定義
+* 設定 ONTAP 並啟用 OAuth 2.0
+
+
+.要求存取權杖
+透過 ONTAP 和授權伺服器的定義和作用中、您可以使用 OAuth 2.0 權杖進行 REST API 呼叫。第一步是向授權伺服器要求存取權杖。這是在 ONTAP 以外使用多種不同技術的伺服器上進行的。ONTAP 不會發出存取權杖或執行重新導向。
+
+.建構 HTTP 要求標頭
+取得存取權杖之後、您可以建構授權標頭、並將其納入 HTTP 要求中。無論您是使用 Curl 或程式設計語言來存取 REST API 、每個用戶端要求都必須包含標頭。您可以如下建構標頭：
+
+`Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSld ...`
 
 
 

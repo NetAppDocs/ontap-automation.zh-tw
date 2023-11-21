@@ -142,11 +142,9 @@
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">安全性</block>
   <block id="a0c340ff7c895ce6a1d571f1f55df890" category="paragraph">REST API所提供的安全性主要是以ONTAP 現有的資訊安全功能為基礎。API使用下列安全性：</block>
   <block id="14a55e8a26db2705a0ffd20ba0427338" category="list-text">傳輸層安全性</block>
-  <block id="efe99011e665b49448af280693e74e6c" category="paragraph">透過網路在ONTAP S還原LIF與用戶端之間傳送的所有流量、通常會根據ONTAP 還原組態設定、使用TLS加密。</block>
   <block id="234b7702b17d750d0199947820d83481" category="list-text">用戶端驗證</block>
   <block id="e3f07bfd552c9d40285bc289e8e95e1a" category="paragraph">使用相同的驗證選項ONTAP 、也可以搭配使用搭配使用《Rsest ONTAP API》（《Rsest System Manager》）和《Network Manageability SDK》（網路管理SDK）。</block>
   <block id="b19cfdc6ba6a94190ea654a5c325673c" category="list-text">HTTP驗證</block>
-  <block id="fba54022e3b47aa328af3bc5b2fd6c5b" category="paragraph">在HTTP層級、API交易會使用基本驗證。每個要求都會新增一個HTTP標頭、其中使用者名稱和密碼為基礎64字串。</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">驗證ONTAP</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。</block>
   <block id="42a4074843d4a69faa8c790fcb72ca0a" category="doc">ONTAPI API API和ONTAP CLI的使用者</block>
@@ -543,8 +541,6 @@
   <block id="c16737a4e599bb09d061c55a7ecad532" category="paragraph">乙太網路廣播網域是一組實體連接埠、看起來像是同一個實體網路的一部分。當從網域中的其中一個連接埠進行廣播時、所有連接埠都會接收封包。每個廣播網域都是IPspace的一部分。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="af23f5cf37eca36a088ece4df6d53de0" category="paragraph">乙太網路連接埠是實體或虛擬網路端點。這些連接埠可合併為連結集合體群組（LAG）、或使用虛擬LAN（VLAN）分隔。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
   <block id="9d47789045e3c6c4eea55da48da63763" category="paragraph">您可以擷取乙太網路交換器的連接埠資訊。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
-  <block id="1fbb0cc82af906c09c88b2ff07a9af6b" category="paragraph">Fibre Channel介面是與SVM相關聯的邏輯端點。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
-  <block id="9491a7372139acacd450acd17119ed0a" category="paragraph">Fibre Channel連接埠是ONTAP 指位於某個節點上的實體介面卡、用於連接至Fibre Channel網路。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
   <block id="75bbbcd48175f605a8ab4e577fb5834d" category="paragraph">您可以為SVM或叢集IPSpace設定HTTP Proxy。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="59ebb6ef1a0a1fc8f946c90ef14db7ae" category="paragraph">您可以建立及管理邊界閘道傳輸協定對等群組。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="3db65e1e11eace7de9f98bf448ab6551" category="paragraph">邏輯介面（LIF）是具有其他組態屬性的IP位址。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
@@ -613,11 +609,9 @@
   <block id="26480427f609b5d339095df99aa09f7c" category="paragraph">您可以使用這些API呼叫來管理支援非揮發性記憶體Express（NVMe）的資源。</block>
   <block id="2935855efa69a27eefb72573bc4066e1" category="paragraph">Fibre Channel登入代表由登入ONTAP 到該功能的Fibre Channel啟動器所建立的連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="574ab269e7caa83c4f904627c177d111" category="paragraph">NVMe介面是設定為支援NVMe over Fabrics（NVMe）傳輸協定的網路介面。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="d7135e19354e1577f81ff90fca13afcd" category="paragraph">NVMe服務可定義SVM的NVMe控制器目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
   <block id="055c2c82f5f90d21db7da7a6ed60c13e" category="paragraph">NVMe子系統控制器代表主機與儲存解決方案之間的動態連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="816c0720f92a2711cb0cd082d1076aa6" category="paragraph">NVMe子系統對應是NVMe命名空間與NVMe子系統的關聯。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe子系統可維護一組NVMe連線主機的組態狀態和命名空間存取控制。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="ce9f5c2bc40cd88e3ff682c6b88a8186" category="paragraph">NVMe命名空間是一組可定址邏輯區塊、顯示給使用NVMe over Fabrics傳輸協定連線至SVM的主機。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。</block>
   <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">資源類別總覽</block>
   <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、您也可以使用查詢參數上的屬性值來存取物件。</block>
   <block id="35ddd64ed03dd1579ce39e6e82ff721f" category="inline-link-macro">其他休息考量</block>
@@ -625,17 +619,14 @@
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">您可以使用這些API呼叫來管理儲存區域網路（SAN）資源。</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel登入代表光纖通道啟動器所建立的連線、這些啟動器已登入ONTAP 到了功能鏈路。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="b125a3961f250d22b3eed929040d8e9a" category="paragraph">光纖通道傳輸協定（FCP）服務可定義SVM的光纖通道目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
   <block id="bec2206da79fc1b03bfc7f4f6c7bda42" category="paragraph">全球連接埠名稱（WWPN）是唯一識別光纖通道連接埠的64位元值。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="68c0fd93c2b023ed4f45e053c2c0475e" category="paragraph">啟動器群組（igroup）是光纖通道WWPN（全球連接埠名稱）、iSCSI IQN（合格名稱）和iSCSI EUI（延伸唯一識別碼）的集合、可識別主機啟動器。這種資源類型最初是以ONTAP 引用功能不適用的功能為設計目標。</block>
   <block id="2b77121b57a073f6a912696b1d7a31d8" category="paragraph">巢狀igroup是ONTAP 功能更新的功能、包含了更新版的支援功能、REST API也加入了支援功能。此REST資源類型隨ONTAP 附於引用的地方。9.9</block>
   <block id="ff405aa42851c6e5daf11546e79e3980" category="paragraph">iSCSI認證物件包含啟動器和ONTAP 物件所使用的驗證認證資料。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="1dfd42e3c5ed950e1ad51c88566f0777" category="paragraph">iSCSI服務可定義SVM的iSCSI目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
   <block id="4ec7a22296b883954f318da87ad08cf3" category="paragraph">iSCSI工作階段是一或多個TCP連線、可將iSCSI啟動器與iSCSI目標連結。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="5863e0f99ad1402d808798b272c35423" category="paragraph">LUN屬性是呼叫者定義的名稱/值配對、可選擇性地與LUN一起儲存。屬性可用來儲存少量的應用程式專屬中繼資料、ONTAP 而不被支援。端點可讓您建立、更新、刪除及探索LUN的屬性。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
   <block id="c1899d8ac0f131825213c510da4ad1d1" category="paragraph">LUN對應是LUN與啟動器群組之間的關聯。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="602c3dee864ac1118043c79730115b22" category="paragraph">報告節點是叢集節點、可透過SAN傳輸協定、將連至對應LUN的網路路徑做為ONTAP 供應器的選擇性LUN對應（SLE）功能的一部分、進行通告。新的端點可讓您新增、移除及探索LUN對應的報告節點。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
-  <block id="cf304f8d071581c8a16443a669547c31" category="paragraph">LUN是儲存區域網路（SAN）中儲存設備的邏輯代表。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">連接埠集是與_portSet_ Storage VM相關聯的光纖通道或iSCSI網路介面的集合。雖然ONTAP 此功能已存在於先前版本的支援、但其餘API現在已加入支援。此REST資源類型隨ONTAP 附於引用的地方。9.9</block>
   <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VMware虛擬磁碟區（vVol）繫結是指類「傳輸協定端點」的LUN與類「VVOL」的LUN之間的關聯。vVol繫結REST API可讓您建立、刪除及探索vVol繫結。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
   <block id="b4ad45acb73dc252050e525d981a2d6d" category="paragraph">以儲存為基礎的傳統WORM（一次寫入、多次讀取）光學解決方案實作、可長期保留資料。SnapLock您可以使用這些API呼叫來管理SnapLock 功能。</block>
@@ -728,7 +719,6 @@
   <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">您可以使用這組API呼叫來管理適用於IPSec部署的原則。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">您可以使用這組API呼叫來管理在進行IPSec部署時有效的安全關聯。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">這些端點可讓您擷取及更新金鑰管理程式的組態。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
-  <block id="8e534dc2397390aadbe32ec748d96a3d" category="paragraph">金鑰庫說明金鑰管理程式的類型。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
   <block id="6c6082904240c6ec5957f81a0fbb1d62" category="paragraph">這些API呼叫是用來擷取及管理叢集LDAP伺服器組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">用於顯示及管理ONTAP 由資訊技術所使用的登入訊息。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="0435d401767ed66c66ec6b98940edb55" category="paragraph">這些設定可用來擷取及管理叢集NIS伺服器組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
@@ -1570,9 +1560,7 @@
   <block id="bf50d5e661106d0abe925af3c2e6f7e7" category="cell">標頭</block>
   <block id="7d8953ad437c7a74fa7c3eaa1037c286" category="cell">用於 HTTP 基本驗證的認證字串。</block>
   <block id="71d08941d68cdfdc2782675a59475359" category="section-title">驗證選項</block>
-  <block id="189c9092755b5ec9acf4ef1fb0b54d46" category="paragraph">REST API 透過 ONTAP 9.13.1 提供的主要驗證方法是基本驗證。</block>
   <block id="5f7f2e03d053c151ec8a08fd76564f5a" category="section-title">HTTP 基本驗證</block>
-  <block id="dc248dc9e4f71e5475b8cecc054f14d4" category="paragraph">使用基本驗證時、每個 HTTP 要求都必須包含使用者認證。傳送認證有兩個選項。</block>
   <block id="303374a8533b38fb7d98a5790a54237c" category="paragraph-title">建構 HTTP 要求標頭</block>
   <block id="de502eeb74b9db18547f010273db3a03" category="list-text">將使用者和密碼值與冒號串連在一起：</block>
   <block id="4f765dee7c913da188ec3feb5803b2eb" category="paragraph"><block ref="4a88e1f19c3245879ff3b041cf65f2c0" prefix="" category="inline-code"></block></block>
@@ -1720,4 +1708,59 @@
   <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。</block>
   <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="f3b85d23635afa201e61913278969401" category="paragraph">如需詳細資訊、請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1 版 NetApp PCL 文件</block>
+  <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
+  <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoS 選項</block>
+  <block id="c3b594acaa0d2b7973545bc9cb6b6045" category="paragraph">我們已推出端點、可讓您擷取及設定叢集的 QoS 選項。例如、您可以為背景工作保留一定百分比的可用系統處理資源。ONTAP 9.14 引進了這種資源類型。</block>
+  <block id="ab5d89910deed604b9cb2e757ec2b2e1" category="paragraph">光纖通道傳輸協定（FCP）服務可定義SVM的光纖通道目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="6430db21988dbbdfca7783c89a7710df" category="paragraph-title">啟動器</block>
+  <block id="e3d33d6f93f2da7210eecf1bf47f611a" category="paragraph">啟動器是光纖通道（ FC ）全球連接埠名稱（ WWPN ）、 iSCSI 合格名稱（ IQN ）或 iSCSI EUI （延伸唯一識別碼）、可識別主機端點。您可以擷取叢集或特定 SVM 的啟動器。ONTAP 9.14 引進了這種資源類型。</block>
+  <block id="131003e164df711c2c8b54e9164645ce" category="paragraph">iSCSI服務可定義SVM的iSCSI目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="824ff803a2e59191d84de2a5883e3817" category="paragraph">LUN是儲存區域網路（SAN）中儲存設備的邏輯代表。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="d88d836b0f6abd268649d467ed5ed4a0" category="paragraph-title">Cisco DuoTM</block>
+  <block id="7dff8926a1636f9c9eb5aafc4933fb51" category="paragraph">雙核心為 SSH 登入提供雙因素驗證。您可以將雙核心設定為在 ONTAP 叢集或 SVM 層級上運作。ONTAP 9.14 引進了這種資源類型。</block>
+  <block id="2f857b00dd40b78c001830e145e6e9ed" category="paragraph">金鑰庫說明金鑰管理程式的類型。此資源類型是ONTAP 更新的、採用了更新版的功能。ONTAP 9.14 新增了其他支援增強控制的端點。</block>
+  <block id="81965b7bd1ea175b46252dfed91f5375" category="paragraph-title">OAuth 2.0</block>
+  <block id="3e1b68a51cd18c85f6633a372eaa47d5" category="paragraph">開放式授權（ OAuth 2.0 ）是以權杖為基礎的架構、可用於限制對 ONTAP 儲存資源的存取。您可以將它與透過 REST API 存取 ONTAP 的用戶端搭配使用。您可以使用任何 ONTAP 管理介面（包括 REST API ）來執行組態。ONTAP 9.14 引進了這種資源類型。</block>
+  <block id="27702643aae403db95bb8d5766d42ba2" category="paragraph">Fibre Channel介面是與SVM相關聯的邏輯端點。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="47232f83862f7c73f2dc299c2cb2a804" category="paragraph">Fibre Channel連接埠是ONTAP 指位於某個節點上的實體介面卡、用於連接至Fibre Channel網路。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="e9460f386e193d8153ce3a30cbeae0a2" category="paragraph">NVMe命名空間是一組可定址邏輯區塊、顯示給使用NVMe over Fabrics傳輸協定連線至SVM的主機。此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="e1212fe9c627f41d39c2fb26db4535c9" category="paragraph">NVMe服務可定義SVM的NVMe控制器目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。</block>
+  <block id="a51892b5a4bcf216a56450a792184174" category="paragraph-title">FPolicy 持續儲存區</block>
+  <block id="ecfa04d0e47a1a9e2cf0144187c21054" category="paragraph">您可以設定及管理 ONTAP FPolicy 組態和事件的持續儲存區。每個 SVM 都可以有一個持續儲存區、供 SVM 中的多個原則共用。ONTAP 9.14 引進了這種資源類型。</block>
+  <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="inline-link">ONTAP 9.14.1.</block>
+  <block id="b7c3bd1301d054c8520873802dd18cfb" category="list-text"><block ref="b7c3bd1301d054c8520873802dd18cfb" category="inline-link-rx"></block></block>
+  <block id="19040d6ab7164538566763cb6e559f8a" category="paragraph">REST API 可用的主要驗證技術是 HTTP 基本驗證。從 ONTAP 9.14 開始、您也可以選擇使用開放式授權（ OAuth 2.0 ）架構搭配權杖型驗證和授權。</block>
+  <block id="a1780de7da7bbe961dafcd25f2acce5f" category="paragraph">使用基本驗證時、每個 HTTP 要求都必須包含使用者認證。傳送認證有兩個選項。</block>
+  <block id="71c946f737aae822b9ee4169f06b784f" category="inline-link">ONTAP OAuth 2.0 實作總覽</block>
+  <block id="1b0b903a9566a5744a2b1ac1619f7022" category="paragraph">使用 OAuth 2.0 時、您需要向外部授權伺服器要求存取權杖、並將其納入每個 HTTP 要求中。基本的高階步驟如下所述。另請參閱<block ref="5bb8a5528675151a3bb0019caff877ea" category="inline-link-rx"></block> 如需 OAuth 2.0 及如何搭配 ONTAP 使用的詳細資訊、請參閱。</block>
+  <block id="d514d2b0ea875e281a924be2987193f2" category="paragraph-title">準備好您的 ONTAP 環境</block>
+  <block id="1eca2aa236ac231cec489235624a47b7" category="paragraph">在使用 REST API 存取 ONTAP 之前、您需要準備和設定 ONTAP 環境。在較高層級、步驟包括：</block>
+  <block id="734782d9ddec20aa61a423604d65ef26" category="list-text">識別 ONTAP 保護的資源和用戶端</block>
+  <block id="de1b191de53683ea60d6ae5c3650295b" category="list-text">檢閱現有的 ONTAP REST 角色和使用者定義</block>
+  <block id="6cbcddd9ef9c2fcdff112cb0b74aa030" category="list-text">安裝及設定授權伺服器</block>
+  <block id="354b069b0f18efe2843f5e3cb7dcae65" category="list-text">設計及設定用戶端授權定義</block>
+  <block id="f32bc251d7ca8430717b0c2283a718b2" category="list-text">設定 ONTAP 並啟用 OAuth 2.0</block>
+  <block id="3e55f8cb6c3c62549dbefbe26c15a020" category="paragraph-title">要求存取權杖</block>
+  <block id="0753972aea61365eef6badd463bd2e43" category="paragraph">透過 ONTAP 和授權伺服器的定義和作用中、您可以使用 OAuth 2.0 權杖進行 REST API 呼叫。第一步是向授權伺服器要求存取權杖。這是在 ONTAP 以外使用多種不同技術的伺服器上進行的。ONTAP 不會發出存取權杖或執行重新導向。</block>
+  <block id="77447de57e7dbcfde744823200577fe6" category="paragraph">取得存取權杖之後、您可以建構授權標頭、並將其納入 HTTP 要求中。無論您是使用 Curl 或程式設計語言來存取 REST API 、每個用戶端要求都必須包含標頭。您可以如下建構標頭：</block>
+  <block id="51296595424b33101155651a10564387" category="paragraph"><block ref="53f780ac405331a2fbd496e5b643b5ba" prefix="" category="inline-code"></block></block>
+  <block id="35f3790d46f0259d732abe98f2b0bdd4" category="paragraph">ONTAP 9.14.1 版本包含超過三打的新 API 呼叫、可持續擴充 ONTAP REST API 的功能。這些端點支援多項新的 ONTAP 功能、以及現有功能的更新。此版本主要著重於安全性增強功能、但也包括 NAS 、 QoS 和效能指標的改善。</block>
+  <block id="641555d3d770ea22835d8832f7b5abc8" category="list-text">ONTAP 9.14.1 推出兩項主要安全功能。開放式授權（ OAuth 2.0 ）是以權杖為基礎的架構、可用於限制對 ONTAP 儲存資源的存取。您可以將它與透過 REST API 存取 ONTAP 的用戶端搭配使用。您可以使用任何 ONTAP 管理介面（包括 REST API ）來執行組態。ONTAP 9.14.1 版本也支援 Cisco 雙核心、可為 SSH 登入提供雙因素驗證。您可以將雙核心設定為在 ONTAP 叢集或 SVM 層級上運作。除了這兩項新功能之外、我們也新增了數個端點、以改善對主要儲存區的控制。</block>
+  <block id="d1da20b888223de4d787257b0ae5aa46" category="list-text">FPolicy 持續儲存</block>
+  <block id="d5daf86a515bbfa343f46bd91a5d7305" category="list-text">FPolicy 提供 ONTAP 原則管理平台。它為各種元件或元素（例如事件和原則引擎）提供容器。您現在可以使用 REST API 來設定和管理 ONTAP FPolicy 組態和事件的持續儲存區。每個 SVM 都可以有一個持續儲存區、供 SVM 中的多個原則共用。</block>
+  <block id="3fad336057e3a048c877232a639dee5d" category="list-text">我們推出兩個端點、可讓您擷取及設定叢集的 QoS 選項。例如、您可以為背景工作保留一定百分比的可用系統處理資源。</block>
+  <block id="e2e6f514a423f7cfe97845b24dae97b3" category="list-text">效能指標</block>
+  <block id="1b924770cbb530a95f9a4b37ebe44510" category="list-text">ONTAP 會維護系統操作特性的統計資訊。此資訊以由表格和資料列組成的資料庫格式呈現。使用 ONTAP 9.14.1 時、會在數個資源類別中新增額外的度量資料、包括光纖通道、 iSCSI 、 LUN 和 NVMe 。這項額外的度量資料持續使 ONTAP REST API 與 Data ONTAP API （ ONTAPI 或 ZAPI ）接近同位。</block>
+  <block id="cd2cdc53f29e0d1cb7f1d3bdd0513782" category="list-text">其他增強功能</block>
+  <block id="1b3fb59c31316efb7c8c3e6f1d3591d9" category="list-text">視您的環境而定、還有幾項額外的增強功能可能會有所幫助。這些新端點可改善對 SAN 啟動器的存取、控制主機快取設定、並可存取個別的 AutoSupport 訊息。</block>
+  <block id="967410f03c47bdd33958d361e0817573" category="list-text">透過網路在用戶端和 ONTAP LIF 之間傳送的所有流量、通常會根據 ONTAP 組態設定、使用 TLS 進行加密。</block>
+  <block id="c1b4860e30e5f16fbbaa10a97391e5fa" category="list-text">在 HTTP 層級、例如直接存取 ONTAP REST API 時、有兩個驗證選項、如下所述。在每種情況下、您都需要建立 HTTP 授權標頭、並將其納入每個要求中。</block>
+  <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">選項</block>
+  <block id="5cbeb623c773120c62a805165bcb60c8" category="cell">ONTAP 使用者名稱和密碼會與冒號串連在一起。字串會轉換為 base64 、並包含在要求標頭中。</block>
+  <block id="e9732853ae6c10d2977789c3027f6be2" category="cell">從 ONTAP 9.14 開始、您可以從外部授權伺服器要求存取權杖、並將其作為承載權杖包含在要求標頭中。</block>
+  <block id="d7c448e959284e2bd2b21fe2375fe20c" category="paragraph">如需 OAuth 2.0 及其如何在 ONTAP 中實作的詳細資訊、請參閱<block ref="5bb8a5528675151a3bb0019caff877ea" category="inline-link-rx"></block>。另請參閱 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block> 請參閱本網站下方的。</block>
+  <block id="f393f584e27f669b011040984c1c9496" category="inline-link">ONTAP 9.14.1 效能計數器對應</block>
+  <block id="49ffd7a8d8266844e2ec7c32f18e5cb1" category="list-text"><block ref="49ffd7a8d8266844e2ec7c32f18e5cb1" category="inline-link-rx"></block></block>
+  <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
 </blocks>

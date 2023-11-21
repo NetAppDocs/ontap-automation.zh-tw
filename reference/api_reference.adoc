@@ -52,6 +52,7 @@ https://<ip_address>/docs/api`
 [role="lead"]
 您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
 
+* https://library.netapp.com/ecmdocs/ECMLP2886775/html/["ONTAP 9.14.1."^]
 * https://library.netapp.com/ecmdocs/ECMLP2885799/html/["ONTAP 9.13.1.12.9.11.9.11."^]
 * https://library.netapp.com/ecmdocs/ECMLP2884821/html/["零點9.12.1. ONTAP"^]
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/["零點9.11.1. ONTAP"^]

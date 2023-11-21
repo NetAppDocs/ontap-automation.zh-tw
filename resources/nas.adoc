@@ -85,6 +85,9 @@ FPolicy引擎可讓您識別接收檔案存取通知的外部伺服器。此資�
 .FPolicy活動
 此組態可識別檔案存取的監控方式、以及產生的事件。此資源類型隨ONTAP 附於NetApp 9.6。
 
+.FPolicy 持續儲存區
+您可以設定及管理 ONTAP FPolicy 組態和事件的持續儲存區。每個 SVM 都可以有一個持續儲存區、供 SVM 中的多個原則共用。ONTAP 9.14 引進了這種資源類型。
+
 .FPolicy原則
 FPolicy架構元素的容器、包括FPolicy引擎和事件。此資源類型隨ONTAP 附於NetApp 9.6。
 

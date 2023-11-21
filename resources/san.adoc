@@ -20,7 +20,7 @@ summary: 您可以使用這些API呼叫來管理SAN資源。
 Fibre Channel登入代表光纖通道啟動器所建立的連線、這些啟動器已登入ONTAP 到了功能鏈路。此資源類型隨ONTAP 附於NetApp 9.6。
 
 .Fibre Channel Protocol服務
-光纖通道傳輸協定（FCP）服務可定義SVM的光纖通道目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
+光纖通道傳輸協定（FCP）服務可定義SVM的光纖通道目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。
 
 .Fibre Channel WWPN別名
 全球連接埠名稱（WWPN）是唯一識別光纖通道連接埠的64位元值。此資源類型隨ONTAP 附於NetApp 9.6。
@@ -30,11 +30,14 @@ Fibre Channel登入代表光纖通道啟動器所建立的連線、這些啟動�
 
 巢狀igroup是ONTAP 功能更新的功能、包含了更新版的支援功能、REST API也加入了支援功能。此REST資源類型隨ONTAP 附於引用的地方。9.9
 
+.啟動器
+啟動器是光纖通道（ FC ）全球連接埠名稱（ WWPN ）、 iSCSI 合格名稱（ IQN ）或 iSCSI EUI （延伸唯一識別碼）、可識別主機端點。您可以擷取叢集或特定 SVM 的啟動器。ONTAP 9.14 引進了這種資源類型。
+
 .iSCSI認證
 iSCSI認證物件包含啟動器和ONTAP 物件所使用的驗證認證資料。此資源類型隨ONTAP 附於NetApp 9.6。
 
 .iSCSI服務
-iSCSI服務可定義SVM的iSCSI目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
+iSCSI服務可定義SVM的iSCSI目標內容。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。
 
 .iSCSI工作階段
 iSCSI工作階段是一或多個TCP連線、可將iSCSI啟動器與iSCSI目標連結。此資源類型隨ONTAP 附於NetApp 9.6。
@@ -49,7 +52,7 @@ LUN對應是LUN與啟動器群組之間的關聯。此資源類型隨ONTAP 附�
 報告節點是叢集節點、可透過SAN傳輸協定、將連至對應LUN的網路路徑做為ONTAP 供應器的選擇性LUN對應（SLE）功能的一部分、進行通告。新的端點可讓您新增、移除及探索LUN對應的報告節點。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。
 
 .LUN
-LUN是儲存區域網路（SAN）中儲存設備的邏輯代表。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
+LUN是儲存區域網路（SAN）中儲存設備的邏輯代表。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。ONTAP 9.14 新增了擷取效能指標資料的支援。
 
 .連接埠集
 連接埠集是與_portSet_ Storage VM相關聯的光纖通道或iSCSI網路介面的集合。雖然ONTAP 此功能已存在於先前版本的支援、但其餘API現在已加入支援。此REST資源類型隨ONTAP 附於引用的地方。9.9

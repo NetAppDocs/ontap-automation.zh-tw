@@ -50,7 +50,7 @@ ONTAP 9 版本資訊、內含目前版本的相關資訊。
 +
 PyPI的NetApp Python用戶端程式庫套件。
 
-* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["適用於 9.13.1 的 NetApp PCL 文件"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1 版 NetApp PCL 文件"^]
 +
 NetApp Python用戶端程式庫的文件。
 
