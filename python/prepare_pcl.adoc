@@ -34,7 +34,7 @@ Python用戶端程式庫套件的名稱為* NetApp-ONTAP*。與套件相關的�
 請參閱_NetApp開發人員網路_以取得文件與其他資源的連結。
 
 .相關資訊
-* https://pypi.org/project/netapp-ontap["PyPI ： NetApp ONTAP 9.13.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["適用於 9.13.1 的 NetApp PCL 文件"^]
+* https://pypi.org/project/netapp-ontap["PyPI ： NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1 版 NetApp PCL 文件"^]
 * https://devnet.netapp.com/restapi.php["NetApp開發人員網路：ONTAP 功能不一的API"^]
 
