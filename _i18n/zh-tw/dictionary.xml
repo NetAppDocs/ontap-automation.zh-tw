@@ -138,7 +138,6 @@
   <block id="97fc3d9385e39e5a8a5a53f93c073517" category="list-text">非同步處理</block>
   <block id="7191f1887421328b513e89d8e5db7cf6" category="list-text">如果非同步要求有效、ONTAP 則會建立背景工作來處理要求、並建立工作物件來固定工作。這會將202 HTTP狀態連同工作物件傳回給呼叫者。若要判斷最終成功或失敗、您必須擷取工作狀態。</block>
   <block id="026d032072959df5e7c61af10bdc9924" category="paragraph">使用POST、修補和刪除方法的要求、是設計成在預期需要兩秒以上才能完成時、非同步執行。</block>
-  <block id="48d8b5f7a9deedfd0fd5dd40310c83a5" category="admonition">「RETON_Timeout」查詢參數可用於非同步API呼叫、並可將非同步呼叫轉換為同步完成。如需詳細資訊、請參閱「使用工作物件進行非同步處理的方式」。</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">安全性</block>
   <block id="a0c340ff7c895ce6a1d571f1f55df890" category="paragraph">REST API所提供的安全性主要是以ONTAP 現有的資訊安全功能為基礎。API使用下列安全性：</block>
   <block id="14a55e8a26db2705a0ffd20ba0427338" category="list-text">傳輸層安全性</block>
@@ -1580,8 +1579,6 @@
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTP 方法和端點</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">此 REST API 呼叫使用下列方法和端點。</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">步驟 2 ：擷取工作狀態</block>
-  <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">您應該擷取工作的狀態、以判斷非同步要求是否成功完成。</block>
-  <block id="4044a674901deb07947f235775f9654d" category="paragraph">狀態值和其他欄位會包含在傳回的工作物件中。</block>
   <block id="1e6808f43cf2da1acd44c6e982792490" category="summary">您可以列出在 ONTAP 叢集中定義的儲存虛擬機器（ SVM ）。在建立新的 SVM 之前、您可以將其做為尋找特定 SVM 識別碼或確保名稱唯一性的一部分。</block>
   <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">列出 SVM</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。</block>
@@ -1606,7 +1603,6 @@
   <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">在捲曲範例之後貼到終端機</block>
   <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">使用範例搭配 Bash</block>
   <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">您可以發出 API 呼叫來更新叢集聯絡資訊。</block>
-  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">工作物件即會傳回。您應該儲存工作識別碼、以便在下一個步驟中使用、做為變數 $job_ID 。</block>
   <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">此範例說明如何擷取單一欄位。若要取得整個叢集物件和組態、您需要移除<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數。</block>
   <block id="e84f1016162859b425bf19a20c585781" category="paragraph"><block ref="0073b77e7a081cdc093bac4d7301bcd9" prefix="" category="inline-code"></block></block>
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">在將工作流程用於即時 ONTAP 部署之前、您應該先熟悉工作流程的結構和格式。</block>
@@ -1623,9 +1619,6 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">您必須為環境替換適當的認證。認證並未在 base64 中編碼。使用此參數執行 cURL 命令時、會編碼字串、並為您產生授權標頭。</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">設定您要執行的捲髮範例所包含的變數值。例如：</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">步驟 3 ：確認叢集聯絡資訊</block>
-  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">更新叢集聯絡人並確認工作狀態</block>
-  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
-  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">您可以更新叢集的連絡人資訊。由於要求是以非同步方式處理、因此此工作流程也說明如何判斷相關的背景工作是否成功完成。</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">REST 資源摘要</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">執行工作流程 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">其他資源</block>
@@ -1761,4 +1754,14 @@
   <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
   <block id="2cea11979f1d383a5921860d201ed868" category="inline-link">PyPI ： NetApp ONTAP 9.14.1</block>
   <block id="90412d82652a0008df94a427a205c033" category="list-text"><block ref="90412d82652a0008df94a427a205c033" category="inline-link-rx"></block></block>
+  <block id="e696d796f06ca3cca4df2aa968f7d80c" category="admonition">。<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> 查詢參數可用於非同步 API 呼叫、並可將非同步呼叫轉換為同步完成。請參閱 <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="1dc5084911d3204af98942fa6d181c14" category="list-text"><block ref="1dc5084911d3204af98942fa6d181c14" category="inline-link-macro-rx"></block></block>
+  <block id="0014615eb6ce34daf3cb39048cc454d3" category="inline-link-macro">取得工作執行個體</block>
+  <block id="d9571b4cf6afe329f62b4dd6681a09a9" category="list-text"><block ref="d9571b4cf6afe329f62b4dd6681a09a9" category="inline-link-macro-rx"></block></block>
+  <block id="906818e5b125ce2384a19c0fa11a2ee9" category="summary">您可以更新叢集的連絡人資訊。由於要求是以非同步方式處理、因此您也需要判斷相關的背景工作是否成功完成。</block>
+  <block id="492fdcd87814cf3c979a27709fc29350" category="paragraph">工作物件即會傳回。您應該儲存工作識別碼、以便在下一步中使用。</block>
+  <block id="09cf9d79ed6060f492a0048bf0b86f96" category="paragraph">執行工作流程 <block ref="d9571b4cf6afe329f62b4dd6681a09a9" category="inline-link-macro-rx"></block> 並確認<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 價值是<block ref="260ca9dd8a4577fc00b7bd5810298076" prefix=" " category="inline-code"></block>。</block>
+  <block id="7eb5ea99f4c7bd16c8867413d8a273bf" category="summary">您可以擷取特定 ONTAP 工作的執行個體。您通常會這樣做、以判斷工作和相關作業是否成功完成。</block>
+  <block id="05535988b76700172a5beb898c23b17d" category="admonition">您需要工作物件的 UUID 、這通常是在發出非同步要求之後提供的。另請檢閱 <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> 使用 ONTAP 內部工作之前。</block>
+  <block id="faec30107399ded67748fbc85ea21f3f" category="paragraph">狀態值和其他欄位會包含在傳回的工作物件中。本範例中的工作是在更新 ONTAP 叢集時執行。</block>
 </blocks>
