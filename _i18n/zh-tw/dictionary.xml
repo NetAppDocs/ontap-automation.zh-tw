@@ -236,8 +236,6 @@
   <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">小於或等於</block>
   <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">&gt;=</block>
   <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">大於或等於</block>
-  <block id="15a8022d0ed9cd9c2a2e756822703eb4" category="cell">更新</block>
-  <block id="3a2d5fe857d8f9541136a124c2edec6c" category="cell">或</block>
   <block id="9033e0e305f247c0c3c80d0c7848c8b3" category="cell">！</block>
   <block id="9bc7de899cf1c0d3ada046cd81f96aff" category="cell">不等於</block>
   <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
@@ -1764,4 +1762,19 @@
   <block id="7eb5ea99f4c7bd16c8867413d8a273bf" category="summary">您可以擷取特定 ONTAP 工作的執行個體。您通常會這樣做、以判斷工作和相關作業是否成功完成。</block>
   <block id="05535988b76700172a5beb898c23b17d" category="admonition">您需要工作物件的 UUID 、這通常是在發出非同步要求之後提供的。另請檢閱 <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> 使用 ONTAP 內部工作之前。</block>
   <block id="faec30107399ded67748fbc85ea21f3f" category="paragraph">狀態值和其他欄位會包含在傳回的工作物件中。本範例中的工作是在更新 ONTAP 叢集時執行。</block>
+  <block id="5b238b062b2dcc574fc3b0cb08104bbc" category="doc">列出 IP 介面</block>
+  <block id="1c6adf46eca226877c802f6585be28ec" category="paragraph">您可以擷取指派給叢集和 SVM 的 IP 生命。您可以這麼做來確認網路組態、或是在計畫新增其他 LIF 時。</block>
+  <block id="a00c50b90749f90a36742b8673eb5362" category="cell">/api/network/IP/ 介面</block>
+  <block id="0b741905860f34a10d74010f462f6dab" category="paragraph-title">Curl 範例的其他輸入參數</block>
+  <block id="8ad1007adda12ebaacc83f24d677e5e6" category="paragraph">除了所有REST API呼叫通用的參數之外、此步驟的Curl範例也會使用下列參數。</block>
+  <block id="dfcd3526cb1256fb8b0242048ce8f6fe" category="cell">傳回相關組態值的有限清單。</block>
+  <block id="c7d3a12d9cd219818b942ce7b79635d9" category="listing-title">捲曲範例：傳回具有預設組態值的所有生命</block>
+  <block id="533043f9cd78f3216839a884ba0b162b" category="listing-title">捲曲範例：傳回具有四個特定組態值的所有生命</block>
+  <block id="5060abb5e8980122d0dc1c35e9f85efd" category="doc">列出磁碟</block>
+  <block id="9e414eeae313ebca6ec1a78d41b6aa68" category="paragraph">您可以擷取叢集中的磁碟清單。您可以這麼做來找出一個或多個要用來做為建立 Aggregate 的一部分的備援磁碟機。</block>
+  <block id="ffd7c2897f8ba9366722a4ded3eaff6c" category="cell">/api/storage / 磁碟</block>
+  <block id="9ed39e2ea931586b6a985a6942ef573e" category="cell">州/省</block>
+  <block id="6e5a184a338e990223b90751d5dce3fa" category="cell">可用於識別新集合體可用的備用磁碟。</block>
+  <block id="9c049e1832aad88667dcc17e261acc9c" category="listing-title">捲曲範例：傳回所有磁碟</block>
+  <block id="2f16f01d47fc5581920b2b69e5a6cdc2" category="listing-title">捲曲範例：傳回備用磁碟</block>
 </blocks>
