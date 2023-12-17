@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: workflows/wf_stor_list_disks.html 
 keywords: workflow, storage, disks, list disks 
-summary:  
+summary: 您可以擷取叢集中的磁碟清單。您可以這麼做來找出一個或多個要用來做為建立 Aggregate 的一部分的備援磁碟機。 
 ---
 = 列出磁碟
 :hardbreaks:

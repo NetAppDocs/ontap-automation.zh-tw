@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_aggrs.html 
+keywords: workflow, storage, aggregates, list aggregates 
+summary:  
+---
+= 列出集合體
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以擷取叢集中的集合體清單。您可以這樣做來評估使用率和效能。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /api/storage / 磁碟 
+|===
+.處理類型
+同步
+
+.Curl 範例的其他輸入參數
+除了所有REST API呼叫通用的參數之外、此步驟的Curl範例也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| node.name | 查詢 | 否 | 可用於識別每個集合所附加的節點。 
+|===
+.Curl 範例：傳回所有具有預設組態值的集合體
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Curl 範例：傳回具有特定組態值的所有集合體
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Json輸出範例
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/storage/aggregates?fields=node.name"
+    }
+  }
+}
+----
+====
