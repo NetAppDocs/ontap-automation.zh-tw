@@ -467,7 +467,6 @@
   <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">原生存取ONTAP 靜態API</block>
   <block id="ae77e4f93e27bd095e1158ccc1bb27f8" category="paragraph">您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。您應該先檢閱本網站上的所有文件。</block>
   <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">調整舊版ONTAPI程式碼以使用REST</block>
-  <block id="4c557aa1edc9db8b42f1265ae600f253" category="paragraph">如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱<block ref="3f8b8a296b98a2427cd0fe076ddc5c7d" category="inline-link-rx"></block> 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、</block>
   <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">使用NetApp Python用戶端程式庫</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python用戶端程式庫</block>
   <block id="7985c67b4ff49ccabd48db90e57852eb" category="paragraph">Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。您應該先檢閱本網站上的文件、包括 <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block>。</block>
@@ -1801,4 +1800,5 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">根據篩選<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 變數以選取備用磁碟。</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">列出帳戶</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">清單集合體</block>
+  <block id="9cebbf9729f76658642974e19c057421" category="paragraph">如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、</block>
 </blocks>

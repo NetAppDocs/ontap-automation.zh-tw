@@ -29,7 +29,7 @@ NOTE: ONTAPI API也稱為Network Manageability SDK或ZAPI、是以程式設計�
 
 == 調整舊版ONTAPI程式碼以使用REST
 
-如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["用於REST API對應資訊的ONTAPI"^] 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、
+如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱 link:../migrate/mapping.html["用於REST API對應的ONTAPI"] 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、
 
 
 
