@@ -14,27 +14,27 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 
 
 [role="lead"]
-您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。
+有幾種額外資源可協助您自動化 ONTAP 儲存系統的部署與管理。
 
 
 
 == 支援支援支援ONTAP
 
-* https://docs.netapp.com/us-en/ontap-family/["產品文件資料ONTAP"^]
+* 提供ONTAP 有關支援功能的文件。
 +
-提供ONTAP 有關支援功能的文件。
+https://docs.netapp.com/us-en/ontap-family/["產品文件資料ONTAP"^]
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]
+* ONTAP 9 版本資訊、內含目前版本的相關資訊。
 +
-ONTAP 9 版本資訊、內含目前版本的相關資訊。
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]
 
-* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["系統管理程式資源ONTAP ONTAP"^]
+* 包括規劃、管理及支援ONTAP 功能所需的文件和其他實用連結。
 +
-包括規劃、管理及支援ONTAP 功能所需的文件和其他實用連結。
+https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["系統管理程式資源ONTAP ONTAP"^]
 
-* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["產品庫ONTAP"^]
+* 存取先前ONTAP 版本的發行說明及其他文件。
 +
-存取先前ONTAP 版本的發行說明及其他文件。
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["產品庫ONTAP"^]
 
 
 
@@ -42,21 +42,39 @@ ONTAP 9 版本資訊、內含目前版本的相關資訊。
 
 == 支援的開發人員資源ONTAP
 
-* link:../migrate/mapping.html["用於REST API對應的ONTAPI"]
+* 協助您在 DevOps 環境中開始使用 Ansible 。
 +
-提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。選取適當ONTAP 的版本。
+https://www.netapp.com/devops-solutions/ansible/["NetApp Ansible DevOps解決方案"^]
 
-* https://pypi.org/project/netapp-ontap["PyPI：ONTAP NetApp"^]
+* 提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。選取適當ONTAP 的版本。
 +
-PyPI的NetApp Python用戶端程式庫套件。
+link:../migrate/mapping.html["用於REST API對應的ONTAPI"]
 
-* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1 版 NetApp PCL 文件"^]
+* PyPI的NetApp Python用戶端程式庫套件。
 +
-NetApp Python用戶端程式庫的文件。
+https://pypi.org/project/netapp-ontap["PyPI：ONTAP NetApp"^]
 
-* https://devnet.netapp.com/restapi.php["NetApp開發人員網路：ONTAP 功能不一的API"^]
+* NetApp Python用戶端程式庫的文件。
 +
-提供使用ONTAP REST API所需的資源和文件、包括ONTAP 使用支援支援的Python用戶端程式庫。
+https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1 版 NetApp PCL 文件"^]
+
+* 提供使用 ONTAP REST API 所需的資源與文件。
++
+https://devnet.netapp.com/restapi.php["NetApp開發人員網路：ONTAP 功能不一的API"^]
+
+
+
+
+
+== 部落格文章
+
+* CLI passThrough提供一種使用ONTAP REST API執行Rest CLI命令的技術。
++
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api["將私有CLI密碼與ONTAP REST API搭配使用"^]
+
+* 如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。
++
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["NetApp與Ansible快速入門：安裝Ansible"^]
 
 
 
@@ -64,26 +82,32 @@ NetApp Python用戶端程式庫的文件。
 
 == 影片
 
-* https://www.youtube.com/watch?v=Wws3SB5d9Ss["NetApp ONTAP 方面的Python用戶端程式庫入門"^]
+* NetApp Python 用戶端程式庫的良好簡介、以及如何開始使用程式庫撰寫程式碼。
 +
-NetApp Python用戶端程式庫簡介、以及如何開始使用程式庫撰寫程式碼。
+https://www.youtube.com/watch?v=Wws3SB5d9Ss["NetApp ONTAP 方面的Python用戶端程式庫入門"^]
 
+* 此影片也可透過 NetApp TV 取得、網址為： link:https://tv.netapp.com/detail/video/6217195551001["Ansible認證模組"^]。
++
+video::L5DZBV_Sg9E[youtube,width=848,height=480]
+* 瞭解 Ansible 認證模組。
++
+video::ZlmQ5IuVZD8[youtube,width=848,height=480]
 
 
 
 
 == NetApp資源
 
-* https://mysupport.netapp.com/["NetApp支援"^]
+* 存取疑難排解工具、文件及技術支援協助。
 +
-存取疑難排解工具、文件及技術支援協助。
+https://mysupport.netapp.com/["NetApp支援"^]
 
-* https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
+* 存取ONTAP 有關使用R11和ONTAP R11 API的要求與相容性資訊。
 +
-存取ONTAP 有關使用R11和ONTAP R11 API的要求與相容性資訊。
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
 
-* http://www.netapp.com/us/library/index.aspx["NetApp技術報告與白皮書庫"^]
+* 存取技術報告、白皮書及其他文件。
 +
-存取技術報告、白皮書及其他文件。
+http://www.netapp.com/us/library/index.aspx["NetApp技術報告與白皮書庫"^]
 
 

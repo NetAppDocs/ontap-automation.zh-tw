@@ -10,7 +10,7 @@ summary: 代表性狀態傳輸（REST）是建立分散式Web應用程式的風�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
