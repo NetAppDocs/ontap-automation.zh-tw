@@ -52,15 +52,15 @@ https://<ip_address>/docs/api`
 [role="lead"]
 您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
 
-* https://library.netapp.com/ecmdocs/ECMLP2886775/html/["ONTAP 9.14.1."^]
-* https://library.netapp.com/ecmdocs/ECMLP2885799/html/["ONTAP 9.13.1.12.9.11.9.11."^]
-* https://library.netapp.com/ecmdocs/ECMLP2884821/html/["零點9.12.1. ONTAP"^]
-* https://library.netapp.com/ecmdocs/ECMLP2882307/html/["零點9.11.1. ONTAP"^]
-* https://library.netapp.com/ecmdocs/ECMLP2879871/html/["零點9.10.1 ONTAP"^]
-* https://library.netapp.com/ecmdocs/ECMLP2876964/html/["部分9.9.1 ONTAP"^]
-* https://library.netapp.com/ecmdocs/ECMLP2874708/html/["部分9.8 ONTAP"^]
-* https://library.netapp.com/ecmdocs/ECMLP2862544/html/["更新ONTAP"^]
-* https://library.netapp.com/ecmdocs/ECMLP2856304/html/["部分9.6 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9141/["ONTAP 9.14.1."^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1.12.9.11.9.11."^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/["零點9.12.1. ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/["零點9.11.1. ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/["零點9.10.1 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/["部分9.9.1 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/["部分9.8 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/["更新ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/["部分9.6 ONTAP"^]
 
 
 .相關資訊

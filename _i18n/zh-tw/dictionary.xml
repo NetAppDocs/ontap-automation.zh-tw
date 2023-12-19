@@ -6,8 +6,6 @@
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">系統管理程式資源ONTAP ONTAP</block>
   <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">支援的開發人員資源ONTAP</block>
-  <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">用於REST API對應資訊的ONTAPI</block>
-  <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
   <block id="3c7d0c806ed3155c89dbd1e259689a6c" category="paragraph">PyPI的NetApp Python用戶端程式庫套件。</block>
   <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">NetApp Python用戶端程式庫的文件。</block>
   <block id="b597994ba1223810c3ac8977cffacb37" category="inline-link">NetApp開發人員網路：ONTAP 功能不一的API</block>
@@ -420,7 +418,6 @@
   <block id="789933b01aa01335db4e573eb0fdfea6" category="paragraph">而供應器的功能也不斷擴充、ONTAP ONTAP有新的API端點可用於現有ONTAP 的功能、包括SAN連接埠集和Vserver檔案目錄安全性。此外、我們也新增了端點、以支援ONTAP 全新的功能與增強功能。相關文件也有所改善。以下為增強功能的摘要。</block>
   <block id="154f94956201de1d51f6ff61e84ae944" category="list-text">將ONTAPI對應至ONTAP Rest 9 API</block>
   <block id="d15c7ef669111b1c40233338c66dfc44" category="inline-link">用於REST API對應的ONTAPI</block>
-  <block id="5576a121543ddb1cc6d1fd0dd6bbc8ce" category="list-text">為了協助您將ONTAP 自己的自動化程式碼轉換為REST API、NetApp提供API對應文件。此參考包含每個的ONTAPI呼叫清單和REST API等效值。地圖文件已更新、加入全新ONTAP 的《更新版》、以涵蓋全新的《更新版》、《更新版》。請參閱<block ref="5dba316c85ac11066d0b9336552c6287" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="5a3b858ecd9ec9c186ad254f07cd1d33" category="list-text">API端點提供ONTAP 全新的功能、以利更新的功能</block>
   <block id="07e5c3418b383cfa2bebed08d44aefc3" category="list-text">REST API已新增對ONTAP 無法透過ONTAPI API取得的全新功能的支援功能。這包括支援巢狀igroup和Google Cloud Key Management Services。</block>
   <block id="d621c5d40a054b36a3f1e180f7fc170d" category="list-text">改善從ONTAPI移轉至REST的支援</block>
@@ -429,7 +426,6 @@
   <block id="ddd51e3a52a14385d0b60fcaf5dfe038" category="list-text">目前、《支援》線上文件參考頁面上的標籤會指出推出每個REST端點或參數時的發行版、包括採用《支援》更新版本的更新版本。ONTAP ONTAP ONTAP</block>
   <block id="2abfff2974f589f7a217325f304e0ec5" category="section-title">部分9.8 ONTAP</block>
   <block id="67c4467b9d90249efeb3de541a9cc553" category="paragraph">由於資料豐富、因此可大幅擴充不景API的廣度和深度。ONTAP ONTAP其中包含多項新功能、可提升您自動化ONTAP 部署及管理功能的能力。此外、支援也已改善、可協助從舊版ONTAPI移轉至REST。</block>
-  <block id="0f1777fe9d7503978fa560d01dc6f49a" category="list-text">為了協助您更新ONTAPI自動化、NetApp提供一組需要一或多個輸入參數的ONTAPI呼叫清單、以及將這些呼叫對應到等效ONTAP 的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效指令API呼叫。請參閱<block ref="b7822a036760b0668f0d2b8313956600" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="abdf317b8f58236a4195d452834d45c9" category="list-text">API端點提供ONTAP 全新的功能、以利實現全新的功能</block>
   <block id="cf1724d8d3131e94ad854521ae7d4f4a" category="list-text">REST API已新增對ONTAP 新核心的支援、無法透過ONTAPI取得這些功能。這包括支援ONTAP REST API以支援SS3儲存區和服務、SnapMirror營運不中斷和檔案系統分析。</block>
   <block id="35d207b2ca355b3e7e3a5d74f2b2afe4" category="list-text">擴充支援以增強安全性</block>
@@ -1057,15 +1053,8 @@
   <block id="485855357f10b438740d2ed039caaa84" category="admonition">您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或是NetApp所維護文件的靜態複本。</block>
   <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">存取ONTAP 一份《R靜止API參考文件》</block>
   <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。</block>
-  <block id="dabf3cc81191d48460fa3508e371a53c" category="list-text"><block ref="dabf3cc81191d48460fa3508e371a53c" category="inline-link-rx"></block></block>
-  <block id="c0076edc80c1407ceda2d5911e6d288b" category="list-text"><block ref="c0076edc80c1407ceda2d5911e6d288b" category="inline-link-rx"></block></block>
-  <block id="e12d5fae570ab26cdfadd64c30e4ae21" category="list-text"><block ref="e12d5fae570ab26cdfadd64c30e4ae21" category="inline-link-rx"></block></block>
-  <block id="f7c5a1bcb357ec457e5da54b44ff52d8" category="list-text"><block ref="f7c5a1bcb357ec457e5da54b44ff52d8" category="inline-link-rx"></block></block>
-  <block id="87a1e5bb26fa6c8f049bab63283cd932" category="list-text"><block ref="87a1e5bb26fa6c8f049bab63283cd932" category="inline-link-rx"></block></block>
-  <block id="92ecf2461519a0850a03fefd557a9caa" category="list-text"><block ref="92ecf2461519a0850a03fefd557a9caa" category="inline-link-rx"></block></block>
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。建立REST角色會自動建立傳統的_mapping角色。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">您可以在ONTAP 線上存取此功能 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需詳細資訊、包括如何使用API的範例、請參閱文件。</block>
-  <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。新的存取層級可用於REST角色、例如「讀取建立」和「讀取修改」。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">產品文件資料ONTAP</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">提供ONTAP 有關支援功能的文件。</block>
@@ -1083,7 +1072,6 @@
   <block id="748bf9f08649deb2201e70da703c7de8" category="summary">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。您可以直接或透過NetApp Python用戶端程式庫存取REST API。</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">零點9.12.1. ONTAP</block>
-  <block id="a7ff89ff57425e5ce3eeb375d968dbe6" category="list-text"><block ref="a7ff89ff57425e5ce3eeb375d968dbe6" category="inline-link-rx"></block></block>
   <block id="a60f928eab9c8ac4756a146853b7b27e" category="list-text"><block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block></block>
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。選取適當ONTAP 的版本。</block>
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">PyPI：ONTAP NetApp</block>
@@ -1496,7 +1484,6 @@
   <block id="2a448fcc25cf428d2769919718ce218b" category="list-text">現有的 CIFS 端點已擴充、可更新特定 SVM 的組態。</block>
   <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">現有的 S3 儲存區端點已擴充、納入規則定義。每個規則都是清單物件、並定義要在貯體內物件上執行的一組動作。這些規則可讓您更有效地管理 S3 儲存區的生命週期。</block>
   <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">使用每種角色時都有優點和缺點。請參閱 <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">部落格文章</block>
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">您應該永遠使用叢集管理 LIF 。這會在所有節點之間平衡 API 要求負載、避免發生離線或連線問題的節點。如果您設定了多個叢集管理階層的生命負載、這些都與存取 REST API 的權限相當。</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">\&lt;=</block>
@@ -1712,7 +1699,6 @@
   <block id="a51892b5a4bcf216a56450a792184174" category="paragraph-title">FPolicy 持續儲存區</block>
   <block id="ecfa04d0e47a1a9e2cf0144187c21054" category="paragraph">您可以設定及管理 ONTAP FPolicy 組態和事件的持續儲存區。每個 SVM 都可以有一個持續儲存區、供 SVM 中的多個原則共用。ONTAP 9.14 引進了這種資源類型。</block>
   <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="inline-link">ONTAP 9.14.1.</block>
-  <block id="b7c3bd1301d054c8520873802dd18cfb" category="list-text"><block ref="b7c3bd1301d054c8520873802dd18cfb" category="inline-link-rx"></block></block>
   <block id="19040d6ab7164538566763cb6e559f8a" category="paragraph">REST API 可用的主要驗證技術是 HTTP 基本驗證。從 ONTAP 9.14 開始、您也可以選擇使用開放式授權（ OAuth 2.0 ）架構搭配權杖型驗證和授權。</block>
   <block id="a1780de7da7bbe961dafcd25f2acce5f" category="paragraph">使用基本驗證時、每個 HTTP 要求都必須包含使用者認證。傳送認證有兩個選項。</block>
   <block id="71c946f737aae822b9ee4169f06b784f" category="inline-link">ONTAP OAuth 2.0 實作總覽</block>
@@ -1801,4 +1787,16 @@
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">列出帳戶</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">清單集合體</block>
   <block id="9cebbf9729f76658642974e19c057421" category="paragraph">如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、</block>
+  <block id="b140235cfdd8fa15bee3204f61084c80" category="list-text"><block ref="b140235cfdd8fa15bee3204f61084c80" category="inline-link-rx"></block></block>
+  <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
+  <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
+  <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
+  <block id="8ec7335e6525b3d07614d1c9c722568f" category="list-text"><block ref="8ec7335e6525b3d07614d1c9c722568f" category="inline-link-rx"></block></block>
+  <block id="6c645a069d50633d36d4e222dc6c9355" category="list-text"><block ref="6c645a069d50633d36d4e222dc6c9355" category="inline-link-rx"></block></block>
+  <block id="fca52401410a3b119815eb6666d6e4a1" category="list-text"><block ref="fca52401410a3b119815eb6666d6e4a1" category="inline-link-rx"></block></block>
+  <block id="3b4dfc8add89b5b87470e0473d10bb44" category="list-text"><block ref="3b4dfc8add89b5b87470e0473d10bb44" category="inline-link-rx"></block></block>
+  <block id="c03c22aa3c11c989e8d97f1d84df52ee" category="list-text"><block ref="c03c22aa3c11c989e8d97f1d84df52ee" category="inline-link-rx"></block></block>
+  <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。REST 角色可以使用新的存取層級、例如<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> 和<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">為了協助您將ONTAP 自己的自動化程式碼轉換為REST API、NetApp提供API對應文件。此參考包含每個的ONTAPI呼叫清單和REST API等效值。地圖文件已更新、加入全新ONTAP 的《更新版》、以涵蓋全新的《更新版》、《更新版》。請參閱 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">為了協助您更新ONTAPI自動化、NetApp提供一組需要一或多個輸入參數的ONTAPI呼叫清單、以及將這些呼叫對應到等效ONTAP 的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效指令API呼叫。請參閱 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
 </blocks>
