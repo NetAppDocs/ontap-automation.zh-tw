@@ -14,8 +14,6 @@ entries:
     url: "/rest/interpret_api_response.html"
   - title: 使用工作物件進行非同步處理
     url: "/rest/asynchronous_processing.html"
-- title: 其他考量
-  entries:
   - title: 物件參考與存取
     url: "/rest/object_references_and_access.html"
   - title: ONTAPI API API和ONTAP CLI的使用者
