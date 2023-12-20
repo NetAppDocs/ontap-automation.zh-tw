@@ -17,7 +17,7 @@ sidebar:
   - section: rest
   - section: workflows
   - section: manage
-  - section: python
+  - section: sw-tools
   - section: migrate
   - section: reference
   - section: additional
@@ -37,14 +37,16 @@ homepage:
     links:
     - title: REST實作詳細資料
       url: "/rest/rest_web_services_foundation.html"
-    - title: 其他考量
-      url: "/rest/object_references_and_access.html"
+    - title: RBAC安全性
+      url: "/rest/rbac_overview.html"
     - title: REST 資源摘要
       url: "/resources/overview_categories.html"
     - title: API 參考
       url: "/reference/api_reference.html"
   - title: 自動化
     links:
+    - title: 工作流程
+      url: "/workflows/prepare_workflows.html"
     - title: Python用戶端程式庫
       url: "/python/overview_pcl.html"
   - title: 移轉至REST API
@@ -61,8 +63,6 @@ homepage:
     links:
     - title: 其他資源
       url: "/additional/resources.html"
-    - title: NetApp DevNet
-      url: https://devnet.netapp.com/restapi.php
     - title: 9文件ONTAP
       url: https://docs.netapp.com/us-en/ontap/
     - title: 文件ONTAP Select

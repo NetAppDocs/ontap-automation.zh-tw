@@ -1,0 +1,12 @@
+---
+section: sw-tools
+title: 軟體工具
+entries:
+- title: Python用戶端程式庫
+  entries:
+  - title: 總覽
+    url: "/python/overview_pcl.html"
+  - title: 準備使用Python用戶端程式庫
+    url: "/python/prepare_pcl.html"
+  - title: 用於擷取叢集組態的指令碼
+    url: "/python/script_retrieve_cluster_configuration.html"

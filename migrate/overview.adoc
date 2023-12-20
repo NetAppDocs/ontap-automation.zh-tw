@@ -20,5 +20,5 @@ NetApp首先推出ONTAP REST API搭配NetApp 9.6。自此之後、 REST API 持�
 
 .相關資訊
 * https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPS-00410 終止供應： ONTAPI"^]
-* https://devnet.netapp.com/restapi.php["NetApp DevNet ： ONTAP REST API"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["常見問題集：適用於 CPC 的 ZAPI 至 ONTAP REST API 轉型"^]
 
