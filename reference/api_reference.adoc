@@ -52,7 +52,7 @@ https://<ip_address>/docs/api`
 [role="lead"]
 您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
 
-* https://docs.netapp.com/us-en/ontap-restapi-9141/["ONTAP 9.14.1."^]
+* https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1."^]
 * https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1.12.9.11.9.11."^]
 * https://docs.netapp.com/us-en/ontap-restapi-9121/["零點9.12.1. ONTAP"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9111/["零點9.11.1. ONTAP"^]

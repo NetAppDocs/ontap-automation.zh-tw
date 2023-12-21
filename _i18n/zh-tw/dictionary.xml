@@ -133,15 +133,11 @@
   <block id="b19cfdc6ba6a94190ea654a5c325673c" category="list-text">HTTP驗證</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">驗證ONTAP</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">執行角色型授權模式。ONTAP您在存取ONTAP 「靜態API」或API文件頁面時所使用的帳戶、應有適當的權限。</block>
-  <block id="42a4074843d4a69faa8c790fcb72ca0a" category="doc">ONTAPI API API和ONTAP CLI的使用者</block>
-  <block id="18aadc11d3c5f40e8c8474e03cf706af" category="paragraph">ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管理ONTAP 各種儲存系統。REST API和ONTAPI API API呼叫之間、以及REST API和ONTAP REST CLI之間存在差異。在正式作業環境中使用REST API之前、您應該先瞭解這些差異。</block>
   <block id="1b3d9b05305989cf6898b061409738ed" category="section-title">一般設計差異</block>
   <block id="ee083ff11ffc430b7230624e8985e88c" category="inline-link-macro">控制API要求的輸入變數</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API 參考</block>
-  <block id="a91c898dc88158a371c7ff70b0baa9e0" category="paragraph">此產品的設計與功能完全不同、ONTAPCLI命令和參數不會直接對應至REST API呼叫。即使可能有相似性、輸入參數的詳細資料也可能有所不同。例如、數字單位可能是以位元組為單位指定、或是使用字尾（例如KB）。您應該檢閱 <block ref="3715d1b1602da53d0f380910b6dd9205" category="inline-link-macro-rx"></block> 以及 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="0f659373042725afb9f92bda18229d9e" category="section-title">透過REST API公開的資料SVM</block>
   <block id="f01d65d87efa9315f7d78fee0755d570" category="paragraph">支援多種儲存虛擬機器（SVM）ONTAP 。不過ONTAP 、只有資料SVM會透過REST API直接曝露在外。說明叢集和節點的組態資訊可透過REST API取得、但是叢集和節點不會視為個別的SVM。</block>
-  <block id="389a48ede65b8854e63d5d655a7dd311" category="section-title">從ONTAPI移轉至REST</block>
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">在ONTAPI中對SnapDiff可用度所做的變更</block>
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">從ONTAP 功能性版本的E59.10.1開始、SnapDiff v1和v2 ONTAPI呼叫將無法叫用。任何啟動SnapDiff v1或v2 ONTAPI呼叫的第三方應用程式、都無法從ONTAP 版本資訊的版本9.10.1開始運作。支援SnapDiff v3 REST的備份應用程式、使用者應先確認其是否支援、再升級至版本RE-9.10.1。ONTAP ONTAP</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">SnapDiff API在ONTAP 整個發行版中的可用度定義如下：</block>
@@ -149,7 +145,6 @@
   <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
   <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">僅限v3（僅限REST API）ONTAP</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">發行說明 ONTAP</block>
-  <block id="430e01911dcacc88e4a83d838ae504e2" category="paragraph"><block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block></block>
   <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">REST Web服務基礎</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因開發期間所做的選擇而有所不同。在使用即時部署之前、您應該先瞭解ONTAP 到靜態API的設計特性。</block>
@@ -344,14 +339,9 @@
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8.</block>
   <block id="cdb0d512cc3fdc0adc8795b79f91c40f" category="cell">資源正在使用中。</block>
   <block id="54a05230a9d83fc20a3024afd1148c81" category="doc">透過REST API存取ONTAP REST CLI</block>
-  <block id="b16b005167b4cc2f06dc1e1acd755f91" category="paragraph">為了協助CLI和ONTAPI API使用者移轉ONTAP 至靜態API、ONTAP 我們提供REST端點來存取CLI。您可以使用此傳遞功能來執行任何CLI命令。REST端點的使用會傳回AutoSupport 至靜態資料中、以便NetApp找出REST API中的落差、並在未來版本中進行改善。</block>
-  <block id="af112349f35f3d8adc945b2dc23535c5" category="paragraph">若要發出CLI命令、您必須根據下列相關規則、進行適當格式的REST API呼叫：</block>
   <block id="9ec3f506845187b11b0f4c9a2b129777" category="list-text">資源路徑</block>
   <block id="ef2eef77980dfb726eee7566523a9f55" category="list-text">欄位名稱</block>
-  <block id="22f09f8242749472617c2605cfe68fef" category="paragraph">CLI存取的基礎資源路徑為「/Private / CLI」。如ONTAP 需透過REST API存取CLI的詳細資訊、請參閱《靜態API》線上文件頁面。</block>
-  <block id="3c2ec0a807110f1719364376d4921734" category="admonition">NetApp維護GitHub儲存庫、其中包含程式碼範例和其他實用資訊。您可以存取儲存庫、以取得如何使用CLI傳遞功能的範例。</block>
   <block id="d8225434898f45be37a5aecc2ae6627b" category="inline-link">靜態Python GitHub儲存庫- CLI傳遞範例ONTAP</block>
-  <block id="3c676a780a447c272e1d87565dcc8822" category="paragraph"><block ref="3c676a780a447c272e1d87565dcc8822" category="inline-link-rx"></block></block>
   <block id="6427fa68aca1f0e647dc8dc6d6c6d323" category="doc">使用工作物件進行非同步處理</block>
   <block id="f8645777304498f78534eb91dd733f91" category="paragraph">在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。視HTTP狀態代碼而定、您必須擷取工作狀態、以判斷要求是否成功。</block>
   <block id="aa5ed514388a44e4dc092690c451252e" category="paragraph">請參閱 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以判斷哪些API呼叫是設計為非同步執行。</block>
@@ -447,15 +437,7 @@
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="list-text">資料保護</block>
   <block id="4d3eb4b74688cbcce2793e7fa6452654" category="list-text">應用程式感知資料管理</block>
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">瞭ONTAP 解功能自動化選項</block>
-  <block id="09b61c4c135233e31eb7b12d4a296b18" category="paragraph">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。您可以直接或透過NetApp Python用戶端程式庫存取REST API。此外、NetApp也支援ONTAP 使用Ansible及其他高階軟體抽象化的功能進行功能不全的自動化。</block>
-  <block id="7510bbb3e3ce7994c1993c8698e3169e" category="admonition">ONTAPI API也稱為Network Manageability SDK或ZAPI、是以程式設計方式存取及管理ONTAP 效益儲存系統的老舊技術。現在、這個靜態API是一項策略性技術、應該盡可能選用。ONTAP</block>
-  <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">原生存取ONTAP 靜態API</block>
-  <block id="ae77e4f93e27bd095e1158ccc1bb27f8" category="paragraph">您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。您應該先檢閱本網站上的所有文件。</block>
-  <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">調整舊版ONTAPI程式碼以使用REST</block>
-  <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">使用NetApp Python用戶端程式庫</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python用戶端程式庫</block>
-  <block id="7985c67b4ff49ccabd48db90e57852eb" category="paragraph">Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。您應該先檢閱本網站上的文件、包括 <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block>。</block>
-  <block id="47139a5580026883093b61e1de623719" category="section-title">使用Ansible</block>
   <block id="15fc2d856a08b9dcaa71e500a1ab83c5" category="inline-image-macro">簡單REST API呼叫的圖例</block>
   <block id="902052a0ca25bce54cba73bea386b28e" category="paragraph"><block ref="902052a0ca25bce54cba73bea386b28e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2a3074658911bf1de23b5d225e3e531" category="paragraph">從用戶端傳送到伺服器的要求包含下列項目：</block>
@@ -800,7 +782,6 @@
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">輸入變數</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">解讀API回應</block>
   <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">使用工作物件進行非同步處理</block>
-  <block id="a9fc82c0b447e076647e2d844f9a70f3" category="sidebar">存取ONTAP CLI</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">瞭解自動化選項</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">總覽</block>
@@ -1040,13 +1021,9 @@
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">提供ONTAP 有關支援功能的文件。</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">您可以使用ONTAP REST API來管理DACL和SACL檔案權限。</block>
   <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">您可以ONTAP 使用REST API來管理E地 環管理系統組態。</block>
-  <block id="146b7b24c2b30a9357470549802fee41" category="summary">ONTAPI是透過Network Manageability SDK提供的一組API呼叫、可用於管理ONTAP 各種儲存系統。REST API和ONTAPI API API呼叫之間、以及REST API和ONTAP REST CLI之間存在差異。</block>
-  <block id="8ac01f6d772ed92eb16c7e67bbf562e3" category="paragraph">REST API是自動化ONTAP 作業系統管理的主要策略選擇。如果您目前使用的是ONTAPI API、則應考慮移轉至REST API。NetApp提供對應文件、協助從ONTAPI移轉至REST。請參閱 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="2f652c73d7c77f77ad56e43e82a5a33c" category="summary">為了協助CLI和ONTAPI API使用者移轉ONTAP 至靜態API、ONTAP 我們提供REST端點來存取CLI。您可以使用此傳遞功能來執行任何CLI命令。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">如何存取ONTAP 靜態API</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">每筆API交易都包含HTTP要求和相關回應。本圖例說明如何擷取ONTAP 叢集所使用的版本的資訊。</block>
-  <block id="748bf9f08649deb2201e70da703c7de8" category="summary">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。您可以直接或透過NetApp Python用戶端程式庫存取REST API。</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">零點9.12.1. ONTAP</block>
   <block id="a60f928eab9c8ac4756a146853b7b27e" category="list-text"><block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block></block>
@@ -1071,7 +1048,6 @@
   <block id="946db446900ee1ab057b2f9b4c05f134" category="list-text"><block ref="946db446900ee1ab057b2f9b4c05f134" category="inline-link-rx"></block></block>
   <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
-  <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">如果您使用的是ONTAPI API、我們建議您開始移轉至ONTAP 靜態API。</block>
   <block id="85689804a28905b0c1195ff1c4debf5c" category="paragraph">Counter Manager子系統會擷取各種有關的統計資訊ONTAP 。您可以存取此資訊來評估系統效能。此資源類型隨ONTAP 附於引用的功能。9.11</block>
   <block id="4ceab4a3abb75365d3643e7027283265" category="paragraph">您可以建立及管理MetroCluster 一套功能豐富的部署、包括執行切換或切換作業。此資源類型為ONTAP 更新版本、更新版本為9.11、更新版本為更新版本9.8。</block>
   <block id="ef706b335d4d5abcae8612013f999056" category="paragraph">您可以使用這些端點來擷取所有平台環境感測器的詳細資料。此資源類型隨ONTAP 附於引用的功能。9.11</block>
@@ -1439,8 +1415,6 @@
   <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Python 用戶端程式庫範例</block>
   <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">如需 Python 用戶端程式庫的簡介、請參閱 <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>。如需 Python 範例、請參閱<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>。</block>
   <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">ONTAPI 停用</block>
-  <block id="7f2d7d67765d2784e59992625f3b9f8e" category="paragraph">ONTAPI （ ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您使用的是 ONTAPI 、則應規劃移轉至 ONTAP REST API 的作業。</block>
-  <block id="89bbd9a5e14ece77e8729df33cc56559" category="paragraph">NetApp首先推出ONTAP REST API搭配NetApp 9.6。自此之後、 REST API 持續擴充並成熟。現在、當 ONTAP 部署的管理作業自動化時、它提供了首選且具策略性的選項。有許多實用的資源和工具可用來支援您的移轉作業。</block>
   <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPS-00410 終止供應： ONTAPI</block>
   <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
   <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">ONTAP 9.13.1 效能計數器對應</block>
@@ -1465,7 +1439,6 @@
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="section-title">BlueXP 自動化目錄</block>
   <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">NetApp 自動化</block>
-  <block id="8e21735532a19050ed5ad15f3404f1c3" category="paragraph">NetApp<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取解決方案、協助您自動化部署及整合 ONTAP 及其他 NetApp 產品。請參閱<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 自動化解決方案說明文件。</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -1652,7 +1625,6 @@
   <block id="3b4eb2c2464d0801cad28a2ce6319a1c" category="paragraph">本摘要所述的其餘資源是根據產品的最新版本而定。如果您需要瞭解先前版本的變更、請參閱 <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。</block>
   <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="f3b85d23635afa201e61913278969401" category="paragraph">如需詳細資訊、請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1 版 NetApp PCL 文件</block>
   <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
   <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoS 選項</block>
@@ -1761,8 +1733,6 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">根據篩選<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 變數以選取備用磁碟。</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">列出帳戶</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">清單集合體</block>
-  <block id="9cebbf9729f76658642974e19c057421" category="paragraph">如果您有使用ONTAPI API的現有程式碼、NetApp將支援您將程式碼轉換成使用較新ONTAP 的REST API。請參閱 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 如需將ONTAPI呼叫對應至等效REST API呼叫的相關資訊、</block>
-  <block id="b140235cfdd8fa15bee3204f61084c80" category="list-text"><block ref="b140235cfdd8fa15bee3204f61084c80" category="inline-link-rx"></block></block>
   <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
   <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
   <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
@@ -1784,8 +1754,32 @@
   <block id="0937dacc143a9ef9a8e961bb05d706cb" category="list-text">NetApp Python 用戶端程式庫的良好簡介、以及如何開始使用程式庫撰寫程式碼。</block>
   <block id="16109e56f76ab0efaf7b92775cbe1b12" category="list-text">此影片也可透過 NetApp TV 取得、網址為： <block ref="0fbd1fba292ef7e8dc7c843e65ec1153" category="inline-link-macro-rx"></block>。</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">瞭解 Ansible 認證模組。</block>
-  <block id="47df15a6cd9dfe893d2aabb6bbfb82d6" category="paragraph">Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。首先、您應該先檢閱本網站的文件。</block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">常見問題集：適用於 CPC 的 ZAPI 至 ONTAP REST API 轉型</block>
   <block id="383b172302e7a0ad8e5f63e801347592" category="list-text"><block ref="383b172302e7a0ad8e5f63e801347592" category="inline-link-rx"></block></block>
   <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">軟體工具</block>
+  <block id="9053840bf2905b594e6d2189157bff2b" category="summary">在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您使用的是 ONTAPI 、則應規劃移轉至 ONTAP REST API 的作業。</block>
+  <block id="91a17d4a4fb7a42ae5523bf1ae74ed4c" category="paragraph">ONTAPI API （ ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫。API 是透過 Network Manageability SDK 提供、並支援資料儲存管理與管理工作的自動化。在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您使用的是 ONTAPI 、則應規劃移轉至 ONTAP REST API 的作業。</block>
+  <block id="e22a3298a5f97f4069fc3abbf0054a78" category="list-text"><block ref="e22a3298a5f97f4069fc3abbf0054a78" category="inline-link-macro-rx"></block></block>
+  <block id="e6a021828131c610a8d1434615483b06" category="summary">在從 ONTAPI API （ ZAPI ）或 ONTAP CLI 移轉至 ONTAP REST API 之前、您應該考慮幾個問題。</block>
+  <block id="f130aae767c73fd9684158ccdddb8f15" category="doc">移轉考量</block>
+  <block id="b7c1ba4e54d3934ebbbfba6a29963dbe" category="paragraph">此產品的設計與功能完全不同、ONTAPCLI命令和參數不會直接對應至REST API呼叫。即使可能有相似性、輸入參數的詳細資料也可能有所不同。例如、數字單位可能是以位元組為單位指定、或是使用字尾（例如KB）。請參閱 <block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block> 和 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="359aa321b2af8c1841936c471ac5028a" category="paragraph">為了協助 ONTAPI API 和 CLI 使用者轉換至 ONTAP REST API 、 ONTAP 提供 REST 端點以存取 ONTAP CLI 。您可以使用此傳遞功能來執行任何CLI命令。  其餘端點的使用會傳回 AutoSupport 資料、讓 NetApp 能夠識別 REST API 中的落差、並在未來的 ONTAP 版本中進行改善。</block>
+  <block id="74b014305892305348ed02c92ab2a761" category="paragraph">若要發出 CLI 命令、您必須根據下列相關規則、撥打適當格式的 REST API 呼叫：</block>
+  <block id="e0b913796ef82dfab8c683cb3688ea8a" category="paragraph">CLI 存取的基礎資源路徑為<block ref="2481cfdbf7d50cf62e7bd1952cb20448" prefix=" " category="inline-code"></block>。如ONTAP 需透過REST API存取CLI的詳細資訊、請參閱《靜態API》線上文件頁面。NetApp 也維護 GitHub 儲存庫、其中包含程式碼範例和其他實用資訊。請參閱<block ref="dc2d27bf2003d8059fdb638718a2f7e5" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="b3dc3759cbac62ce0e64726643b40958" category="paragraph">另請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="f0169c3155d167d08754f46b0e187086" category="list-text"><block ref="f0169c3155d167d08754f46b0e187086" category="inline-link-rx"></block></block>
+  <block id="d6631ef35bb40cd64a9a7e6045544867" category="summary">有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理。</block>
+  <block id="2b17a7509e874cabf89f09bb638e3133" category="paragraph">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。自此之後、 REST API 持續擴充並成熟。現在、當 ONTAP 部署的管理作業自動化時、它提供了首選且具策略性的選項。使用 ONTAP REST API 時有幾個考量事項。</block>
+  <block id="a72eaae2582a47c88e517d12584cddf1" category="paragraph-title">原生存取 REST API</block>
+  <block id="1e32e29797138920931a43f857fe4b9d" category="paragraph">您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。</block>
+  <block id="dd95513a6bbe255b9283c48df37da163" category="paragraph-title">移轉舊版的 ONTAPI 程式碼以使用 REST</block>
+  <block id="a0e425fb99eecdee631601b89aaa1b63" category="paragraph">ONTAPI （ ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。請參閱 <block ref="4966a0ddcca12bd1d32ac36af70623a8" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="efea648fde82cca9a59a6c5e90f3d617" category="section-title">用戶端軟體工具套件</block>
+  <block id="9d344c4d689635bee0d71b95de7b0c04" category="paragraph">NetApp 提供用戶端工具套件、可抽象化 ONTAP REST API 、並讓建立自動化程式碼變得更容易。您應該選擇適合您開發語言和環境的選項。</block>
+  <block id="8d5ff34376065bd3b5b8beab5c2a0a8f" category="paragraph">Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。請參閱 <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="978685ea07530013be4ee7935a3a51c0" category="section-title">自動化架構</block>
+  <block id="045c9b234c3f9802c9287b1b0cd9cebf" category="paragraph">您可以使用數個架構之一來建立及部署自動化程式碼</block>
+  <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
+  <block id="1654311dbef1756ea54a3a10080ed337" category="paragraph">Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。請參閱 <block ref="c23236ff2a6fe1c72a62ffc77c7c00ed" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">NetApp<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取套裝解決方案、協助您自動化 ONTAP 與其他產品的部署與整合。請參閱<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 以取得文件及更多資訊。</block>
 </blocks>
