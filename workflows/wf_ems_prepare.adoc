@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_prepare.html 
+keywords: support, ems, event management system, event notifications, notifications 
+summary: 您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、並視需要擷取 EMS 訊息。 
+---
+= 準備管理 EMS 支援服務
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、並視需要擷取 EMS 訊息。
+
+
+
+=== 總覽
+
+有幾個工作流程範例可說明如何使用 ONTAP EMS 服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 link:../workflows/prepare_workflows.html["準備好使用工作流程"]。
+
+如果您使用 Python 、也會看到指令碼 https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py["events.py"^] 如需瞭解如何將部分 EMS 相關活動自動化的範例。
+
+
+
+=== 不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP
+
+在許多工作中、使用 ONTAP REST API 所需的通話數、比等效的 ONTAP CLI 命令少。下表列出 API 呼叫清單、以及每項工作所需的 CLI 命令。
+
+[cols="30,70"]
+|===
+| 靜態API ONTAP | CLI ONTAP 
+
+
+| 取得 /support/EMS | 「事件組態顯示」 
+
+
+| POST / 支援 / EMS / 目的地  a| 
+. 事件通知目的地建立
+. 建立活動通知
+
+
+
+
+| 《Get /support/ES/events》（取得/支援/緊急醫療服務/活動 | 「事件記錄顯示」 
+
+
+| "POST /support/ES/filer"  a| 
+. 「事件篩選器create -filter名稱<Filter name>」
+. 「事件篩選規則add -filter名稱<Filter name>」
+
+
+|===
+.相關資訊
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py["說明 EMS 的 Python 指令碼"^]
+* https://blog.netapp.com/ontap-rest-apis-automate-notification["REST API：自動通知高嚴重性事件ONTAP"^]
+

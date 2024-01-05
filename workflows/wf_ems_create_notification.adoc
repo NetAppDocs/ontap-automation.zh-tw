@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_create_notification.html 
+keywords: support, ems, event management system, create ems, create ems notification 
+summary: 您可以使用下列工作流程來建立新的 EMS 通知目的地、以接收選取的事件訊息。 
+---
+= 建立 EMS 通知
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用下列工作流程來建立新的 EMS 通知目的地、以接收選取的事件訊息。
+
+
+
+== 步驟 1 ：設定全系統的電子郵件設定
+
+您可以發出下列 API 呼叫來設定全系統的電子郵件設定。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 修補程式 | /API/support/EMS 
+|===
+.處理類型
+同步
+
+.Curl 範例的其他輸入參數
+除了所有REST API呼叫通用的參數之外、此步驟的Curl範例也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| 郵件寄件者 | 查詢 | 是的 | 設定 `from` 通知電子郵件訊息中的欄位。 
+
+
+| mail_server | 查詢 | 是的 | 設定目標 SMTP 郵件伺服器。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request PATCH \
+--location "https://$FQDN_IP/api/support/ems?mail_from=administrator@mycompany.com&mail_server=mail@mycompany.com" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+
+
+== 步驟 2 ：定義訊息篩選器
+
+您可以發出 API 呼叫、以定義符合訊息的篩選規則。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /api/support/EMS / 篩選器 
+|===
+.處理類型
+同步
+
+.Curl 範例的其他輸入參數
+除了所有REST API呼叫通用的參數之外、此步驟的Curl範例也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| 篩選器 | 本文 | 是的 | 包含篩選組態的值。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/filters" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, json]
+----
+{
+  "name": "test-filter",
+  "rules.type": ["include"],
+  "rules.message_criteria.severities": ["emergency"]
+}
+----
+
+
+== 步驟 3 ：建立訊息目的地
+
+您可以發出 API 呼叫來建立訊息目的地。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /api/support/EMS / 目的地 
+|===
+.處理類型
+同步
+
+.Curl 範例的其他輸入參數
+除了所有REST API呼叫通用的參數之外、此步驟的Curl範例也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| 目的地組態 | 本文 | 是的 | 包含事件目的地的值。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/destinations" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSONN輸入範例
+[source, curl]
+----
+{
+  "name": "test-destination",
+  "type": "email",
+  "destination": "administrator@mycompany.com",
+  "filters.name": ["important-events"]
+}
+----

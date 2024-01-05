@@ -697,29 +697,12 @@
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">路徑</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">非同步</block>
   <block id="2fe4167817733fec8e6ba1afddf78f1b" category="paragraph">同步</block>
-  <block id="5b4f03d6bb02bf1a4943d2fd721bca50" category="doc">利用REST API管理EMS事件通知ONTAP</block>
-  <block id="7ae7146ab14a911070a9b67bb88d3193" category="paragraph">您可以使用ONTAP Sesrest API來設定事件管理系統（EMS）事件通知傳送給您的重要性、以及擷取具有特定屬性的所有EMS訊息或特定訊息。您可以使用REST API來協助自動化與EMS相關的工作、節省使用其他EMS訊息方法的時間。</block>
   <block id="1099d399c75060b79e3ad383bf9aaaca" category="inline-link">Python指令碼</block>
-  <block id="619a84d9c14dd4e8431c29139707919c" category="paragraph">以下範例說明如何使用ONTAP Resrest API來處理EMS訊息。在每個範例中、請務必在方括弧&lt;&gt;中指定資訊的值。您也可以參考範例<block ref="93282e4588c19699b4435477b6d0187b" category="inline-link-rx"></block> 這說明如何將許多與EMS相關的活動自動化。</block>
-  <block id="c25e3541a8e8d23fbd7bc417366e087a" category="section-title">檢視特定事件記錄</block>
-  <block id="53d5e5ab3f1018d37b93775c447bf8c5" category="paragraph">使用「Get /support/ES/events」API呼叫、您可以擷取特定事件訊息、例如最新訊息、包含特定文字的訊息、或是具有特定嚴重性的訊息。</block>
-  <block id="f615b69d52993b779bce7b1c6728c21d" category="listing-title">申請範例：擷取最新訊息</block>
   <block id="8b395980037bcca82c69c1da89a28918" category="listing-title">回應範例</block>
-  <block id="ce82b9076790e11cac5d1aa3bcd41aa5" category="listing-title">申請範例：擷取內含特定文字和嚴重性的訊息</block>
-  <block id="0cc4ccc760bba90b3392a98e6a6ec9e5" category="section-title">檢視現有的EMS組態</block>
-  <block id="11bd634909ab0002d27896579c235553" category="paragraph">使用「Get /support/ES/」API呼叫、您可以擷取現有EMS通知組態的相關資訊。</block>
   <block id="6f76c699e041eacfac4485d0f16323e1" category="listing-title">申請範例</block>
-  <block id="5415ddffb113099234fe3c0d76f7749a" category="section-title">建立新的EMS通知組態</block>
-  <block id="9bf42ad17c089dd9891c431d5a1c5c2f" category="paragraph">您可以同時使用數個API呼叫來建立新的EMS組態、以自訂接收訊息的方式和時間。</block>
-  <block id="2b24417cd71c7c073f9c43c6702b281e" category="list-text">設定全系統的電子郵件設定。例如：</block>
-  <block id="d6a7eb66a65f3937689937ed206de56a" category="list-text">定義使用特定規則來符合特定訊息的篩選條件。例如：</block>
-  <block id="4d3eb0a7fcad51868e2c47187c83128f" category="list-text">建立訊息的目的地。例如：</block>
   <block id="411009bbd509e2b00a1f4543b3c1ca74" category="section-title">不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP</block>
-  <block id="304905cae974c3b05217421398eee9f1" category="paragraph">利用此功能、您可以使用比支援許多工作的CLI更少的命令來自動化工作流程。ONTAP ONTAP例如、您可以使用單一POST API方法來建立篩選器、而非使用多個CLI命令。下表顯示完成一般EMS工作所需的CLI命令、以及對應的REST API呼叫：</block>
   <block id="de134183bea5df515a6756a539ce6f18" category="cell">CLI ONTAP</block>
-  <block id="2368af484e43b6e0fc7814eb71cba236" category="cell">《Get /support/EMS》（取得/支援/EMS）</block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell">「事件組態顯示」</block>
-  <block id="9f14a0e7f948d7c4687191b2963b4b88" category="cell">"POST /support/ES/DESTINS/DESTINATION"</block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text">事件通知目的地建立</block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text">建立活動通知</block>
   <block id="67263db3668d1ed303c86b613bbb802c" category="cell">《Get /support/ES/events》（取得/支援/緊急醫療服務/活動</block>
@@ -728,8 +711,6 @@
   <block id="9b8f1b89d54261f317c44e8ccd1c91cd" category="list-text">「事件篩選器create -filter名稱&lt;Filter name&gt;」</block>
   <block id="42d9b7d3455dfaa83fb3e81bad6cce7c" category="list-text">「事件篩選規則add -filter名稱&lt;Filter name&gt;」</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
-  <block id="3b580ecb7e3414e24089f175032dabf3" category="inline-link">靜態API EMS Python指令碼範例ONTAP</block>
-  <block id="acfce8bc71a552130aa0ccb8784fe895" category="list-text"><block ref="acfce8bc71a552130aa0ccb8784fe895" category="inline-link-rx"></block></block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">REST API：自動通知高嚴重性事件ONTAP</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
   <block id="c50ee9e545662286884e42e140649f09" category="doc">利用REST API管理DACL和SACL檔案權限ONTAP</block>
@@ -788,7 +769,6 @@
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">用於擷取叢集組態的指令碼</block>
   <block id="e6b088db24ebe67ed0e9567d309387ec" category="sidebar">工作流程</block>
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">使用ONTAP REST API管理功能</block>
-  <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS事件通知</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL和SACL權限</block>
   <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">包括規劃、管理及支援ONTAP 功能所需的文件和其他實用連結。</block>
   <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">產品庫ONTAP</block>
@@ -1020,7 +1000,6 @@
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">提供ONTAP 有關支援功能的文件。</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">您可以使用ONTAP REST API來管理DACL和SACL檔案權限。</block>
-  <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">您可以ONTAP 使用REST API來管理E地 環管理系統組態。</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">如何存取ONTAP 靜態API</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">每筆API交易都包含HTTP要求和相關回應。本圖例說明如何擷取ONTAP 叢集所使用的版本的資訊。</block>
@@ -1782,4 +1761,52 @@
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
   <block id="1654311dbef1756ea54a3a10080ed337" category="paragraph">Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。請參閱 <block ref="c23236ff2a6fe1c72a62ffc77c7c00ed" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">NetApp<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取套裝解決方案、協助您自動化 ONTAP 與其他產品的部署與整合。請參閱<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 以取得文件及更多資訊。</block>
+  <block id="6896ceb4698b2c86775b4d891be243d5" category="summary">您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、並視需要擷取 EMS 訊息。</block>
+  <block id="90aef0d7524722ffd0dc0cb8fa364d96" category="doc">準備管理 EMS 支援服務</block>
+  <block id="af129edd8d2b529838378e328200ea64" category="paragraph">有幾個工作流程範例可說明如何使用 ONTAP EMS 服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3bd9688dec070eec4b4332373791cf4" category="inline-link">events.py</block>
+  <block id="85215b1290359f4664d37f38216d2256" category="paragraph">如果您使用 Python 、也會看到指令碼<block ref="643db497504332dea05c67888bb57b20" category="inline-link-rx"></block> 如需瞭解如何將部分 EMS 相關活動自動化的範例。</block>
+  <block id="e9e8fc0a404ed0a61c1fa104ebb28bf6" category="paragraph">在許多工作中、使用 ONTAP REST API 所需的通話數、比等效的 ONTAP CLI 命令少。下表列出 API 呼叫清單、以及每項工作所需的 CLI 命令。</block>
+  <block id="da7abcfccfd8f5465b37263afe3831d7" category="cell">取得 /support/EMS</block>
+  <block id="1062b444cc77d8ad6e425665a210f471" category="cell">POST / 支援 / EMS / 目的地</block>
+  <block id="882aca4326d752010b772b8158e8baa0" category="inline-link">說明 EMS 的 Python 指令碼</block>
+  <block id="cece6a40b70715f2a63bbd9c0b1372bd" category="list-text"><block ref="cece6a40b70715f2a63bbd9c0b1372bd" category="inline-link-rx"></block></block>
+  <block id="eb230b030eac22517ebd137fbd7025a9" category="summary">您可以使用下列工作流程來建立新的 EMS 通知目的地、以接收選取的事件訊息。</block>
+  <block id="b4d8401916bcfe9d487b43317e141180" category="doc">建立 EMS 通知</block>
+  <block id="4b6b43bf6462be74bc77a76514b73254" category="section-title">步驟 1 ：設定全系統的電子郵件設定</block>
+  <block id="1186c8ad3d5fa7fe5bc14196b7869208" category="paragraph">您可以發出下列 API 呼叫來設定全系統的電子郵件設定。</block>
+  <block id="ef891763ba7048887e2e72131878e76c" category="cell">/API/support/EMS</block>
+  <block id="9e35acb7edddb1772b2efd7d781ddcff" category="cell">郵件寄件者</block>
+  <block id="8a756bee0e76039a357517c3ec68baa8" category="cell">設定<block ref="d98a07f84921b24ee30f86fd8cd85c3c" prefix=" " category="inline-code"></block> 通知電子郵件訊息中的欄位。</block>
+  <block id="3a39d1bd30ebdc1346f3852bee919a32" category="cell">mail_server</block>
+  <block id="0e7ed5767e88d46eb334e785e803029a" category="cell">設定目標 SMTP 郵件伺服器。</block>
+  <block id="ca56c3d35b83a8f15d7479ec57deb841" category="section-title">步驟 2 ：定義訊息篩選器</block>
+  <block id="1f3d6e417923726ce667adaba59cd9e5" category="paragraph">您可以發出 API 呼叫、以定義符合訊息的篩選規則。</block>
+  <block id="04ab7b0f96aa4ed5c4daa4003b776460" category="cell">/api/support/EMS / 篩選器</block>
+  <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">篩選器</block>
+  <block id="ac101b32dda4448cf13a93fe283dddd8" category="cell">本文</block>
+  <block id="eddb87129144f52bc2371d54624f3585" category="cell">包含篩選組態的值。</block>
+  <block id="03fc49787cddf4ed88e0caaf2007ff6d" category="section-title">步驟 3 ：建立訊息目的地</block>
+  <block id="13f2851313b707564d2819b992656595" category="paragraph">您可以發出 API 呼叫來建立訊息目的地。</block>
+  <block id="0221d81fa5719220847a0d6b07fa7833" category="cell">/api/support/EMS / 目的地</block>
+  <block id="5af5cc7f9522d6ed61830a95fdd63cae" category="cell">目的地組態</block>
+  <block id="cfbbc7b9438bc32708cb12da6986b172" category="cell">包含事件目的地的值。</block>
+  <block id="49d9b762ced33c4a64540c0502fa12ae" category="summary">您可以擷取 ONTAP 叢集的目前 EMS 組態。您可以在更新組態或建立新的 EMS 通知之前執行此動作。</block>
+  <block id="bf68501f440a0b26f1bce42df8f87f61" category="doc">取得 EMS 組態</block>
+  <block id="321af4d0ee1843b9eb21c75179cd5a5a" category="summary">您可以擷取所有事件通知訊息或具有特定特性的訊息。</block>
+  <block id="13a19e32980ac43fd75e6a9645a8b411" category="doc">列出 EMS 記錄事件</block>
+  <block id="077c58e0d7282761a97c6c03fcd5f677" category="paragraph">您可以擷取所有事件通知訊息、或只擷取具有特定特性的訊息。</block>
+  <block id="b098fa166f68e99b9f901b465347c595" category="cell">/api/support/EMS / 事件</block>
+  <block id="51f996d6bdce27d5d9c364daf9452884" category="cell">用於要求在回應中包含特定欄位。</block>
+  <block id="f4abba9bb52bad37accc0150f9554249" category="cell">可用於限制單一要求傳回的記錄數。</block>
+  <block id="324ae438d51fef5c0ef842b1ae03b061" category="cell">log_message</block>
+  <block id="457f3ac0d864daefc37f956ecde87f36" category="cell">用於搜尋特定的文字值、並僅傳回相符的訊息。</block>
+  <block id="4c171cc7d3dc158650998f518afaaf33" category="cell">message.severity</block>
+  <block id="e61413d2e7f87f9d206a86d29576165b" category="cell">將傳回的訊息限制為具有特定嚴重性的訊息、例如<block ref="7ed21143076d0cca420653d4345baa2f" prefix=" " category="inline-code"></block>。</block>
+  <block id="0525d9b2a094d7ff164a2c00a881e661" category="listing-title">捲曲範例：傳回最新訊息和名稱值</block>
+  <block id="385fbeb68ce09e6c918240872da38a13" category="listing-title">捲曲範例：傳回包含特定文字和嚴重性的訊息</block>
+  <block id="20b8470cecac07ba9530bb746a9f64e4" category="sidebar">準備使用 EMS</block>
+  <block id="8d8818fd01745d22f1212838417a2a3f" category="sidebar">列出記錄事件</block>
+  <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">取得 EMS 組態</block>
+  <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">建立 EMS 通知</block>
 </blocks>
