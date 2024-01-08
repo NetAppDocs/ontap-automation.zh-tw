@@ -35,11 +35,11 @@ entries:
     - title: 建立角色
       entries:
       - title: 限制 SVM Volume 作業
-        url: "/workflows/wf_rbac_limit_svm.html"
+        url: "/workflows/wf_rbac_role_limit_svm.html"
       - title: 啟用資料保護
-        url: "/workflows/wf_rbac_data_protection.html"
+        url: "/workflows/wf_rbac_role_data_protection.html"
       - title: 允許產生 ONTAP 報告
-        url: "/workflows/wf_rbac_ontap_reports.html"
+        url: "/workflows/wf_rbac_role_ontap_reports.html"
     - title: 建立具有角色的使用者
       url: "/workflows/wf_rbac_user_role.html"
 - title: 儲存設備

@@ -23,7 +23,6 @@ NOTE: 您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或�
 
 == 存取ONTAP 《程式碼API》文件頁面
 
-[role="lead"]
 您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。
 
 .開始之前
@@ -49,7 +48,6 @@ https://<ip_address>/docs/api`
 
 == 存取ONTAP 一份《R靜止API參考文件》
 
-[role="lead"]
 您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
 
 * https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1."^]
