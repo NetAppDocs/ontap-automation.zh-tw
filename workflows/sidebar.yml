@@ -12,6 +12,22 @@ entries:
     url: "/workflows/wf_cls_update_contact.html"
   - title: 取得工作執行個體
     url: "/workflows/wf_jobs_get_job.html"
+- title: NAS
+  entries:
+  - title: 檔案安全性權限
+    entries:
+    - title: 準備好管理檔案安全性
+      url: "/workflows/wf_nas_fs_prepare.html"
+    - title: 取得有效權限
+      url: "/workflows/wf_nas_fs_get_permissions.html"
+    - title: 取得稽核資訊
+      url: "/workflows/wf_nas_fs_get_audit_info.html"
+    - title: 套用權限
+      url: "/workflows/wf_nas_fs_apply_permissions.html"
+    - title: 更新安全性描述元
+      url: "/workflows/wf_nas_fs_update_sd.html"
+    - title: 刪除存取控制項目
+      url: "/workflows/wf_nas_fs_delete_ace.html"
 - title: 網路
   entries:
   - title: 列出 IP 介面

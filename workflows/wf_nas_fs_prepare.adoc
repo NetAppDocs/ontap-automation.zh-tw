@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_prepare.html 
+keywords: nas, file security, sacl, dacl, prepare 
+summary: 您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和稽核原則。 
+---
+= 準備好管理檔案安全性和稽核原則
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和稽核原則。
+
+
+
+=== 總覽
+
+使用系統存取控制清單（SACL）和自由存取控制清單（DACL）來指派檔案物件的權限。ONTAP從 ONTAP 9.9.1 開始、其餘 API 支援管理 SACL 和 DACL 權限。您可以使用 API 來自動化檔案安全性權限的管理。在許多情況下、您可以使用單一 REST API 呼叫、而非多個 CLI 命令或 ONTAPI （ ZAPI ）呼叫。
+
+
+NOTE: 對於 9.9.1 之前的 ONTAP 版本、您可以使用 CLI Passthrough 功能、自動管理 SACL 和 DACL 權限。請參閱 link:../migrate/migration-considerations.html["移轉考量"] 和 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["將私有CLI密碼與ONTAP REST API搭配使用"^] 以取得更多資訊。
+
+我們提供幾個工作流程範例、說明如何使用 REST API 來管理 ONTAP 檔案安全服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 link:../workflows/prepare_workflows.html["準備好使用工作流程"]。
+
+如果您使用 Python 、也會看到指令碼 https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["file_security_permissions.py"^] 如需如何自動化部分檔案安全活動的範例。
+
+
+
+=== 不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP
+
+在許多工作中、使用 ONTAP REST API 所需的通話數、比等效的 ONTAP CLI 命令或 ONTAPI （ ZAPI ）通話數少。下表列出 API 呼叫清單、以及每項工作所需的 CLI 命令。
+
+[cols="40,60"]
+|===
+| 靜態API ONTAP | CLI ONTAP 
+
+
+| 「Get /傳輸 協定/file-Security /有效權限/」  a| 
+「vserver安全性檔案目錄show-aive-permissions」
+
+
+
+| 「POST /傳輸協定/檔案安全性/權限/」  a| 
+. 「vserver安全性檔案目錄NTFS建立」
+. 「vserver安全檔案目錄NTFS DACL add」
+. 「vserver安全檔案目錄NTFS SACL add」
+. 「vserver安全性檔案目錄原則建立」
+. 「vserver安全性檔案目錄原則工作新增」
+. 「適用Vserver安全檔案目錄」
+
+
+
+
+| 「修補程式/傳輸協定/檔案安全性/權限/」  a| 
+「vserver安全性檔案目錄NTFS修改」
+
+
+
+| 「刪除/傳輸協定/檔案安全性/權限/」  a| 
+. 「Vserver安全檔案目錄NTFS DACL移除」
+. 「Vserver安全檔案目錄NTFS SACL移除」
+
+
+|===
+.相關資訊
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py["說明檔案權限的 Python 指令碼"^]
+* https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/["利用REST API簡化檔案安全權限的管理ONTAP"^]
+* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["將私有CLI密碼與ONTAP REST API搭配使用"^]
+

@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_get_permissions.html 
+keywords: nas, file security, effective permissions 
+summary: 您可以擷取特定檔案或資料夾的目前有效權限。 
+---
+= 取得檔案的有效權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以擷取特定檔案或資料夾的目前有效權限。
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 取得 | /api/protocols / file-security/active-permissions/｛ SVM.uuid ｝ / ｛ path ｝ 
+|===
+.處理類型
+同步
+
+.捲曲範例的其他輸入參數
+除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| $SVM_ID | 路徑 | 是的 | 這是包含檔案的 SVM 的 UUID 。 
+
+
+| $FILE_PATH | 路徑 | 是的 | 這是檔案或資料夾的路徑。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/protocols/file-security/effective-permissions/$SVM_ID/$FILE_PATH" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Json輸出範例
+[listing]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----

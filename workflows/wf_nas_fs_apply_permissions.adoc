@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_apply_permissions.html 
+keywords: nas, file security, sacl, dacl, permissions, apply permissions 
+summary: 您可以將新的安全性描述元套用至特定檔案或資料夾。 
+---
+= 將新權限套用至檔案
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將新的安全性描述元套用至特定檔案或資料夾。
+
+
+
+== 步驟 1 ：套用新權限
+
+.HTTP 方法和端點
+此 REST API 呼叫使用下列方法和端點。
+
+[cols="25,75"]
+|===
+| HTTP方法 | 路徑 
+
+
+| 貼文 | /api/protocols / file-security/permissions/｛ SVM.uuid ｝ / ｛ path ｝ 
+|===
+.處理類型
+非同步
+
+.捲曲範例的其他輸入參數
+除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。
+
+[cols="25,10,10,55"]
+|===
+| 參數 | 類型 | 必要 | 說明 
+
+
+| $SVM_ID | 路徑 | 是的 | 這是包含檔案的 SVM 的 UUID 。 
+
+
+| $FILE_PATH | 路徑 | 是的 | 這是檔案或資料夾的路徑。 
+|===
+.Curl範例
+[source, curl]
+----
+curl --request POST --location "https://$FQDN_IP/api/protocols/file-security/permissions/$SVM_ID/$FILE_PATH?return_timeout=0" --include --header "Accept */*" --header "Authorization: Basic $BASIC_AUTH" --data '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}'
+----
+.Json輸出範例
+[listing]
+----
+{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== 步驟 2 ：擷取工作狀態
+
+執行工作流程 link:../workflows/wf_jobs_get_job.html["取得工作執行個體"] 並確認 `state` 價值是 `success`。
