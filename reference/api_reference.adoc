@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference/api_reference.html 
-keywords: reference, API reference, ONTAP API documentation 
-summary: API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。 
+keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
+summary: API 參考包含 ONTAP REST API 呼叫的詳細資料、包括 HTTP 方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。 
 ---
 = API 參考
 :hardbreaks:
@@ -14,16 +14,33 @@ summary: API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、�
 
 
 [role="lead"]
-API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。
+API 參考包含 ONTAP REST API 呼叫的詳細資料、包括 HTTP 方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。
 
 
-NOTE: 您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或是NetApp所維護文件的靜態複本。
+NOTE: 您可以根據 ONTAP 版本、在多個站台中的其中一個存取 REST API 參考文件。您也可以透過本機 ONTAP 系統上的 Swagger UI 取得同等文件的複本。
 
 
 
-== 存取ONTAP 《程式碼API》文件頁面
+== 線上存取 ONTAP API 參考文件
 
-您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。
+您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。文件由 ONTAP 版本維護。
+
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1."^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1.12.9.11.9.11."^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["零點9.12.1. ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["零點9.11.1. ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html["零點9.10.1 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html["部分9.9.1 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html["部分9.8 ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html["更新ONTAP"^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html["部分9.6 ONTAP"^]
+
+
+
+
+== 透過 Swagger UI 存取 ONTAP API 參考文件
+
+您可以透過本機 ONTAP 系統上的 Swagger UI 來存取 ONTAP REST API 文件。
 
 .開始之前
 您必須具備下列條件：
@@ -43,23 +60,3 @@ https://<ip_address>/docs/api`
 
 . 如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。
 
-
-
-
-== 存取ONTAP 一份《R靜止API參考文件》
-
-您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。
-
-* https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1."^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1.12.9.11.9.11."^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/["零點9.12.1. ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/["零點9.11.1. ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/["零點9.10.1 ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/["部分9.9.1 ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/["部分9.8 ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/["更新ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/["部分9.6 ONTAP"^]
-
-
-.相關資訊
-https://devnet.netapp.com/restapi.php["NetApp DevNet：ONTAP 無憂API"^]

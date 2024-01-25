@@ -476,8 +476,6 @@
   <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">請參閱_NetApp開發人員網路_以取得文件與其他資源的連結。</block>
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">用於擷取叢集組態的指令碼</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">下列指令碼提供如何使用Python用戶端程式庫的簡單範例。您可以在CLI中使用Python 3執行指令碼、以擷取ONTAP 叢集組態。</block>
-  <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">存取ONTAP 《程式碼API》文件頁面</block>
-  <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">您可以在ONTAP 本地ONTAP 的作業系統上存取《局部API》線上文件頁面。</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">您必須具備下列條件：</block>
   <block id="4c00680cb601dcd1be164318ed4c2a88" category="list-text">有權存取ONTAP 靜態API的帳戶使用者名稱和密碼</block>
   <block id="2bc3d06698b6c0a0cff5dd4519390843" category="list-text">在瀏覽器中輸入URL、然後按* Enter *：</block>
@@ -485,8 +483,6 @@
   <block id="86537fad07b98a84cd28189507075143" category="list-text">使用ONTAP 這個帳戶登入。</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP</block>
   <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。</block>
-  <block id="6a63b53f3b2aa312b323d97ef5f8c1ee" category="inline-link">NetApp DevNet：ONTAP 無憂API</block>
-  <block id="3ed5229516b6cbe9a83c3af31dfe7e8f" category="paragraph"><block ref="3ed5229516b6cbe9a83c3af31dfe7e8f" category="inline-link-rx"></block></block>
   <block id="7ccaa0673dcbf1129469d5f4407e7b74" category="paragraph">您可以使用這些API呼叫來存取S3型物件儲存設備。</block>
   <block id="51bd7d165e8c40b2785e7cc20641c92e" category="paragraph">儲存區是物件的容器、使用物件名稱空間來進行結構化。每個S3物件伺服器都可以有多個儲存區。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
   <block id="0ce533be2fabb323cea3390612055d60" category="paragraph">您可以建立及管理ONTAP 包含伺服器和庫位組態在內的SS3組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
@@ -729,13 +725,8 @@
   <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
   <block id="b4cd15e8e24635e4a72a8cce25d314ca" category="sidebar">自動化文件ONTAP</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
-  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">版本資訊</block>
-  <block id="0c5518b5db3a9e2425db3b5de6d30634" category="sidebar">自動化選項ONTAP</block>
   <block id="ec8bc6c5f8fe5dc6045b9edfffae614a" category="sidebar">準備使用REST API</block>
   <block id="e78273b83daaaecb5744859fa531181b" category="sidebar">REST實作詳細資料</block>
-  <block id="caea8340e2d186a540518d08602aa065" category="sidebar">自動化</block>
-  <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">9文件ONTAP</block>
-  <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">文件ONTAP Select</block>
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">如何存取REST API</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">輸入變數</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">解讀API回應</block>
@@ -966,9 +957,6 @@
   <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">您可以使用新使用者的認證登入SVM管理介面。</block>
   <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="sidebar">RBAC安全性</block>
   <block id="80164c28762060fa56d042df66e7553d" category="sidebar">建立具有角色的使用者</block>
-  <block id="485855357f10b438740d2ed039caaa84" category="admonition">您可以在本地ONTAP 的餐廳系統存取線上API參考內容、或是NetApp所維護文件的靜態複本。</block>
-  <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">存取ONTAP 一份《R靜止API參考文件》</block>
-  <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。API參考文件是ONTAP 由發行版進行維護。</block>
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">其餘角色是ONTAP 以32個9.6加入、一般適用於透過ONTAP REST API存取的使用者。建立REST角色會自動建立傳統的_mapping角色。</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">您可以在ONTAP 線上存取此功能 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 如需詳細資訊、包括如何使用API的範例、請參閱文件。</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">產品文件資料ONTAP</block>
@@ -977,7 +965,6 @@
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">在發出設計為非同步執行的API要求之後、一律會建立工作物件並傳回呼叫者。工作會說明並固定處理要求的背景工作。</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">如何存取ONTAP 靜態API</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">每筆API交易都包含HTTP要求和相關回應。本圖例說明如何擷取ONTAP 叢集所使用的版本的資訊。</block>
-  <block id="1474d65709aff61f7e01ec29740e4346" category="summary">API參考包含ONTAP 有關所有的靜止API呼叫的詳細資料、包括HTTP方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">零點9.12.1. ONTAP</block>
   <block id="a60f928eab9c8ac4756a146853b7b27e" category="list-text"><block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block></block>
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">提供重要的ONTAPI呼叫、以及對應至同等REST API呼叫的功能。選取適當ONTAP 的版本。</block>
@@ -1501,12 +1488,10 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">您必須為環境替換適當的認證。認證並未在 base64 中編碼。使用此參數執行 cURL 命令時、會編碼字串、並為您產生授權標頭。</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">設定您要執行的捲髮範例所包含的變數值。例如：</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">步驟 3 ：確認叢集聯絡資訊</block>
-  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">REST 資源摘要</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">執行工作流程 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>。您應該設定<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 查詢參數至<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>。</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">其他資源</block>
   <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">ONTAP 9 版本資訊、內含目前版本的相關資訊。</block>
-  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">請參閱 <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="9b516c95369c98e15389e58383128a9e" category="inline-link-macro">RBAC 工作流程</block>
   <block id="d0ae4474b926ded595a7a12cdb4fa9ca" category="admonition">請參閱 <block ref="08b1cfcbf90aa340f0ccb33fbb4649b8" category="inline-link-macro-rx"></block> 如需如何建立及使用 ONTAP REST API 角色的範例。</block>
@@ -1684,14 +1669,6 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">根據篩選<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 變數以選取備用磁碟。</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">列出帳戶</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">清單集合體</block>
-  <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
-  <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
-  <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
-  <block id="8ec7335e6525b3d07614d1c9c722568f" category="list-text"><block ref="8ec7335e6525b3d07614d1c9c722568f" category="inline-link-rx"></block></block>
-  <block id="6c645a069d50633d36d4e222dc6c9355" category="list-text"><block ref="6c645a069d50633d36d4e222dc6c9355" category="inline-link-rx"></block></block>
-  <block id="fca52401410a3b119815eb6666d6e4a1" category="list-text"><block ref="fca52401410a3b119815eb6666d6e4a1" category="inline-link-rx"></block></block>
-  <block id="3b4dfc8add89b5b87470e0473d10bb44" category="list-text"><block ref="3b4dfc8add89b5b87470e0473d10bb44" category="inline-link-rx"></block></block>
-  <block id="c03c22aa3c11c989e8d97f1d84df52ee" category="list-text"><block ref="c03c22aa3c11c989e8d97f1d84df52ee" category="inline-link-rx"></block></block>
   <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">以角色為基礎的存取控制（RBAC）功能已經過強化、可提供更精細的資料。ONTAP您可以使用傳統角色、或透過REST API視需要建立新的自訂角色。每個角色都與一個或多個權限相關聯、每個權限都會識別REST API呼叫或CLI命令以及存取層級。REST 角色可以使用新的存取層級、例如<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> 和<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>。這項增強功能可提供Data ONTAP 與靜態API（ONTAPI或ZAPI）的同位元、並支援客戶移轉至REST API。請參閱 <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">為了協助您將ONTAP 自己的自動化程式碼轉換為REST API、NetApp提供API對應文件。此參考包含每個的ONTAPI呼叫清單和REST API等效值。地圖文件已更新、加入全新ONTAP 的《更新版》、以涵蓋全新的《更新版》、《更新版》。請參閱 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">為了協助您更新ONTAPI自動化、NetApp提供一組需要一或多個輸入參數的ONTAPI呼叫清單、以及將這些呼叫對應到等效ONTAP 的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效指令API呼叫。請參閱 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
@@ -1718,7 +1695,6 @@
   <block id="74b014305892305348ed02c92ab2a761" category="paragraph">若要發出 CLI 命令、您必須根據下列相關規則、撥打適當格式的 REST API 呼叫：</block>
   <block id="e0b913796ef82dfab8c683cb3688ea8a" category="paragraph">CLI 存取的基礎資源路徑為<block ref="2481cfdbf7d50cf62e7bd1952cb20448" prefix=" " category="inline-code"></block>。如ONTAP 需透過REST API存取CLI的詳細資訊、請參閱《靜態API》線上文件頁面。NetApp 也維護 GitHub 儲存庫、其中包含程式碼範例和其他實用資訊。請參閱<block ref="dc2d27bf2003d8059fdb638718a2f7e5" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="b3dc3759cbac62ce0e64726643b40958" category="paragraph">另請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得更多資訊。</block>
-  <block id="f0169c3155d167d08754f46b0e187086" category="list-text"><block ref="f0169c3155d167d08754f46b0e187086" category="inline-link-rx"></block></block>
   <block id="d6631ef35bb40cd64a9a7e6045544867" category="summary">有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理。</block>
   <block id="2b17a7509e874cabf89f09bb638e3133" category="paragraph">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。自此之後、 REST API 持續擴充並成熟。現在、當 ONTAP 部署的管理作業自動化時、它提供了首選且具策略性的選項。使用 ONTAP REST API 時有幾個考量事項。</block>
   <block id="a72eaae2582a47c88e517d12584cddf1" category="paragraph-title">原生存取 REST API</block>
@@ -1817,4 +1793,19 @@
   <block id="a0b064f87e86d15d09bd439eeac8859d" category="sidebar">套用權限</block>
   <block id="982b873024de716ae33d5ad3f5fc8e1a" category="sidebar">更新安全性描述元</block>
   <block id="db5695cffdc658d54a90f935d7e8495e" category="section-title">步驟 1 ：刪除 ACE</block>
+  <block id="b62a0ce222a32de08e1187e5c25337b3" category="summary">API 參考包含 ONTAP REST API 呼叫的詳細資料、包括 HTTP 方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。</block>
+  <block id="9ee871a8bdae23bde132bdc475127a91" category="admonition">您可以根據 ONTAP 版本、在多個站台中的其中一個存取 REST API 參考文件。您也可以透過本機 ONTAP 系統上的 Swagger UI 取得同等文件的複本。</block>
+  <block id="2b143ad87a879a3f7e0e10f005539f8e" category="section-title">線上存取 ONTAP API 參考文件</block>
+  <block id="a82c48b5d06cbcc4f0ba1ae8bdef9c02" category="paragraph">您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。文件由 ONTAP 版本維護。</block>
+  <block id="6b416daf58339fe33aae71a393fbf571" category="list-text"><block ref="6b416daf58339fe33aae71a393fbf571" category="inline-link-rx"></block></block>
+  <block id="1a7a6021e347b043939d76bcefa6df25" category="list-text"><block ref="1a7a6021e347b043939d76bcefa6df25" category="inline-link-rx"></block></block>
+  <block id="e5b9abf558fec0163b635d6d64f9e7ad" category="list-text"><block ref="e5b9abf558fec0163b635d6d64f9e7ad" category="inline-link-rx"></block></block>
+  <block id="df9ddc7cae6db2b9f03ec9f63e9a15fb" category="list-text"><block ref="df9ddc7cae6db2b9f03ec9f63e9a15fb" category="inline-link-rx"></block></block>
+  <block id="f184911465f21dd8f7c4dcdc711e1ac7" category="list-text"><block ref="f184911465f21dd8f7c4dcdc711e1ac7" category="inline-link-rx"></block></block>
+  <block id="be16bcaaf8f90b15fde4e47a0b2bada9" category="list-text"><block ref="be16bcaaf8f90b15fde4e47a0b2bada9" category="inline-link-rx"></block></block>
+  <block id="6da29242aaec0bfacf4cccc152f3ae17" category="list-text"><block ref="6da29242aaec0bfacf4cccc152f3ae17" category="inline-link-rx"></block></block>
+  <block id="d5653468b803018e1df8a03526ca0dfe" category="list-text"><block ref="d5653468b803018e1df8a03526ca0dfe" category="inline-link-rx"></block></block>
+  <block id="804b12a0b7232fc26053b6e4ef6143e9" category="list-text"><block ref="804b12a0b7232fc26053b6e4ef6143e9" category="inline-link-rx"></block></block>
+  <block id="39d2726aa93bd430df52956407b809b4" category="section-title">透過 Swagger UI 存取 ONTAP API 參考文件</block>
+  <block id="527df4f1ccd81173595bb685c8266938" category="paragraph">您可以透過本機 ONTAP 系統上的 Swagger UI 來存取 ONTAP REST API 文件。</block>
 </blocks>
