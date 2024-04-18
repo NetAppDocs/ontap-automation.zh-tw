@@ -19,5 +19,7 @@ NetApp ONTAP R靜止Python用戶端程式庫是一套套件、可讓您安裝及
 
 NOTE: NetApp維護GitHub儲存庫、其中包含程式碼範例和其他實用資訊。您可以瀏覽至_examples_資料夾、使用Python用戶端程式庫存取範例。
 
-.相關連結
-https://github.com/NetApp/ontap-rest-python["REST Python GitHub儲存庫ONTAP"^]
+.相關資訊
+* https://github.com/NetApp/ontap-rest-python["REST Python GitHub儲存庫ONTAP"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["ONTAP REST Python 用戶端程式庫範例"^]
+

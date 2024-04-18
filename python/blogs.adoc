@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: python/blogs_pcl.html 
+keywords: blogs, blog articles 
+summary: 有幾篇部落格文章和影片可協助您更深入瞭解如何使用 Python 用戶端程式庫。 
+---
+= 部落格文章
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+有幾篇部落格文章可協助您更深入瞭解如何使用 Python 用戶端程式庫。
+
+.使用 Python 用戶端程式庫簡化 ONTAP REST API 的使用
+此部落格提供 ONTAP Python 用戶端程式庫功能的良好簡介。
+
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["www.netapp.com/blog/simplify-ontap-rest-api-consumption"^]
+
+.ONTAP REST API Python 用戶端程式庫快速入門
+這是三個部分的部落格系列、涵蓋 Python 用戶端程式庫的更多詳細資料。
+
+第 1 部分： https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["NetApp.IO/2020/06/09/ONTAP REST -API-python 用戶端程式庫 -pt1"^]
+
+第 2 部分： https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["NetApp.IO/2020/06/09/ONTAP-REST -API-python 用戶端程式庫 -pt2/"^]
+
+第 3 部分： https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["NetApp.IO/2020/06/09/ONTAP-REST -API-python 用戶端程式庫 -pT3"^]

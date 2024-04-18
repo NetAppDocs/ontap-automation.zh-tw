@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: migrate/overview.html 
+permalink: migrate/ontapi_disablement.html 
 keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API 
 summary: 在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您使用的是 ONTAPI 、則應規劃移轉至 ONTAP REST API 的作業。 
 ---

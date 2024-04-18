@@ -8,5 +8,15 @@ entries:
     url: "/python/overview_pcl.html"
   - title: 準備使用Python用戶端程式庫
     url: "/python/prepare_pcl.html"
+  - title: 套件與文件
+    url: "/python/packages.html"
   - title: 用於擷取叢集組態的指令碼
     url: "/python/script_retrieve_cluster_configuration.html"
+  - title: 部落格文章
+    url: "/python/blogs_pcl.html"
+- title: PowerShell 工具套件
+  entries:
+  - title: 總覽
+    url: "/pstk/overview_pstk.html"
+  - title: 下載並安裝
+    url: "/pstk/install_pstk.html"

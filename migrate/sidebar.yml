@@ -1,9 +1,9 @@
 ---
 section: migrate
-title: 移轉至REST API
+title: 從 ONTAPI 移轉至 REST API
 entries:
 - title: ONTAPI 停用
-  url: "/migrate/overview.html"
+  url: "/migrate/ontapi_disablement.html"
 - title: 移轉考量
   url: "/migrate/migration-considerations.html"
 - title: ONTAPI至REST對應
@@ -13,4 +13,4 @@ entries:
 - title: 工具與軟體
   url: "/migrate/software.html"
 - title: 部落格文章
-  url: "/migrate/blogs.html"
+  url: "/migrate/blogs_migrate.html"

@@ -26,7 +26,7 @@ summary: 有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理�
 您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。
 
 .移轉舊版的 ONTAPI 程式碼以使用 REST
-ONTAPI （ ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。請參閱 link:../migrate/overview.html["移轉至REST API"] 以取得更多資訊。
+ONTAPI （ ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。在未來的 ONTAP 版本中、將停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。請參閱 link:../migrate/ontapi_disablement.html["移轉至REST API"] 以取得更多資訊。
 
 
 
@@ -37,6 +37,9 @@ NetApp 提供用戶端工具套件、可抽象化 ONTAP REST API 、並讓建立
 .Python用戶端程式庫
 Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。請參閱 link:../python/overview_pcl.html["Python用戶端程式庫"] 以取得更多資訊。
 
+.PowerShell 工具套件
+您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。請參閱 https://review.docs.netapp.com/us-en/ontap-automation_devnet-update/pstk/overview_pstk.html["PowerShell 工具套件概觀"^] 以取得更多資訊。
+
 
 
 == 自動化架構
@@ -44,7 +47,7 @@ Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ON
 您可以使用數個架構之一來建立及部署自動化程式碼
 
 .Ansible
-Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。請參閱 link:../additional/resources.html["其他資源"] 以取得更多資訊。
+Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。請參閱 link:../additional/learn_more.html["深入瞭解"] 和 https://www.netapp.com/devops-solutions/ansible/["NetApp Ansible DevOps解決方案"^] 以取得更多資訊。
 
 .BlueXP 自動化目錄
 NetApp https://console.bluexp.netapp.com/automationCatalog/["BlueXP 自動化目錄"^] 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取套裝解決方案、協助您自動化 ONTAP 與其他產品的部署與整合。請參閱 https://docs.netapp.com/us-en/netapp-automation/["NetApp 自動化"^] 以取得文件及更多資訊。
