@@ -524,7 +524,6 @@
   <block id="b26d022aeb288cb83538385118383ca5" category="paragraph">您可以管理特定的SNMP設陷主機。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="c3b7775b2eccd350a3b590c2c1c7e7a3" category="paragraph">您可以定義及管理SNMP使用者。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="b6fc3f4cebfd4495ccd03b001112b524" category="paragraph">您可以管理引擎ID與管理SVM或資料SVM相關聯的特定SNMP使用者。此資源類型隨ONTAP 附於NetApp 9.7。</block>
-  <block id="ddcc73c0369a0b65c748dc3e5194759a" category="paragraph">網路資料管理傳輸協定提供備份NAS裝置的標準。您可以使用這些API呼叫來管理NDMP服務。</block>
   <block id="e78d7ab79adaa44183fd6bddec381b9e" category="paragraph">NDMP操作模式可以是SVM範圍或節點範圍。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="e2c8cf4362fd8da934b960c0838f7f52" category="paragraph">您可以管理節點的NDMP組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="9dfd95a51120838c5f0411955b6b8ee0" category="paragraph">您可以擷取及刪除特定SVM或節點的NDMP工作階段詳細資料。此資源類型隨ONTAP 附於NetApp 9.7。</block>
@@ -540,9 +539,6 @@
   <block id="816c0720f92a2711cb0cd082d1076aa6" category="paragraph">NVMe子系統對應是NVMe命名空間與NVMe子系統的關聯。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe子系統可維護一組NVMe連線主機的組態狀態和命名空間存取控制。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">資源類別總覽</block>
-  <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、您也可以使用查詢參數上的屬性值來存取物件。</block>
-  <block id="35ddd64ed03dd1579ce39e6e82ff721f" category="inline-link-macro">其他休息考量</block>
-  <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">您可以使用這些API呼叫來管理儲存區域網路（SAN）資源。</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel登入代表光纖通道啟動器所建立的連線、這些啟動器已登入ONTAP 到了功能鏈路。此資源類型隨ONTAP 附於NetApp 9.6。</block>
@@ -556,7 +552,6 @@
   <block id="602c3dee864ac1118043c79730115b22" category="paragraph">報告節點是叢集節點、可透過SAN傳輸協定、將連至對應LUN的網路路徑做為ONTAP 供應器的選擇性LUN對應（SLE）功能的一部分、進行通告。新的端點可讓您新增、移除及探索LUN對應的報告節點。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">連接埠集是與_portSet_ Storage VM相關聯的光纖通道或iSCSI網路介面的集合。雖然ONTAP 此功能已存在於先前版本的支援、但其餘API現在已加入支援。此REST資源類型隨ONTAP 附於引用的地方。9.9</block>
   <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VMware虛擬磁碟區（vVol）繫結是指類「傳輸協定端點」的LUN與類「VVOL」的LUN之間的關聯。vVol繫結REST API可讓您建立、刪除及探索vVol繫結。此資源類型隨ONTAP 附於引用的功能不只是功能。9.10。</block>
-  <block id="b4ad45acb73dc252050e525d981a2d6d" category="paragraph">以儲存為基礎的傳統WORM（一次寫入、多次讀取）光學解決方案實作、可長期保留資料。SnapLock您可以使用這些API呼叫來管理SnapLock 功能。</block>
   <block id="03aaf72a36d8a4b49208da200f94b4cf" category="paragraph">此功能是根據特定磁碟區上包含記錄的目錄和檔案來建立。SnapLock記錄檔會根據最大記錄檔大小來填入和歸檔。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="02c81912a7634089043ac791429c0c06" category="paragraph">法規遵循時鐘決定SnapLock 了物件的到期時間。時鐘必須在REST API之外初始化、且無法變更。此資源類型隨ONTAP 附於NetApp 9.7。</block>
   <block id="21632c1548a44b25024b7b882a17cac7" category="paragraph">您可以使用SnapLock 「以事件為基礎的保留」（EBR）功能、定義事件發生後檔案保留的時間。此資源類型隨ONTAP 附於NetApp 9.7。</block>
@@ -630,7 +625,6 @@
   <block id="c2b3f5e16089ee9d9af58cbb5c2cbd06" category="paragraph">邏輯容器用於將資料提供給用戶端。此資源類型最初是以ONTAP 不含REST API的功能推出。API所使用的許多參數值都已透過ONTAP 包含空間管理的值在內的各個方面、大幅擴充。</block>
   <block id="88df77acac312e5edd7fce693cdcaa37" category="paragraph">您可以擷取磁碟區上特定目錄的檔案和目錄清單。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
   <block id="87098ebfbdf9f76cfa6a8b400124cecc" category="paragraph">Volume的快照。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="5b601547f8aa3a93b2be784742d56f50" category="paragraph">這些API呼叫可用於管理叢集和SVM安全性設定。</block>
   <block id="24e7cd4ec777036322f32b55a87d5bce" category="paragraph">叢集和SVM的使用者帳戶集合。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="ec3e5f0707efe5d62c929bd9fd725078" category="paragraph">範圍內使用者帳戶的組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="5bfa71d20e72cfa3885c1399635e02fe" category="paragraph">您可以在Active Directory伺服器上管理SVM帳戶資訊。此資源類型隨ONTAP 附於NetApp 9.7。</block>
@@ -968,7 +962,6 @@
   <block id="00d9cb95eeaf06aed2c944d601467bab" category="paragraph">這組API呼叫可讓您使用Azure Key Vault來儲存ONTAP 功能完善的加密金鑰。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="20a5796507ad5434cd0a5cb89dabf3b5" category="paragraph">提供多位管理員核准存取的選項、可提升ONTAP 您的支援和IT環境的安全性。這些資源類型是ONTAP 以引用的功能為參考9.11。</block>
   <block id="64653610bb83e768ab10ed738c71d4f7" category="paragraph">獨立式應用程式AutoSupport 可發出POST要求、將EMS事件及選擇性產生的功能套件記錄在ONTAP 一個系統上。此資源類型隨ONTAP 附於引用的功能不只是功能。9.11.1</block>
-  <block id="1559c80340a3552e982d5443b26cb658" category="summary">透過「靜態API」提供的資源ONTAP 會依照類別進行組織、如ONTAP 「靜態API」文件頁所示。</block>
   <block id="0242de1421b2dbbb8285300eae69f9fc" category="summary">您可以使用這些API呼叫來管理支援NVMe的資源。</block>
   <block id="50f3a24b94f9f178410d7708def5ebde" category="summary">您可以使用這些API呼叫來管理SnapLock 功能。</block>
   <block id="9250e564d64f55011e433f17ac824f44" category="paragraph-title">NDMP模式</block>
@@ -1202,7 +1195,6 @@
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">將自動化技術從ONTAP ONTAPI轉型為靜態API</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">使用ONTAPI使用報告工具從ONTAPI進行轉換</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">您的第一個API呼叫</block>
-  <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">透過「靜態API」提供的資源ONTAP 會依類別進行整理、如ONTAP 《The》（英文）、API線上文件所示。下文將簡短說明每項資源、並在適當情況下提供額外的使用考量。</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">更新功能ONTAP</block>
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">為了協助CLI和ONTAP 支援功能的使用者移轉至ONTAP 靜態API、ONTAP 我們提供一個私有REST API端點、可用來存取任何CLI命令。</block>
   <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
@@ -1513,7 +1505,6 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
-  <block id="3b4eb2c2464d0801cad28a2ce6319a1c" category="paragraph">本摘要所述的其餘資源是根據產品的最新版本而定。如果您需要瞭解先前版本的變更、請參閱 <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。</block>
   <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1 版 NetApp PCL 文件</block>
@@ -1896,4 +1887,9 @@
   <block id="6c271a07c1fe500a9af8e4bb8e005441" category="sidebar">從 ONTAPI 移轉至 REST API</block>
   <block id="336165a88740b33476f13e8f41666771" category="sidebar">PowerShell 工具套件</block>
   <block id="326737de1766f7c8b80a5acde0f18651" category="sidebar">下載並安裝</block>
+  <block id="10c96e88b9c4e92d1c2ae63f9eade937" category="paragraph">您可以使用這些 API 呼叫來管理 ONTAP SnapLock 功能。</block>
+  <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">透過 ONTAP REST API 提供的資源會依類別進行組織。每個資源類別都包含簡短的說明、以及其他適當的使用考量。</block>
+  <block id="6bfd79fe477653dcbe9240cddc1bff7e" category="paragraph">摘要中所述的其餘資源是以產品的最新版本為基礎。如果您需要更詳細瞭解先前版本所做的變更、請參閱 <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="0ea16c1b878b2cbbbc3d0b12297d9b11" category="admonition">對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、在許多情況下、您也可以使用查詢參數上的屬性值來存取物件。</block>
+  <block id="72cb412397232628600f03c53da4faf9" category="paragraph">您可以使用這些 API 呼叫來管理叢集和 SVM 安全性設定。</block>
 </blocks>

@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-這些API呼叫可用於管理叢集和SVM安全性設定。
+您可以使用這些 API 呼叫來管理叢集和 SVM 安全性設定。
 
 .帳戶
 叢集和SVM的使用者帳戶集合。此資源類型隨ONTAP 附於NetApp 9.6。

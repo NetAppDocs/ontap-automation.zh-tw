@@ -14,7 +14,7 @@ summary: 您可以使用這些API呼叫來管理SnapLock 功能。
 
 
 [role="lead"]
-以儲存為基礎的傳統WORM（一次寫入、多次讀取）光學解決方案實作、可長期保留資料。SnapLock您可以使用這些API呼叫來管理SnapLock 功能。
+您可以使用這些 API 呼叫來管理 ONTAP SnapLock 功能。
 
 .記錄
 此功能是根據特定磁碟區上包含記錄的目錄和檔案來建立。SnapLock記錄檔會根據最大記錄檔大小來填入和歸檔。此資源類型隨ONTAP 附於NetApp 9.7。
