@@ -16,7 +16,7 @@ summary:
 [role="lead"]
 透過 ONTAP REST API 提供的資源會依類別進行組織。每個資源類別都包含簡短的說明、以及其他適當的使用考量。
 
-摘要中所述的其餘資源是以產品的最新版本為基礎。如果您需要更詳細瞭解先前版本所做的變更、請參閱 link:../whats_new.html["更新功能ONTAP"] 以及 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。
+摘要中所述的其餘資源是以產品的最新版本為基礎。如果您需要更詳細瞭解先前版本所做的變更、請參閱 link:../whats-new.html["更新功能ONTAP"] 以及 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。
 
 
 TIP: 對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、在許多情況下、您也可以使用查詢參數上的屬性值來存取物件。

@@ -109,6 +109,9 @@ Kerberos介面的組態設定。此資源類型隨ONTAP 附於NetApp 9.6。
 .NFS Kerberos領域
 Kerberos領域的組態設定。此資源類型隨ONTAP 附於NetApp 9.6。
 
+.NFS over TLS
+此資源可讓您在使用 NFS over TLS 時擷取及更新介面組態。ONTAP 9.15 引進了這種資源類型。
+
 .NFS服務
 NFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。
 

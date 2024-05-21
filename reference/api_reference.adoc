@@ -25,7 +25,8 @@ NOTE: 您可以根據 ONTAP 版本、在多個站台中的其中一個存取 RES
 
 您可以ONTAP 透過下列連結存取一份《R靜止API參考文件》。文件由 ONTAP 版本維護。
 
-* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1."^]
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.15.1.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9141/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1."^]
 * https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1.12.9.11.9.11."^]
 * https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["零點9.12.1. ONTAP"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["零點9.11.1. ONTAP"^]

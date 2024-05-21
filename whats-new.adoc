@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: whats_new.html 
+permalink: whats-new.html 
 keywords: new features, new in release 
 summary: NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。 
 ---
@@ -18,6 +18,18 @@ NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和
 
 
 TIP: 您也應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^] 以取得其他資訊、包括已知的限制或問題。
+
+
+
+== ONTAP 9.15.1.1
+
+ONTAP 9.15.1 持續擴充 ONTAP REST API 的功能。此版本的更新相對較少、有三個新端點支援新功能。
+
+NFS over TLS:: 此功能有三個新端點可供使用。您可以發出這些 API 呼叫、以擷取所有透過 TLS 介面的 NFS 、以 UUID 擷取特定介面、以及更新 TLS 介面的組態內容。這些 API 呼叫總的來說是相當於的集合 `vserver nfs tls interface` CLI 命令。
+
+
+
+CAUTION: 9.15.1 提供 ONTAP over TLS 的公開預覽功能。作為預覽產品、 ONTAP 9.15.1 的正式作業工作負載不支援此功能。
 
 
 

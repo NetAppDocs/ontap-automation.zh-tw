@@ -16,6 +16,11 @@ summary:
 [role="lead"]
 從 9.6 開始、每個 ONTAP 版本都可使用 Python 用戶端程式庫。您應該根據所使用的 ONTAP 版本來存取 PyPI 套件和文件。
 
+.ONTAP 9.15.1.1
+* https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI ： NetApp ONTAP 9.15.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3319064/html/index.html["9.15.1 版 NetApp PCL 文件"^]
+
+
 .ONTAP 9.14.1.
 * https://pypi.org/project/netapp-ontap/9.14.1.0/["PyPI ： NetApp ONTAP 9.14.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1 版 NetApp PCL 文件"^]

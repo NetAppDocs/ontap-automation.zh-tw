@@ -100,6 +100,7 @@ NetApp提供廣泛的支援、可將自動化程式碼從ONTAPI移轉至ONTAP RE
 
 請參閱您ONTAP 所使用之版本資訊的適當對應文件：
 
+* https://docs.netapp.com/us-en/ontap-pcmap/["ONTAP 9.15.1 效能計數器對應"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9141/["ONTAP 9.14.1 效能計數器對應"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9131/["ONTAP 9.13.1 效能計數器對應"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9121/["零點9.12.1效能計數器對應ONTAP"^]
