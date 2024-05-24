@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-有兩個選項可供下載及安裝 NetApp ONTAP PowerShell Toolkit 。
+有兩個選項可供下載及安裝 NetApp ONTAP PowerShell 工具組。
 
 .NetApp支援
 您可以從 NetApp 支援網站 下載 PowerShell 工具組：
