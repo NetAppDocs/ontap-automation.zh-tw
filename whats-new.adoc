@@ -23,13 +23,16 @@ TIP: 您也應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP24
 
 == ONTAP 9.15.1.1
 
-ONTAP 9.15.1 持續擴充 ONTAP REST API 的功能。此版本的更新相對較少、有三個新端點支援新功能。
+ONTAP 9.15.1 持續擴充 ONTAP REST API 的功能。此版本的更新相對較少、支援兩項新功能。
 
 NFS over TLS:: 此功能有三個新端點可供使用。您可以發出這些 API 呼叫、以擷取所有透過 TLS 介面的 NFS 、以 UUID 擷取特定介面、以及更新 TLS 介面的組態內容。這些 API 呼叫總的來說是相當於的集合 `vserver nfs tls interface` CLI 命令。
 
 
 
 CAUTION: 9.15.1 提供 ONTAP over TLS 的公開預覽功能。作為預覽產品、 ONTAP 9.15.1 的正式作業工作負載不支援此功能。
+
+Windows 備份應用程式和 Unix 風格的符號連結:: 當 Windows 備份應用程式遇到 Unix 樣式的符號連結（ symlink ）時、連結會被遍歷、資料會由 ONTAP 傳回並備份。從 ONTAP 9.15.1 開始、您也可以選擇備份 symlink 、而非指向的資料。這可提供多項優點、包括改善備份應用程式的效能。端點 `/protocols/cifs/services/{svm.uuid}` 已更新、以將新參數納入 `backup-symlink-enabled` 物件中 `options` 。
+
 
 
 

@@ -574,7 +574,6 @@
   <block id="7e70a3f5fe5680525cb2b864b84dd895" category="paragraph">您可以使用這些API呼叫來管理叢集和SVM的CIFS和NFS設定。</block>
   <block id="7f10c6261c4b6c29a47a7c3f7a01e279" category="paragraph">您可以將NAS稽核事件重新導向至特定SVM。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">您可以在CIFS伺服器上建立SMB使用者的主目錄、而不需為每位使用者建立個別的SMB共用區。主目錄搜尋路徑是SVM根目錄的一組絕對路徑。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS伺服器的核心組態。此資源類型採用ONTAP 了更新ONTAP 版的32個版本、更新版為32個版本。</block>
   <block id="71a26588e1c1d8e12094fdd21dc0d287" category="paragraph">您可以使用此API擷取CIFS工作階段的詳細資訊。這種資源類型是ONTAP 以《不含資料的9.8 REST API」推出、ONTAP 並以《不含資料的升級版：</block>
   <block id="d5f4fec8a6c653ca7e90ff237d4a4316" category="paragraph">在CIFS伺服器上定義的SMB共用。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="f0f651567e26868dafe0ee9cc161686c" category="paragraph">存取控制清單（ACL）可控制對CIFS共用上資料夾和檔案的存取。此資源類型隨ONTAP 附於NetApp 9.6。</block>
@@ -1915,7 +1914,6 @@
   <block id="f3d744cfa0520002045d6f43144f6d48" category="list-text"><block ref="f3d744cfa0520002045d6f43144f6d48" category="inline-link-rx"></block></block>
   <block id="430f1c1df2cd64a3c4f965b8d9c49566" category="list-text"><block ref="430f1c1df2cd64a3c4f965b8d9c49566" category="inline-link-rx"></block></block>
   <block id="35edae61aca91aae4cbd46b48209e29c" category="list-text"><block ref="35edae61aca91aae4cbd46b48209e29c" category="inline-link-rx"></block></block>
-  <block id="6a7c5e7366ffed370462b891c0a9ae2c" category="paragraph">ONTAP 9.15.1 持續擴充 ONTAP REST API 的功能。此版本的更新相對較少、有三個新端點支援新功能。</block>
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">此功能有三個新端點可供使用。您可以發出這些 API 呼叫、以擷取所有透過 TLS 介面的 NFS 、以 UUID 擷取特定介面、以及更新 TLS 介面的組態內容。這些 API 呼叫總的來說是相當於的集合<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> CLI 命令。</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">9.15.1 提供 ONTAP over TLS 的公開預覽功能。作為預覽產品、 ONTAP 9.15.1 的正式作業工作負載不支援此功能。</block>
   <block id="b302321652be9f7bc5eab2d6b2eb58f6" category="sidebar">您可以使用多種可用選項之一、將 ONTAP 儲存系統的部署與管理作業自動化。ONTAP REST API 是自動化技術的主要基礎。</block>
@@ -1931,4 +1929,8 @@
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">文件ONTAP Select</block>
   <block id="9a48142f39a67f56da7343e45f9a5f6a" category="paragraph">有兩個選項可供下載及安裝 NetApp ONTAP PowerShell 工具組。</block>
   <block id="d61a36a5306e6c21551315a0807bb00a" category="paragraph">NetApp 。 ONTAP PowerShell 工具組包含適用於 NetApp ONTAP 的 PowerShell 模組。此工具組支援在各種環境中執行 ONTAP 、包括 NetApp AFF 和 FAS 系統、市售硬體和雲端。此模組包含超過 2 、 400 個 Cmdlet 、可共同支援 Windows 主機上的儲存管理。</block>
+  <block id="7e20d550033609efe814483eaca98482" category="paragraph">CIFS伺服器的核心組態。此資源類型隨 ONTAP 9.6 一起推出、並更新為 ONTAP 9.7 和 9.15 。</block>
+  <block id="25c2f3f417194f8a4327550b96839461" category="paragraph">ONTAP 9.15.1 持續擴充 ONTAP REST API 的功能。此版本的更新相對較少、支援兩項新功能。</block>
+  <block id="df1b9eeca7fff049392b594c09b8d79c" category="list-text">Windows 備份應用程式和 Unix 風格的符號連結</block>
+  <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">當 Windows 備份應用程式遇到 Unix 樣式的符號連結（ symlink ）時、連結會被遍歷、資料會由 ONTAP 傳回並備份。從 ONTAP 9.15.1 開始、您也可以選擇備份 symlink 、而非指向的資料。這可提供多項優點、包括改善備份應用程式的效能。端點<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> 已更新、以將新參數納入<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block> 物件中<block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> 。</block>
 </blocks>
