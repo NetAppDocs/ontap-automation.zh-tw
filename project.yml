@@ -13,7 +13,7 @@ sidebar:
     url: "/index.html"
   - title: 新增功能
     entries:
-    - title: ONTAP REST API 的新功能
+    - title: 更新功能ONTAP
       url: "/whats-new.html"
   - section: get-started
   - section: rest

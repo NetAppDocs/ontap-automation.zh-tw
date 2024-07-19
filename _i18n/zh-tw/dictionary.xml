@@ -347,7 +347,6 @@
   <block id="51c033a34d63a2d1737e1b6bdf842d1f" category="list-text">取得工作的目前狀態。</block>
   <block id="b281ec87e30bc1058b3173012f46c637" category="list-text">如果工作處於非終端機狀態、請再次執行迴圈。</block>
   <block id="6caaacff3c8abae5d9b2e02a5e4d0829" category="list-text">當工作達到終端機狀態（成功、失敗）時停止。</block>
-  <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">更新功能：利用靜止API與自動化技術ONTAP</block>
   <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">零點9.10.1 ONTAP</block>
   <block id="f81a95c072d17e5d1b7da75eee2c5a50" category="paragraph">而供應的功能也不斷擴大。ONTAP ONTAP我們新增了超過一百個新的端點、以支援ONTAP 全新的功能、以及對現有功能的增強功能。其餘API增強功能的摘要如下所示。</block>
@@ -1879,7 +1878,6 @@
   <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">透過 ONTAP REST API 提供的資源會依類別進行組織。每個資源類別都包含簡短的說明、以及其他適當的使用考量。</block>
   <block id="0ea16c1b878b2cbbbc3d0b12297d9b11" category="admonition">對於許多REST端點、您可以在路徑字串中加入UUID金鑰、以存取特定的物件執行個體。不過、在許多情況下、您也可以使用查詢參數上的屬性值來存取物件。</block>
   <block id="72cb412397232628600f03c53da4faf9" category="paragraph">您可以使用這些 API 呼叫來管理叢集和 SVM 安全性設定。</block>
-  <block id="12149ef13bbca8b5b9ef6c7969b51bdb" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="719fb5b8ac08da8fa53ff24d277d30a0" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="list-title">ONTAP 9.15.1.1</block>
   <block id="75d0655a3007155c5cee6673326640b8" category="inline-link">PyPI ： NetApp ONTAP 9.15.1</block>
   <block id="88f0364b032c766b6224cbd9e9d86861" category="list-text"><block ref="88f0364b032c766b6224cbd9e9d86861" category="inline-link-rx"></block></block>
@@ -1933,5 +1931,6 @@
   <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">當 Windows 備份應用程式遇到 Unix 樣式的符號連結（ symlink ）時、連結會被遍歷、資料會由 ONTAP 傳回並備份。從 ONTAP 9.15.1 開始、您也可以選擇備份 symlink 、而非指向的資料。這可提供多項優點、包括改善備份應用程式的效能。端點<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> 已更新、以將新參數納入<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block> 物件中<block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> 。</block>
   <block id="d239da172f3ae62623c76921d1e69cef" category="paragraph"><block ref="d239da172f3ae62623c76921d1e69cef" category="inline-link-rx"></block></block>
   <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
-  <block id="a6fd48ff460bdb9f9b5bd42c615526ae" category="sidebar">ONTAP REST API 的新功能</block>
+  <block id="b61d835a52b302e3c0dbeedac89aecec" category="inline-link-macro">ONTAP REST API 的新功能</block>
+  <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP如需詳細資訊、請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> 。</block>
 </blocks>
