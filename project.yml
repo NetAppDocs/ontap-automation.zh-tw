@@ -12,7 +12,9 @@ sidebar:
   - title: 自動化文件ONTAP
     url: "/index.html"
   - title: 新增功能
-    url: "/whats-new.html"
+    entries:
+    - title: ONTAP REST API 的新功能
+      url: "/whats-new.html"
   - section: get-started
   - section: rest
   - section: workflows
