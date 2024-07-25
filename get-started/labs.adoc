@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/labs.html 
-keywords:  
-summary:  
+keywords: ONTAP REST API labs, lab resources 
+summary: NetApp 提供實驗室環境、讓您測試 ONTAP REST API 及其他相關自動化技術。 
 ---
-= NetApp 實驗室資源
+= ONTAP REST API 實驗室資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

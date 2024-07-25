@@ -4,7 +4,7 @@ permalink: get-started/first_call.html
 keywords: first REST API call, test REST API 
 summary: 您可以發出 Curl 命令、開始使用 ONTAP REST API 並確認其可用度。 
 ---
-= 您的第一個API呼叫
+= 您的第一次 ONTAP REST API 呼叫
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
