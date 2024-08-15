@@ -1501,7 +1501,6 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
-  <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1 版 NetApp PCL 文件</block>
   <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
   <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoS 選項</block>
@@ -1935,4 +1934,19 @@
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp 。 ONTAP PowerShell 工具套件</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="7aa552dc681d656a7dca492830d13523" category="paragraph"><block ref="7aa552dc681d656a7dca492830d13523" category="inline-link-rx"></block></block>
+  <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetApp 持續在每個主要產品版本中增強及更新 ONTAP REST API 。這些更新有時可能會包括對現有 API 呼叫的變更、例如所使用的參數和預設值。這些變更可能會影響存取 REST API 的軟體。</block>
+  <block id="9edc7f95e01deb6ba7b3322cd44aded4" category="doc">ONTAP REST API 呼叫的變更</block>
+  <block id="cdfb2103aa97d64dff8d54de4cce7a03" category="section-title">變更現有的 ONTAP REST API 呼叫</block>
+  <block id="c54d88e796967d1b66714295a3511fe0" category="paragraph">對現有 API 呼叫所做的任何變更、都可能影響存取 REST API 的軟體。您應檢閱下表中的變更清單、以判斷是否會對 ONTAP 自動化環境造成影響。每個項目都包含適用的 API 端點、變更說明、以及推出的 ONTAP 版本。</block>
+  <block id="c46f7e527391f67f3805bf7d784fc003" category="cell">變更說明</block>
+  <block id="b15340b33a8b3cfed1967fb759a31d3a" category="cell"><block ref="653abe1298f355e168ee1393257c84cd" prefix="" category="inline-code"></block><block ref="8b19fc37f7c6865add16f7d29be42f8e" prefix=" " category="inline-code"></block></block>
+  <block id="32ad5449f355fd85efafb34fde71a1a6" category="cell">回應中的欄位 *_links * 已從這些端點的 duogroup 中移除。沒有建議客戶採取的行動或因應措施。此欄位預期會在未來的 ONTAP 版本中重新新增。</block>
+  <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1..</block>
+  <block id="8b5316cbd81290ae3e906370a7f93751" category="section-title">ONTAP REST API 參考文件錯誤</block>
+  <block id="06da39e83216b4cbe300f130aae4c4f2" category="paragraph">隨著 NetApp 增強及更新 ONTAP REST API 、有時可能會在線上參考文件中出現錯誤。使用 API 時、這些錯誤可能會造成混淆、但通常不會影響或中斷 ONTAP 自動化軟體或環境。</block>
+  <block id="df8a5d4721acfa7407625ef7e4c36dc6" category="paragraph">您應檢閱下表中的錯誤清單。這將有助於您更深入瞭解及瀏覽 ONTAP REST API 參考文件。每個項目都包含適用的 API 端點、錯誤說明、以及所推出的 ONTAP 版本。</block>
+  <block id="37b6d443585283b17a6c4bb5dcd6e38f" category="cell"><block ref="33829ee32ee08b76bc7ed5eeada2cd50" prefix="" category="inline-code"></block></block>
+  <block id="79d1f0bd73ced50c557a63343981d432" category="cell">端點的 REST API 文件指出 * 規範 * 是有效欄位。不過、此端點不支援配額說明符。沒有建議客戶採取的行動或因應措施。此欄位將在未來的 ONTAP 版本中從 API 文件中移除。</block>
+  <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
+  <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。如需可能影響自動化軟體的任何變更、請參閱 <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

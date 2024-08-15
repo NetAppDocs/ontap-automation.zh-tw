@@ -17,7 +17,7 @@ summary: NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強
 NetApp會定期更新ONTAP Resrest API、為您帶來新功能、增強功能和錯誤修復。
 
 
-TIP: 您也應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^] 以取得其他資訊、包括已知的限制或問題。
+TIP: 您也應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^] 以取得其他資訊、包括已知的限制或問題。如需可能影響自動化軟體的任何變更、請參閱 link:api-changes.html["ONTAP REST API 呼叫的變更"] 。
 
 
 
