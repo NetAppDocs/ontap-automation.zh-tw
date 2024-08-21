@@ -18,6 +18,6 @@ ONTAPI API （ ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫�
 
 .相關資訊
 * link:../get-started/ontap_automation_options.html["瞭ONTAP 解功能自動化選項"]
-* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPS-00410 終止供應： ONTAPI"^]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPD-00410 延遲 ONTAPI （ ZAPI ）終止供應公告"^]
 * https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["常見問題集：適用於 CPC 的 ZAPI 至 ONTAP REST API 轉型"^]
 
