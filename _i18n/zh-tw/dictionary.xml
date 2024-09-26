@@ -1890,7 +1890,6 @@
   <block id="d87719184e085166d3d845048810dd21" category="paragraph-title">下載 SDK</block>
   <block id="100168388acf5b00a071ca6e015323e0" category="paragraph">您可以從 NetApp 支援網站 下載 NetApp Manageability SDK 。SDK 支援用戶端上的多種語言、包括： Python 、 PowerShell 、 C 、 C++ 、 Java 、 C# 、 VB. NET 和 Ruby 。請務必檢閱互通性對照表工具、以取得 NetApp Manageability SDK 的相關資訊、以及您的 ONTAP 版本如何支援該工具。</block>
   <block id="8a9c78330b74df288ffa23c3c916c9d4" category="paragraph-title">使用 OnCommand Workflow Automation</block>
-  <block id="5e956e5c034d62bc54b3db5e88c7f216" category="paragraph">您也可以使用 SDK 隨附的 API 來自動化管理工作、而無需撰寫任何指令碼。OnCommand Workflow Automation （ OnCommand WFA ）提供數個預先封裝的工作流程、以部署及執行管理工作。您可以從 NetApp 儲存自動化商店下載 OnCommand WFA 套件。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
   <block id="74ca9f2037f85f9bee172d20503c7375" category="list-text"><block ref="74ca9f2037f85f9bee172d20503c7375" category="inline-link-rx"></block></block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互通性對照表工具</block>
@@ -1949,4 +1948,5 @@
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">您也應該檢閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得其他資訊、包括已知的限制或問題。如需可能影響自動化軟體的任何變更、請參閱 <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 。</block>
   <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">CPD-00410 延遲 ONTAPI （ ZAPI ）終止供應公告</block>
   <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
+  <block id="22c2d1f13363659c32e6085b79534d7a" category="paragraph">您也可以使用 SDK 隨附的 API 來自動化管理工作、而無需撰寫任何指令碼。OnCommand Workflow Automation （ OnCommand WFA ）提供數個預先封裝的工作流程、以部署及執行管理工作。</block>
 </blocks>

@@ -23,7 +23,7 @@ NOTE: 雖然 NetApp Manageability SDK 和 OnCommand Workflow Automation 持續�
 您可以從 NetApp 支援網站 下載 NetApp Manageability SDK 。SDK 支援用戶端上的多種語言、包括： Python 、 PowerShell 、 C 、 C++ 、 Java 、 C# 、 VB. NET 和 Ruby 。請務必檢閱互通性對照表工具、以取得 NetApp Manageability SDK 的相關資訊、以及您的 ONTAP 版本如何支援該工具。
 
 .使用 OnCommand Workflow Automation
-您也可以使用 SDK 隨附的 API 來自動化管理工作、而無需撰寫任何指令碼。OnCommand Workflow Automation （ OnCommand WFA ）提供數個預先封裝的工作流程、以部署及執行管理工作。您可以從 NetApp 儲存自動化商店下載 OnCommand WFA 套件。
+您也可以使用 SDK 隨附的 API 來自動化管理工作、而無需撰寫任何指令碼。OnCommand Workflow Automation （ OnCommand WFA ）提供數個預先封裝的工作流程、以部署及執行管理工作。
 
 .相關資訊
 * https://mysupport.netapp.com/site/["NetApp 支援網站"^]
