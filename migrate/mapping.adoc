@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/mapping.html 
-keywords: ONTAPI, REST API, mapping, mapping documentation 
-summary: NetApp提供的文件說明從ONTAPI呼叫對應至同等REST API呼叫的過程。 
+keywords: ontapi, rest api, mapping, mapping documentation, zapi 
+summary: 在大部分的領域中、靜態API包含相當於ONTAPI的功能。ONTAPNetApp提供的文件說明從ONTAPI呼叫對應至同等REST API呼叫的過程。 
 ---
 = 用於REST API對應的ONTAPI
 :hardbreaks:
@@ -16,14 +16,4 @@ summary: NetApp提供的文件說明從ONTAPI呼叫對應至同等REST API呼叫
 [role="lead"]
 在大部分的領域中、靜態API包含相當於ONTAPI的功能。ONTAPNetApp提供的文件說明從ONTAPI呼叫對應至同等REST API呼叫的過程。
 
-API對應文件取決於ONTAP 此版本的功能：
-
-* https://docs.netapp.com/us-en/ontap-restmap["ONTAP 9.15.1.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9141["ONTAP 9.14.1."^]
-* https://docs.netapp.com/us-en/ontap-restmap-9131["ONTAP 9.13.1.12.9.11.9.11."^]
-* https://docs.netapp.com/us-en/ontap-restmap-9121["零點9.12.1. ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9111["零點9.11.1. ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9101["零點9.10.1 ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restmap-991["部分9.9.1 ONTAP"^]
-* https://docs.netapp.com/us-en/ontap-restmap-98["部分9.8 ONTAP"^]
-
+您可以線上存取目前的 https://docs.netapp.com/us-en/ontap-restmap/["ONTAP ONTAPI- 對 REST 對應"^]文件。也有版本選取器可存取 ONTAP 版本的文件先前版本。

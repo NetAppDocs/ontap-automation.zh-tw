@@ -10,7 +10,7 @@ summary: 在將 ONTAP 工作流程用於即時部署之前、您應該先熟悉�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

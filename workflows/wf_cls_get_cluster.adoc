@@ -10,7 +10,7 @@ summary: 您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

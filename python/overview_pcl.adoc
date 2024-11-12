@@ -10,7 +10,7 @@ summary: NetApp ONTAP R靜止Python用戶端程式庫是一套套件、可讓您
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

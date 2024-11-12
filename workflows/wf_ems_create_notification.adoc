@@ -10,7 +10,7 @@ summary: 您可以使用下列工作流程來建立新的 EMS 通知目的地、
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

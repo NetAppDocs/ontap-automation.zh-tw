@@ -10,7 +10,7 @@ summary: 您可以使用此工作流程來建立具有相關 REST 角色的使�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

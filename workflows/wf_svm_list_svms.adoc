@@ -10,7 +10,7 @@ summary: 您可以列出在 ONTAP 叢集中定義的儲存虛擬機器（ SVM �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

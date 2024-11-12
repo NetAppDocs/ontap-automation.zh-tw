@@ -10,7 +10,7 @@ summary: 您可以在CLI中使用Python 3執行指令碼、以擷取ONTAP 叢集
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

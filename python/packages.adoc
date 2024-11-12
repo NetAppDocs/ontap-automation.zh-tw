@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/packages.html 
-keywords: packages, documentation 
-summary:  
+keywords: python, pypi, pcl, packages, documentation 
+summary: 從 9.6 開始、每個 ONTAP 版本都可使用 Python 用戶端程式庫。您應該根據所使用的 ONTAP 版本來存取 PyPI 套件和文件。 
 ---
 = 套件與文件
 :hardbreaks:
@@ -10,11 +10,16 @@ summary:
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 從 9.6 開始、每個 ONTAP 版本都可使用 Python 用戶端程式庫。您應該根據所使用的 ONTAP 版本來存取 PyPI 套件和文件。
+
+.ONTAP 9.16.1.
+* https://pypi.org/project/netapp-ontap/9.16.1.0/["PyPI：NetApp ONTAP 產品特色9.16.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html["9.16.1 版 NetApp PCL 文件"^]
+
 
 .ONTAP 9.15.1.1
 * https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI ： NetApp ONTAP 9.15.1"^]

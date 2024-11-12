@@ -10,7 +10,7 @@ summary: 您可以更新叢集的連絡人資訊。由於要求是以非同步�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

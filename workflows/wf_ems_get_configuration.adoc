@@ -10,7 +10,7 @@ summary: 您可以擷取 ONTAP 叢集的目前 EMS 組態。您可以在更新�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

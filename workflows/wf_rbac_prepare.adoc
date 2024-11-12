@@ -10,7 +10,7 @@ summary: 視您的環境而定、您可以使用多種不同的 ONTAP RBAC 功�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

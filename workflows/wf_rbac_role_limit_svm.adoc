@@ -10,7 +10,7 @@ summary: 您可以定義角色、以限制 SVM 內的儲存磁碟區管理。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

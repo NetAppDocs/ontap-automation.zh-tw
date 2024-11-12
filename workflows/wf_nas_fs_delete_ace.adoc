@@ -10,7 +10,7 @@ summary: 您可以從特定檔案或資料夾刪除現有的存取控制項目�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

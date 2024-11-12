@@ -10,7 +10,7 @@ summary: 您可以擷取特定 ONTAP 工作的執行個體。您通常會這樣�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

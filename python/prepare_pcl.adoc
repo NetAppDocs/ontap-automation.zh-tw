@@ -10,7 +10,7 @@ summary: 您應該先準備本機執行時間環境、再使用Python用戶端�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

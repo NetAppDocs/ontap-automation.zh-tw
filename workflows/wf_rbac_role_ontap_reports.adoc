@@ -10,7 +10,7 @@ summary: 您可以建立REST角色、讓使用者能夠產生ONTAP 各種報告�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

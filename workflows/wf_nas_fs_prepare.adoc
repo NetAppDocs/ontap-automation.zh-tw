@@ -10,7 +10,7 @@ summary: 您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

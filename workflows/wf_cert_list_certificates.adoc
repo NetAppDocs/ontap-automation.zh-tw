@@ -10,7 +10,7 @@ summary: 您可以列出安裝在 ONTAP 叢集中的憑證。您可以這樣做�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

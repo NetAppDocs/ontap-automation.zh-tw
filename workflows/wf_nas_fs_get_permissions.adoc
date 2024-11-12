@@ -10,7 +10,7 @@ summary: 您可以擷取特定檔案或資料夾的目前有效權限。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

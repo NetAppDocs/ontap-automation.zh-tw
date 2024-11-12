@@ -10,7 +10,7 @@ summary: 您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

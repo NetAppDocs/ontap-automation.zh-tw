@@ -10,7 +10,7 @@ summary: 您可以將新的安全性描述元套用至特定檔案或資料夾�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

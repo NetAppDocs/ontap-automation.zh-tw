@@ -10,7 +10,7 @@ summary: 您可以在 ONTAP 叢集中安裝簽署的 X.509 憑證。您可以在
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

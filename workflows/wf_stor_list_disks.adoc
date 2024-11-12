@@ -10,7 +10,7 @@ summary: 您可以擷取叢集中的磁碟清單。您可以這麼做來找出�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
