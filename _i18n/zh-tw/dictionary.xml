@@ -118,9 +118,6 @@
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">在ONTAPI中對SnapDiff可用度所做的變更</block>
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">從ONTAP 功能性版本的E59.10.1開始、SnapDiff v1和v2 ONTAPI呼叫將無法叫用。任何啟動SnapDiff v1或v2 ONTAPI呼叫的第三方應用程式、都無法從ONTAP 版本資訊的版本9.10.1開始運作。支援SnapDiff v3 REST的備份應用程式、使用者應先確認其是否支援、再升級至版本RE-9.10.1。ONTAP ONTAP</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">SnapDiff API在ONTAP 整個發行版中的可用度定義如下：</block>
-  <block id="c731207305059b4146b7b02e506607f9" category="list-text">更新版本：V1和v2（僅限ONTAPI）ONTAP</block>
-  <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
-  <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">僅限v3（僅限REST API）ONTAP</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">發行說明 ONTAP</block>
   <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">REST Web服務基礎</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
@@ -1954,4 +1951,7 @@
   <block id="5002d79d77c997408c96270b3cd46237" category="list-text">支援透過 ONTAPI 無法使用的新 ONTAP 9 8 功能，已新增至 REST API 。這包括 ONTAP S3 儲存區和服務的 REST API 支援， SnapMirror 主動式同步（前身為 SnapMirror 業務持續運作）和檔案系統分析。</block>
   <block id="982a944cf7d3a2f28ae7bfcc8755ec2c" category="list-text">利用REST API、提供更有效率且更現代化的工作流程。ONTAP例如，現在有多種不同類型的韌體可以使用單鍵更新韌體。</block>
   <block id="c408f623f341094b81899c67b52a1051" category="list-text">ONTAP 線上文件頁面中的標籤指出每個 REST 端點或參數都已推出的 ONTAP 版本，包括 9.8 的新版本。</block>
+  <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">更新版本：V1和v2（僅限ONTAPI）ONTAP</block>
+  <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
+  <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9 ． 10.1 及更新版本：僅 v3 （僅限 REST API ）</block>
 </blocks>
