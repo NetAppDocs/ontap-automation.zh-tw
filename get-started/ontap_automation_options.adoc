@@ -38,7 +38,7 @@ NetApp 提供用戶端工具套件、可抽象化 ONTAP REST API 、並讓建立
 Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。請參閱 link:../python/overview_pcl.html["Python用戶端程式庫"] 以取得更多資訊。
 
 .PowerShell 工具套件
-您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。請參閱 https://review.docs.netapp.com/us-en/ontap-automation_devnet-update/pstk/overview_pstk.html["PowerShell 工具套件概觀"^] 以取得更多資訊。
+您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 link:../pstk/overview_pstk.html["PowerShell 工具套件概觀"] 。
 
 
 
