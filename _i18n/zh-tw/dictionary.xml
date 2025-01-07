@@ -1848,8 +1848,6 @@
   <block id="2d11c1e0261953683085b8e4bbb5c6b3" category="list-text"><block ref="2d11c1e0261953683085b8e4bbb5c6b3" category="inline-link-rx"></block></block>
   <block id="adb8bbc4797b2c4786a7cc39e81b6f80" category="inline-link">NetApp Manageability SDK 文件</block>
   <block id="e63dbec97e259e045c2bdaab696ebe25" category="list-text"><block ref="eb9fd5adf45f5072855c8bbbb18ec1d3" category="inline-link-rx"></block></block>
-  <block id="15ed38b5d48d9edf37f82cc89687f17e" category="inline-link">OnCommand Workflow Automation 文件資源</block>
-  <block id="f8e4512adc37ddf24d285dd82223a4d9" category="list-text"><block ref="f8e4512adc37ddf24d285dd82223a4d9" category="inline-link-rx"></block></block>
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">此功能有三個新端點可供使用。您可以發出這些 API 呼叫、以擷取所有透過 TLS 介面的 NFS 、以 UUID 擷取特定介面、以及更新 TLS 介面的組態內容。這些 API 呼叫總的來說是相當於的集合<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> CLI 命令。</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">9.15.1 提供 ONTAP over TLS 的公開預覽功能。作為預覽產品、 ONTAP 9.15.1 的正式作業工作負載不支援此功能。</block>
   <block id="b302321652be9f7bc5eab2d6b2eb58f6" category="sidebar">您可以使用多種可用選項之一、將 ONTAP 儲存系統的部署與管理作業自動化。ONTAP REST API 是自動化技術的主要基礎。</block>
@@ -1954,4 +1952,6 @@
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9 ． 10.1 及更新版本：僅 v3 （僅限 REST API ）</block>
   <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> 。</block>
+  <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">OnCommand Workflow Automation 文件</block>
+  <block id="ad717655f6134a7a7b1257cccf5f85ba" category="list-text"><block ref="ad717655f6134a7a7b1257cccf5f85ba" category="inline-link-rx"></block></block>
 </blocks>
