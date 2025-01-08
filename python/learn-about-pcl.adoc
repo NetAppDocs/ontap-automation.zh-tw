@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: python/learn-about-pcl.html 
+keywords: learn about python client library, learn about pcl, pcl overview, pcl 
+summary: NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。 
+---
+= 瞭解 ONTAP Python 用戶端程式庫
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。
+
+.優點與功能
+您可以使用 Python 用戶端程式庫來快速開發健全的程式碼，以自動化 ONTAP 部署的管理。它提供多種基礎服務，包括：
+
+* 連線管理
+* 非同步處理
+* 例外處理
+* 統一化錯誤訊息
+
+
+.套件名稱與版本
+Python用戶端程式庫套件的名稱為* NetApp-ONTAP*。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。
+
+.安裝
+您必須使用 *pip* 公用程式，從 Python 套件索引（ PyPi ）網站安裝 NetApp ONTAP 套件。
+
+.ONTAP 版本的套件與文件
+每個以 9.6 開頭的 ONTAP 版本都有 PyPI 套件和相關文件。如需詳細資訊、請參閱 link:../python/packages.html["套件與文件"] 。每個套件均隨附安裝需求，並指定下列各項的不同版本：
+
+* Python
+* 要求
+* 申請工具
+* 棉花糖
+
+
+.程式碼範例
+NetApp 維護 GitHub 儲存庫，其中包含程式碼範例和其他實用資訊。您可以瀏覽至_examples_資料夾、使用Python用戶端程式庫存取範例。如需詳細資訊，請參閱 GitHub 的下列位置：
+
+* https://github.com/NetApp/ontap-rest-python["REST Python GitHub儲存庫ONTAP"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["ONTAP REST Python 用戶端程式庫範例"^]
+

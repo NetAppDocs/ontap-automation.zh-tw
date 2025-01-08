@@ -52,9 +52,7 @@ ONTAPI 使用報告工具旨在協助 NetApp 專業服務、客戶及合作夥�
 
 == Python用戶端程式庫
 
-Python 用戶端程式庫是一個套件、您可以安裝並使用它來存取 ONTAP REST API 搭配 Python 。它可讓您快速開發健全的程式碼、以自動化 ONTAP 部署。
-
-如需 Python 用戶端程式庫的簡介、請參閱 link:../python/overview_pcl.html["Python用戶端程式庫總覽"]。如需 Python 範例、請參閱 https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Python 用戶端程式庫範例"^]。
+Python 用戶端程式庫是一個套件、您可以安裝並使用它來存取 ONTAP REST API 搭配 Python 。它可讓您快速開發健全的程式碼、以自動化 ONTAP 部署。若要深入瞭解 Python 用戶端程式庫，請參閱link:../python/learn-about-pcl.html["Python用戶端程式庫"]。
 
 
 

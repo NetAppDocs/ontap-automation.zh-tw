@@ -28,7 +28,7 @@ indexpage:
     - title: 工作流程
       url: "/workflows/prepare_workflows.html"
     - title: Python用戶端程式庫
-      url: "/python/overview_pcl.html"
+      url: "/python/learn-about-pcl.html"
     - title: PowerShell 工具套件
       url: "/pstk/overview_pstk.html"
     - title: NetApp Manageability SDK
