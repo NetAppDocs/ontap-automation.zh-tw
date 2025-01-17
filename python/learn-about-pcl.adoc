@@ -16,6 +16,9 @@ summary: NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝
 [role="lead"]
 NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。
 
+
+NOTE: 您也應該檢閱中的可用資源link:../additional/learn_more.html["深入瞭解 ONTAP REST API"]。
+
 .優點與功能
 您可以使用 Python 用戶端程式庫來快速開發健全的程式碼，以自動化 ONTAP 部署的管理。它提供多種基礎服務，包括：
 

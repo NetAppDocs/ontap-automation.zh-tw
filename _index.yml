@@ -41,8 +41,6 @@ indexpage:
       url: "/migrate/mapping.html"
     - title: 效能計數器
       url: "/migrate/performance-counters.html"
-    - title: 部落格文章
-      url: "/migrate/blogs_migrate.html"
   - title: 知識與支援
     links:
     - title: 深入瞭解

@@ -10,8 +10,6 @@ entries:
     url: "/python/packages.html"
   - title: 用於擷取叢集組態的指令碼
     url: "/python/script_retrieve_cluster_configuration.html"
-  - title: 部落格文章
-    url: "/python/blogs_pcl.html"
 - title: PowerShell 工具套件
   entries:
   - title: 總覽

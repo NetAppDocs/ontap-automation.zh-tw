@@ -4,7 +4,7 @@ permalink: additional/learn_more.html
 keywords: learn, learn more, more information, additional resources 
 summary: 您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。 
 ---
-= 深入瞭解
+= 深入瞭解 ONTAP REST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,17 +20,15 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 
 == 部落格文章
 
+部落格文章會根據主題分為幾個部分。
+
+
+
+=== 一般
+
 * 目前 ONTAP 自動化技術的良好摘要。
 +
 https://www.netapp.com/blog/new-normal-for-automation["自動化的新常態"^]
-
-* 在 GitHub 中存取及使用 ONTAP REST API 的 Python 範例指令碼簡介。
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["開始使用 GitHub 的範例指令碼"^]
-
-* CLI passThrough提供一種使用ONTAP REST API執行Rest CLI命令的技術。
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api["將私有CLI密碼與ONTAP REST API搭配使用"^]
 
 * 如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。
 +
@@ -48,11 +46,7 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification["REST API：自動
 +
 https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["使用 ONTAP REST API 的角色型存取控制（ RBAC ）"^]
 
-* NetApp 提供 Python 範例指令碼以使用 ONTAP REST API 。
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 範例指令碼現已在 GitHub 上推出！"^]
-
-* 休息時間（ 6 集）。
+* 休息時間（ 6 集）：
 +
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852["ONTAP REST API 的基礎知識"^]
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-2-Features-of-ONTAP-REST-APIs/m-p/168168/highlight/true#M208["ONTAP REST API 的功能"^]
@@ -61,6 +55,49 @@ https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 範例指令
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293["專用 CLI Passthrough"^]
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604["讓 ONTAP 儲存自動化變得簡單的 5 項神奇功能！"^]
 
+
+
+
+
+
+=== Python用戶端程式庫
+
+* NetApp 在 GitHub 提供的 Python 範例指令碼簡介，可用來存取 ONTAP REST API 。
++
+https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 範例指令碼現已在 GitHub 上推出！"^]
+
+* 此部落格提供 ONTAP Python 用戶端程式庫功能的良好簡介。
++
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["使用 Python 用戶端程式庫簡化 ONTAP REST API 的使用"^]
+
+* 這是由三個部分組成的部落格系列，介紹如何開始使用 Python 用戶端程式庫：
++
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["第1部分"^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["第2部分"^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["第3部分"^]
+
+
+
+
+
+
+=== 移轉至 REST API
+
+* NetApp透過ONTAP 對應文件、提供從專屬的ONTAPI API移轉至靜態API的支援。
++
+https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["ONTAPI至REST對應"^]
+
+* 有幾項技術可協助您根據ONTAP REST API來改造您的非自動化環境。
++
+https://www.netapp.com/blog/transform-automation-ontap-rest-api/["將自動化技術從ONTAP ONTAPI轉型為靜態API"^]
+
+* 為了協助CLI和ONTAP 支援功能的使用者移轉至ONTAP 靜態API、ONTAP 我們提供一個私有REST API端點、可用來存取任何CLI命令。
++
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["將私有CLI密碼與ONTAP REST API搭配使用"^]
+
+* NetApp提供一項工具、協助客戶和合作夥伴移轉至ONTAP 靜態API。
++
+https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["使用 ONTAPI 使用報告工具從 ONTAPI （ ZAPI ）轉換"^]
 
 
 

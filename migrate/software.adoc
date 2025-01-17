@@ -17,7 +17,7 @@ summary:
 NetApp 提供 Python 指令碼範例和其他相關軟體、以支援您從 ONTAPI 移轉至 ONTAP REST API 。以下說明這些樣本中最重要的部分。
 
 
-NOTE: 所有 Python 程式碼範例均可在中取得 https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^] GitHub 儲存庫。
+NOTE: 所有 Python 程式碼範例均可在 GitHub 儲存庫取得 https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^]。您也應該檢閱中的可用資源link:../additional/learn_more.html["深入瞭解 ONTAP REST API"]。
 
 
 
