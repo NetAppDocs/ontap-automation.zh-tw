@@ -4,7 +4,7 @@ permalink: reference/api_reference.html
 keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
 summary: API 參考包含 ONTAP REST API 呼叫的詳細資料、包括 HTTP 方法、輸入參數和回應。這份完整參考資料有助於使用REST API開發自動化應用程式。 
 ---
-= API 參考
+= ONTAP REST API 參考
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

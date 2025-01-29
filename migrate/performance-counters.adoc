@@ -4,7 +4,7 @@ permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping 
 summary: 《The》介紹各個系統效能的豐富資訊ONTAP ONTAP 。它會將此資料匯出為一組效能計數器，您可以用來評估 ONTAP 系統的效能，並協助達成您的效能目標。 
 ---
-= 效能計數器
+= 搭配 ONTAP REST API 使用效能計數器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

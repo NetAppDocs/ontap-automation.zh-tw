@@ -4,7 +4,7 @@ permalink: migrate/mapping.html
 keywords: ontapi, rest api, mapping, mapping documentation, zapi 
 summary: 在大部分的領域中、靜態API包含相當於ONTAPI的功能。ONTAPNetApp提供的文件說明從ONTAPI呼叫對應至同等REST API呼叫的過程。 
 ---
-= 用於REST API對應的ONTAPI
+= 將 ONTAPI 對應至 ONTAP REST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

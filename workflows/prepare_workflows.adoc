@@ -4,7 +4,7 @@ permalink: workflows/prepare_workflows.html
 keywords: workflows, preparation, prepare to use workflows 
 summary: 在將 ONTAP 工作流程用於即時部署之前、您應該先熟悉其結構和格式。 
 ---
-= 準備好使用工作流程
+= 準備使用 ONTAP REST API 工作流程
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

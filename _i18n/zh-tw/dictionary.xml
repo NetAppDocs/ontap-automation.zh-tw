@@ -1946,4 +1946,12 @@
   <block id="2718df1a2d0085e67f1f9cfb09960b20" category="paragraph"><block ref="2718df1a2d0085e67f1f9cfb09960b20" category="inline-link-rx"></block></block>
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">所有 Python 程式碼範例均可在 GitHub 儲存庫取得<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block>。您也應該檢閱中的可用資源<block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>。</block>
   <block id="afadfcc5e8834b85c88b2a5e94fdf7bc" category="admonition">您也應該檢閱中的可用資源<block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>。</block>
+  <block id="f0e9bdffcded3071566cc636f2645353" category="doc">ONTAP REST API 的法律聲明</block>
+  <block id="0d2211154e74dec09269bf1111f07b01" category="doc">將 ONTAPI 對應至 ONTAP REST API</block>
+  <block id="484b32b038170aab3e10173e4c46ac03" category="doc">ONTAP REST API 的移轉考量</block>
+  <block id="f785a07ee9c2bffde63d337fdbfba172" category="doc">ONTAPI 停用和 ONTAP REST API</block>
+  <block id="7736cc9045eca4ab635dbdd3296019b8" category="doc">搭配 ONTAP REST API 使用效能計數器</block>
+  <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">支援 ONTAP REST API 的工具與軟體</block>
+  <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST API 參考</block>
+  <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">準備使用 ONTAP REST API 工作流程</block>
 </blocks>

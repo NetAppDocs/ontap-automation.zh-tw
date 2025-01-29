@@ -4,7 +4,7 @@ permalink: migrate/software.html
 keywords:  
 summary:  
 ---
-= 工具與軟體
+= 支援 ONTAP REST API 的工具與軟體
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
