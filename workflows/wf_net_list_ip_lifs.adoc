@@ -4,7 +4,7 @@ permalink: workflows/wf_net_list_ip_lifs.html
 keywords: workflow, job, job state 
 summary:  
 ---
-= 列出 IP 介面
+= 使用 ONTAP REST API 列出 IP 介面
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

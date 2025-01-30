@@ -4,7 +4,7 @@ permalink: workflows/wf_ems_list_log_events.html
 keywords: support, ems, event management system, get events, get notifications, retrieve events 
 summary: 您可以擷取所有事件通知訊息或具有特定特性的訊息。 
 ---
-= 列出 EMS 記錄事件
+= 使用 ONTAP REST API 列出 EMS 記錄事件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

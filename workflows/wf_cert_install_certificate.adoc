@@ -4,7 +4,7 @@ permalink: workflows/wf_cert_install_certificate.html
 keywords: workflow, install certificate, x509, x.509 
 summary: 您可以在 ONTAP 叢集中安裝簽署的 X.509 憑證。您可以在設定需要加強驗證的 ONTAP 功能或傳輸協定時執行此動作。 
 ---
-= 安裝憑證
+= 使用 ONTAP REST API 安裝憑證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

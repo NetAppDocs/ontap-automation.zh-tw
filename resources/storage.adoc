@@ -4,7 +4,7 @@ permalink: resources/storage.html
 keywords: storage resources 
 summary: 您可以使用這些API呼叫來管理實體和邏輯儲存設備。 
 ---
-= 儲存設備
+= ONTAP REST API 中的儲存資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

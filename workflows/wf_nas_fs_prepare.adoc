@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_prepare.html
 keywords: nas, file security, sacl, dacl, prepare 
 summary: 您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和稽核原則。 
 ---
-= 準備好管理檔案安全性和稽核原則
+= 準備使用 ONTAP REST API 來管理檔案安全性和稽核原則
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

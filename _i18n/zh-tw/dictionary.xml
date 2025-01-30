@@ -644,7 +644,6 @@
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">REST API：自動通知高嚴重性事件ONTAP</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
-  <block id="7d986aa6827f53816cefdf1f0049c38b" category="section-title">更新安全性描述元資訊</block>
   <block id="f778c6da6bf9a458b710a39182352949" category="cell">「Get /傳輸 協定/file-Security /有效權限/」</block>
   <block id="5f7113a4943de281bc5047f65e391330" category="paragraph">「vserver安全性檔案目錄show-aive-permissions」</block>
   <block id="f40f7b5338aed8818a9fcf853a0ee22a" category="cell">「POST /傳輸協定/檔案安全性/權限/」</block>
@@ -661,7 +660,6 @@
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text">「Vserver安全檔案目錄NTFS SACL移除」</block>
   <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">利用REST API簡化檔案安全權限的管理ONTAP</block>
   <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
-  <block id="b4cd15e8e24635e4a72a8cce25d314ca" category="sidebar">自動化文件ONTAP</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="ec8bc6c5f8fe5dc6045b9edfffae614a" category="sidebar">準備使用REST API</block>
   <block id="e78273b83daaaecb5744859fa531181b" category="sidebar">REST實作詳細資料</block>
@@ -849,7 +847,6 @@
   <block id="51a9e3c779f1be0a43354b1da5831ba0" category="cell">您可以建立傳統角色。</block>
   <block id="2dcd39fd89691d20d107d37e822309c0" category="section-title">存取路徑的精確性</block>
   <block id="8dcea28ae0e36ecb9fb7a7682e6c8323" category="paragraph">為REST角色定義的存取路徑是以REST端點為基礎。傳統角色的存取路徑是以CLI命令或命令目錄為基礎。此外、您也可以加入選用的查詢參數及傳統角色、以根據命令參數值進一步限制存取。</block>
-  <block id="6e4ad51ed0c9f59ca29ccce216f868b1" category="section-title">限制對SVM Volume作業的存取</block>
   <block id="44b825cf5bc9349a15a7ed51954ce076" category="list-text">能夠執行所有CRUD Volume作業、包括Get、Create、Modify和Delete</block>
   <block id="0a98788f622c9b8a786424f59d6f073f" category="list-text">無法建立Volume複製</block>
   <block id="0577bbabd0439eea401a8ec18491d1a6" category="listing-title">JSONN輸入範例</block>
@@ -857,7 +854,6 @@
   <block id="76a4694d3323882a13252de3b8c66853" category="list-text">無法建立或修改較高層級的物件、例如磁碟區或SVM</block>
   <block id="3afdfc4bb62414921598f2f4531aaca1" category="list-text">能夠擷取與容量和效能相關的所有儲存物件資訊（例如Volume、qtree、LUN、Aggregate、節點、 和SnapMirror關係）</block>
   <block id="9a97a4c8ef433f35c821ef57f10aa45d" category="list-text">無法建立或修改較高層級的物件（例如磁碟區或SVM）</block>
-  <block id="7341eaad1796dcd6268b71a308240243" category="doc">建立具有角色的使用者</block>
   <block id="379385ed06cff6b981e905026b8488d8" category="paragraph">此版本可決定哪些REST端點和RBAC功能可供使用。ONTAP</block>
   <block id="7a1d01c8bf21e8d2524e97aacc31c321" category="paragraph">您需要識別要保護的資源或命令、以及範圍（叢集或SVM）。</block>
   <block id="6d1c7815a7f642c3359cf36570ffac64" category="paragraph">在識別資源和範圍之後、您需要判斷要授與的存取層級。</block>
@@ -1332,7 +1328,6 @@
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">此 REST API 呼叫使用下列方法和端點。</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">步驟 2 ：擷取工作狀態</block>
   <block id="1e6808f43cf2da1acd44c6e982792490" category="summary">您可以列出在 ONTAP 叢集中定義的儲存虛擬機器（ SVM ）。在建立新的 SVM 之前、您可以將其做為尋找特定 SVM 識別碼或確保名稱唯一性的一部分。</block>
-  <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">列出 SVM</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">您可以擷取 ONTAP 叢集的組態、包括特定欄位。您可以在評估叢集狀態或更新組態之前、執行此動作。</block>
   <block id="0510f6e6bd78b2ec3d88fb42187ae328" category="paragraph-title">捲曲範例的其他輸入參數</block>
   <block id="a9ea431a49179a653fb353a3d8027b29" category="paragraph">除了所有 REST API 呼叫通用的參數之外、本步驟的捲髮範例中也會使用下列參數。</block>
@@ -1375,7 +1370,6 @@
   <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">請參閱 <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="9b516c95369c98e15389e58383128a9e" category="inline-link-macro">RBAC 工作流程</block>
   <block id="d0ae4474b926ded595a7a12cdb4fa9ca" category="admonition">請參閱 <block ref="08b1cfcbf90aa340f0ccb33fbb4649b8" category="inline-link-macro-rx"></block> 如需如何建立及使用 ONTAP REST API 角色的範例。</block>
-  <block id="e5811d257020368f5a717692e3698c8c" category="doc">啟用資料保護的管理</block>
   <block id="a6812db2442ae325a9ccd39373bbd9dd" category="paragraph-title">關於此工作流程</block>
   <block id="daba4fa4643f88029966b062423e8d20" category="paragraph">建立的傳統角色具有下列特性：</block>
   <block id="d48b8c7902dee00442e14d9b1af3af1b" category="cell">/API/cluster</block>
@@ -1393,7 +1387,6 @@
   <block id="18a5ea643c715c0e45aa53077e8f1429" category="cell">要更新的 SVM 中角色的名稱。</block>
   <block id="4fa346713b0e13aa5afd8dc51d0ddecb" category="section-title">步驟 6 ：建立使用者</block>
   <block id="3c597ed3165c87f6539fd81a53a11876" category="paragraph">執行下列REST API呼叫以建立使用者帳戶。上述建立的角色 * dprole1* 與新使用者相關聯。</block>
-  <block id="e3abdda2fcce71a97b7507b852418cf4" category="doc">允許產生 ONTAP 報告</block>
   <block id="c6ef9b731f6fad8f77a915b2ed739e76" category="paragraph">您可以建立REST角色、讓使用者能夠產生ONTAP 各種報告。</block>
   <block id="fddc78544f7292e6a6fd31d26110db0d" category="paragraph">建立的角色具有下列特性：</block>
   <block id="05da6cc99ce87a708e1db8445633412e" category="doc">準備使用 RBAC</block>
@@ -1426,7 +1419,6 @@
   <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">Max_Records</block>
   <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">指定要傳回的記錄數。</block>
   <block id="b933168f11c5a1fef62b427e5c4faba9" category="summary">您可以在 ONTAP 叢集中安裝簽署的 X.509 憑證。您可以在設定需要加強驗證的 ONTAP 功能或傳輸協定時執行此動作。</block>
-  <block id="86ba127d49846ec207c19190730b16ac" category="doc">安裝憑證</block>
   <block id="5c88f057b69ff938c461962eab9693dc" category="paragraph">您必須擁有要安裝的憑證。您也應該視需要確定已安裝任何中繼憑證。</block>
   <block id="6a9cd64c223b26e7117c3bc5cd084d43" category="admonition">使用以下 JSON 輸入範例之前、請務必先更新<block ref="d73414ceb92d4d043000a5e640fd38a8" prefix=" " category="inline-code"></block> 為您的環境提供憑證的價值。</block>
   <block id="bc81a95e520df56e073aa3da00713e6b" category="section-title">步驟 1 ：安裝憑證</block>
@@ -1513,17 +1505,13 @@
   <block id="6e5a184a338e990223b90751d5dce3fa" category="cell">可用於識別新集合體可用的備用磁碟。</block>
   <block id="9c049e1832aad88667dcc17e261acc9c" category="listing-title">捲曲範例：傳回所有磁碟</block>
   <block id="2f16f01d47fc5581920b2b69e5a6cdc2" category="listing-title">捲曲範例：傳回備用磁碟</block>
-  <block id="2a11f21f5d4741d58b7d14923d4e08f9" category="doc">列出帳戶</block>
   <block id="4394c7ebecc609175a50f72d74a0557f" category="paragraph">您可以擷取帳戶清單。您可以在建立新帳戶之前、評估您的安全環境。</block>
-  <block id="47a8ff2921d745ff1e85c78a7811f188" category="doc">列出集合體</block>
   <block id="490c2fcb0f7a2efc0e882e344265c316" category="paragraph">您可以擷取叢集中的集合體清單。您可以這樣做來評估使用率和效能。</block>
   <block id="6edce6e6c5993cbcc3356de83eed68df" category="cell">node.name</block>
   <block id="586ba6b164fb68d2e277e5509c3d920e" category="cell">可用於識別每個集合所附加的節點。</block>
   <block id="d77215a29f7c4c57074e8278a01cb44d" category="listing-title">Curl 範例：傳回所有具有預設組態值的集合體</block>
   <block id="3d13cd0551da6b0edbb329a4192f28a3" category="listing-title">Curl 範例：傳回具有特定組態值的所有集合體</block>
-  <block id="902758a99886ee9a4b12dd38cc667f95" category="doc">列出 IP 介面</block>
   <block id="1220a442fc15fd5c171980b6a6315040" category="listing-title">捲曲範例：傳回具有預設組態值的所有生命</block>
-  <block id="36e958b717916175c77e1c0a9bd8a51d" category="doc">列出磁碟</block>
   <block id="c4acc246007fa7e427ad78bab2246d93" category="cell">$job_ID</block>
   <block id="e62ba1f7e88de861aba828d64f793b2f" category="cell">需要識別所要求的工作。</block>
   <block id="542fcd84c10c6cf94d17a2aec683b3f3" category="paragraph">使用 GET 方法發出 API 呼叫時、您可以使用查詢參數、根據任何屬性來限制或篩選傳回的物件。</block>
@@ -1573,7 +1561,6 @@
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
   <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">NetApp<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取套裝解決方案、協助您自動化 ONTAP 與其他產品的部署與整合。請參閱<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 以取得文件及更多資訊。</block>
   <block id="6896ceb4698b2c86775b4d891be243d5" category="summary">您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、並視需要擷取 EMS 訊息。</block>
-  <block id="90aef0d7524722ffd0dc0cb8fa364d96" category="doc">準備管理 EMS 支援服務</block>
   <block id="af129edd8d2b529838378e328200ea64" category="paragraph">有幾個工作流程範例可說明如何使用 ONTAP EMS 服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
   <block id="f3bd9688dec070eec4b4332373791cf4" category="inline-link">events.py</block>
   <block id="85215b1290359f4664d37f38216d2256" category="paragraph">如果您使用 Python 、也會看到指令碼<block ref="643db497504332dea05c67888bb57b20" category="inline-link-rx"></block> 如需瞭解如何將部分 EMS 相關活動自動化的範例。</block>
@@ -1583,7 +1570,6 @@
   <block id="882aca4326d752010b772b8158e8baa0" category="inline-link">說明 EMS 的 Python 指令碼</block>
   <block id="cece6a40b70715f2a63bbd9c0b1372bd" category="list-text"><block ref="cece6a40b70715f2a63bbd9c0b1372bd" category="inline-link-rx"></block></block>
   <block id="eb230b030eac22517ebd137fbd7025a9" category="summary">您可以使用下列工作流程來建立新的 EMS 通知目的地、以接收選取的事件訊息。</block>
-  <block id="b4d8401916bcfe9d487b43317e141180" category="doc">建立 EMS 通知</block>
   <block id="4b6b43bf6462be74bc77a76514b73254" category="section-title">步驟 1 ：設定全系統的電子郵件設定</block>
   <block id="1186c8ad3d5fa7fe5bc14196b7869208" category="paragraph">您可以發出下列 API 呼叫來設定全系統的電子郵件設定。</block>
   <block id="ef891763ba7048887e2e72131878e76c" category="cell">/API/support/EMS</block>
@@ -1603,9 +1589,7 @@
   <block id="5af5cc7f9522d6ed61830a95fdd63cae" category="cell">目的地組態</block>
   <block id="cfbbc7b9438bc32708cb12da6986b172" category="cell">包含事件目的地的值。</block>
   <block id="49d9b762ced33c4a64540c0502fa12ae" category="summary">您可以擷取 ONTAP 叢集的目前 EMS 組態。您可以在更新組態或建立新的 EMS 通知之前執行此動作。</block>
-  <block id="bf68501f440a0b26f1bce42df8f87f61" category="doc">取得 EMS 組態</block>
   <block id="321af4d0ee1843b9eb21c75179cd5a5a" category="summary">您可以擷取所有事件通知訊息或具有特定特性的訊息。</block>
-  <block id="13a19e32980ac43fd75e6a9645a8b411" category="doc">列出 EMS 記錄事件</block>
   <block id="077c58e0d7282761a97c6c03fcd5f677" category="paragraph">您可以擷取所有事件通知訊息、或只擷取具有特定特性的訊息。</block>
   <block id="b098fa166f68e99b9f901b465347c595" category="cell">/api/support/EMS / 事件</block>
   <block id="51f996d6bdce27d5d9c364daf9452884" category="cell">用於要求在回應中包含特定欄位。</block>
@@ -1622,17 +1606,14 @@
   <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">建立 EMS 通知</block>
   <block id="62e79f1e2a16917d7b811343757eede5" category="summary">您可以為使用者提供有限的資料保護功能。</block>
   <block id="542f0dae2bb6d52eba2a6242f8f9bbb4" category="summary">您可以擷取特定檔案或資料夾的目前有效權限。</block>
-  <block id="ca8b310152c3cdbf0b209d0af018c2db" category="doc">取得檔案的有效權限</block>
   <block id="eb8b558a40765e93b8be653d5fb7656c" category="cell">/api/protocols / file-security/active-permissions/｛ SVM.uuid ｝ / ｛ path ｝</block>
   <block id="d4f560c2cc4c11c467693af3a4c697fb" category="cell">這是包含檔案的 SVM 的 UUID 。</block>
   <block id="a0da37dfc114065048cd3b5de2ff66a6" category="cell">$FILE_PATH</block>
   <block id="bae6d4bef4e1697b5dfae7f9202e2499" category="cell">這是檔案或資料夾的路徑。</block>
   <block id="6abb58e21232fa67ee94875bd5f72d26" category="summary">您可以將新的安全性描述元套用至特定檔案或資料夾。</block>
-  <block id="28a11b3673dcd0e091505156efd803f3" category="doc">將新權限套用至檔案</block>
   <block id="350becfaa43a05e99267c2c4700bf2f4" category="section-title">步驟 1 ：套用新權限</block>
   <block id="a624b6656737d2c783691ba33fc23197" category="cell">/api/protocols / file-security/permissions/｛ SVM.uuid ｝ / ｛ path ｝</block>
   <block id="db7bd3219c8001e5e6cdbc7e71916c02" category="summary">您可以擷取特定檔案或資料夾的所有稽核資訊。</block>
-  <block id="420c6b28da357f4a659ab47453e63f4e" category="doc">取得檔案的稽核資訊</block>
   <block id="0751d56a6f57c4680d1dfea528fbf8d3" category="paragraph">您可以擷取特定檔案或資料夾的稽核資訊。</block>
   <block id="59acc03c473e764ed04cb83fde18f389" category="summary">您可以從特定檔案或資料夾刪除現有的存取控制項目（ ACE ）。變更會傳播到任何子物件。</block>
   <block id="3560dff4f0f31db694c608a2ebc06e85" category="doc">刪除存取控制項目</block>
@@ -1640,7 +1621,6 @@
   <block id="a2ec471f92f85173e4ba00d9da0db114" category="summary">您可以將特定安全性描述元更新至特定檔案或資料夾、包括主要擁有者、群組或控制標誌。</block>
   <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">步驟 1 ：更新安全性描述元</block>
   <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和稽核原則。</block>
-  <block id="09cd38efbd2c8fdbc8c6175ec9176ea8" category="doc">準備好管理檔案安全性和稽核原則</block>
   <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">使用系統存取控制清單（SACL）和自由存取控制清單（DACL）來指派檔案物件的權限。ONTAP從 ONTAP 9.9.1 開始、其餘 API 支援管理 SACL 和 DACL 權限。您可以使用 API 來自動化檔案安全性權限的管理。在許多情況下、您可以使用單一 REST API 呼叫、而非多個 CLI 命令或 ONTAPI （ ZAPI ）呼叫。</block>
   <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">對於 9.9.1 之前的 ONTAP 版本、您可以使用 CLI Passthrough 功能、自動管理 SACL 和 DACL 權限。請參閱 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> 和<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">我們提供幾個工作流程範例、說明如何使用 REST API 來管理 ONTAP 檔案安全服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
@@ -1800,7 +1780,6 @@
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">此功能有三個新端點可供使用。您可以發出這些 API 呼叫、以擷取所有透過 TLS 介面的 NFS 、以 UUID 擷取特定介面、以及更新 TLS 介面的組態內容。這些 API 呼叫總的來說是相當於的集合<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> CLI 命令。</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">9.15.1 提供 ONTAP over TLS 的公開預覽功能。作為預覽產品、 ONTAP 9.15.1 的正式作業工作負載不支援此功能。</block>
   <block id="b302321652be9f7bc5eab2d6b2eb58f6" category="sidebar">您可以使用多種可用選項之一、將 ONTAP 儲存系統的部署與管理作業自動化。ONTAP REST API 是自動化技術的主要基礎。</block>
-  <block id="391aea2b8a642f755fa9fc56deaf7f9d" category="sidebar">自動化ONTAP</block>
   <block id="617c66d87497684f35f56ae2cec21d23" category="sidebar">您可以使用多種可用選項之一、將 ONTAP 儲存系統的部署與管理作業自動化。</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">版本資訊</block>
   <block id="0c5518b5db3a9e2425db3b5de6d30634" category="sidebar">自動化選項ONTAP</block>
@@ -1960,4 +1939,45 @@
   <block id="98dce57b0664e78870d257a648e96612" category="doc">在 ONTAP REST API 中使用角色和使用者</block>
   <block id="8e7104f8cdaf55507f25e0b9a816f34b" category="doc">使用 ONTAP REST API 取得叢集組態</block>
   <block id="19ca54acf953a715866f203d447d92ef" category="sidebar">營運特性</block>
+  <block id="b4042b6243fb82748c12f0b5e64e126b" category="doc">ONTAP REST API 中的雲端資源</block>
+  <block id="43d680669ba6d4e64886d6e371703971" category="doc">ONTAP REST API 中的叢集資源</block>
+  <block id="23e06eb64b67c34e02cdf1c333fb39e1" category="doc">ONTAP REST API 中的名稱服務資源</block>
+  <block id="fbfe672bafe1799a64f8b844cbf51200" category="doc">ONTAP REST API 中的 NAS 資源</block>
+  <block id="bf96d7232b1569f7f974f84313712582" category="doc">ONTAP REST API 中的 NDMP 資源</block>
+  <block id="5bfb1971c3845672a0927996621ab7c8" category="doc">ONTAP REST API 中的網路資源</block>
+  <block id="4da2072299f85c020ad205af08ed4d70" category="doc">ONTAP REST API 中的 NVMe 資源</block>
+  <block id="b85ca351f297a958cc3a56ffe6513379" category="doc">ONTAP REST API 中的物件儲存資源</block>
+  <block id="fcb3c24f0a82777a9189784dd009798e" category="doc">ONTAP REST API 中的 SAN 資源</block>
+  <block id="5becf2b8ac4936c5ba1447d230808356" category="doc">ONTAP REST API 中的安全資源</block>
+  <block id="c8cf67503220d2badea000e3d11e99b4" category="doc">ONTAP REST API 中的 SnapLock 資源</block>
+  <block id="c086e13d0bf1486e94e003705ba9c004" category="doc">ONTAP REST API 中的 SnapMirror 資源</block>
+  <block id="b9f209b0cb8741dc1516366752eeeb99" category="doc">ONTAP REST API 中的儲存資源</block>
+  <block id="49a1afb43fc7c1159041fb51ac2ca83d" category="doc">ONTAP REST API 中的支援資源</block>
+  <block id="115fa475ca65d7cc65ec0795dfa7f351" category="doc">ONTAP REST API 中的 SVM 資源</block>
+  <block id="fb388d9c8e5b3913e52ecd5af61590fa" category="doc">使用 ONTAP REST API 安裝憑證</block>
+  <block id="5c1899ae11da3b65cc9747f3b5a0e3e6" category="doc">使用 ONTAP REST API 列出已安裝的憑證</block>
+  <block id="ff75e734b8e348f7fbc58a45a62c3d2a" category="doc">使用 ONTAP REST API 更新叢集連絡人</block>
+  <block id="20b2b927bbd47b1299d71368f43a9c05" category="doc">使用 ONTAP REST API 建立 EMS 通知</block>
+  <block id="382cc4ffaee151c9b027efc50735214d" category="doc">使用 ONTAP REST API 取得 EMS 組態</block>
+  <block id="16b8abca450f596dee5f67d45a9be46a" category="doc">使用 ONTAP REST API 列出 EMS 記錄事件</block>
+  <block id="a859ee6e31a48c21f78b533bb9b22b91" category="doc">準備使用 ONTAP REST API 來管理 EMS 支援服務</block>
+  <block id="8f6acc43151cdfde9ac685d19b85c9e4" category="doc">使用 ONTAP REST API 取得工作執行個體</block>
+  <block id="d1464563dfce19f45744880723e72289" category="doc">使用 ONTAP REST API 將新權限套用至檔案</block>
+  <block id="08afd7b193f9841a00bc826625e9367e" category="doc">使用 ONTAP REST API 刪除存取控制項目</block>
+  <block id="5abfa0830c06ff193aad808d42a5ad6f" category="doc">使用 ONTAP REST API 取得檔案的稽核資訊</block>
+  <block id="f38d0a3a68b1a29e0f8271bd663ce1c2" category="doc">使用 ONTAP REST API 取得檔案的有效權限</block>
+  <block id="24825bd5411d630c335647de8203bbeb" category="doc">準備使用 ONTAP REST API 來管理檔案安全性和稽核原則</block>
+  <block id="304f7db2f7ba5f9087bf7857f5ef378d" category="doc">使用 ONTAP REST API 更新安全性描述元資訊</block>
+  <block id="df4c268dde27ccdcf1230d4e17c68985" category="doc">使用 ONTAP REST API 列出 IP 介面</block>
+  <block id="e6b44c79dfa7350257328764150e644b" category="doc">準備使用 ONTAP REST API 來使用 RBAC</block>
+  <block id="e44265ccdfdc2f520b02d27496844c14" category="doc">使用 ONTAP REST API 來管理資料保護</block>
+  <block id="27ead5fadf54405407c84b4a439bfd72" category="doc">使用 ONTAP REST API 限制對 SVM Volume 作業的存取</block>
+  <block id="be7e00cbd41a4e9dc719b0c8d1883009" category="doc">允許使用 ONTAP REST API 產生 ONTAP 報告</block>
+  <block id="efb197e274661cc09589a68cfb64ba0b" category="doc">使用 ONTAP REST API 建立具有角色的使用者</block>
+  <block id="91af67596c66905a5013dd5a8db3f2d0" category="doc">使用 ONTAP REST API 列出帳戶</block>
+  <block id="cfe6eeb0469ddb026288aadf548610bd" category="doc">使用 ONTAP REST API 列出集合體</block>
+  <block id="a5bbc27835a218995809409c292f40ed" category="doc">使用 ONTAP REST API 列出磁碟</block>
+  <block id="598efe1689990327c62503c7c48dbd74" category="doc">使用 ONTAP REST API 列出 SVM</block>
+  <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">ONTAP 自動化</block>
+  <block id="47ac2234b10a714bdea293d370ad2ce1" category="sidebar">ONTAP 自動化文件</block>
 </blocks>

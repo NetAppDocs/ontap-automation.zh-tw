@@ -4,7 +4,7 @@ permalink: resources/snaplock.html
 keywords: snaplock resources 
 summary: 您可以使用這些API呼叫來管理SnapLock 功能。 
 ---
-= SnapLock
+= ONTAP REST API 中的 SnapLock 資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

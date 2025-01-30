@@ -4,7 +4,7 @@ permalink: resources/cluster.html
 keywords: cluster resources 
 summary: 您可以使用這些API呼叫來管理ONTAP 支援的叢集和相關資源。 
 ---
-= 叢集
+= ONTAP REST API 中的叢集資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

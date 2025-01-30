@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_role_limit_svm.html
 keywords: rbac, role, storage volume, limited storage volume administration 
 summary: 您可以定義角色、以限制 SVM 內的儲存磁碟區管理。 
 ---
-= 限制對SVM Volume作業的存取
+= 使用 ONTAP REST API 限制對 SVM Volume 作業的存取
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

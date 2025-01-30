@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_apply_permissions.html
 keywords: nas, file security, sacl, dacl, permissions, apply permissions 
 summary: 您可以將新的安全性描述元套用至特定檔案或資料夾。 
 ---
-= 將新權限套用至檔案
+= 使用 ONTAP REST API 將新權限套用至檔案
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

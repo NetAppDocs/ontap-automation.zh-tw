@@ -4,7 +4,7 @@ permalink: resources/networking.html
 keywords: networking resources 
 summary: 您可以使用這些API呼叫來管理叢集所使用的實體和邏輯網路資源。 
 ---
-= 網路
+= ONTAP REST API 中的網路資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

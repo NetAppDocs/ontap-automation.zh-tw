@@ -4,7 +4,7 @@ permalink: workflows/wf_ems_prepare.html
 keywords: support, ems, event management system, event notifications, notifications 
 summary: 您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、並視需要擷取 EMS 訊息。 
 ---
-= 準備管理 EMS 支援服務
+= 準備使用 ONTAP REST API 來管理 EMS 支援服務
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_delete_ace.html
 keywords: nas, file security, access control entry, ace, delete ace 
 summary: 您可以從特定檔案或資料夾刪除現有的存取控制項目（ ACE ）。變更會傳播到任何子物件。 
 ---
-= 刪除存取控制項目
+= 使用 ONTAP REST API 刪除存取控制項目
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

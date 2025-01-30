@@ -4,7 +4,7 @@ permalink: resources/snapmirror.html
 keywords: snapmirror resources 
 summary: 您可以使用這些API呼叫來管理SnapMirror資料保護技術。 
 ---
-= SnapMirror
+= ONTAP REST API 中的 SnapMirror 資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

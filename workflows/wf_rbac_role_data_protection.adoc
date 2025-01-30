@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_role_data_protection.html
 keywords: rbac, role, data protection, limited data protection 
 summary: 您可以為使用者提供有限的資料保護功能。 
 ---
-= 啟用資料保護的管理
+= 使用 ONTAP REST API 來管理資料保護
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: resources/cloud.html
 keywords: cloud resources 
 summary: 您可以使用這些API呼叫來管理雲端中物件儲存資源的連線。 
 ---
-= 雲端
+= ONTAP REST API 中的雲端資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

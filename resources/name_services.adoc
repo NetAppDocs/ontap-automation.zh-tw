@@ -4,7 +4,7 @@ permalink: resources/name_services.html
 keywords: name services resources 
 summary: 您可以使用這些API呼叫來管理ONTAP 支援的名稱服務。 
 ---
-= 名稱服務
+= ONTAP REST API 中的名稱服務資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
