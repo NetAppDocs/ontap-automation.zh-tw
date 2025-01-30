@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: rest/operational_characteristics.html 
-keywords: operation, request and response, crud 
-summary: 您可以ONTAP 使用多種不同的方法來存取靜態API。 
+keywords: rest, rest api, operation, request, response, crud 
+summary: REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因設計選項而異。 
 ---
-= 基本營運特性
+= ONTAP REST API 的操作特性
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: rest/input_variables.html
 keywords: variables, input, input variabls 
 summary: 您可以透過HTTP要求中設定的參數和變數來控制API呼叫的處理方式。 
 ---
-= 控制API要求的輸入變數
+= ONTAP REST API 要求的輸入變數
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

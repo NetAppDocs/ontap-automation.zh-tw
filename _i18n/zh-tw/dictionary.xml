@@ -5,7 +5,6 @@
   <block id="554cfab3938e21d9270bd6b75931f96f" category="section-title">影片</block>
   <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。</block>
   <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">NetApp Ansible DevOps解決方案</block>
-  <block id="cae712fa1badd396170b95946efaaab8" category="doc">儲存資源的效能指標</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">此功能可收集所選SVM儲存物件和傳輸協定的效能指標、並透過REST API回報此資訊。ONTAP您可以使用此資料來監控ONTAP 整個系統的效能。</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">對於特定的儲存物件或傳輸協定、效能資料分為三類：</block>
   <block id="79073619fba8242703524f16870ff858" category="list-text">IOPS</block>
@@ -75,7 +74,6 @@
   <block id="99efb2d280df5dfb88ff3974d6ba377a" category="list-text">以查詢為基礎的Get來擷取集合</block>
   <block id="b493da72818f74a4523850f1316fabdc" category="list-text">修補或刪除集合中每個物件上的呼叫的序列順序</block>
   <block id="d42ef5aeeeac3bae2faf89cff30ba1b2" category="paragraph">作業的逾時時間可設定為預設為15秒的「恢復逾時」。如果在逾時之前未完成、回應會包含下一個物件的連結。您必須使用下一個連結重新核發相同的HTTP方法、才能繼續作業。</block>
-  <block id="f9423483f907b342ce1d6b2a5646580f" category="doc">基本營運特性</block>
   <block id="d9ea677ef356bfa08eea805869f9eded" category="paragraph">REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因設計選項而異。</block>
   <block id="fc068ae597c9019f5d61b19badc39991" category="section-title">要求及回應API交易</block>
   <block id="52cbf28bd4927df9cf59c3544b5ae581" category="paragraph">每次REST API呼叫都會以HTTP要求的形式執行ONTAP 、以產生與用戶端相關的回應。此要求/回應配對被視為API交易。在使用API之前、您應該先熟悉可用於控制要求的輸入變數、以及回應輸出的內容。</block>
@@ -237,7 +235,6 @@
   <block id="cd203ccd68b84de1c5df8fd890e104e0" category="cell">PB</block>
   <block id="e96c6ce30fc02655f5156ad7f43abeb2" category="cell">PB PB PB（TB x 1024位元組）或pibibbytes</block>
   <block id="4d89f3083454f3531f41ee418943d490" category="paragraph"><block ref="4d89f3083454f3531f41ee418943d490" category="inline-link-macro-rx"></block></block>
-  <block id="32bab1cda6687d8af3648df1b3e2f763" category="doc">解讀API回應</block>
   <block id="6fc21adbf0e55cc3da583314e4540308" category="paragraph">每個API要求都會對用戶端產生回應。您應該檢查回應、判斷回應是否成功、並視需要擷取其他資料。</block>
   <block id="0a289f551402f1b0bba7f13be5d7fdc4" category="section-title">HTTP狀態代碼</block>
   <block id="9cc7f2c4c4cb3a083eaa0fa002427217" category="paragraph">以下說明了由靜止API使用的HTTP狀態代碼ONTAP 。</block>
@@ -516,7 +513,6 @@
   <block id="055c2c82f5f90d21db7da7a6ed60c13e" category="paragraph">NVMe子系統控制器代表主機與儲存解決方案之間的動態連線。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="816c0720f92a2711cb0cd082d1076aa6" category="paragraph">NVMe子系統對應是NVMe命名空間與NVMe子系統的關聯。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe子系統可維護一組NVMe連線主機的組態狀態和命名空間存取控制。此資源類型隨ONTAP 附於NetApp 9.6。</block>
-  <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">資源類別總覽</block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">您可以使用這些API呼叫來管理儲存區域網路（SAN）資源。</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel登入代表光纖通道啟動器所建立的連線、這些啟動器已登入ONTAP 到了功能鏈路。此資源類型隨ONTAP 附於NetApp 9.6。</block>
@@ -672,7 +668,6 @@
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">如何存取REST API</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">輸入變數</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">解讀API回應</block>
-  <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">使用工作物件進行非同步處理</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">瞭解自動化選項</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">總覽</block>
@@ -722,7 +717,6 @@
   <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">由於授權錯誤、存取遭拒。</block>
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror功能已在多個領域（包括排程）中獲得增強。在DP關係中加入了與Rz9.11.1的靜態關係同位元檢查、而REST API提供的節流功能已達到與RzAPI（ONTAPI或ZAPI）的同位元檢查。SnapVault ONTAP Data ONTAP與此相關、我們提供支援來建立及管理大量Snapshot複本。</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI報告工具</block>
-  <block id="40631aef1c7a95be86710dae30e73e3d" category="doc">RBAC安全性總覽</block>
   <block id="58722e059e2f5bb0441a986407122c33" category="paragraph">包含強大且可擴充的角色型存取控制（RBAC）功能。ONTAP您可以為每個帳戶指派不同的角色、以控制使用者對透過REST API和CLI公開之資源的存取。這些角色定義不同ONTAP 層級的管理存取權限、以供各種不同的使用者使用。</block>
   <block id="fb40fe81e6f182515c987233a6044be5" category="inline-link-macro">RBAC演進摘要</block>
   <block id="8964641d12d0ef111bd01efe34f212c2" category="section-title">職務ONTAP</block>
@@ -1954,4 +1948,16 @@
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">支援 ONTAP REST API 的工具與軟體</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST API 參考</block>
   <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">準備使用 ONTAP REST API 工作流程</block>
+  <block id="bcc9a2132297815fc027add5a436948a" category="doc">ONTAP REST API 中的應用程式資源</block>
+  <block id="eec2cbc696ccc578df798a96160bf183" category="doc">ONTAP REST API 中資源類別的總覽</block>
+  <block id="efcb5f574c1de0467f4e66c4a07add5f" category="doc">與 ONTAP REST API 進行非同步處理</block>
+  <block id="9b2df43e4bec630fa4504501800e1b6b" category="doc">ONTAP REST API 要求的輸入變數</block>
+  <block id="1b0bd65580a152f66ee09f993666fc14" category="doc">解讀 ONTAP REST API 回應</block>
+  <block id="f5e837ffcba4ed9f59e55e708b69b4b2" category="doc">ONTAP REST API 物件參考與存取</block>
+  <block id="ea29eadd59b6ae07ee97408fb3e9d88c" category="doc">ONTAP REST API 的操作特性</block>
+  <block id="fd59abbb2badcd8fdfa670e39e0c6619" category="doc">使用 ONTAP REST API 存取效能指標</block>
+  <block id="79f078dac9397adc5e4d383ab0f49eea" category="doc">ONTAP REST API 的 RBAC 安全性總覽</block>
+  <block id="98dce57b0664e78870d257a648e96612" category="doc">在 ONTAP REST API 中使用角色和使用者</block>
+  <block id="8e7104f8cdaf55507f25e0b9a816f34b" category="doc">使用 ONTAP REST API 取得叢集組態</block>
+  <block id="19ca54acf953a715866f203d447d92ef" category="sidebar">營運特性</block>
 </blocks>

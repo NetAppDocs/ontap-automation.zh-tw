@@ -6,17 +6,17 @@ entries:
   entries:
   - title: REST Web服務基礎
     url: "/rest/rest_web_services_foundation.html"
-  - title: 基本營運特性
+  - title: 營運特性
     url: "/rest/operational_characteristics.html"
   - title: 輸入變數
     url: "/rest/input_variables.html"
   - title: 解讀API回應
     url: "/rest/interpret_api_response.html"
-  - title: 使用工作物件進行非同步處理
+  - title: 非同步處理
     url: "/rest/asynchronous_processing.html"
   - title: 物件參考與存取
     url: "/rest/object_references_and_access.html"
-  - title: 儲存資源的效能指標
+  - title: 效能指標
     url: "/rest/performance_metrics.html"
 - title: RBAC安全性
   entries:
