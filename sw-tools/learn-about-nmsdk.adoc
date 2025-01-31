@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: sw-tools/nmsdk.html 
+permalink: sw-tools/learn-about-nmsdk.html 
 keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, zapi 
 summary: NetApp Manageability SDK 提供一組 ONTAPI API 呼叫、用於開發應用程式來監控及管理您的 ONTAP 儲存設備。SDK 搭配 OnCommand Workflow Automation 套件、可協助您將 ONTAP 系統的管理作業自動化。 
 ---
-= NetApp Manageability SDK
+= 瞭解 NetApp Manageability SDK
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

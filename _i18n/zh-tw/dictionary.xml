@@ -1683,10 +1683,8 @@
   <block id="5cd76801bc70b25fab5348133fbeaaff" category="list-text">如果您在 ONTAP REST API 中發現功能落差、則可以要求 API 的新功能。</block>
   <block id="2d808b90a1137a1a9fb1f2a6b8aab8eb" category="inline-link">如何申請 ONTAP REST API 的功能</block>
   <block id="2f25f340fb53d4017b182c6b51020451" category="paragraph"><block ref="2f25f340fb53d4017b182c6b51020451" category="inline-link-rx"></block></block>
-  <block id="f954d54d4b0a7e9ea5cf236808483a7c" category="summary">NetApp 支援使用 PowerShell 來管理 ONTAP 儲存系統。</block>
   <block id="c79fa3b95a882a4d5a7a0e5e00100e39" category="doc">PowerShell 工具套件概觀</block>
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell</block>
-  <block id="501fd8414e2cb7ea1f33c45defefd651" category="paragraph">PowerShell 是 Microsoft 提供的程式、可用於工作自動化與組態管理。它包括命令列 Shell 環境和指令碼語言。</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">NetApp ONTAP PowerShell 工具套件</block>
   <block id="0659d428df833a806e29e65e632d380a" category="paragraph-title">NetApp支援</block>
   <block id="abbe6086a8dd2213ec443ee7529470ed" category="paragraph">您可以從 NetApp 支援網站 下載 PowerShell 工具組：</block>
@@ -1800,7 +1798,6 @@
   <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">藉助於《更新版本》（及後續版本）、可持續擴充及大幅增強其RBAC功能。ONTAP ONTAP如需詳細資訊、請參閱 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 和 <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> 。</block>
   <block id="fe6ccd0a0c871758ba9563377db86e13" category="doc">您的第一次 ONTAP REST API 呼叫</block>
   <block id="e02870eb3d03aec6ab03fa4fa4f87b65" category="doc">ONTAP REST API 實驗室資源</block>
-  <block id="b5ca69b3b3ee6f013fa4a87b8fdd4fb5" category="doc">下載並安裝 ONTAP PowerShell Toolkit</block>
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp 。 ONTAP PowerShell 工具套件</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetApp 持續在每個主要產品版本中增強及更新 ONTAP REST API 。這些更新有時可能會包括對現有 API 呼叫的變更、例如所使用的參數和預設值。這些變更可能會影響存取 REST API 的軟體。</block>
@@ -1980,4 +1977,9 @@
   <block id="598efe1689990327c62503c7c48dbd74" category="doc">使用 ONTAP REST API 列出 SVM</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">ONTAP 自動化</block>
   <block id="47ac2234b10a714bdea293d370ad2ce1" category="sidebar">ONTAP 自動化文件</block>
+  <block id="773636ecc39ec5e888c33fed3471ca6a" category="summary">NetApp 提供 PowerShell 支援，可讓您用來管理 ONTAP 儲存系統。</block>
+  <block id="2fa251c44aacb71e26d10444ef2c35d7" category="doc">瞭解 NetApp PowerShell 工具套件</block>
+  <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell 是另一個自動化 ONTAP 叢集管理的選項。</block>
+  <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell 是 Microsoft 的程式設計語言，可用於工作自動化與組態管理。它包括命令列 Shell 環境和指令碼語言。</block>
+  <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">瞭解 NetApp Manageability SDK</block>
 </blocks>

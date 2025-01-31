@@ -11,10 +11,6 @@ entries:
   - title: 用於擷取叢集組態的指令碼
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: PowerShell 工具套件
-  entries:
-  - title: 總覽
-    url: "/pstk/overview_pstk.html"
-  - title: 下載並安裝
-    url: "/pstk/install_pstk.html"
+  url: "/pstk/learn-about-pstk.html"
 - title: NetApp Manageability SDK
-  url: "/sw-tools/nmsdk.html"
+  url: "/sw-tools/learn-about-nmsdk.html"
