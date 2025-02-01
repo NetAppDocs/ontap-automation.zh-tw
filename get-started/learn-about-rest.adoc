@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: rest/rest_web_services_foundation.html 
+permalink: get-started/learn-about-rest.html 
 keywords: REST, web services, transaction, API transaction, request, response 
 summary: 代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。 
 ---
-= REST Web服務基礎
+= 瞭解 REST Web 服務
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,8 +4,6 @@ title: 靜態API ONTAP
 entries:
 - title: REST實作詳細資料
   entries:
-  - title: REST Web服務基礎
-    url: "/rest/rest_web_services_foundation.html"
   - title: 營運特性
     url: "/rest/operational_characteristics.html"
   - title: 輸入變數

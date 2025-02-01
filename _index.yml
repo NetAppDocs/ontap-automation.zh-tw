@@ -16,7 +16,7 @@ indexpage:
   - title: 靜態API ONTAP
     links:
     - title: REST實作詳細資料
-      url: "/rest/rest_web_services_foundation.html"
+      url: "/rest/operational_characteristics.html"
     - title: RBAC安全性
       url: "/rest/rbac_overview.html"
     - title: REST 資源摘要
@@ -30,9 +30,9 @@ indexpage:
     - title: Python用戶端程式庫
       url: "/python/learn-about-pcl.html"
     - title: PowerShell 工具套件
-      url: "/pstk/overview_pstk.html"
+      url: "/pstk/learn-about-pstk.html"
     - title: NetApp Manageability SDK
-      url: "/sw-tools/nmsdk.html"
+      url: "/sw-tools/learn-about-nmsdk.html"
   - title: 移轉至REST API
     links:
     - title: ONTAPI 停用

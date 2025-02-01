@@ -4,6 +4,8 @@ title: 開始使用
 entries:
 - title: 瞭解自動化選項
   url: "/get-started/ontap_automation_options.html"
+- title: 瞭解 REST Web 服務
+  url: "/get-started/learn-about-rest.html"
 - title: 如何存取REST API
   url: "/get-started/access_rest_api.html"
 - title: 您的第一次 ONTAP REST API 呼叫

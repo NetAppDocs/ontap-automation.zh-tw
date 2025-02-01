@@ -114,7 +114,6 @@
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">從ONTAP 功能性版本的E59.10.1開始、SnapDiff v1和v2 ONTAPI呼叫將無法叫用。任何啟動SnapDiff v1或v2 ONTAPI呼叫的第三方應用程式、都無法從ONTAP 版本資訊的版本9.10.1開始運作。支援SnapDiff v3 REST的備份應用程式、使用者應先確認其是否支援、再升級至版本RE-9.10.1。ONTAP ONTAP</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">SnapDiff API在ONTAP 整個發行版中的可用度定義如下：</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">發行說明 ONTAP</block>
-  <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">REST Web服務基礎</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因開發期間所做的選擇而有所不同。在使用即時部署之前、您應該先瞭解ONTAP 到靜態API的設計特性。</block>
   <block id="b0fcdfb2c58efafaace08609d3e95f6d" category="section-title">資源和狀態表示</block>
@@ -1982,4 +1981,5 @@
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell 是另一個自動化 ONTAP 叢集管理的選項。</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell 是 Microsoft 的程式設計語言，可用於工作自動化與組態管理。它包括命令列 Shell 環境和指令碼語言。</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">瞭解 NetApp Manageability SDK</block>
+  <block id="40165cda75e3c737682e919501eec98c" category="doc">瞭解 REST Web 服務</block>
 </blocks>
