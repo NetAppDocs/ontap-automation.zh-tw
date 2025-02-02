@@ -6,8 +6,6 @@ entries:
   entries:
   - title: 瞭解 Python 用戶端程式庫
     url: "/python/learn-about-pcl.html"
-  - title: 套件與文件
-    url: "/python/packages.html"
   - title: 用於擷取叢集組態的指令碼
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: PowerShell 工具套件
