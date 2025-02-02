@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: python/learn-about-pcl.html 
 keywords: learn about python client library, learn about pcl, pcl overview, pcl 
-summary: NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您需要使用 _pip_ 公用程式，從 Python 套件索引（ PyPi ）網站安裝 NetApp ONTAP 套件。 
+summary: NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您可以使用 _pip_ 公用程式，從 Python 套件索引（ PyPI ）網站安裝套件。 
 ---
 = 瞭解 ONTAP Python 用戶端程式庫
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝
 
 
 [role="lead"]
-NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您需要使用 _pip_ 公用程式，從 Python 套件索引（ PyPi ）網站安裝 NetApp ONTAP 套件。
+NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您可以使用 _pip_ 公用程式，從 Python 套件索引（ PyPI ）網站安裝套件。
 
 .相關資訊
 * link:../additional/learn_more.html["深入瞭解 ONTAP REST API"]。
@@ -34,15 +34,11 @@ NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用
 
 
 
-== 依 ONTAP 版本區分套件
+== 套件與文件
 
-Python用戶端程式庫套件的名稱為* NetApp-ONTAP*。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。
+Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。
 
-
-
-=== 套件與文件
-
-每個以 9.6 開頭的 ONTAP 版本都有 PyPI 套件和相關文件。每個套件都包含安裝需求，並指定不同版本的： Python ，要求，索取工具帶和棉花糖。
+每個以 9.6 開頭的 ONTAP 版本都有一個包含相關文件的 PyPI 套件。每個套件都包含安裝需求，並指定支援程式庫的版本，例如 python ， requests ， request-toolbelt 和 marshore 。
 
 .套件與文件清單
 [%collapsible]

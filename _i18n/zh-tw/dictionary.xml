@@ -1876,7 +1876,6 @@
   <block id="35a07dde4cdfcf3565f03875ee748ac6" category="list-text">連線管理</block>
   <block id="8fe3bb19a244ccfeddfe93062360622d" category="list-text">例外處理</block>
   <block id="06856d0d21cf25fed37bf8f01dd8e070" category="list-text">統一化錯誤訊息</block>
-  <block id="4eabbfd21dbe2c323da49bedb2a5c62c" category="paragraph">Python用戶端程式庫套件的名稱為* NetApp-ONTAP*。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。</block>
   <block id="05ccfbea6601dcca671775f24a6b14d3" category="paragraph-title">程式碼範例</block>
   <block id="2284945e609b7e5c75ffeed3e93b30dc" category="paragraph">NetApp 維護 GitHub 儲存庫，其中包含程式碼範例和其他實用資訊。您可以瀏覽至_examples_資料夾、使用Python用戶端程式庫存取範例。如需詳細資訊，請參閱 GitHub 的下列位置：</block>
   <block id="a9672c1d2a17caa13c69c68927db925b" category="sidebar">瞭解 Python 用戶端程式庫</block>
@@ -1968,11 +1967,11 @@
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell 是 Microsoft 的程式設計語言，可用於工作自動化與組態管理。它包括命令列 Shell 環境和指令碼語言。</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">瞭解 NetApp Manageability SDK</block>
   <block id="40165cda75e3c737682e919501eec98c" category="doc">瞭解 REST Web 服務</block>
-  <block id="4c720a0398276ed3f84fdbaf97711b7d" category="summary">NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您需要使用 _pip_ 公用程式，從 Python 套件索引（ PyPi ）網站安裝 NetApp ONTAP 套件。</block>
   <block id="7bafad8d0c182e2b6b31ac4018784823" category="list-text"><block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>。</block>
   <block id="35ae08a314ffffc02580e3c3fbfad924" category="section-title">功能與優勢</block>
-  <block id="b310094d4525ad8d1f7d1dab174a4148" category="section-title">依 ONTAP 版本區分套件</block>
-  <block id="4411cc32563b58d1d479aff384140f24" category="paragraph">每個以 9.6 開頭的 ONTAP 版本都有 PyPI 套件和相關文件。每個套件都包含安裝需求，並指定不同版本的： Python ，要求，索取工具帶和棉花糖。</block>
   <block id="075eb829f6ad7e0f3047f5e1b0db251b" category="example-title">套件與文件清單</block>
   <block id="04e844fe21e462953e1fe26128de4115" category="doc">使用 Python 用戶端程式庫擷取叢集組態的指令碼</block>
+  <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您可以使用 _pip_ 公用程式，從 Python 套件索引（ PyPI ）網站安裝套件。</block>
+  <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。</block>
+  <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">每個以 9.6 開頭的 ONTAP 版本都有一個包含相關文件的 PyPI 套件。每個套件都包含安裝需求，並指定支援程式庫的版本，例如 python ， requests ， request-toolbelt 和 marshore 。</block>
 </blocks>
