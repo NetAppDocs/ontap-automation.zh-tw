@@ -26,7 +26,7 @@ summary: 有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理�
 您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。
 
 .移轉舊版的 ONTAPI 程式碼以使用 REST
-ONTAPI API （ Zephyr API 或 ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。API 是的一部分 link:../sw-tools/nmsdk.html["NetApp Manageability SDK"]。預期在未來版本的 ONTAP 中會停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。請參閱 link:../migrate/ontapi_disablement.html["從 ONTAPI 移轉至 REST API"] 以取得更多資訊。
+ONTAPI API （ Zephyr API 或 ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。API 是的一部分link:../sw-tools/learn-about-nmsdk.html["NetApp Manageability SDK"]。預期在未來版本的 ONTAP 中會停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。如需詳細資訊、請參閱 link:../migrate/ontapi_disablement.html["從 ONTAPI 移轉至 REST API"] 。
 
 
 
@@ -38,7 +38,7 @@ NetApp 提供用戶端工具套件、可抽象化 ONTAP REST API 、並讓建立
 Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。如需詳細資訊、請參閱 link:../python/learn-about-pcl.html["Python用戶端程式庫"] 。
 
 .PowerShell 工具套件
-您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 link:../pstk/overview_pstk.html["PowerShell 工具套件概觀"] 。
+您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 link:../pstk/learn-about-pstk.html["瞭解 NetApp PowerShell 工具套件"] 。
 
 
 

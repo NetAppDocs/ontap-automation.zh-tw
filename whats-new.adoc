@@ -10,7 +10,7 @@ summary: 每個 ONTAP 版本都會更新 ONTAP REST API ，為您提供新功能
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

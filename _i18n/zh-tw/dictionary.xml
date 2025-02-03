@@ -1679,7 +1679,6 @@
   <block id="5cd76801bc70b25fab5348133fbeaaff" category="list-text">如果您在 ONTAP REST API 中發現功能落差、則可以要求 API 的新功能。</block>
   <block id="2d808b90a1137a1a9fb1f2a6b8aab8eb" category="inline-link">如何申請 ONTAP REST API 的功能</block>
   <block id="2f25f340fb53d4017b182c6b51020451" category="paragraph"><block ref="2f25f340fb53d4017b182c6b51020451" category="inline-link-rx"></block></block>
-  <block id="c79fa3b95a882a4d5a7a0e5e00100e39" category="doc">PowerShell 工具套件概觀</block>
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">NetApp ONTAP PowerShell 工具套件</block>
   <block id="0659d428df833a806e29e65e632d380a" category="paragraph-title">NetApp支援</block>
@@ -1692,7 +1691,6 @@
   <block id="f0258b6685684c113bad94d91b8fa02a" category="inline-link">示範</block>
   <block id="2c2d289066c19b061fa5051110ce72bc" category="paragraph">您可以存取<block ref="10e3da19ba49cdfd167b1f3dae41bc1c" category="inline-link-rx"></block> 開始使用。另請參閱 A<block ref="ef075c0fbc68ce59cce02cf136cb7c91" category="inline-link-rx"></block> 關於報告工具及其使用方法。</block>
   <block id="18e808da68bb719b1204b8c83712fac3" category="section-title">ONTAP PowerShell 工具套件</block>
-  <block id="a44d5f089327249c77efb12dd65462af" category="paragraph">NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需詳細資訊、請參閱 <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block>。</block>
   <block id="b2e736bcffbb818aa5d8853b16957107" category="paragraph">NetApp 提供實驗室環境、讓您測試 ONTAP REST API 及其他相關自動化技術。</block>
   <block id="e41eeb18c8b1c48d8645aac00cd5d0da" category="inline-link">隨需實驗室</block>
   <block id="42b5bbee3175a5d253bf7e5909af0734" category="paragraph">。<block ref="d0ac576a8894e6f13fb4390a137a168e" category="inline-link-rx"></block> 適用於 NetApp 客戶和合作夥伴。您需要有效的認證才能登入並開始使用實驗室資源。您可以視需要在實驗室中搜尋 _REST 或其他技術。</block>
@@ -1750,7 +1748,6 @@
   <block id="b220d699be7fd0932b3c304fd8648407" category="list-text"><block ref="b220d699be7fd0932b3c304fd8648407" category="inline-link-rx"></block></block>
   <block id="03496c1105d6ada9b9d9120127a0577c" category="paragraph">從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。自此之後、 REST API 持續擴充並成熟。現在、當 ONTAP 部署的管理作業自動化時、它提供了首選且具策略性的選項。</block>
   <block id="c84c0f9609be66cee0d77e9666118367" category="inline-link-macro">NetApp Manageability SDK</block>
-  <block id="b2ab6282b00e5d530566496ef231d5a6" category="paragraph">ONTAPI API （ Zephyr API 或 ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。API 是的一部分 <block ref="6dc7f4d5441674df665a6aaa0cfc034f" category="inline-link-macro-rx"></block>。預期在未來版本的 ONTAP 中會停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。請參閱 <block ref="3d7fa22cc3253a8ea2b8dc3e58c1e284" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="3df33987b53f76052b03396d19f4cb71" category="paragraph">摘要中所述的其餘資源是以產品的最新版本為基礎。如果您需要更詳細瞭解先前版本所做的變更、請參閱 <block ref="364c4ee8563aaa25f3410cba7aa49bfa" category="inline-link-macro-rx"></block> 以及<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="4ade1e690485ace608877ec90f1e5fbc" category="paragraph-title">NFS over TLS</block>
   <block id="e2f136c9b4c07ac93b9d6011ce9b2135" category="paragraph">此資源可讓您在使用 NFS over TLS 時擷取及更新介面組態。ONTAP 9.15 引進了這種資源類型。</block>
@@ -1866,7 +1863,6 @@
   <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">更新版本：V1和v2（僅限ONTAPI）ONTAP</block>
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9 ． 10.1 及更新版本：僅 v3 （僅限 REST API ）</block>
-  <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> 。</block>
   <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">OnCommand Workflow Automation 文件</block>
   <block id="a370e7923c07d85d87e81fefb3ea1979" category="list-text"><block ref="a370e7923c07d85d87e81fefb3ea1979" category="inline-link-rx"></block></block>
   <block id="4194600c450cd5967951e54d38f6d438" category="paragraph">Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。如需詳細資訊、請參閱 <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block> 。</block>
@@ -1974,4 +1970,7 @@
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您可以使用 _pip_ 公用程式，從 Python 套件索引（ PyPI ）網站安裝套件。</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">每個以 9.6 開頭的 ONTAP 版本都有一個包含相關文件的 PyPI 套件。每個套件都包含安裝需求，並指定支援程式庫的版本，例如 python ， requests ， request-toolbelt 和 marshore 。</block>
+  <block id="f2885cad6169924223c504ffd3639f43" category="paragraph">ONTAPI API （ Zephyr API 或 ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。API 是的一部分<block ref="4465a4dcb9477c65b8928fca416c5a7a" category="inline-link-macro-rx"></block>。預期在未來版本的 ONTAP 中會停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。如需詳細資訊、請參閱 <block ref="3d7fa22cc3253a8ea2b8dc3e58c1e284" category="inline-link-macro-rx"></block> 。</block>
+  <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需更多資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
 </blocks>
