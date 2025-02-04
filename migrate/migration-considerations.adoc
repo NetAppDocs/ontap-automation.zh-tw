@@ -56,7 +56,7 @@ SnapDiff API在ONTAP 整個發行版中的可用度定義如下：
 * ONTAP 9 ． 10.1 及更新版本：僅 v3 （僅限 REST API ）
 
 
-另請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^] 以取得更多資訊。
+在每個版本中的不同點都會撤回支援。其中包括 ONTAP 9.10.1 P11 及更新版本， 9.11.1 P7 及更新版本，以及 9.12.1 GA 及更新版本。如需詳細資訊、請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。
 
 
 

@@ -1545,7 +1545,6 @@
   <block id="359aa321b2af8c1841936c471ac5028a" category="paragraph">為了協助 ONTAPI API 和 CLI 使用者轉換至 ONTAP REST API 、 ONTAP 提供 REST 端點以存取 ONTAP CLI 。您可以使用此傳遞功能來執行任何CLI命令。  其餘端點的使用會傳回 AutoSupport 資料、讓 NetApp 能夠識別 REST API 中的落差、並在未來的 ONTAP 版本中進行改善。</block>
   <block id="74b014305892305348ed02c92ab2a761" category="paragraph">若要發出 CLI 命令、您必須根據下列相關規則、撥打適當格式的 REST API 呼叫：</block>
   <block id="e0b913796ef82dfab8c683cb3688ea8a" category="paragraph">CLI 存取的基礎資源路徑為<block ref="2481cfdbf7d50cf62e7bd1952cb20448" prefix=" " category="inline-code"></block>。如ONTAP 需透過REST API存取CLI的詳細資訊、請參閱《靜態API》線上文件頁面。NetApp 也維護 GitHub 儲存庫、其中包含程式碼範例和其他實用資訊。請參閱<block ref="dc2d27bf2003d8059fdb638718a2f7e5" category="inline-link-rx"></block> 以取得更多資訊。</block>
-  <block id="b3dc3759cbac62ce0e64726643b40958" category="paragraph">另請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="d6631ef35bb40cd64a9a7e6045544867" category="summary">有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理。</block>
   <block id="a72eaae2582a47c88e517d12584cddf1" category="paragraph-title">原生存取 REST API</block>
   <block id="1e32e29797138920931a43f857fe4b9d" category="paragraph">您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。</block>
@@ -1973,4 +1972,5 @@
   <block id="f2885cad6169924223c504ffd3639f43" category="paragraph">ONTAPI API （ Zephyr API 或 ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。API 是的一部分<block ref="4465a4dcb9477c65b8928fca416c5a7a" category="inline-link-macro-rx"></block>。預期在未來版本的 ONTAP 中會停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。如需詳細資訊、請參閱 <block ref="3d7fa22cc3253a8ea2b8dc3e58c1e284" category="inline-link-macro-rx"></block> 。</block>
   <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
   <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需更多資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
+  <block id="7428add5c3a2dd7025d4c547d124a83f" category="paragraph">在每個版本中的不同點都會撤回支援。其中包括 ONTAP 9.10.1 P11 及更新版本， 9.11.1 P7 及更新版本，以及 9.12.1 GA 及更新版本。如需詳細資訊、請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
 </blocks>
