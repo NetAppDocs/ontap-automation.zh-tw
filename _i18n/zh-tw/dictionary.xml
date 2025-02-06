@@ -1808,7 +1808,6 @@
   <block id="68d26d1aac1d90ae670aa8a5fe3415f3" category="summary">《The》介紹各個系統效能的豐富資訊ONTAP ONTAP 。它會將此資料匯出為一組效能計數器，您可以用來評估 ONTAP 系統的效能，並協助達成您的效能目標。</block>
   <block id="08d2a25d52e092c6c253545968ce5bb5" category="inline-link">ONTAP 效能計數器對應</block>
   <block id="91b54891dd280b62b83af7ec4c8e3979" category="paragraph">您可以線上存取目前的<block ref="9d8aae4b84eb6e74ade1e0afd2ee1664" category="inline-link-rx"></block>文件。也有版本選取器可存取 ONTAP 版本的文件先前版本。</block>
-  <block id="d9c24a6b276d26b3ed8aa4df515da6c8" category="paragraph"><block ref="d9c24a6b276d26b3ed8aa4df515da6c8" category="inline-link-rx"></block></block>
   <block id="31272abf1c9209ab4acd0bf10f129338" category="list-title">ONTAP 9.16.1.</block>
   <block id="0c06f2efbe678ca8c3e4cd68189cf2ae" category="inline-link">PyPI：NetApp ONTAP 產品特色9.16.1</block>
   <block id="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="list-text"><block ref="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="inline-link-rx"></block></block>
@@ -1973,4 +1972,5 @@
   <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
   <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需更多資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
   <block id="7428add5c3a2dd7025d4c547d124a83f" category="paragraph">在每個版本中的不同點都會撤回支援。其中包括 ONTAP 9.10.1 P11 及更新版本， 9.11.1 P7 及更新版本，以及 9.12.1 GA 及更新版本。如需詳細資訊、請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
+  <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
 </blocks>
