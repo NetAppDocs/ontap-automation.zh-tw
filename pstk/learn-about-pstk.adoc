@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: pstk/learn-about-pstk.html 
 keywords: overview, powershell, powershell toolkit, install powershell toolkit 
-summary: NetApp 提供 PowerShell 支援，可讓您用來管理 ONTAP 儲存系統。 
+summary: NetApp 提供 PowerShell 應用程式的工具組，可用於管理 ONTAP 儲存系統。此工具組是由 NetApp 開發人員所建立，並由客戶社群提供支援。 
 ---
 = 瞭解 NetApp PowerShell 工具套件
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp 提供 PowerShell 支援，可讓您用來管理 ONTAP 儲存系
 
 
 [role="lead"]
-NetApp 提供 PowerShell 支援，可讓您用來管理 ONTAP 儲存系統。
+NetApp 提供 PowerShell 應用程式的工具組，可用於管理 ONTAP 儲存系統。此工具組是由 NetApp 開發人員所建立，並由客戶社群提供支援。
 
 
 
