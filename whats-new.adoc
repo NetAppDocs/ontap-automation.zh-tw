@@ -21,6 +21,18 @@ TIP: 您應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP24925
 
 
 
+== ONTAP 9.17.1
+
+ONTAP 9.17.1 版本繼續擴充ONTAP REST API 的功能，新增了近二十個 API 呼叫。此版本主要側重於安全性增強，並對中介處理、NMVe 子系統和應用程式容器進行了額外更新。
+
+安全性:: ONTAP 9.17.1 REST API 引進了四個主要安全功能。 ONTAPONTAP(JIT) 權限提升是對基於角色的存取控制 (RBAC) 的增強。叢集管理員可以請求臨時提升現有角色權限，從而允許存取特權命令。此功能包含一組強大的配置選項。新增了對 OpenStack Barbican 金鑰管理員的支援。此 KMS 用於維護NetApp磁碟區加密 (NVE) 的金鑰。 ONTAPONTAP包含針對 SAN 磁碟區的自主勒索軟體防護 (ARP)。詳細的 ARP 熵統計資訊可透過 REST API 取得。此外，還新增了多個 API 呼叫來管理叢集的 SAML 預設元資料配置。
+集群中介:: 您可以使用ONTAP REST API 對BlueXP雲端服務執行 ping 作業。您也可以使用現有端點的 PATCH 方法修改特定中介器的配置。
+NVMe:: NVMe 子系統維護一組 NVMe 連線主機的設定狀態和命名空間存取控制。使用ONTAP 9.17.1，您可以使用現有端點的 PATCH 方法修改 NVMe 子系統。
+應用程式容器:: 應用程式容器是ONTAP 9.17.1 中的新功能，支援配置一個或多個儲存物件。您可以設定客戶端存取儲存所需的政策和規則。此外，還可以設定FlexCache磁碟區。
+
+
+
+
 == ONTAP 9.16.1.
 
 ONTAP 9 。 16.1 包含超過二十個新的 API 呼叫，可持續擴充 ONTAP REST API 的功能。這些增強功能主要著重於安全性，但也包括改善指標和貯體管理。
