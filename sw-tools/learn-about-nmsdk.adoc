@@ -17,7 +17,7 @@ summary: NetApp Manageability SDK 提供一組 ONTAPI API 呼叫、用於開發�
 NetApp Manageability SDK 提供一組 ONTAPI API 呼叫、用於開發應用程式來監控及管理您的 ONTAP 儲存設備。SDK 搭配 OnCommand Workflow Automation 套件、可協助您將 ONTAP 系統的管理作業自動化。
 
 
-NOTE: 雖然 NetApp Manageability SDK 和 OnCommand Workflow Automation 持續受到支援、但 ONTAP REST API 是自動化 ONTAP 系統時首選使用的策略性技術。請參閱 link:../migrate/ontapi_disablement.html["ONTAPI 停用"] 以取得更多資訊。
+NOTE: 雖然NetApp Manageability SDK 和OnCommand Workflow Automation繼續受到支持，但ONTAP REST API 是自動化ONTAP系統時首選的戰略技術。看link:../migrate/migration-considerations.html["從 ONTAPI 移轉至 REST API"]了解更多。
 
 .下載 SDK
 您可以從 NetApp 支援網站 下載 NetApp Manageability SDK 。SDK 支援用戶端上的多種語言、包括： Python 、 PowerShell 、 C 、 C++ 、 Java 、 C# 、 VB. NET 和 Ruby 。請務必檢閱互通性對照表工具、以取得 NetApp Manageability SDK 的相關資訊、以及您的 ONTAP 版本如何支援該工具。

@@ -20,13 +20,13 @@ summary: 有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理�
 
 == 靜態API ONTAP
 
-從功能豐富的REST API開始、從功能豐富的靜止API開始ONTAP 、ONTAP 即可將儲存系統的部署與管理作業自動化。自此之後、 REST API 持續擴充並成熟。現在、當 ONTAP 部署的管理作業自動化時、它提供了首選且具策略性的選項。
+從ONTAP 9.6 開始， ONTAP包含一個強大的 REST API，為自動部署和管理儲存系統奠定了基礎。從那時起，REST API 不斷擴展和成熟。現在，它在自動化ONTAP部署管理時提供了首選和策略性的選擇。
 
 .原生存取 REST API
 您可以ONTAP 使用任何支援REST用戶端的程式設計語言、直接存取靜態API。熱門的語言選擇包括Python、PowerShell和Java。
 
 .移轉舊版的 ONTAPI 程式碼以使用 REST
-ONTAPI API （ Zephyr API 或 ZAPI ）是 NetApp ONTAP 軟體隨附的一組原始專屬呼叫、可支援資料儲存管理與管理工作的自動化。API 是的一部分link:../sw-tools/learn-about-nmsdk.html["NetApp Manageability SDK"]。預期在未來版本的 ONTAP 中會停用 ONTAPI 介面。如果您有使用 ONTAPI API 的現有程式碼、則應該計畫移轉至不使用 ONTAPI 的位置。NetApp 支援將程式碼轉換為使用較新的 ONTAP REST API 。如需詳細資訊、請參閱 link:../migrate/ontapi_disablement.html["從 ONTAPI 移轉至 REST API"] 。
+ONTAPI API（Zephyr API 或 ZAPI）是NetApp ONTAP軟體中包含的原始專有呼叫集，用於支援資料儲存管理和管理任務的自動化。 API 是link:../sw-tools/learn-about-nmsdk.html["NetApp Manageability SDK"]。如果您現有的程式碼使用 ONTAPI API，則應排程遷移至ONTAP REST API，以利用 REST API 提供的擴充功能集。 NetApp提供將您的程式碼轉換為使用較新的ONTAP REST API 的支援。看link:../migrate/migration-considerations.html["從 ONTAPI 移轉至 REST API"]了解更多。
 
 
 
@@ -44,7 +44,7 @@ Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ON
 
 == 自動化架構
 
-您可以使用數個架構之一來建立及部署自動化程式碼
+您可以使用多個框架之一來建立和部署自動化程式碼。
 
 .Ansible
 Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。請參閱 link:../additional/learn_more.html["深入瞭解"] 和 https://www.netapp.com/devops-solutions/ansible/["NetApp Ansible DevOps解決方案"^] 以取得更多資訊。

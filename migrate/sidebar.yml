@@ -2,8 +2,6 @@
 section: migrate
 title: 從 ONTAPI 移轉至 REST API
 entries:
-- title: ONTAPI 停用
-  url: "/migrate/ontapi_disablement.html"
 - title: 移轉考量
   url: "/migrate/migration-considerations.html"
 - title: ONTAPI至REST對應

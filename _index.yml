@@ -35,8 +35,8 @@ indexpage:
       url: "/sw-tools/learn-about-nmsdk.html"
   - title: 移轉至REST API
     links:
-    - title: ONTAPI 停用
-      url: "/migrate/ontapi_disablement.html"
+    - title: 移轉考量
+      url: "/migrate/migration-considerations.html"
     - title: ONTAPI至REST對應
       url: "/migrate/mapping.html"
     - title: 效能計數器
