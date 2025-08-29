@@ -107,7 +107,7 @@ https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-re
 
 * NetApp Python 用戶端程式庫的良好簡介、以及如何開始使用程式庫撰寫程式碼。
 +
-video::Wws3SB5d9Ss[youtube,width=848,height=480]
+video::pg5ls1Ol6uw[youtube,width=848,height=480]
 * 瞭解 Ansible 認證模組。
 +
 video::ZlmQ5IuVZD8[youtube,width=848,height=480]
