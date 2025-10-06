@@ -44,7 +44,7 @@ Counter Manager子系統會擷取各種有關的統計資訊ONTAP 。您可以�
 授權可讓您實作特定ONTAP 的功能。此資源類型隨ONTAP 附於NetApp 9.6。
 
 .中介 ping
-您可以 ping 通BlueXP雲端服務。此資源類型是ONTAP 9.17.1 中的新增資源類型。
+您可以 ping NetApp控制台雲端服務。此資源類型是ONTAP 9.17.1 中的新增資源類型。
 
 .協調員
 您可以管理與MetroCluster關聯的調解器，包括新增或刪除調解器實例。此資源類型是ONTAP 9.8 中的新增資源類型，並在 9.17.1 中進行了更新。

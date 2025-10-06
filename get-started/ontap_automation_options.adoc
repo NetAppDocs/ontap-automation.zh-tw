@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console 
 summary: 有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理。 
 ---
 = 瞭ONTAP 解功能自動化選項
@@ -49,5 +49,5 @@ Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ON
 .Ansible
 Ansible是開放原始碼軟體工具、可支援資源配置、組態管理及應用程式部署。自從RedHat推出及後續併購之後、它的受歡迎度持續成長。NetApp提供獲認證的Ansible模組、客戶可用來自動化ONTAP 其支援的整套系統管理。請參閱 link:../additional/learn_more.html["深入瞭解"] 和 https://www.netapp.com/devops-solutions/ansible/["NetApp Ansible DevOps解決方案"^] 以取得更多資訊。
 
-.BlueXP 自動化目錄
-NetApp https://console.bluexp.netapp.com/automationCatalog/["BlueXP 自動化目錄"^] 可透過 BlueXP 網路使用者介面取得。目錄可讓您存取套裝解決方案、協助您自動化 ONTAP 與其他產品的部署與整合。請參閱 https://docs.netapp.com/us-en/netapp-automation/["NetApp 自動化"^] 以取得文件及更多資訊。
+.NetApp控制台自動化目錄
+NetApp https://console.netapp.com/automationCatalog/["NetApp控制台自動化目錄"^]可透過控制台 Web 使用者介面存取。該目錄提供對打包解決方案的訪問，可幫助您自動部署ONTAP並將其與其他產品整合。看 https://docs.netapp.com/us-en/netapp-automation/["NetApp 自動化"^]以取得文件和更多資訊。
