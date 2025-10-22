@@ -23,7 +23,7 @@ NOTE: 您可以根據 ONTAP 版本、在多個站台中的其中一個存取 RES
 
 == 線上存取 ONTAP API 參考文件
 
-您可以線上存取目前的 https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP REST API 參考"^]文件。也有版本選取器可存取 ONTAP 版本的文件先前版本。
+您可以存取目前 https://docs.netapp.com/us-en/ontap-restapi/getting_started_with_the_ontap_rest_api.html["ONTAP REST API 參考"^] 線上文檔。還有一個版本選擇器可用於存取基於ONTAP版本的文件的先前版本。
 
 
 
