@@ -1986,4 +1986,14 @@
   <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">您可以 ping NetApp控制台雲端服務。此資源類型是ONTAP 9.17.1 中的新增資源類型。</block>
   <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">您可以使用ONTAP REST API 對NetApp控制台雲端服務執行 ping 操作。您也可以使用現有端點的 PATCH 方法修改特定中介器的配置。</block>
   <block id="f04dab284dad2dc94bb0467cf87dbc58" category="paragraph">您可以存取目前<block ref="a6269724e00b43d37f924c69c86e7e19" category="inline-link-rx"></block> 線上文檔。還有一個版本選擇器可用於存取基於ONTAP版本的文件的先前版本。</block>
+  <block id="e3aedd8df3cd69d8e94979676c8a6dd7" category="paragraph-title">叢集網路安全</block>
+  <block id="2ba91439b1128ff520cbb5959f73aad8" category="paragraph">您可以檢索和更新叢集網路安全性配置，包括憑證。此資源類型是在ONTAP 9.18 中引入的。</block>
+  <block id="9ca7e83422351da8c70ef542bef87792" category="paragraph-title">高可用性網路安全</block>
+  <block id="d5c164ed97644c5e6b46241ecc36ec9c" category="paragraph">您可以檢索和更新 HA 網路安全性設定。此資源類型是在ONTAP 9.18 中引入的。</block>
+  <block id="dcbd4560482ab6a221d6d830ae26a732" category="paragraph-title">FlexCache連線狀態</block>
+  <block id="32c698ea847d2a277ff9d589cf3e9933" category="paragraph">您可以取得FlexCache連線狀態。此資源類型是在ONTAP 9.18 中引入的。</block>
+  <block id="e48e73e576f724fd4213ab1eca7edb4a" category="section-title">ONTAP 9.18.1</block>
+  <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 版本繼續擴充ONTAP REST API 的功能，新增了 11 個 API 呼叫。此次改進主要集中在安全性方面，但也包括與儲存管理相關的改進。</block>
+  <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API 引進了兩個主要的安全性增強功能。您可以使用新的叢集網路 API 端點來顯示和更新叢集網路安全性配置。集群網路證書管理功能強大。此外，您還可以顯示並更新 NVLog 流量的 HA 網路的安全性配置。</block>
+  <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCache是​​來源磁碟區的持久快取。它支援扇出，因此可以從單一來源磁碟區建立多個FlexCache 。REST API 支援檢索快取實例和來源磁碟區之間的連線狀態。</block>
 </blocks>

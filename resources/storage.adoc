@@ -40,6 +40,9 @@ summary: 您可以使用這些API呼叫來管理實體和邏輯儲存設備。
 .FlexCache
 此資源類型採用ONTAP 了更新ONTAP 版本的32個版本、更新版本為32個版本。
 
+.FlexCache連線狀態
+您可以取得FlexCache連線狀態。此資源類型是在ONTAP 9.18 中引入的。
+
 .來源FlexCache
 不只是來源磁碟區的持續快取、FlexCache這種資源類型最初是以ONTAP 引用功能不適用的功能為設計目標。支援功能已透過ONTAP 支援透過HTTP修補方法進行的更新、以支援更新。
 

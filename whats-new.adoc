@@ -21,6 +21,16 @@ TIP: 您應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP24925
 
 
 
+== ONTAP 9.18.1
+
+ONTAP 9.18.1 版本繼續擴充ONTAP REST API 的功能，新增了 11 個 API 呼叫。此次改進主要集中在安全性方面，但也包括與儲存管理相關的改進。
+
+安全性:: ONTAP 9.18.1 REST API 引進了兩個主要的安全性增強功能。您可以使用新的叢集網路 API 端點來顯示和更新叢集網路安全性配置。集群網路證書管理功能強大。此外，您還可以顯示並更新 NVLog 流量的 HA 網路的安全性配置。
+儲存設備:: NetApp FlexCache是​​來源磁碟區的持久快取。它支援扇出，因此可以從單一來源磁碟區建立多個FlexCache 。REST API 支援檢索快取實例和來源磁碟區之間的連線狀態。
+
+
+
+
 == ONTAP 9.17.1
 
 ONTAP 9.17.1 版本繼續擴充ONTAP REST API 的功能，新增了近二十個 API 呼叫。此版本主要側重於安全性增強，並對中介處理、NMVe 子系統和應用程式容器進行了額外更新。
