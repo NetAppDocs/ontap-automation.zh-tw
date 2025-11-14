@@ -43,6 +43,11 @@ Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的�
 .套件與文件清單
 [%collapsible]
 ====
+.ONTAP 9.17.1
+* https://pypi.org/project/netapp-ontap/9.17.1.0/["PyPI： NetApp ONTAP 9.17.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3351667/html/index.html["NetApp PCL 9.17.1 版文檔"^]
+
+
 .ONTAP 9.16.1.
 * https://pypi.org/project/netapp-ontap/9.16.1.0/["PyPI：NetApp ONTAP 產品特色9.16.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html["9.16.1 版 NetApp PCL 文件"^]

@@ -3,7 +3,6 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="f09943979dc3457d406cfb7e8205a032" category="paragraph">您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。</block>
   <block id="554cfab3938e21d9270bd6b75931f96f" category="section-title">影片</block>
-  <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。</block>
   <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">NetApp Ansible DevOps解決方案</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">此功能可收集所選SVM儲存物件和傳輸協定的效能指標、並透過REST API回報此資訊。ONTAP您可以使用此資料來監控ONTAP 整個系統的效能。</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">對於特定的儲存物件或傳輸協定、效能資料分為三類：</block>
@@ -1115,7 +1114,6 @@
   <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="paragraph-title">S3群組</block>
   <block id="29c67008363344d9ca92cd75f29fe2c9" category="paragraph-title">S3原則</block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">將私有CLI密碼與ONTAP REST API搭配使用</block>
-  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">NetApp與Ansible快速入門：安裝Ansible</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP要求</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP回應</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
@@ -1526,7 +1524,6 @@
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">為了協助您更新ONTAPI自動化、NetApp提供一組需要一或多個輸入參數的ONTAPI呼叫清單、以及將這些呼叫對應到等效ONTAP 的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效的等效指令API呼叫。請參閱 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="a45cab230f2297dd4eb30fef224dd154" category="section-title">典型 REST API 交易</block>
   <block id="f53d66bdb1fa04bbb3f2f929505e7427" category="paragraph">有幾種額外資源可協助您自動化 ONTAP 儲存系統的部署與管理。</block>
-  <block id="940b33dd3ba3d167b07b98a018af32be" category="paragraph"><block ref="940b33dd3ba3d167b07b98a018af32be" category="inline-link-rx"></block></block>
   <block id="0937dacc143a9ef9a8e961bb05d706cb" category="list-text">NetApp Python 用戶端程式庫的良好簡介、以及如何開始使用程式庫撰寫程式碼。</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">瞭解 Ansible 認證模組。</block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">常見問題集：適用於 CPC 的 ZAPI 至 ONTAP REST API 轉型</block>
@@ -1996,4 +1993,8 @@
   <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 版本繼續擴充ONTAP REST API 的功能，新增了 11 個 API 呼叫。此次改進主要集中在安全性方面，但也包括與儲存管理相關的改進。</block>
   <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API 引進了兩個主要的安全性增強功能。您可以使用新的叢集網路 API 端點來顯示和更新叢集網路安全性配置。集群網路證書管理功能強大。此外，您還可以顯示並更新 NVLog 流量的 HA 網路的安全性配置。</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCache是​​來源磁碟區的持久快取。它支援扇出，因此可以從單一來源磁碟區建立多個FlexCache 。REST API 支援檢索快取實例和來源磁碟區之間的連線狀態。</block>
+  <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI： NetApp ONTAP 9.17.1</block>
+  <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
+  <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">NetApp PCL 9.17.1 版文檔</block>
+  <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
 </blocks>

@@ -30,9 +30,7 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 +
 https://www.netapp.com/blog/new-normal-for-automation["自動化的新常態"^]
 
-* 如果您剛開始使用Ansible進行ONTAP 不景自動化、這是個好開始。
-+
-https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["NetApp與Ansible快速入門：安裝Ansible"^]
+
 
 * 您可以使用 ONTAP REST API 來管理檔案安全性和權限。
 +
