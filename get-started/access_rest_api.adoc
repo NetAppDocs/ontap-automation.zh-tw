@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/access_rest_api.html 
-keywords: accessing the rest api, lif 
+keywords: access rest api, lif, cluster lif, svm lif, node lif 
 summary: 您可以ONTAP 使用多種不同的方法來存取靜態API。 
 ---
 = 如何存取ONTAP 靜態API
@@ -20,17 +20,14 @@ summary: 您可以ONTAP 使用多種不同的方法來存取靜態API。
 
 == 網路考量
 
-您可以透過下列介面連線至REST API：
+您可以使用多種類型的介面之一連接到ONTAP REST API。您選擇的 LIF 需要設定為支援 HTTPS 管理協定。此外，您網路中的防火牆配置必須允許 HTTPS 流量。支援以下介面：
 
 * 叢集管理LIF
 * 節點管理 LIF
 * SVM管理LIF
 
 
-您選擇使用的LIF必須設定為支援HTTPS管理傳輸協定。此外、網路中的防火牆組態必須允許HTTPS流量。
-
-
-TIP: 您應該永遠使用叢集管理 LIF 。這會在所有節點之間平衡 API 要求負載、避免發生離線或連線問題的節點。如果您設定了多個叢集管理階層的生命負載、這些都與存取 REST API 的權限相當。
+雖然您可以使用這些 LIF 中的任何一個，但建議的最佳實踐是使用叢集管理 LIF。這樣一來，叢集就可以作為一個單一的邏輯單元進行定址，從而提供最高層級的彈性和負載平衡。集群 LIF 可以根據需要重新定位到集群中，以處理計劃內的升級、仲裁事件和其他連接問題。如果配置了多個叢集管理 LIF，它們在存取 REST API 方面都是等效的。SVM 管理 LIF 也進行了負載平衡，但傳送到節點層級 LIF 的請求會在本地處理。
 
 
 
