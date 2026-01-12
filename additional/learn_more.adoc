@@ -119,28 +119,6 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["自動
 
 
 
-== 技術訓練與活動
-
-* Insight 2022 簡報（ 26 分鐘）。
-+
-https://media.netapp.com/video-detail/152137a0-4153-59dc-ad7d-232af1785dd5/modernize-your-ontap-storage-management-with-ontap-rest-apis-1837["利用 ONTAP REST API 將 ONTAP 儲存管理現代化"^]
-
-
-
-* Insight 2021 簡報（ 31 分鐘）。
-+
-https://media.netapp.com/video-detail/f353c28a-2364-5e5e-bf86-5d7ef66360fe/netapp-ontap-save-time-and-simplify-using-rest-apis-brk-1103-3["NetApp ONTAP ：使用 REST API 節省時間並簡化作業"^]
-
-
-
-* NetApp 學習服務。
-+
-https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI["使用 ONTAP REST API 和 Ansible 來自動化儲存管理"^]
-
-
-
-
-
 == NetApp知識庫
 
 * 如果 ONTAP REST API 發生問題、您可以將其回報給 NetApp 。
