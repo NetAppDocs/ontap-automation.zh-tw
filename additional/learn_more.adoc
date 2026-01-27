@@ -30,19 +30,9 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 +
 https://www.netapp.com/blog/new-normal-for-automation["自動化的新常態"^]
 
-
-
-* 您可以使用 ONTAP REST API 來管理檔案安全性和權限。
-+
-https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis["利用REST API簡化檔案安全權限的管理ONTAP"^]
-
 * 您可以監控 ONTAP 事件、隨時掌握系統活動。這些事件的組態和管理可以使用 REST API 自動進行。
 +
 https://blog.netapp.com/ontap-rest-apis-automate-notification["REST API：自動通知高嚴重性事件ONTAP"^]
-
-* 您可以使用 REST API 將角色和存取層級設定為 RBAC 安全環境的一部分。
-+
-https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["使用 ONTAP REST API 的角色型存取控制（ RBAC ）"^]
 
 * 休息時間（ 6 集）：
 +
@@ -60,20 +50,9 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["使用 ONTAP REST API �
 
 === Python用戶端程式庫
 
-* NetApp 在 GitHub 提供的 Python 範例指令碼簡介，可用來存取 ONTAP REST API 。
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 範例指令碼現已在 GitHub 上推出！"^]
-
 * 此部落格提供 ONTAP Python 用戶端程式庫功能的良好簡介。
 +
 https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["使用 Python 用戶端程式庫簡化 ONTAP REST API 的使用"^]
-
-* 這是由三個部分組成的部落格系列，介紹如何開始使用 Python 用戶端程式庫：
-+
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["第1部分"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["第2部分"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["第3部分"^]
-
 
 
 
@@ -81,21 +60,9 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["使用 Python �
 
 === 移轉至 REST API
 
-* NetApp透過ONTAP 對應文件、提供從專屬的ONTAPI API移轉至靜態API的支援。
-+
-https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["ONTAPI至REST對應"^]
-
 * 有幾項技術可協助您根據ONTAP REST API來改造您的非自動化環境。
 +
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["將自動化技術從ONTAP ONTAPI轉型為靜態API"^]
-
-* 為了協助CLI和ONTAP 支援功能的使用者移轉至ONTAP 靜態API、ONTAP 我們提供一個私有REST API端點、可用來存取任何CLI命令。
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["將私有CLI密碼與ONTAP REST API搭配使用"^]
-
-* NetApp提供一項工具、協助客戶和合作夥伴移轉至ONTAP 靜態API。
-+
-https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["使用 ONTAPI 使用報告工具從 ONTAPI （ ZAPI ）轉換"^]
 
 
 
