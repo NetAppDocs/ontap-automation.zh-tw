@@ -1969,5 +1969,5 @@
   <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">啟用反勒索軟體</block>
   <block id="8decbf8aa6be13f4f523f23aac8e2e6a" category="paragraph">您可以控制自主勒索軟體防護（ARP）啟用功能的運作。這包括擷取和修改組態設定。此資源類型是在 ONTAP 9.18.1 中引入的。</block>
   <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">ONTAP 9.18.1 版本透過新增 13 個 API 調用，進一步擴展了 ONTAP REST API 的功能。這些增強功能主要集中在安全性方面，但也包括對儲存管理的改進。</block>
-  <block id="2b6417c7e24c5efdcdbe136fac22e8b2" category="list-text">ONTAP 9.18.1 REST API 引進了多項安全性增強功能。您可以使用新的叢集網路端點來顯示和更新叢集網路安全性組態，包括憑證管理。此外，您還可以管理 NVLog 流量的 HA 網路安全性組態。Autonomous Ransomware Protection（ARP）已增強，可讓您顯示和更新啟用功能。</block>
+  <block id="b21adb6984316fe52e38ac05c428930c" category="list-text">ONTAP 9.18.1 REST API 引進了多項安全性增強功能。您可以使用新的叢集網路端點來顯示和更新叢集網路安全性組態，包括憑證管理。此外，您還可以管理 NVLog 流量的 HA 網路安全性組態。Autonomous Ransomware Protection（ARP）功能也得到了增強，支援顯示和更新自動啟用組態。</block>
 </blocks>
