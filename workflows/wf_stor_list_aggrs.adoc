@@ -24,7 +24,7 @@ summary:
 | HTTP方法 | 路徑 
 
 
-| 取得 | /api/storage / 磁碟 
+| 取得 | /api/storage/aggregates 
 |===
 .處理類型
 同步
