@@ -15,7 +15,7 @@ sidebar:
     entries:
     - title: 更新功能ONTAP
       url: "/whats-new.html"
-    - title: ONTAP REST API 呼叫的變更
+    - title: ONTAP REST API 變更與考量事項
       url: "/api-changes.html"
   - section: get-started
   - section: rest

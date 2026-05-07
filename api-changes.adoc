@@ -2,7 +2,7 @@
 permalink: api-changes.html 
 sidebar: sidebar 
 keywords: rest api, api changes, parameters, default values, breaking changes, documentation errors 
-summary: NetApp 持續在每個主要產品版本中增強及更新 ONTAP REST API 。這些更新有時可能會包括對現有 API 呼叫的變更、例如所使用的參數和預設值。這些變更可能會影響存取 REST API 的軟體。 
+summary: NetApp 持續在每一次主要產品版本中增強並更新 ONTAP REST API。這些更新有時可能會對現有的 API 呼叫產生變更，進而中斷對 ONTAP 功能的存取。在使用 API 時還有其他需要考慮的事項，以及部分文件錯誤。 
 ---
 = ONTAP REST API 呼叫的變更
 :hardbreaks:
@@ -14,17 +14,20 @@ summary: NetApp 持續在每個主要產品版本中增強及更新 ONTAP REST A
 
 
 [role="lead"]
-NetApp 持續在每個主要產品版本中增強及更新 ONTAP REST API 。這些更新有時可能會包括對現有 API 呼叫的變更、例如所使用的參數和預設值。這些變更可能會影響存取 REST API 的軟體。
+NetApp 持續在每一次主要產品版本中增強並更新 ONTAP REST API。這些更新有時可能會對現有的 API 呼叫產生變更，進而中斷對 ONTAP 功能的存取。在使用 API 時還有其他需要考慮的事項，以及部分文件錯誤。
 
 
 
 == 變更現有的 ONTAP REST API 呼叫
 
-對現有 API 呼叫所做的任何變更、都可能影響存取 REST API 的軟體。您應檢閱下表中的變更清單、以判斷是否會對 ONTAP 自動化環境造成影響。每個項目都包含適用的 API 端點、變更說明、以及推出的 ONTAP 版本。
+對現有 ONTAP REST API 呼叫（例如端點和參數）的變更可能會影響使用該 API 的軟體。在大多數情況下，根據您的環境，這些變更被視為_重大變更_。您應查看下表中的列表，以確定這些變更是否會對您的自動化環境造成影響。每個條目都包含適用的 API 端點或區域、變更描述以及引入該變更的 ONTAP 版本。
 
 [cols="40%,50%,10%"]
 |===
-| 端點 | 變更說明 | 發行版ONTAP 
+| API 端點或區域 | 行為說明 | 發行版ONTAP 
+
+
+| Azure Key Vault | 用於啟用和停用 Azure Key Vault（AKV）的 REST API 端點現在以非同步方式執行，而非同步執行。這會影響用於啟用 AKV 的 POST 作業和用於停用 AKV 的 DELETE 作業。使用這些 API 呼叫的用戶端應更新其程式碼以處理非同步回應，這需要檢查工作狀態，而不僅僅是 HTTP 狀態碼。此變更主要影響透過 ONTAP REST API 管理 Azure Key Vault 組態的 Azure NetApp Files（ANF）環境。 | 9.19.1 
 
 
 | `/security/authentication/duo/groups`
@@ -32,15 +35,29 @@ NetApp 持續在每個主要產品版本中增強及更新 ONTAP REST API 。這
 |===
 
 
-== ONTAP REST API 參考文件錯誤
+== 其他 REST API 使用注意事項
 
-隨著 NetApp 增強及更新 ONTAP REST API 、有時可能會在線上參考文件中出現錯誤。使用 API 時、這些錯誤可能會造成混淆、但通常不會影響或中斷 ONTAP 自動化軟體或環境。
-
-您應檢閱下表中的錯誤清單。這將有助於您更深入瞭解及瀏覽 ONTAP REST API 參考文件。每個項目都包含適用的 API 端點、錯誤說明、以及所推出的 ONTAP 版本。
+除了可能造成破壞性或重大變更的情況外，使用 ONTAP REST API 時還需要考慮其他幾個方面。這些問題類型多種多樣，包括引入新的或替代的 API 調用，以及 ONTAP 內部處理機制的變更。每個條目都包含適用的 API 端點或區域、行為描述以及引入該行為的 ONTAP 版本。
 
 [cols="40%,50%,10%"]
 |===
-| 端點 | 變更說明 | 發行版ONTAP 
+| API 端點或區域 | 行為說明 | 發行版ONTAP 
+
+
+| `/api/application/containers` | 用於建立容器的端點已增強，現在支援先前只能透過 `/api/storage/volumes`存取的多個磁碟區配置參數。這使得客戶（尤其是使用 NetApp Trident 進行 Kubernetes 儲存編排的客戶）能夠在配置持久性磁碟區時利用 ONTAP 的均衡放置功能。磁碟區可以自動分佈在叢集節點上，以實現最佳效能和容量利用率。部署需要對磁碟區放置、QoS 策略或容量管理進行精細控制的容器化應用程式時，應使用更新後的端點。這對於大規模 Kubernetes 環境尤其有幫助，因為在這些環境中，跨儲存資源的自動負載平衡至關重要。 | 9.19.1 
+
+
+| `/api/cluster/licensing/licenses` | 當透過 REST API 為非常大型的 ONTAP 叢集（32 個節點或更多）檢索授權資訊時，可能會遇到回應速度緩慢的問題。此問題會影響 System Manager 授權標籤以及同時查詢所有授權的自動化工作流程。為了減少影響，您可以每次使用查詢參數來取得特定功能的授權，或使用 CLI 命令 `system license show`，而不是透過單一 API 呼叫取得所有授權。 | 9.19.1 
+|===
+
+
+== ONTAP REST API 參考文件錯誤
+
+隨著 NetApp ONTAP REST API 的不斷增強和更新，線上參考文件中有時會出現錯誤。這些錯誤可能會在使用 API 時造成困惑，但通常不會影響或中斷您的 ONTAP 自動化軟體或環境。您應該查看下表中的錯誤清單。這將有助於您更好地理解和使用 ONTAP REST API 參考文件。每個條目都包含適用的 API 端點或區域、錯誤描述以及引入該錯誤的 ONTAP 版本。
+
+[cols="40%,50%,10%"]
+|===
+| API 端點或區域 | 變更說明 | 發行版ONTAP 
 
 
 | `/storage/quota/reports` | 端點的 REST API 文件指出 * 規範 * 是有效欄位。不過、此端點不支援配額說明符。沒有建議客戶採取的行動或因應措施。此欄位將在未來的 ONTAP 版本中從 API 文件中移除。 | 9.6 

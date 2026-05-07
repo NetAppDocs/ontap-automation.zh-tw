@@ -21,6 +21,16 @@ TIP: 您應該檢閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP24925
 
 
 
+== ONTAP 9.19.1
+
+ONTAP 9.19.1 版本包含多項更新,這些更新將繼續增強和完善 ONTAP REST API。
+
+安全性:: 新增了一項 `whoami`功能，用於檢索已登入使用者的使用者名稱、角色和權限資訊。此外，Web 身份驗證（WebAuthn）功能也得到了增強。
+SAN:: LUN 對應管理已更新，具備改良的更新功能。
+
+
+
+
 == ONTAP 9.18.1
 
 ONTAP 9.18.1 版本透過新增 13 個 API 調用，進一步擴展了 ONTAP REST API 的功能。這些增強功能主要集中在安全性方面，但也包括對儲存管理的改進。
