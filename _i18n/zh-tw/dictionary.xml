@@ -650,8 +650,6 @@
   <block id="94e1cc167c8b21e2dee8ae6449422dc8" category="cell">「刪除/傳輸協定/檔案安全性/權限/」</block>
   <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text">「Vserver安全檔案目錄NTFS DACL移除」</block>
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text">「Vserver安全檔案目錄NTFS SACL移除」</block>
-  <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">利用REST API簡化檔案安全權限的管理ONTAP</block>
-  <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="ec8bc6c5f8fe5dc6045b9edfffae614a" category="sidebar">準備使用REST API</block>
   <block id="e78273b83daaaecb5744859fa531181b" category="sidebar">REST實作詳細資料</block>
@@ -1108,7 +1106,6 @@
   <block id="bd96d411ebb8705b0ef857c4d7b8c9c9" category="paragraph-title">服務桶</block>
   <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="paragraph-title">S3群組</block>
   <block id="29c67008363344d9ca92cd75f29fe2c9" category="paragraph-title">S3原則</block>
-  <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">將私有CLI密碼與ONTAP REST API搭配使用</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP要求</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP回應</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
@@ -1598,14 +1595,12 @@
   <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">步驟 1 ：更新安全性描述元</block>
   <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和稽核原則。</block>
   <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">使用系統存取控制清單（SACL）和自由存取控制清單（DACL）來指派檔案物件的權限。ONTAP從 ONTAP 9.9.1 開始、其餘 API 支援管理 SACL 和 DACL 權限。您可以使用 API 來自動化檔案安全性權限的管理。在許多情況下、您可以使用單一 REST API 呼叫、而非多個 CLI 命令或 ONTAPI （ ZAPI ）呼叫。</block>
-  <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">對於 9.9.1 之前的 ONTAP 版本、您可以使用 CLI Passthrough 功能、自動管理 SACL 和 DACL 權限。請參閱 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> 和<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">我們提供幾個工作流程範例、說明如何使用 REST API 來管理 ONTAP 檔案安全服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>。</block>
   <block id="f13ddbbf96dbd385b6b39bedaac4e6f7" category="inline-link">file_security_permissions.py</block>
   <block id="b3b08c8a5c5a09ffbe1430bb1e019e74" category="paragraph">如果您使用 Python 、也會看到指令碼<block ref="3ccddfdb1872f5bc3b7f054cd270fc1b" category="inline-link-rx"></block> 如需如何自動化部分檔案安全活動的範例。</block>
   <block id="0207c62847caaa4c5ffaeaf4b00552d6" category="paragraph">在許多工作中、使用 ONTAP REST API 所需的通話數、比等效的 ONTAP CLI 命令或 ONTAPI （ ZAPI ）通話數少。下表列出 API 呼叫清單、以及每項工作所需的 CLI 命令。</block>
   <block id="3d1a91a3f9c08c95df6cb1eff36db464" category="inline-link">說明檔案權限的 Python 指令碼</block>
   <block id="bd9e252fe191d999eeb79daa2d91b6a8" category="list-text"><block ref="bd9e252fe191d999eeb79daa2d91b6a8" category="inline-link-rx"></block></block>
-  <block id="0c30cc0a8be3231b1496649b8f111c07" category="list-text"><block ref="0c30cc0a8be3231b1496649b8f111c07" category="inline-link-rx"></block></block>
   <block id="a58cf8beb5e4ede8e197f2cc371725fe" category="sidebar">準備好管理檔案安全性</block>
   <block id="22b4fdae10b975d500f499f9cd7d2659" category="sidebar">取得有效權限</block>
   <block id="f520e25b29f7e72fdce54450ea759fc8" category="sidebar">取得稽核資訊</block>
@@ -1987,4 +1982,5 @@
   <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">新增了一項<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>功能，用於檢索已登入使用者的使用者名稱、角色和權限資訊。此外，Web 身份驗證（WebAuthn）功能也得到了增強。</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN 對應管理已更新，具備改良的更新功能。</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST API 變更與考量事項</block>
+  <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">對於 ONTAP 9.9.1 之前的版本，您可以使用 CLI 直通功能自動管理 SACL 和 DACL 權限。如需詳細資訊，請參閱 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>。</block>
 </blocks>
