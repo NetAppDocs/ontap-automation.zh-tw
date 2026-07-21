@@ -21,6 +21,7 @@ TIP: 您應該確定 ONTAP 版本支援您計畫使用之工作流程中的所�
 
 
 
+[[introduction]]
 == 簡介
 
 工作流程_是完成特定管理工作或目標所需的一或多個步驟順序。ONTAP 工作流程包含您完成每項工作所需的核心步驟和參數。它們是自訂 ONTAP 自動化環境的起點。
@@ -41,12 +42,14 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 
 
 
+[[input-variables]]
 == 輸入變數
 
 這些工作流程的設計儘可能通用、以便在任何 ONTAP 環境中使用。有鑑於此、 REST API 呼叫會在捲曲範例和其他輸入中使用變數。其餘 API 呼叫則可輕鬆地適應不同的 ONTAP 環境。
 
 
 
+[[base-url-format]]
 === 基礎 URL 格式
 
 您可以透過 Curl 或程式設計語言直接存取 ONTAP REST API 。在這種情況下、基本 URL 與您在存取 ONTAP 線上文件或系統管理員時所使用的 URL 不同。
@@ -59,6 +62,7 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 
 
 
+[[common-input-parameters]]
 === 通用輸入參數
 
 大多數 REST API 呼叫通常會使用數個輸入參數。這些參數通常未在個別工作流程中說明。您應該熟悉這些參數。請參閱 link:../rest/input_variables.html["控制API要求的輸入變數"] 以取得更多資訊。
@@ -67,6 +71,7 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 
 
 
+[[variable-format]]
 === 可變格式
 
 工作流程範例所使用的 ID 值和其他變數是不透明的、可能會因每個 ONTAP 叢集而異。為了改善範例的可讀性、不使用實際值。而是使用變數。這種方法以一致的格式和一組保留名稱為基礎、有幾項優點：
@@ -95,6 +100,7 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 |===
 
 
+[[json-input-examples]]
 === JSON 輸入範例
 
 某些 REST API 呼叫（例如使用 POST 或修補程式的呼叫）需要在要求主體中輸入 JSON 。JSON 輸入範例與捲曲範例分開呈現、以供清楚說明。您可以將 JSON 輸入範例與下列其中一種技術搭配使用。
@@ -107,12 +113,14 @@ ONTAP 工作流程中的每個步驟都是下列其中一種類型：
 
 
 
+[[authentication-options]]
 == 驗證選項
 
 REST API 可用的主要驗證技術是 HTTP 基本驗證。從 ONTAP 9.14 開始、您也可以選擇使用開放式授權（ OAuth 2.0 ）架構搭配權杖型驗證和授權。
 
 
 
+[[http-basic-authentication]]
 === HTTP 基本驗證
 
 使用基本驗證時、每個 HTTP 要求都必須包含使用者認證。傳送認證有兩個選項。
@@ -145,6 +153,7 @@ REST API 可用的主要驗證技術是 HTTP 基本驗證。從 ONTAP 9.14 開�
 
 
 
+[[oauth-2-0]]
 === OAuth 2.0
 
 使用 OAuth 2.0 時、您需要向外部授權伺服器要求存取權杖、並將其納入每個 HTTP 要求中。基本的高階步驟如下所述。另請參閱 https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0 實作總覽"^] 如需 OAuth 2.0 及如何搭配 ONTAP 使用的詳細資訊、請參閱。
@@ -169,6 +178,7 @@ REST API 可用的主要驗證技術是 HTTP 基本驗證。從 ONTAP 9.14 開�
 
 
 
+[[using-the-examples-with-bash]]
 == 使用範例搭配 Bash
 
 如果您直接使用工作流程捲曲範例、則必須使用適合您環境的值來更新這些範例所包含的變數。您可以手動編輯範例、或仰賴 Bash Shell 執行以下所述的替代作業。

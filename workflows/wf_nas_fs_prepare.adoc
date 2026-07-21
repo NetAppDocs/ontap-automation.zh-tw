@@ -18,6 +18,7 @@ summary: 您可以管理 ONTAP 叢集內透過 SVM 所提供檔案的權限和�
 
 
 
+[[overview]]
 === 總覽
 
 使用系統存取控制清單（SACL）和自由存取控制清單（DACL）來指派檔案物件的權限。ONTAP從 ONTAP 9.9.1 開始、其餘 API 支援管理 SACL 和 DACL 權限。您可以使用 API 來自動化檔案安全性權限的管理。在許多情況下、您可以使用單一 REST API 呼叫、而非多個 CLI 命令或 ONTAPI （ ZAPI ）呼叫。
@@ -31,6 +32,7 @@ NOTE: 對於 ONTAP 9.9.1 之前的版本，您可以使用 CLI 直通功能自�
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === 不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP
 
 在許多工作中、使用 ONTAP REST API 所需的通話數、比等效的 ONTAP CLI 命令或 ONTAPI （ ZAPI ）通話數少。下表列出 API 呼叫清單、以及每項工作所需的 CLI 命令。

@@ -18,6 +18,7 @@ summary: 您可以從特定檔案或資料夾刪除現有的存取控制項目�
 
 
 
+[[step-1-delete-the-ace]]
 == 步驟 1 ：刪除 ACE
 
 .HTTP 方法和端點
@@ -67,6 +68,7 @@ curl --request DELETE --location "https://$FQDN_IP/api/protocols/file-security/p
 ----
 
 
+[[step-2-retrieve-the-status-of-the-job]]
 == 步驟 2 ：擷取工作狀態
 
 執行工作流程 link:../workflows/wf_jobs_get_job.html["取得工作執行個體"] 並確認 `state` 價值是 `success`。

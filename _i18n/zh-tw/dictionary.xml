@@ -425,7 +425,6 @@
   <block id="b112c8c17f296b55ffc035363cc1cac3" category="paragraph">https://&lt;ip_address&gt;/docs/api`</block>
   <block id="86537fad07b98a84cd28189507075143" category="list-text">使用ONTAP 這個帳戶登入。</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP</block>
-  <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。</block>
   <block id="7ccaa0673dcbf1129469d5f4407e7b74" category="paragraph">您可以使用這些API呼叫來存取S3型物件儲存設備。</block>
   <block id="51bd7d165e8c40b2785e7cc20641c92e" category="paragraph">儲存區是物件的容器、使用物件名稱空間來進行結構化。每個S3物件伺服器都可以有多個儲存區。此資源類型是以ONTAP 更新ONTAP 版本的更新版本介紹、並以更新版本的更新版本為更新版本。</block>
   <block id="0ce533be2fabb323cea3390612055d60" category="paragraph">您可以建立及管理ONTAP 包含伺服器和庫位組態在內的SS3組態。此資源類型隨ONTAP 附於NetApp 9.7。</block>
@@ -600,8 +599,6 @@
   <block id="ad9b161528b083800d5054d4feb9ec8a" category="paragraph">這組API呼叫可讓您使用Google Cloud Platform Key Management Service來儲存及管理ONTAP 此等加密金鑰。這種資源類型最初是以ONTAP 《不只是用作參考資料的參考資料9、8、8、9、8不過ONTAP 、這項功能已重新設計、因此在更新資源類型時、將會被視為全新功能、如更新於本文件中的9.9。</block>
   <block id="c78f0d76ddea2a641c1fd047b64d3b75" category="paragraph">網際網路傳輸協定安全性（IPSec）是一套傳輸協定、可在基礎IP網路上的兩個端點之間提供安全性。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="49594609d9f640b0c454c45b305cb943" category="paragraph">您可以新增、移除及擷取IPSec CA憑證。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
-  <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">您可以使用這組API呼叫來管理適用於IPSec部署的原則。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
-  <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">您可以使用這組API呼叫來管理在進行IPSec部署時有效的安全關聯。此資源類型是ONTAP 更新的功能、採用了更新的功能。</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">這些端點可讓您擷取及更新金鑰管理程式的組態。此資源類型是ONTAP 更新的、採用了更新版的功能。</block>
   <block id="6c6082904240c6ec5957f81a0fbb1d62" category="paragraph">這些API呼叫是用來擷取及管理叢集LDAP伺服器組態。此資源類型隨ONTAP 附於NetApp 9.6。</block>
   <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">用於顯示及管理ONTAP 由資訊技術所使用的登入訊息。此資源類型隨ONTAP 附於NetApp 9.6。</block>
@@ -1952,7 +1949,6 @@
   <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">NetApp Console自動化中心</block>
   <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">這<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> 可透過控制台 Web 使用者介面存取。自動化中心提供對打包解決方案的訪問，可以幫助您自動部署ONTAP並將其與其他產品整合。看<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 有關文件和更多信息，請參閱相關文件。</block>
   <block id="29b6d9e80417ebf4ac723dd56e4f6322" category="inline-link">PyPI：NetApp ONTAP 9.18.1</block>
-  <block id="ad4162572ca44b98fde9ffd6f23c426d" category="list-text"><block ref="ad4162572ca44b98fde9ffd6f23c426d" category="inline-link-rx"></block></block>
   <block id="90e2aef8589fa5b53a7c288f4dee47c8" category="inline-link">NetApp PCL 9.18.1 版本文檔</block>
   <block id="c7dcdb34a106576d21e7bce6b5b431e5" category="list-text"><block ref="c7dcdb34a106576d21e7bce6b5b431e5" category="inline-link-rx"></block></block>
   <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">啟用反勒索軟體</block>
@@ -1973,14 +1969,22 @@
   <block id="71c05fa8077a773e095376bb567cd291" category="cell"><block ref="56d408287fc247401a306f946d8667db" prefix="" category="inline-code"></block></block>
   <block id="131e71b08dd73776358a31f5b869388f" category="cell">當透過 REST API 為非常大型的 ONTAP 叢集（32 個節點或更多）檢索授權資訊時，可能會遇到回應速度緩慢的問題。此問題會影響 System Manager 授權標籤以及同時查詢所有授權的自動化工作流程。為了減少影響，您可以每次使用查詢參數來取得特定功能的授權，或使用 CLI 命令<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block>，而不是透過單一 API 呼叫取得所有授權。</block>
   <block id="cc420b198b8f8ad3d8233549a925dced" category="paragraph">隨著 NetApp ONTAP REST API 的不斷增強和更新，線上參考文件中有時會出現錯誤。這些錯誤可能會在使用 API 時造成困惑，但通常不會影響或中斷您的 ONTAP 自動化軟體或環境。您應該查看下表中的錯誤清單。這將有助於您更好地理解和使用 ONTAP REST API 參考文件。每個條目都包含適用的 API 端點或區域、錯誤描述以及引入該錯誤的 ONTAP 版本。</block>
-  <block id="265b7201a1a1b0248d25d88bde5d5b3d" category="paragraph">LUN 對應是 LUN 與啟動器群組之間的關聯。此資源類型是 ONTAP 9.6 推出、並隨 ONTAP 9.19.1 更新。</block>
-  <block id="d466bf08db43e32247cf12faafc07c3e" category="paragraph">Web 驗證（WebAuthn）是一種基於公鑰加密技術的安全使用者身分驗證 Web 標準。透過 ONTAP，它支援透過 System Manager 和 ONTAP REST API 管理防釣魚的 MFA。此功能在 ONTAP 9.16 版本中添加，並在 ONTAP 9.19.1 版本中進行了更新。</block>
   <block id="b5905e09f21d5864e3d35c42e06cc891" category="paragraph-title">Whoami</block>
-  <block id="99bd4fa5b8d549d8817c7c1fd47f1a07" category="paragraph">提供端點以顯示已驗證使用者的詳細資料，包括使用者名稱、角色和權限。此資源類型是在 ONTAP 9.19.1 中引入的。</block>
   <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="section-title">ONTAP 9.19.1</block>
   <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">ONTAP 9.19.1 版本包含多項更新,這些更新將繼續增強和完善 ONTAP REST API。</block>
-  <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">新增了一項<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>功能，用於檢索已登入使用者的使用者名稱、角色和權限資訊。此外，Web 身份驗證（WebAuthn）功能也得到了增強。</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN 對應管理已更新，具備改良的更新功能。</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST API 變更與考量事項</block>
   <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">對於 ONTAP 9.9.1 之前的版本，您可以使用 CLI 直通功能自動管理 SACL 和 DACL 權限。如需詳細資訊，請參閱 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>。</block>
+  <block id="930f6e309ea31ddf8913bc2743474206" category="inline-link">PyPI：NetApp ONTAP 9.19.1</block>
+  <block id="fc079a70c22d237bf5ba1cb37fd321ed" category="list-text"><block ref="fc079a70c22d237bf5ba1cb37fd321ed" category="inline-link-rx"></block></block>
+  <block id="ed9d9bda2b176aa2a1f17944b6d4a5b8" category="inline-link">NetApp PCL 9.19.1 版本文檔</block>
+  <block id="7203ae9325dee2a32f00ac70dd5380eb" category="list-text"><block ref="7203ae9325dee2a32f00ac70dd5380eb" category="inline-link-rx"></block></block>
+  <block id="f2b97056166d6335cc220aa8ed571bd5" category="list-text"><block ref="f2b97056166d6335cc220aa8ed571bd5" category="inline-link-rx"></block></block>
+  <block id="7396427871824f6e3ab00adb004f3863" category="list-text">例如，要進行單一 API 呼叫，請向下捲動到 *cluster* 類別，然後選擇 *GET /cluster*。</block>
+  <block id="2cd51d1ef50a2fdcfcd54b6bd7545da6" category="paragraph">LUN 對應是 LUN 與啟動器群組之間的關聯。此資源類型於 ONTAP 9.6 引入，並於 ONTAP 9.19 更新。</block>
+  <block id="5143cbd37fee11e20d0f08ba1a56ffe3" category="paragraph">您可以使用這組 API 呼叫來管理 IPSec 部署中生效的原則。此資源類型是 ONTAP 9.8 的新增功能。在 9.19 版本中，這些功能已更新，可擷取叢集網路所使用的原則。</block>
+  <block id="534aa7412e40ee98329aa6cbf7e73921" category="paragraph">您可以使用這組 API 呼叫來管理 IPSec 部署中生效的安全性關聯。此資源類型是 ONTAP 9.8 的新增功能。在 9.19 版本中，它們已更新，用於擷取叢集網路使用的安全性關聯。</block>
+  <block id="1e546dde5ec48b72b17c80c9fd9a4326" category="paragraph">Web 驗證（WebAuthn）是一種基於公鑰密碼編譯的安全用戶身份驗證 Web 標準。透過 ONTAP，可透過 System Manager 和 ONTAP REST API 管理防釣魚的多因素驗證（MFA）。此功能於 ONTAP 9.16 新增，並於 ONTAP 9.19 更新。</block>
+  <block id="552a4b441f2408a18f59e549d17ab486" category="paragraph">提供端點以顯示已驗證使用者的詳細資訊，包括使用者名稱、角色和權限。此資源類型是在 ONTAP 9.19 中引入的。</block>
+  <block id="d9eb7c3d944a1a4dbd6e7c30275c219a" category="list-text">新增了一項<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>功能，用於擷取已登入使用者的使用者名稱、角色和權限資訊。Web 驗證 （WebAuthn） 功能也已增強。IPsec 已更新，可擷取叢集網路所使用的原則和安全性關聯。</block>
 </blocks>

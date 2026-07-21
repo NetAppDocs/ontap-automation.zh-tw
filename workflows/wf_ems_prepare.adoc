@@ -18,6 +18,7 @@ summary: 您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、�
 
 
 
+[[overview]]
 === 總覽
 
 有幾個工作流程範例可說明如何使用 ONTAP EMS 服務。在使用工作流程並發出任何 REST API 呼叫之前、請務必先檢閱 link:../workflows/prepare_workflows.html["準備好使用工作流程"]。
@@ -26,6 +27,7 @@ summary: 您可以為 ONTAP 叢集設定事件管理系統（ EMS ）處理、�
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === 不只是使用靜態API、更是使用非靜態CLI命令ONTAP ONTAP
 
 在許多工作中、使用 ONTAP REST API 所需的通話數、比等效的 ONTAP CLI 命令少。下表列出 API 呼叫清單、以及每項工作所需的 CLI 命令。

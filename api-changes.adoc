@@ -18,6 +18,7 @@ NetApp 持續在每一次主要產品版本中增強並更新 ONTAP REST API。�
 
 
 
+[[changes-to-existing-ontap-rest-api-calls]]
 == 變更現有的 ONTAP REST API 呼叫
 
 對現有 ONTAP REST API 呼叫（例如端點和參數）的變更可能會影響使用該 API 的軟體。在大多數情況下，根據您的環境，這些變更被視為_重大變更_。您應查看下表中的列表，以確定這些變更是否會對您的自動化環境造成影響。每個條目都包含適用的 API 端點或區域、變更描述以及引入該變更的 ONTAP 版本。
@@ -35,6 +36,7 @@ NetApp 持續在每一次主要產品版本中增強並更新 ONTAP REST API。�
 |===
 
 
+[[additional-rest-api-usage-considerations]]
 == 其他 REST API 使用注意事項
 
 除了可能造成破壞性或重大變更的情況外，使用 ONTAP REST API 時還需要考慮其他幾個方面。這些問題類型多種多樣，包括引入新的或替代的 API 調用，以及 ONTAP 內部處理機制的變更。每個條目都包含適用的 API 端點或區域、行為描述以及引入該行為的 ONTAP 版本。
@@ -51,6 +53,7 @@ NetApp 持續在每一次主要產品版本中增強並更新 ONTAP REST API。�
 |===
 
 
+[[ontap-rest-api-reference-documentation-errors]]
 == ONTAP REST API 參考文件錯誤
 
 隨著 NetApp ONTAP REST API 的不斷增強和更新，線上參考文件中有時會出現錯誤。這些錯誤可能會在使用 API 時造成困惑，但通常不會影響或中斷您的 ONTAP 自動化軟體或環境。您應該查看下表中的錯誤清單。這將有助於您更好地理解和使用 ONTAP REST API 參考文件。每個條目都包含適用的 API 端點或區域、錯誤描述以及引入該錯誤的 ONTAP 版本。

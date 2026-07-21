@@ -27,6 +27,7 @@ summary: 您可以定義角色、以限制 SVM 內的儲存磁碟區管理。
 
 
 
+[[step-1-create-the-role]]
 == 步驟 1 ：建立角色
 
 您可以發出 API 呼叫來建立 RBAC 角色。
@@ -68,6 +69,7 @@ curl --request POST \
 ----
 
 
+[[step-2-update-the-role]]
 == 步驟 2 ：更新角色
 
 您可以發出 API 呼叫來更新現有角色。

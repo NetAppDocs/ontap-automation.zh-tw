@@ -18,12 +18,14 @@ summary: 您可以存取其他幾項資源、以取得協助、並取得有關�
 
 
 
+[[blog-articles]]
 == 部落格文章
 
 部落格文章會根據主題分為幾個部分。
 
 
 
+[[general]]
 === 一般
 
 * 目前 ONTAP 自動化技術的良好摘要。
@@ -48,6 +50,7 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification["REST API：自動
 
 
 
+[[python-client-library]]
 === Python用戶端程式庫
 
 * 此部落格提供 ONTAP Python 用戶端程式庫功能的良好簡介。
@@ -58,6 +61,7 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["使用 Python �
 
 
 
+[[migrating-to-the-rest-api]]
 === 移轉至 REST API
 
 * 有幾項技術可協助您根據ONTAP REST API來改造您的非自動化環境。
@@ -68,6 +72,7 @@ https://www.netapp.com/blog/transform-automation-ontap-rest-api/["將自動化�
 
 
 
+[[videos]]
 == 影片
 
 * NetApp Python 用戶端程式庫的良好簡介、以及如何開始使用程式庫撰寫程式碼。
@@ -86,6 +91,7 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["自動
 
 
 
+[[netapp-knowledge-base]]
 == NetApp知識庫
 
 * 如果 ONTAP REST API 發生問題、您可以將其回報給 NetApp 。

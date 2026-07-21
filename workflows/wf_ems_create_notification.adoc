@@ -18,6 +18,7 @@ summary: 您可以使用下列工作流程來建立新的 EMS 通知目的地、
 
 
 
+[[step-1-configure-the-system-wide-email-settings]]
 == 步驟 1 ：設定全系統的電子郵件設定
 
 您可以發出下列 API 呼叫來設定全系統的電子郵件設定。
@@ -59,6 +60,7 @@ curl --request PATCH \
 ----
 
 
+[[step-2-define-a-message-filter]]
 == 步驟 2 ：定義訊息篩選器
 
 您可以發出 API 呼叫、以定義符合訊息的篩選規則。
@@ -107,6 +109,7 @@ curl --request POST \
 ----
 
 
+[[step-3-create-a-message-destination]]
 == 步驟 3 ：建立訊息目的地
 
 您可以發出 API 呼叫來建立訊息目的地。

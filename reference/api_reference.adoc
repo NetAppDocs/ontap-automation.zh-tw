@@ -21,12 +21,14 @@ NOTE: 您可以根據 ONTAP 版本、在多個站台中的其中一個存取 RES
 
 
 
+[[access-the-ontap-api-reference-documentation-online]]
 == 線上存取 ONTAP API 參考文件
 
 您可以存取目前 https://docs.netapp.com/us-en/ontap-restapi/getting_started_with_the_ontap_rest_api.html["ONTAP REST API 參考"^] 線上文檔。還有一個版本選擇器可用於存取基於ONTAP版本的文件的先前版本。
 
 
 
+[[access-the-ontap-api-reference-documentation-through-the-swagger-ui]]
 == 透過 Swagger UI 存取 ONTAP API 參考文件
 
 您可以透過本機 ONTAP 系統上的 Swagger UI 來存取 ONTAP REST API 文件。
@@ -47,5 +49,5 @@ https://<ip_address>/docs/api`
 +
 畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP
 
-. 如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。
+. 例如，要進行單一 API 呼叫，請向下捲動到 *cluster* 類別，然後選擇 *GET /cluster*。
 

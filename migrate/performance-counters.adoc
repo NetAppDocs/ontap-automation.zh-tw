@@ -18,6 +18,7 @@ summary: 《The》介紹各個系統效能的豐富資訊ONTAP ONTAP 。它會�
 
 
 
+[[access-the-ontap-performance-counters]]
 == 存取ONTAP 效能計數器
 
 您可以ONTAP 使用兩個不同的API、以及ONTAP 透過VMware命令列介面來存取VMware效能計數器。
@@ -27,6 +28,7 @@ NOTE: 在自動化管理您的VMware部署時、支援使用支援功能的API�
 
 
 
+[[ontapi-api]]
 === ONTAPI API
 
 NetApp Network Manageability SDK提供ONTAPI API。使用ONTAPI時、效能計數器會在物件集合內定義。每個物件對應於系統的實體或虛擬元件。根據系統組態、每個物件可以有一個或多個執行個體。
@@ -35,6 +37,7 @@ NetApp Network Manageability SDK提供ONTAPI API。使用ONTAPI時、效能計�
 
 
 
+[[ontap-rest-api]]
 === 靜態API ONTAP
 
 從VMware版本9.11.1開始ONTAP 、您也可以透過REST API存取效能資料。在這種情況下、效能計數器會組織成相當於ONTAPI物件的表格。每個表格列都相當於ONTAPI物件的執行個體。
@@ -43,12 +46,14 @@ NetApp Network Manageability SDK提供ONTAPI API。使用ONTAPI時、效能計�
 
 
 
+[[prepare-to-use-the-rest-api]]
 == 準備使用REST API
 
 您應該先準備好、再使用ONTAP REST API存取效能計數器。
 
 
 
+[[performance-counters-organized-in-tables]]
 === 效能計數器會組織在表格中
 
 ONTAPI物件的子集可透過ONTAP REST API取得、並顯示為表格。例如、ONTAPI *主機介面卡*物件透過REST API呈現為*主機_adpater*表格。系統中的每個主機介面卡都是一列、有自己的一組效能計數器。
@@ -67,6 +72,8 @@ ONTAPI物件的子集可透過ONTAP REST API取得、並顯示為表格。例如
 |===
 
 
+[[summary-of-the-rest-endpoints]]
+[[eps]]
 === 其餘端點的摘要
 
 共有四個主要端點可供存取ONTAP 不景效能計數器和相關表格。
@@ -94,6 +101,7 @@ NOTE: 每個REST端點都提供唯讀存取、而且僅支援* Get* HTTP方法�
 
 
 
+[[migrating-from-ontapi-to-the-rest-api]]
 === 從ONTAPI移轉至REST API
 
 NetApp提供廣泛的支援、可將自動化程式碼從ONTAPI移轉至ONTAP REST API。這包括對應文件、以識別特定ONTAPI物件REST API中可用的等效效能計數器表。
@@ -102,12 +110,14 @@ NetApp提供廣泛的支援、可將自動化程式碼從ONTAPI移轉至ONTAP RE
 
 
 
+[[get-started-with-the-ontap-rest-api]]
 == 開始使用ONTAP 靜態API
 
 以下範例說明如何使用REST API來存取ONTAP VMware效能計數器。這包括擷取可用表格的清單、以及探索表格結構。
 
 
 
+[[before-you-begin]]
 === 開始之前
 
 請先檢閱下列資訊、再使用範例。
@@ -129,6 +139,7 @@ NetApp提供廣泛的支援、可將自動化程式碼從ONTAPI移轉至ONTAP RE
 
 
 
+[[example-1-all-performance-counter-tables]]
 === 範例1：所有效能計數器表
 
 您可以使用此REST API呼叫來探索所有可用的計數器管理器表格。
@@ -728,6 +739,7 @@ curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/clust
 ====
 
 
+[[example-2-high-level-information-about-a-specific-table]]
 === 範例2：特定表格的高層資訊
 
 您可以使用此REST API呼叫來顯示特定表格的說明和中繼資料。輸出內容包括表格用途、以及每個效能計數器所包含的資料類型。本範例使用*主機介面卡*表格。
@@ -802,6 +814,7 @@ curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/clust
 ====
 
 
+[[example-3-all-rows-in-a-specific-table]]
 === 範例3：特定表格中的所有列
 
 您可以使用此REST API呼叫來檢視表格中的所有列。這表示Counter Manager物件存在哪些執行個體。
@@ -849,6 +862,7 @@ curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/clust
 ====
 
 
+[[example-4-single-row-in-a-specific-table]]
 === 範例4：特定表格中的單一列
 
 您可以使用此REST API呼叫來檢視表格中特定計數器管理程式執行個體的效能計數器值。在此範例中、會要求其中一個主機介面卡的效能資料。

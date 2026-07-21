@@ -20,6 +20,7 @@ summary: 在發出設計為非同步執行的API要求之後、一律會建立�
 
 
 
+[[controlling-how-a-request-is-processed]]
 == 控制處理要求的方式
 
 您可以使用「RETON_Timeout」查詢參數來控制處理非同步API呼叫的方式。使用此參數有兩種可能的結果。
@@ -36,6 +37,7 @@ NOTE: "RETON_Timeout"參數的預設值為零秒。因此、如果您不包含�
 
 
 
+[[querying-the-job-object-associated-with-an-api-request]]
 == 查詢與API要求相關聯的工作物件
 
 HTTP回應中傳回的工作物件包含數個內容。您可以在後續的API呼叫中查詢狀態內容、以判斷要求是否成功完成。工作物件永遠處於下列其中一種狀態：
@@ -61,6 +63,7 @@ HTTP回應中傳回的工作物件包含數個內容。您可以在後續的API�
 
 
 
+[[general-procedure-for-issuing-an-asynchronous-request]]
 == 發出非同步要求的一般程序
 
 您可以使用下列高階程序來完成非同步API呼叫。此範例假設不使用「recnute_timeout」參數、或是背景工作完成之前的時間過期。

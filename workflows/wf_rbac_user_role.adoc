@@ -21,6 +21,7 @@ summary: 您可以使用此工作流程來建立具有相關 REST 角色的使�
 
 
 
+[[step-1-list-the-data-svms-in-the-cluster]]
 == 步驟 1 ：列出叢集中的資料 SVM
 
 執行下列REST API呼叫、列出叢集中的SVM。輸出中會提供每個 SVM 的 UUID 和名稱。
@@ -49,6 +50,7 @@ curl --request GET \
 
 
 
+[[step-2-list-the-users-defined-to-the-svm]]
 == 步驟 2 ：列出定義給 SVM 的使用者
 
 執行下列REST API呼叫、列出您所選SVM中定義的使用者。您可以透過擁有者參數來識別SVM。
@@ -77,6 +79,7 @@ curl --request GET \
 
 
 
+[[step-3-list-the-rest-roles-defined-to-the-svm]]
 == 步驟 3 ：列出定義給 SVM 的其餘角色
 
 執行下列REST API呼叫、列出您所選SVM中定義的角色。您可以透過擁有者參數來識別SVM。
@@ -106,6 +109,7 @@ curl --request GET \
 
 
 
+[[step-4-create-a-custom-rest-role]]
 == 步驟 4 ：建立自訂 REST 角色
 
 執行下列REST API呼叫、以在SVM中建立自訂REST角色。角色一開始只有一個權限會建立*無*的預設存取權、因此會拒絕所有存取權。
@@ -149,6 +153,7 @@ curl --request POST \
 
 
 
+[[step-5-update-the-role-by-adding-more-privileges]]
 == 步驟 5 ：新增更多權限以更新角色
 
 執行下列REST API呼叫、視需要新增權限以修改角色。
@@ -199,6 +204,7 @@ curl --request POST \
 
 
 
+[[step-6-create-a-user]]
 == 步驟 6 ：建立使用者
 
 執行下列REST API呼叫以建立使用者帳戶。上述建立的角色 * dprole1* 與新使用者相關聯。

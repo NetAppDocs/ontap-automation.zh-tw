@@ -22,6 +22,7 @@ NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用
 
 
 
+[[features-and-benefits]]
 == 功能與優勢
 
 您可以使用 Python 用戶端程式庫來快速開發健全的程式碼，以自動化 ONTAP 部署的管理。它提供多種基礎服務，包括：
@@ -34,6 +35,7 @@ NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用
 
 
 
+[[packages-and-documentation]]
 == 套件與文件
 
 Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。
@@ -43,8 +45,13 @@ Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的�
 .套件與文件清單
 [%collapsible]
 ====
+.ONTAP 9.19.1
+* https://pypi.org/project/netapp-ontap/["PyPI：NetApp ONTAP 9.19.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3383665/html/index.html["NetApp PCL 9.19.1 版本文檔"^]
+
+
 .ONTAP 9.18.1
-* https://pypi.org/project/netapp-ontap/["PyPI：NetApp ONTAP 9.18.1"^]
+* https://pypi.org/project/netapp-ontap/9.18.1.0["PyPI：NetApp ONTAP 9.18.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html["NetApp PCL 9.18.1 版本文檔"^]
 
 
@@ -111,6 +118,7 @@ Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的�
 ====
 
 
+[[code-samples]]
 == 程式碼範例
 
 NetApp 維護 GitHub 儲存庫，其中包含程式碼範例和其他實用資訊。您可以瀏覽至_examples_資料夾、使用Python用戶端程式庫存取範例。如需詳細資訊，請參閱 GitHub 的下列位置：

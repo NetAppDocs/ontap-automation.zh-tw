@@ -21,6 +21,7 @@ NOTE: 所有 Python 程式碼範例均可在 GitHub 儲存庫取得 https://gith
 
 
 
+[[ontapi-usage-reporting-tool]]
 == ONTAPI 使用報告工具
 
 ONTAPI 使用報告工具旨在協助 NetApp 專業服務、客戶及合作夥伴識別其 ONTAP 環境中的 ONTAPI 使用情形。下表說明三種不同使用案例的指令碼。
@@ -42,6 +43,7 @@ ONTAPI 使用報告工具旨在協助 NetApp 專業服務、客戶及合作夥�
 
 
 
+[[private-cli-passthrough]]
 == 專用 CLI 傳遞
 
 其餘 API 則涵蓋 ONTAP 提供的功能與設施。不過、在某些情況下、透過 REST API 直接存取 ONTAP CLI 可能會很有用。
@@ -50,12 +52,14 @@ ONTAPI 使用報告工具旨在協助 NetApp 專業服務、客戶及合作夥�
 
 
 
+[[python-client-library]]
 == Python用戶端程式庫
 
 Python 用戶端程式庫是一個套件、您可以安裝並使用它來存取 ONTAP REST API 搭配 Python 。它可讓您快速開發健全的程式碼、以自動化 ONTAP 部署。若要深入瞭解 Python 用戶端程式庫，請參閱link:../python/learn-about-pcl.html["Python用戶端程式庫"]。
 
 
 
+[[ontap-powershell-toolkit]]
 == ONTAP PowerShell 工具套件
 
 NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需更多資訊、請參閱 link:../pstk/learn-about-pstk.html["瞭解 NetApp PowerShell 工具套件"]。
