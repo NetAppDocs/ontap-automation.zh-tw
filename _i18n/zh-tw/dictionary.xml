@@ -204,8 +204,6 @@
   <block id="8b2e720a58accc143187322487b6638a" category="list-text">如果您指定排序欄位但未提供方向、則會以遞增順序排序這些值。</block>
   <block id="35f47ff7e3cab9069eae76509c43183a" category="list-text">包含多個參數時、您必須以逗號分隔欄位。</block>
   <block id="245272e0c4968634df98eb3e43fe7188" category="section-title">擷取集合中的物件時分頁</block>
-  <block id="dc509c391146df8e9a9de44e0a0d97b0" category="paragraph">使用Get存取同一類型物件的集合時發出API呼叫ONTAP 、根據兩個限制、嘗試傳回盡可能多的物件。您可以使用要求上的其他查詢參數來控制這些限制。針對特定Get要求所達成的第一個限制會終止要求、因此會限制傳回的記錄數目。</block>
-  <block id="77f9234bccd7df3df5de9766fc1ee88a" category="admonition">如果要求在重複所有物件之前結束、回應會包含擷取下一批記錄所需的連結。</block>
   <block id="9b694e5a19d32713635e80d596a204af" category="list-text">限制物件數量</block>
   <block id="9495391a0bd527b86b989c35cf92b08d" category="list-text">根據預設、ONTAP 針對Get要求、最多可傳回10、000個物件。您可以使用「max_Records」查詢參數來變更此限制。例如：</block>
   <block id="ca70aeac050e5deeb2d294566c856b35" category="paragraph">"Marax_Records=20"</block>
@@ -1987,4 +1985,6 @@
   <block id="1e546dde5ec48b72b17c80c9fd9a4326" category="paragraph">Web 驗證（WebAuthn）是一種基於公鑰密碼編譯的安全用戶身份驗證 Web 標準。透過 ONTAP，可透過 System Manager 和 ONTAP REST API 管理防釣魚的多因素驗證（MFA）。此功能於 ONTAP 9.16 新增，並於 ONTAP 9.19 更新。</block>
   <block id="552a4b441f2408a18f59e549d17ab486" category="paragraph">提供端點以顯示已驗證使用者的詳細資訊，包括使用者名稱、角色和權限。此資源類型是在 ONTAP 9.19 中引入的。</block>
   <block id="d9eb7c3d944a1a4dbd6e7c30275c219a" category="list-text">新增了一項<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>功能，用於擷取已登入使用者的使用者名稱、角色和權限資訊。Web 驗證 （WebAuthn） 功能也已增強。IPsec 已更新，可擷取叢集網路所使用的原則和安全性關聯。</block>
+  <block id="004ce315c7fe174848e8698d9ab0331c" category="paragraph">當使用 GET 發出 API 呼叫以存取相同類型的物件集合時，ONTAP 會嘗試根據兩個限制條件（最大物件數和擷取物件所用時間）傳回盡可能多的物件。您可以使用請求中的附加查詢參數來控制這兩個限制條件。對於特定的 GET 請求，第一個達到的限制條件將終止請求，從而限制傳回的記錄數。如果請求在遍歷所有物件之前結束，則回應將包含擷取下一批記錄所需的連結。</block>
+  <block id="fe2491a3e9df98303b4fc686684774b5" category="admonition">如果 API 呼叫返回零筆記錄，且沒有下一個連結，則可能表示在擷取任何記錄之前發生了逾時。在這種情況下，您可以使用較大的<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block>值或較小的<block ref="f69688cd7802eb62a67f6a56384b3d93" prefix=" " category="inline-code"></block>值（或兩者）重試請求。</block>
 </blocks>
