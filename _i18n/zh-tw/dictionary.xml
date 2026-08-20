@@ -110,8 +110,6 @@
   <block id="0f659373042725afb9f92bda18229d9e" category="section-title">透過REST API公開的資料SVM</block>
   <block id="f01d65d87efa9315f7d78fee0755d570" category="paragraph">支援多種儲存虛擬機器（SVM）ONTAP 。不過ONTAP 、只有資料SVM會透過REST API直接曝露在外。說明叢集和節點的組態資訊可透過REST API取得、但是叢集和節點不會視為個別的SVM。</block>
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">在ONTAPI中對SnapDiff可用度所做的變更</block>
-  <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">從ONTAP 功能性版本的E59.10.1開始、SnapDiff v1和v2 ONTAPI呼叫將無法叫用。任何啟動SnapDiff v1或v2 ONTAPI呼叫的第三方應用程式、都無法從ONTAP 版本資訊的版本9.10.1開始運作。支援SnapDiff v3 REST的備份應用程式、使用者應先確認其是否支援、再升級至版本RE-9.10.1。ONTAP ONTAP</block>
-  <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">SnapDiff API在ONTAP 整個發行版中的可用度定義如下：</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">發行說明 ONTAP</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">代表性狀態傳輸（REST）是建立分散式Web應用程式的風格。當套用到Web服務API的設計時、它會建立一套技術、以揭露伺服器型資源並管理其狀態。它使用主流傳輸協定和標準、為ONTAP 管理等叢集提供靈活的基礎。</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">REST建立一套通用的技術和最佳實務做法、但每個API的詳細資料可能會因開發期間所做的選擇而有所不同。在使用即時部署之前、您應該先瞭解ONTAP 到靜態API的設計特性。</block>
@@ -1801,8 +1799,6 @@
   <block id="982a944cf7d3a2f28ae7bfcc8755ec2c" category="list-text">利用REST API、提供更有效率且更現代化的工作流程。ONTAP例如，現在有多種不同類型的韌體可以使用單鍵更新韌體。</block>
   <block id="c408f623f341094b81899c67b52a1051" category="list-text">ONTAP 線上文件頁面中的標籤指出每個 REST 端點或參數都已推出的 ONTAP 版本，包括 9.8 的新版本。</block>
   <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">更新版本：V1和v2（僅限ONTAPI）ONTAP</block>
-  <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">資料9.8–9.9.1：V1、v2和v3（ONTAPI和REST API）ONTAP</block>
-  <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9 ． 10.1 及更新版本：僅 v3 （僅限 REST API ）</block>
   <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">OnCommand Workflow Automation 文件</block>
   <block id="a370e7923c07d85d87e81fefb3ea1979" category="list-text"><block ref="a370e7923c07d85d87e81fefb3ea1979" category="inline-link-rx"></block></block>
   <block id="4194600c450cd5967951e54d38f6d438" category="paragraph">Python用戶端程式庫是一個套件、您可以在寫入指令碼以存取ONTAP REST API時使用。它支援多種基礎服務、包括連線管理、非同步要求處理及例外處理。您可以使用Python用戶端程式庫、快速開發強大的程式碼來支援ONTAP 您的自動化目標。如需詳細資訊、請參閱 <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block> 。</block>
@@ -1899,7 +1895,6 @@
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">每個以 9.6 開頭的 ONTAP 版本都有一個包含相關文件的 PyPI 套件。每個套件都包含安裝需求，並指定支援程式庫的版本，例如 python ， requests ， request-toolbelt 和 marshore 。</block>
   <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
   <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需更多資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
-  <block id="7428add5c3a2dd7025d4c547d124a83f" category="paragraph">在每個版本中的不同點都會撤回支援。其中包括 ONTAP 9.10.1 P11 及更新版本， 9.11.1 P7 及更新版本，以及 9.12.1 GA 及更新版本。如需詳細資訊、請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>。</block>
   <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
   <block id="55f8a02846727817cdfe8e0382917362" category="summary">NetApp 提供 PowerShell 應用程式的工具組，可用於管理 ONTAP 儲存系統。此工具組是由 NetApp 開發人員所建立，並由客戶社群提供支援。</block>
   <block id="cabfdd624e257c6296d46c502ec2f6a0" category="paragraph-title">應用程式容器</block>
@@ -1987,4 +1982,9 @@
   <block id="d9eb7c3d944a1a4dbd6e7c30275c219a" category="list-text">新增了一項<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block>功能，用於擷取已登入使用者的使用者名稱、角色和權限資訊。Web 驗證 （WebAuthn） 功能也已增強。IPsec 已更新，可擷取叢集網路所使用的原則和安全性關聯。</block>
   <block id="004ce315c7fe174848e8698d9ab0331c" category="paragraph">當使用 GET 發出 API 呼叫以存取相同類型的物件集合時，ONTAP 會嘗試根據兩個限制條件（最大物件數和擷取物件所用時間）傳回盡可能多的物件。您可以使用請求中的附加查詢參數來控制這兩個限制條件。對於特定的 GET 請求，第一個達到的限制條件將終止請求，從而限制傳回的記錄數。如果請求在遍歷所有物件之前結束，則回應將包含擷取下一批記錄所需的連結。</block>
   <block id="fe2491a3e9df98303b4fc686684774b5" category="admonition">如果 API 呼叫返回零筆記錄，且沒有下一個連結，則可能表示在擷取任何記錄之前發生了逾時。在這種情況下，您可以使用較大的<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block>值或較小的<block ref="f69688cd7802eb62a67f6a56384b3d93" prefix=" " category="inline-code"></block>值（或兩者）重試請求。</block>
+  <block id="81c0f35545aecb43d0b1d8698fdfddd0" category="paragraph">SnapDiff v1 和 v2 是基於 ONTAPI （ZAPI） 管理架構，因此在某些 ONTAP 版本中存在一些使用性限制。SnapDiff v3 API 不使用 ONTAPI，並支援 ONTAP 9.8 及更新版本。SnapDiff API 在各 ONTAP 版本中的可用度定義如下：</block>
+  <block id="81e49f8f5a10210ac490dec6f253d68d" category="inline-link">常見問題：SnapDiff 在 ONTAP 中的支援</block>
+  <block id="b0d162570d0a9520ca3afc5310f1b35c" category="list-text">ONTAP 9.8 及更高版本：v1、v2 和 v3。存在一些限制；請參閱<block ref="cfd2bb0293335b7703f8ab0ba06aed6b" category="inline-link-rx"></block>以取得有關基於 ONTAP 版本的 SnapDiff 支援的更多詳細資訊。</block>
+  <block id="1194f043b69756352d85295bd0560859" category="paragraph">您應該確認您的備份應用程式支援 SnapDiff，並感知根據您所使用的 ONTAP 版本而產生的任何互通性限制。另請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>以取得更多資訊。</block>
+  <block id="b3010b51b71ecf40957b5f39b4beabb1" category="list-text"><block ref="b3010b51b71ecf40957b5f39b4beabb1" category="inline-link-rx"></block></block>
 </blocks>
