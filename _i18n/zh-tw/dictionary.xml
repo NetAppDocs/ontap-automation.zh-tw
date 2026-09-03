@@ -1881,7 +1881,6 @@
   <block id="598efe1689990327c62503c7c48dbd74" category="doc">使用 ONTAP REST API 列出 SVM</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">ONTAP 自動化</block>
   <block id="47ac2234b10a714bdea293d370ad2ce1" category="sidebar">ONTAP 自動化文件</block>
-  <block id="2fa251c44aacb71e26d10444ef2c35d7" category="doc">瞭解 NetApp PowerShell 工具套件</block>
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell 是另一個自動化 ONTAP 叢集管理的選項。</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell 是 Microsoft 的程式設計語言，可用於工作自動化與組態管理。它包括命令列 Shell 環境和指令碼語言。</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">瞭解 NetApp Manageability SDK</block>
@@ -1893,8 +1892,6 @@
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您可以使用 _pip_ 公用程式，從 Python 套件索引（ PyPI ）網站安裝套件。</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">每個以 9.6 開頭的 ONTAP 版本都有一個包含相關文件的 PyPI 套件。每個套件都包含安裝需求，並指定支援程式庫的版本，例如 python ， requests ， request-toolbelt 和 marshore 。</block>
-  <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 、從 Windows 主機自動管理 ONTAP 叢集。如需詳細資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit 以包含超過 2 、 400 個 Cmdlet 的模組來強化您的本機 PowerShell 環境。它可讓您快速開發 Windows 主機的程式碼、以自動化 ONTAP 部署。如需更多資訊、請參閱 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>。</block>
   <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
   <block id="55f8a02846727817cdfe8e0382917362" category="summary">NetApp 提供 PowerShell 應用程式的工具組，可用於管理 ONTAP 儲存系統。此工具組是由 NetApp 開發人員所建立，並由客戶社群提供支援。</block>
   <block id="cabfdd624e257c6296d46c502ec2f6a0" category="paragraph-title">應用程式容器</block>
@@ -1987,4 +1984,7 @@
   <block id="b0d162570d0a9520ca3afc5310f1b35c" category="list-text">ONTAP 9.8 及更高版本：v1、v2 和 v3。存在一些限制；請參閱<block ref="cfd2bb0293335b7703f8ab0ba06aed6b" category="inline-link-rx"></block>以取得有關基於 ONTAP 版本的 SnapDiff 支援的更多詳細資訊。</block>
   <block id="1194f043b69756352d85295bd0560859" category="paragraph">您應該確認您的備份應用程式支援 SnapDiff，並感知根據您所使用的 ONTAP 版本而產生的任何互通性限制。另請參閱<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>以取得更多資訊。</block>
   <block id="b3010b51b71ecf40957b5f39b4beabb1" category="list-text"><block ref="b3010b51b71ecf40957b5f39b4beabb1" category="inline-link-rx"></block></block>
+  <block id="b201a8dd29e4f52f8c7bcba56cc89a4b" category="inline-link-macro">了解 NetApp ONTAP PowerShell 工具包</block>
+  <block id="8b7efead83e22c580ef9c77c4e535a8e" category="paragraph">您可以使用 NetApp.ONTAP PowerShell Toolkit 從 Windows 主機自動化管理 ONTAP 叢集。如需詳細資訊，請參閱 <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>。</block>
+  <block id="8440ec0fb315f7d587b38429a761b612" category="paragraph">NetApp ONTAP PowerShell 工具包透過一個包含 2,400 多個 cmdlet 的模組來增強您的本機 PowerShell 環境。它可讓您快速為 Windows 主機開發程式碼，以自動化 ONTAP 部署。如需詳細資訊，請參閱<block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
