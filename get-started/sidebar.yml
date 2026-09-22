@@ -6,7 +6,7 @@ entries:
   url: "/get-started/ontap_automation_options.html"
 - title: 瞭解 REST Web 服務
   url: "/get-started/learn-about-rest.html"
-- title: 如何存取REST API
+- title: 存取 REST API 的方法
   url: "/get-started/access_rest_api.html"
 - title: 您的第一次 ONTAP REST API 呼叫
   url: "/get-started/first_call.html"

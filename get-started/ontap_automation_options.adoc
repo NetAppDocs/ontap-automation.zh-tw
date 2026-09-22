@@ -4,7 +4,7 @@ permalink: get-started/ontap_automation_options.html
 keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console, hub 
 summary: 有幾個選項可用於自動化 ONTAP 儲存系統的部署與管理。 
 ---
-= 瞭ONTAP 解功能自動化選項
+= 自動化選項ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
