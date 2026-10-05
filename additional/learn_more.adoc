@@ -4,7 +4,7 @@ permalink: additional/learn_more.html
 keywords: learn, learn more, more information, additional resources 
 summary: 您可以存取其他幾項資源、以取得協助、並取得有關如何自動化ONTAP 部署及管理您的不必要儲存系統的更多資訊。 
 ---
-= 深入瞭解 ONTAP REST API
+= ONTAP REST API 的其他資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
