@@ -1885,7 +1885,6 @@
   <block id="7bafad8d0c182e2b6b31ac4018784823" category="list-text"><block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>。</block>
   <block id="35ae08a314ffffc02580e3c3fbfad924" category="section-title">功能與優勢</block>
   <block id="075eb829f6ad7e0f3047f5e1b0db251b" category="example-title">套件與文件清單</block>
-  <block id="04e844fe21e462953e1fe26128de4115" category="doc">使用 Python 用戶端程式庫擷取叢集組態的指令碼</block>
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 用戶端程式庫是一個套件，您可以安裝及使用它來快速寫入指令碼，以存取 ONTAP REST API 。使用本機執行階段環境之前，您必須先做好準備。您可以使用 _pip_ 公用程式，從 Python 套件索引（ PyPI ）網站安裝套件。</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 用戶端程式庫套件的名稱為 NetApp ONTAP 。與套件相關的版本是程式庫產生的 ONTAP 主要和次要版本編號的組合，以及 ONTAP 版本中用戶端程式庫的次要版本。例如，有效的版本編號包括 9.6.1 ， 9.6.2 和 9.1.1 。</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">每個以 9.6 開頭的 ONTAP 版本都有一個包含相關文件的 PyPI 套件。每個套件都包含安裝需求，並指定支援程式庫的版本，例如 python ， requests ， request-toolbelt 和 marshore 。</block>
@@ -1991,4 +1990,5 @@
   <block id="bda838b652b88a842b6842d75ef9fd57" category="sidebar">存取 REST API 的方法</block>
   <block id="fe0515a8af283239225745febd13b5b5" category="sidebar">了解遷移</block>
   <block id="f84e398074d51e73de507e79d4754e19" category="doc">ONTAP REST API 的其他資源</block>
+  <block id="1ead7860d2e1f85551e49767e066d13c" category="doc">使用 ONTAP Python 用戶端程式庫檢索叢集組態</block>
 </blocks>
