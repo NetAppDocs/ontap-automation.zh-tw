@@ -1823,10 +1823,8 @@
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">將 ONTAPI 對應至 ONTAP REST API</block>
   <block id="7736cc9045eca4ab635dbdd3296019b8" category="doc">搭配 ONTAP REST API 使用效能計數器</block>
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">支援 ONTAP REST API 的工具與軟體</block>
-  <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST API 參考</block>
   <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">準備使用 ONTAP REST API 工作流程</block>
   <block id="bcc9a2132297815fc027add5a436948a" category="doc">ONTAP REST API 中的應用程式資源</block>
-  <block id="eec2cbc696ccc578df798a96160bf183" category="doc">ONTAP REST API 中資源類別的總覽</block>
   <block id="efcb5f574c1de0467f4e66c4a07add5f" category="doc">與 ONTAP REST API 進行非同步處理</block>
   <block id="9b2df43e4bec630fa4504501800e1b6b" category="doc">ONTAP REST API 要求的輸入變數</block>
   <block id="1b0bd65580a152f66ee09f993666fc14" category="doc">解讀 ONTAP REST API 回應</block>
@@ -1991,4 +1989,6 @@
   <block id="fe0515a8af283239225745febd13b5b5" category="sidebar">了解遷移</block>
   <block id="f84e398074d51e73de507e79d4754e19" category="doc">ONTAP REST API 的其他資源</block>
   <block id="1ead7860d2e1f85551e49767e066d13c" category="doc">使用 ONTAP Python 用戶端程式庫檢索叢集組態</block>
+  <block id="e987836733c74672e63da5daa667b250" category="doc">存取 ONTAP REST API 文件</block>
+  <block id="d4a3578830ab7018ca26d315bfdf9496" category="doc">ONTAP REST API 中的資源類別</block>
 </blocks>
